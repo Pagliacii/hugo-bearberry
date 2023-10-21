@@ -37,11 +37,11 @@ body {
   padding: 20px;
   max-width: 720px;
   text-align: left;
-  background-color: #1d1f27;
+  background-color: var(--flexoki-900);
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
-  color: #c9d1d9;
+  color: var(--flexoki-100);
 }
 
 h1,
@@ -52,7 +52,7 @@ h5,
 h6,
 strong,
 b {
-  color: var(--flexoki-paper);
+  color: var(--flexoki-50);
 }
 
 content h1:not(.tag)::before {
@@ -135,7 +135,7 @@ th,
 td {
   border: 1px solid;
   border-collapse: collapse;
-  border-color: #c9d1d9;
+  border-color: var(--flexoki-light-blue);
   padding: 5px;
 }
 
@@ -145,8 +145,8 @@ img {
 
 code {
   padding: 2px 5px;
-  color: var(--flexoki-50);
-  background-color: #373842;
+  color: var(--flexoki-100);
+  background-color: var(--flexoki-850);
 }
 
 pre code {
@@ -155,6 +155,11 @@ pre code {
   white-space: pre;
   font-size: 14px;
   overflow-x: auto;
+}
+
+p code {
+  padding: 1px 4px;
+  color: var(--flexoki-light-cyan);
 }
 
 blockquote {

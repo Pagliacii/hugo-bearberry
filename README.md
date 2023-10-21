@@ -140,6 +140,7 @@ enableRobotsTXT = true
     # emitMetadata = false
     # inputPosition = "top"
     # lang = "en"
+    # theme = "preferred_color_scheme"
 
 # Social media. Delete any item you aren't using to make sure it won't show up
 # in your website's metadata.
