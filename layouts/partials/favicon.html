@@ -1,2 +1,15 @@
 {{ with .Site.Params.favicon }}
-<link rel="shortcut icon" href="{{ absURL . }}" />{{ end }}
+<link rel="shortcut icon" href="{{ absURL . }}" />
+{{ end }}
+{{ with .Site.Params.apple_touch_icon }}
+<link rel="apple-touch-icon" size="180x180" href="{{ absURL . }}" />
+{{ end }}
+{{ with .Site.Params.favicon32 }}
+<link rel="icon" type="image/png" sizes="32x32" href="{{ absURL . }}" />
+{{ end }}
+{{ with .Site.Params.favicon16 }}
+<link rel="icon" type="image/png" sizes="16x16" href="{{ absURL . }}" />
+{{ end }}
+{{ with .Site.Params.manifest }}
+<link rel="manifest" href="{{ absURL . }}" />
+{{ end }}
