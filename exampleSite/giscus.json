@@ -1,0 +1,9 @@
+{
+  "origins": [
+    "https://pagliacii.github.io/hugo-bearberry"
+  ],
+  "originsRegex": [
+    "http://localhost:[0-9]+"
+  ]
+}
+

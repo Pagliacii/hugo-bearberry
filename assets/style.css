@@ -1,3 +1,36 @@
+:root {
+  --flexoki-black:         #100F0F;
+  --flexoki-950:           #1C1B1A;
+  --flexoki-900:           #282726;
+  --flexoki-850:           #343331;
+  --flexoki-800:           #403E3C;
+  --flexoki-700:           #575653;
+  --flexoki-600:           #6F6E69;
+  --flexoki-500:           #878580;
+  --flexoki-300:           #B7B5AC;
+  --flexoki-200:           #CECDC3;
+  --flexoki-150:           #DAD8CE;
+  --flexoki-100:           #E6E4D9;
+  --flexoki-50:            #F2F0E5;
+  --flexoki-paper:         #FFFCF0;
+  --flexoki-dark-red:      #AF3029;
+  --flexoki-dark-orange:   #BC5215;
+  --flexoki-dark-yellow:   #AD8301;
+  --flexoki-dark-green:    #66800B;
+  --flexoki-dark-cyan:     #24837B;
+  --flexoki-dark-blue:     #205EA6;
+  --flexoki-dark-purple:   #5E409D;
+  --flexoki-dark-magenta:  #A02F6F;
+  --flexoki-light-red:     #D14D41;
+  --flexoki-light-orange:  #DA702C;
+  --flexoki-light-yellow:  #D0A215;
+  --flexoki-light-green:   #879A39;
+  --flexoki-light-cyan:    #3AA99F;
+  --flexoki-light-blue:    #4385BE;
+  --flexoki-light-purple:  #8B7EC8;
+  --flexoki-light-magenta: #CE5D97;
+}
+
 body {
   font-family: Verdana, sans-serif;
   margin: auto;
@@ -19,7 +52,40 @@ h5,
 h6,
 strong,
 b {
-  color: #eee;
+  color: var(--flexoki-paper);
+}
+
+content h1:not(.tag)::before {
+  content: "# ";
+}
+
+content h2:not(.tag)::before {
+  content: "## ";
+}
+
+content h3:not(.tag)::before {
+  content: "### ";
+}
+
+content h4:not(.tag)::before {
+  content: "#### ";
+}
+
+content h5:not(.tag)::before {
+  content: "##### ";
+}
+
+content h6:not(.tag)::before {
+  content: "###### ";
+}
+
+content h1:not(.tag)::before,
+content h2:not(.tag)::before,
+content h3:not(.tag)::before,
+content h4:not(.tag)::before,
+content h5:not(.tag)::before,
+content h6:not(.tag)::before {
+  color: var(--flexoki-light-blue);
 }
 
 a {
@@ -79,8 +145,8 @@ img {
 
 code {
   padding: 2px 5px;
-  color: #f8f8f2;
-  background-color: #282a36;
+  color: var(--flexoki-50);
+  background-color: #373842;
 }
 
 pre code {
@@ -92,10 +158,10 @@ pre code {
 }
 
 blockquote {
-  border-left: 1px solid #999;
-  color: #ccc;
-  padding-left: 20px;
-  font-style: italic;
+  border-left: 4px solid var(--flexoki-dark-blue);
+  color: var(--flexoki-300);
+  padding-left: 16px;
+  font-style: normal;
 }
 
 footer {

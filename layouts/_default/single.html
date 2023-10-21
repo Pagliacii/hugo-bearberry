@@ -1,12 +1,25 @@
 {{ define "main" }}
 {{ if not .Params.menu }}
 <h1>{{ .Title }}</h1>
-<p class="byline">
+<p style="color: gray; font-size: 0.9rem">
+  Published:
   <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
     {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
   </time>
-  {{ with .Params.author }}· {{.}}{{ end }}
+  | Updated:
+  <time datetime='{{ .Date.Format "2006-01-02" }}'>
+    {{ .Lastmod.Format (default "2006-01-02" .Site.Params.dateFormat) }}
+  </time>
+  |
+  <span>{{ .FuzzyWordCount }}</span>
+  <span>words</span>
+  |
+  <span>{{ .ReadingTime }}</span>
+  <span>mins</span>
 </p>
+{{ end }}
+{{ if or .Params.math .Site.Params.math }}
+{{ partial "math.html" . }}
 {{ end }}
 <content>
   {{ .Content }}
@@ -16,6 +29,24 @@
     <a class="blog-tags" href="{{ .Permalink }}">#{{ .LinkTitle }}</a>&nbsp;&nbsp;
   {{ end }}
 </p>
+{{ with .Site.Params.giscus }}
+<script src="https://giscus.app/client.js"
+        data-repo="{{ .repoName }}"
+        data-repo-id="{{ .repoID }}"
+        data-category="{{ .category }}"
+        data-category-id="{{ .categoryID }}"
+        data-mapping='{{ .mapping | default "pathname" }}'
+        data-strict="0"
+        data-reactions-enabled="{{ if .reactionsEnabled }}1{{ else }}0{{ end }}"
+        data-emit-metadata="{{ if .emitMetadata }}0{{ else }}1{{ end }}"
+        data-input-position='{{ .inputPosition | default "top" }}'
+        data-theme="preferred_color_scheme"
+        data-lang='{{ .lang | default "en" }}'
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+{{ end }}
 {{ with .Site.Social.email }}
   <p>
     <a href='mailto:{{ . }}?subject={{ i18n "email-subject" }}"{{ default $.Site.Title $.Page.Title }}"'>
