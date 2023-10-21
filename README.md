@@ -92,7 +92,15 @@ enableRobotsTXT = true
   description = "Bear Berry Demo"
 
   # The path to your favicon
-  favicon = "images/favicon.png"
+  favicon = "images/favicon.ico"
+  favicon16 = "images/favicon-16x16.png"
+  favicon32 = "images/favicon-32x32.png"
+  apple_touch_icon = "images/apple-touch-icon.png"
+  manifest = "images/site.webmanifest"
+  safari_pinned_tab = "images/safari-pinned-tab.svg"
+  msapplication_tilecolor = "#da532c"
+  msapplication_config = "images/browserconfig.xml"
+  theme_color = "#fff
 
   # These images will show up when services want to generate a preview of a link
   # to your site. Ignored if `generateSocialCard = true`. For more information

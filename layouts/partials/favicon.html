@@ -1,6 +1,3 @@
-{{ with .Site.Params.favicon }}
-<link rel="shortcut icon" href="{{ absURL . }}" />
-{{ end }}
 {{ with .Site.Params.apple_touch_icon }}
 <link rel="apple-touch-icon" size="180x180" href="{{ absURL . }}" />
 {{ end }}
@@ -12,4 +9,19 @@
 {{ end }}
 {{ with .Site.Params.manifest }}
 <link rel="manifest" href="{{ absURL . }}" />
+{{ end }}
+{{ with .Site.Params.safari_pinned_tab }}
+<link rel="mask-icon" href="{{ absURL . }}" color='{{ $.Site.Params.safari_pinned_tab_color | default "#5bbad5" }}' />
+{{ end }}
+{{ with .Site.Params.favicon }}
+<link rel="shortcut icon" href="{{ absURL . }}" />
+{{ end }}
+{{ with .Site.Params.msapplication_tilecolor }}
+<meta name="msapplication-TileColor" content="{{ . }}" />
+{{ end }}
+{{ with .Site.Params.msapplication_config }}
+<meta name="msapplication-config" content="{{ absURL . }}" />
+{{ end }}
+{{ with .Site.Params.theme_color }}
+<meta name="theme-color" content="{{ . }}" />
 {{ end }}
