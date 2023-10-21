@@ -30,7 +30,9 @@ echo 'theme = "hugo-bearberry"' >> config.toml
 
 - Show the update date, words and reading time in the post page.
 - Heading prefix with "#".
+- Enable [katex](https://katex.org/) to render math expressions by including `math = true` in a post's [front matter](https://gohugo.io/content-management/front-matter/).
 - Use [giscus](https://giscus.app/) as the comment system.
+- Use [mermaid.js](https://mermaid.js.org/) to draw diagrams.
 
 ## Configuration
 
