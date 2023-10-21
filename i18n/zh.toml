@@ -1,0 +1,14 @@
+[filtering-for]
+  other = "过滤中"
+
+[no-posts]
+  other = "还没有文章"
+
+[email-subject]
+  other = "回复 "
+
+[email-reply]
+  other = "通过电邮回复此帖"
+
+[skip-link]
+  other = "跳转至主要内容"
