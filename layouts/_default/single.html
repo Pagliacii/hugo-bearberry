@@ -24,6 +24,15 @@
 <content>
   {{ .Content }}
 </content>
+{{ if .Page.Store.Get "hasMermaid" }}
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: "dark",
+  });
+</script>
+{{ end }}
 <p>
   {{ range (.GetTerms "tags") }}
     <a class="blog-tags" href="{{ .Permalink }}">#{{ .LinkTitle }}</a>&nbsp;&nbsp;
