@@ -49,7 +49,7 @@
         data-reactions-enabled="{{ if .reactionsEnabled }}1{{ else }}0{{ end }}"
         data-emit-metadata="{{ if .emitMetadata }}0{{ else }}1{{ end }}"
         data-input-position='{{ .inputPosition | default "top" }}'
-        data-theme='{{ absURL "giscus.css" }}'
+        data-theme='{{ .theme | default "preferred_color_scheme" }}'
         data-lang='{{ .lang | default "en" }}'
         data-loading="lazy"
         crossorigin="anonymous"
