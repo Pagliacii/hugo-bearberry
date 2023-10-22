@@ -33,6 +33,8 @@ echo 'theme = "hugo-bearberry"' >> config.toml
 - Enable [katex](https://katex.org/) to render math expressions by including `math = true` in a post's [front matter](https://gohugo.io/content-management/front-matter/).
 - Use [giscus](https://giscus.app/) as the comment system.
 - Use [mermaid.js](https://mermaid.js.org/) to draw diagrams.
+- Add copy button and language name for code blocks.
+- Add the back-to-top button at right-bottom corner.
 
 ## Configuration
 
@@ -102,7 +104,7 @@ enableRobotsTXT = true
   safari_pinned_tab = "images/safari-pinned-tab.svg"
   msapplication_tilecolor = "#da532c"
   msapplication_config = "images/browserconfig.xml"
-  theme_color = "#fff
+  theme_color = "#fff"
 
   # These images will show up when services want to generate a preview of a link
   # to your site. Ignored if `generateSocialCard = true`. For more information

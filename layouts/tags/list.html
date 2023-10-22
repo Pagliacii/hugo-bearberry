@@ -1,8 +1,10 @@
 {{ define "main" }}
 <content>
   <h3 class="tag">{{ .Title }}</h3>
-  {{ range .Site.Taxonomies.tags }}
-  <a href="{{ .Page.RelPermalink }}">#{{ .Page.Title }}</a>
-  {{ end }}
+  <div>
+    {{ range .Site.Taxonomies.tags }}
+      <a class="blog-tags" href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>&nbsp;&nbsp;
+    {{ end }}
+  </div>
 </content>
 {{ end }}
