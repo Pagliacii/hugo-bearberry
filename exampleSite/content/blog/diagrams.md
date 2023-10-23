@@ -10,6 +10,7 @@ tags = [
     "mermaid",
     "GoAT",
 ]
+toc = true
 +++
 
 This article is a demo of diagrams, using the [mermaid](https://mermaid.js.org) and [goat](https://github.com/bep/goat) tools.

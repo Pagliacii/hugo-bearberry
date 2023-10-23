@@ -12,3 +12,6 @@
 
 [skip-link]
   other = "跳转至主要内容"
+
+[table-of-contents]
+  other = "文章目录"

@@ -1,7 +1,7 @@
 # Basic config
 baseURL = "https://example.com"
 theme = "hugo-bearberry"
-copyright = "Jason Huang © 2023"
+copyright = "[Jason Huang](https://github.com/Pagliacii) © 2023"
 defaultContentLanguage = "en"
 
 # Generate a nice robots.txt for SEO
@@ -26,10 +26,6 @@ enableRobotsTXT = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 4
-    ordered = false
 
 # Multilingual mode config. More for information about how to setup translation,
 # see https://gohugo.io/content-management/multilingual/

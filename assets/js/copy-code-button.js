@@ -7,6 +7,7 @@ const langColors = {
     "javascript": "#f1e05a",
     "html": "#e34c26",
     "rust": "#dea584",
+    "bash": "#89e051",
 };
 
 function getLanguageColor(language) {

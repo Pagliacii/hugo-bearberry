@@ -18,39 +18,28 @@
   <span>mins</span>
 </p>
 {{ end }}
+
 {{ if .Params.toc }}
-{{ .TableOfContents }}
+<article class="article">
 {{ end }}
-{{ if or .Params.math .Site.Params.math }}
-{{- partial "math.html" . -}}
+  <content class="content">
+    {{ .Content }}
+  </content>
+  <p>
+    {{ range (.GetTerms "tags") }}
+      <a class="blog-tags" href="{{ .Permalink }}">#{{ .LinkTitle }}</a>&nbsp;&nbsp;
+    {{ end }}
+  </p>
+{{ if .Params.toc }}
+  <aside class="sidebar">
+    <div class="toc-container">
+      <div style="font-weight: bold; margin-bottom: 0.4rem">{{ i18n "table-of-contents" }}</div>
+      <div class="toc"></div>
+    </div>
+  </aside>
+</article>
 {{ end }}
-<content>
-  {{ .Content }}
-</content>
-<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-<script>addBackToTop({
-  diameter: 56,
-  backgroundColor: "rgb(218, 112, 44)",
-  textColor: "#fffcf0"
-})</script>
-{{ if (findRE "<pre" .Content 1) }}
-  {{ $js := resources.Get "/js/copy-code-button.js" | minify }}
-  <script src="{{ $js.RelPermalink }}"></script>
-{{ end }}
-{{ if .Page.Store.Get "hasMermaid" }}
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({
-    startOnLoad: true,
-    theme: "dark",
-  });
-</script>
-{{ end }}
-<p>
-  {{ range (.GetTerms "tags") }}
-    <a class="blog-tags" href="{{ .Permalink }}">#{{ .LinkTitle }}</a>&nbsp;&nbsp;
-  {{ end }}
-</p>
+
 {{ with .Site.Params.giscus }}
 <script src="https://giscus.app/client.js"
         data-repo="{{ .repoName }}"
@@ -75,5 +64,29 @@
       {{ i18n "email-reply" }} ↪
     </a>
   </p>
+{{ end }}
+
+{{ if or .Params.math .Site.Params.math }}
+{{- partial "math.html" . -}}
+{{ end }}
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  cornerOffset: 32,
+  diameter: 64,
+  backgroundColor: "var(--flexoki-light-blue)",
+  textColor: "var(--flexoki-paper)"
+})</script>
+{{ if (findRE "<pre" .Content 1) }}
+  {{ $js := resources.Get "/js/copy-code-button.js" | minify }}
+  <script src="{{ $js.RelPermalink }}"></script>
+{{ end }}
+{{ if .Page.Store.Get "hasMermaid" }}
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: "dark",
+  });
+</script>
 {{ end }}
 {{ end }}

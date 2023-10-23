@@ -12,5 +12,7 @@ Keep it simple and fast. With more features.
 
 - Use [giscus](https://github.com/giscus/giscus) as the comments system.
 - Integrate with [Mermaid](https://mermaid.js.org/).
+- ToC via [tocbot](https://github.com/tscanlin/tocbot).
+- back-to-top button via [vanilla-back-to-top](https://github.com/vfeskov/vanilla-back-to-top).
 
 Made with 💟 by [Jason Huang](https://github.com/Pagliacii).

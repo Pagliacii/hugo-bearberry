@@ -26,6 +26,12 @@
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
 
+  {{ if .Params.toc }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.21.2/tocbot.css">
+    {{ $toc := resources.Get "toc.css" | minify }}
+    <link href="{{ $toc.RelPermalink }}" rel="stylesheet">
+  {{ end }}
+
   <!-- A partial to be overwritten by the user.
   Simply place a custom_head.html into
   your local /layouts/partials-directory -->
@@ -42,6 +48,12 @@
   <footer>
     {{- partial "footer.html" . -}}
   </footer>
+
+  {{ if .Params.toc }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.21.2/tocbot.min.js"></script>
+    {{ $toc := resources.Get "js/toc.js" | minify }}
+    <script src="{{ $toc.RelPermalink }}"></script>
+  {{ end }}
 
   <!-- A partial to be overwritten by the user.
   Simply place a custom_body.html into

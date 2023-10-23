@@ -7,6 +7,7 @@ tags = [
     "markdown",
     "code",
 ]
+toc = true
 +++
 
 ## Python
