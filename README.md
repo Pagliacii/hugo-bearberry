@@ -34,7 +34,7 @@ echo 'theme = "hugo-bearberry"' >> config.toml
 - Use [giscus](https://giscus.app/) as the comment system.
 - Use [mermaid.js](https://mermaid.js.org/) to draw diagrams.
 - Add copy button and language name for code blocks.
-- Add the back-to-top button at right-bottom corner.
+- Add the [back-to-top](https://github.com/vfeskov/vanilla-back-to-top) button at right-bottom corner.
 - Use [tocbot](https://github.com/tscanlin/tocbot) to show the table of contents.
 
 ## Configuration

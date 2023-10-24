@@ -21,6 +21,12 @@
 
 {{ if .Params.toc }}
 <article class="article">
+  <aside class="sidebar">
+    <div class="toc-container">
+      <div style="font-weight: bold; margin-bottom: 0.4rem">{{ i18n "table-of-contents" }}</div>
+      <div class="toc"></div>
+    </div>
+  </aside>
 {{ end }}
   <content class="content">
     {{ .Content }}
@@ -31,12 +37,6 @@
     {{ end }}
   </p>
 {{ if .Params.toc }}
-  <aside class="sidebar">
-    <div class="toc-container">
-      <div style="font-weight: bold; margin-bottom: 0.4rem">{{ i18n "table-of-contents" }}</div>
-      <div class="toc"></div>
-    </div>
-  </aside>
 </article>
 {{ end }}
 
@@ -74,7 +74,8 @@
   cornerOffset: 32,
   diameter: 64,
   backgroundColor: "var(--flexoki-light-blue)",
-  textColor: "var(--flexoki-paper)"
+  textColor: "var(--flexoki-paper)",
+  showWhenScrollTopIs: 512, // px
 })</script>
 {{ if (findRE "<pre" .Content 1) }}
   {{ $js := resources.Get "/js/copy-code-button.js" | minify }}
