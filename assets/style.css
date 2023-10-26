@@ -176,10 +176,14 @@ p code {
 }
 
 blockquote {
-  border-left: 4px solid var(--flexoki-dark-blue);
-  color: var(--flexoki-300);
+  border-left: 6px solid var(--flexoki-light-blue);
+  color: var(--flexoki-150);
   padding-left: 16px;
   font-style: normal;
+  background-color: #494953;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  margin: 0;
 }
 
 footer {
