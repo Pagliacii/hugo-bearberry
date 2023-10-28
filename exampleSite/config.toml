@@ -102,3 +102,9 @@ enableRobotsTXT = true
   email = "me@example.com" # Added to the footer so readers can reply to posts
   twitter = "example" # Twitter handle (without '@')
   facebook_admin = "0000000000" # Facebook Page Admin ID
+
+# Optimize the performance for kroki diagrams
+[caches]
+  [caches.getresource]
+    dir = ":resourceDir"
+    maxAge = -1

@@ -8,7 +8,9 @@ const langColors = {
     "html": "#e34c26",
     "rust": "#dea584",
     "bash": "#89e051",
+    "toml": "#9c4221",
 };
+const excludedLangs = ['mermaid', 'goat', 'kroki'];
 
 function getLanguageColor(language) {
     let color = langColors[language];
@@ -29,7 +31,7 @@ function addCopyButtons(clipboard) {
           }
         }
 
-        if (codeLang === 'mermaid') {
+        if (excludedLangs.includes(codeLang)) {
           return;
         }
 
@@ -45,9 +47,10 @@ function addCopyButtons(clipboard) {
         button.className = 'copy-code-button';
         button.type = 'button';
         button.innerText = 'Copy';
+        button.setAttribute('aria-label', 'Copy');
 
         button.addEventListener('click', function () {
-            // Select only code content spans  
+            // Select only code content spans
             const codeSpans = codeBlock.querySelectorAll('span.cl');
             // Map to text
             const codeLines = [...codeSpans]

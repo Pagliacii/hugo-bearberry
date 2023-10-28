@@ -320,3 +320,13 @@ pre {
   font-size: 0.6em;
   font-weight: bold;
 }
+
+/* For kroki diagrams */
+img.diagram {
+  height: auto;
+  width: 100%;
+}
+
+.mermaid {
+  background-color: var(--flexoki-300);
+}
