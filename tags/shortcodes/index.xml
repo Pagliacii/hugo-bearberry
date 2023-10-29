@@ -104,13 +104,9 @@ Alerts Note alert 1{{&amp;lt; note &amp;gt;}} 2Highlights information that users
 <h2 id="heading">@</h2>
 <p>You can use this shortcode to create a link to a GitHub user or Twitter user. For example, 
 
+<a href="https://github.com/gohugoio">@Hugo</a> and 
 
-<a href="https://github.com/gohugoio">@Hugo</a>
- and 
-
-
-<a href="https://twitter.com/gohugoio">@GoHugo.io</a>
-.</p>
+<a href="https://twitter.com/gohugoio">@GoHugo.io</a>.</p>
 <p>Here is the code:</p>
 
 
