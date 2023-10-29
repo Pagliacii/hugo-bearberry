@@ -37,6 +37,7 @@ echo 'theme = "hugo-bearberry"' >> config.toml
 - Add the [back-to-top](https://github.com/vfeskov/vanilla-back-to-top) button at right-bottom corner.
 - Use [tocbot](https://github.com/tscanlin/tocbot) to show the table of contents.
 - Use the free [Kroki](https://kroki.io/) for more diagrams.
+- Add more [shortcodes](layouts/shortcodes) to make the writing more easily.
 
 ## Configuration
 
