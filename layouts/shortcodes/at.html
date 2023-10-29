@@ -5,4 +5,4 @@
 {{ else if (eq $type "twitter" )}}
   {{- $link = printf "https://twitter.com/%s" (.Get "id") }}
 {{ end }}
-<a href="{{ $link }}">@{{- .Get "name" -}}</a>
+{{- printf "[@%s](%s)" (.Get "name") $link | markdownify -}}
