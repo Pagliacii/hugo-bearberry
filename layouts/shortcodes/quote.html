@@ -1,0 +1,10 @@
+{{- $inner := trim .Inner "\n\r" }}
+{{- $title := .Get "title" }}
+<blockquote class="quote">
+  <p class="quote-text">&ldquo;{{ $inner | safeHTML }}&rdquo;</p>
+  <div class="quote-info">
+    <span>&mdash;</span>
+    <span class="quote-author">{{ .Get "author" }}, </span>
+    <span class="quote-title">{{ with .Get "ref" }}<a href="{{ . }}">{{ $title }}</a>{{ else }}{{ $title }}{{ end }}</span>
+  </div>
+</blockquote>

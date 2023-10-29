@@ -1,0 +1,8 @@
+{{- $type := .Get "type" }}
+{{- $link := .Get "url" }}
+{{ if (eq $type "github") }}
+  {{- $link = printf "https://github.com/%s" (.Get "id") }}
+{{ else if (eq $type "twitter" )}}
+  {{- $link = printf "https://twitter.com/%s" (.Get "id") }}
+{{ end }}
+{{- printf "[%s](%s)" (.Get "name") $link | markdownify -}}

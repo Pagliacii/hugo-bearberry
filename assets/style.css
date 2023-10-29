@@ -356,3 +356,64 @@ div.kroki-img {
   padding-bottom: 0.1rem;
   margin-top: 0.75rem;
 }
+
+.alert {
+  padding: 0 1em;
+  margin: 16px 0;
+  border-left: 0.25em solid var(--flexoki-500);
+  background-color: var(--flexoki-950);
+}
+
+.alert-icon {
+  display: inline-flex;
+  align-items: center !important;
+  margin-bottom: 4px;
+}
+
+.octicon {
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+  margin-right: 8px;
+}
+
+.alert-note {
+  border-left-color: var(--flexoki-light-blue);
+}
+
+.alert-note-icon {
+  color: var(--flexoki-light-blue);
+}
+
+.alert-important {
+  border-left-color: var(--flexoki-light-purple);
+}
+
+.alert-important-icon {
+  color: var(--flexoki-light-purple);
+}
+
+.alert-warning {
+  border-left-color: var(--flexoki-light-yellow);
+}
+
+.alert-warning-icon {
+  color: var(--flexoki-light-yellow);
+}
+
+.quote {
+  margin: 0.5em 0;
+  background-color: var(--flexoki-800);
+  border-left-color: var(--flexoki-light-cyan);
+}
+
+.quote-text {
+  color: var(--flexoki-paper);
+  font-weight: bold;
+}
+
+.quote-info {
+  color: var(--flexoki-300);
+  text-align: right;
+}
