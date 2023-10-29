@@ -153,6 +153,14 @@ enableRobotsTXT = true
   email = "me@example.com" # Added to the footer so readers can reply to posts
   twitter = "example" # Twitter handle (without '@')
   facebook_admin = "0000000000" # Facebook Page Admin ID
+
+# Use Hugo cache to optimize performance in a CI/CD environment. For more information see links below:
+# https://gohugo.io/getting-started/configuration/#configure-file-caches
+# https://www.veriphor.com/articles/diagrams/#performance
+[caches]
+  [caches.getresource]
+    dir = ":resourceDir/_gen"
+    maxAge = -1
 ```
 
 ## Contributing
