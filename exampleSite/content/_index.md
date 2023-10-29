@@ -17,4 +17,4 @@ Keep it simple and fast. With more features.
 - Integrate with [Kroki](https://kroki.io/).
 - More shortcodes.
 
-Made with 💟 by [Jason Huang](https://github.com/Pagliacii).
+Made with 💟 by {{< at name="Jason Huang" type=github id=Pagliacii >}}.
