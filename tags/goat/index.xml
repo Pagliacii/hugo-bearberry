@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>GoAT on Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/tags/goat/</link><description>Recent content in GoAT on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><copyright>[Jason Huang](https://github.com/Pagliacii) © 2023</copyright><lastBuildDate>Sat, 21 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/tags/goat/index.xml" rel="self" type="application/rss+xml"/><item><title>Diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</link><pubDate>Sat, 21 Oct 2023 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</guid><description>This article is a demo of diagrams, using the mermaid and goat tools.</description><content:encoded><![CDATA[<p>This article is a demo of diagrams, using the <a href="https://mermaid.js.org">mermaid</a> and <a href="https://github.com/bep/goat">goat</a> tools.</p>
 <h2 id="mermaid">Mermaid</h2>
 <h3 id="sequence-diagram-example">Sequence Diagram Example</h3>
+
+
+
+
+
 <pre tabindex="0"><code>```mermaid
 sequenceDiagram
     participant Alice
@@ -13,8 +18,7 @@ sequenceDiagram
     John--&gt;&gt;Alice: Great!
     John-&gt;&gt;Bob: How about you?
     Bob--&gt;&gt;John: Jolly good!
-```
-</code></pre><pre class="mermaid">sequenceDiagram
+```</code></pre><pre class="mermaid">sequenceDiagram
     participant Alice
     participant Bob
     Alice->>John: Hello John, how are you?
@@ -28,6 +32,11 @@ sequenceDiagram
 </pre>
 
 <h3 id="class-diagram-example">Class Diagram Example</h3>
+
+
+
+
+
 <pre tabindex="0"><code>```mermaid
 ---
 title: Animal example
@@ -55,8 +64,7 @@ classDiagram
         +bool is_wild
         +run()
     }
-```
-</code></pre><pre class="mermaid">---
+```</code></pre><pre class="mermaid">---
 title: Animal example
 ---
 classDiagram
@@ -85,6 +93,11 @@ classDiagram
 </pre>
 
 <h3 id="gantt-chart-with-specified-theme">Gantt Chart with specified theme</h3>
+
+
+
+
+
 <pre tabindex="0"><code>```mermaid
 %%{init: { &#34;theme&#34;: &#34;forest&#34; } }%%
 gantt
@@ -99,8 +112,7 @@ gantt
     section Another
     Task in sec      :2014-01-12  , 12d
     another task      : 24d
-```
-</code></pre><pre class="mermaid">%%{init: { "theme": "forest" } }%%
+```</code></pre><pre class="mermaid">%%{init: { "theme": "forest" } }%%
 gantt
       accTitle: My Gantt Chart Accessibility Title
       accDescr: My Gantt Chart Accessibility Description
@@ -118,6 +130,11 @@ gantt
 <h2 id="goat">GoAT</h2>
 <p>Click <a href="https://github.com/bep/goat/tree/master/examples">here</a> to see more examples.</p>
 <h3 id="trees">Trees</h3>
+
+
+
+
+
 <pre tabindex="0"><code>```goat
       .               .                .               .--- 1          .-- 1     / 1
      / \              |                |           .---+            .-+         +
@@ -127,8 +144,7 @@ gantt
  /   \ /   \    |   |   |   |    |   |   |   |     &#39;---+            &#39;-+         +
  1   2 3   4    1   2   3   4    1   2   3   4         &#39;--- 4          &#39;-- 4     \ 4
 
-```
-</code></pre>
+```</code></pre>
 
 
 <div class="goat svg-container ">
@@ -234,14 +250,18 @@ gantt
   
 </div>
 <h3 id="dot-grids">Dot Grids</h3>
+
+
+
+
+
 <pre tabindex="0"><code>```goat
   o o o o o  * * * * *  * * o o *    o o o      * * *      o o o     · * · · ·     · · ·
   o o o o o  * * * * *  o o o o *   o o o o    * * * *    * o * *    · * * · ·    · · · ·
   o o o o o  * * * * *  o * o o o  o o o o o  * * * * *  o o o o o   · o · · o   · · * * ·
   o o o o o  * * * * *  o * o o o   o o o o    * * * *    o * o o    · · · · o    · · * ·
   o o o o o  * * * * *  * * * * o    o o o      * * *      o * o     · · · · ·     · · *
-```
-</code></pre>
+```</code></pre>
 
 
 <div class="goat svg-container ">
@@ -435,6 +455,11 @@ gantt
   
 </div>
 <h3 id="large-nodes">Large Nodes</h3>
+
+
+
+
+
 <pre tabindex="0"><code>```goat
    .---.       .-.        .-.       .-.                                       .-.
    | A +-----&gt;| 1 +&lt;----&gt;| 2 |&lt;----+ 4 +------------------.                  | 8 |
@@ -444,8 +469,7 @@ gantt
                           .-.      .-+-.        .-.      .-+-.      .-.       .+.       .---.
                          | 3 +----&gt;| B |&lt;-----&gt;| 5 +----&gt;| C +----&gt;| 6 +----&gt;| 7 |&lt;----&gt;| D |
                           &#39;-&#39;      &#39;---&#39;        &#39;-&#39;      &#39;---&#39;      &#39;-&#39;       &#39;-&#39;       &#39;---&#39;
-```
-</code></pre>
+```</code></pre>
 
 
 <div class="goat svg-container ">
@@ -563,6 +587,11 @@ gantt
   
 </div>
 <h3 id="circuits">Circuits</h3>
+
+
+
+
+
 <pre tabindex="0"><code>```goat
                      ____                      *
                     |    |_____.---.           |
@@ -581,8 +610,7 @@ gantt
                         |            /___\
                         |              |
                         &#39;--------------&#39;
-```
-</code></pre>
+```</code></pre>
 
 
 <div class="goat svg-container ">

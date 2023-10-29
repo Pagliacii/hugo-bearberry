@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/</link><description>Recent content on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><copyright>[Jason Huang](https://github.com/Pagliacii) © 2023</copyright><lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/index.xml" rel="self" type="application/rss+xml"/><item><title>Kroki diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</link><pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</guid><description>Use a fenced code block to embed an SVG image of a diagram in your Hugo site using the free Kroki service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.1
 Thanks for @jmooring and Kroki.
 Performance According to @jmooring&amp;rsquo;s blog, you could edit your site configuration to store getresource cache to optimize performance.
-1[caches] 2 [caches.getresource] 3 dir = &amp;#34;:resourceDir/_gen&amp;#34; 4 maxAge = -1 And don&amp;rsquo;t forget to check the resources directory into source control.</description><content:encoded><![CDATA[<blockquote>
+1[caches] 2 [caches.getresource] 3 dir = &amp;#34;:resourceDir/_gen&amp;#34; 4 maxAge = -1And don&amp;rsquo;t forget to check the resources directory into source control.</description><content:encoded><![CDATA[<blockquote>
 <p>Use a fenced code block to embed an SVG image of a diagram in your <a href="https://gohugo.io/">Hugo</a> site using the free <a href="https://kroki.io/">Kroki</a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 </blockquote>
 <p>Thanks for <a href="https://github.com/jmooring">@jmooring</a> and <a href="https://kroki.io/">Kroki</a>.</p>
 <h2 id="performance">Performance</h2>
 <p>According to <a href="https://github.com/jmooring">@jmooring</a>&rsquo;s <a href="https://www.veriphor.com/articles/diagrams/#performance">blog</a>, you could edit your <a href="https://gohugo.io/getting-started/configuration/#configure-file-caches">site configuration</a> to store <code>getresource</code> cache to optimize performance.</p>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="ln">1</span><span class="cl"><span class="p">[</span><span class="nx">caches</span><span class="p">]</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">getresource</span><span class="p">]</span>
 </span></span><span class="line"><span class="ln">3</span><span class="cl">    <span class="nx">dir</span> <span class="p">=</span> <span class="s2">&#34;:resourceDir/_gen&#34;</span>
-</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span>
-</span></span></code></pre></div><p>And don&rsquo;t forget to check the <code>resources</code> directory into source control.</p>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span></span></span></code></pre></div><p>And don&rsquo;t forget to check the <code>resources</code> directory into source control.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="d2">D2</h3>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=d2}
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl"># Actors
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">hans: Hans Niemann
@@ -36,11 +45,15 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">20</span><span class="cl">defendants.naka -&gt; hans: Accused of cheating on his stream
 </span></span><span class="line"><span class="ln">21</span><span class="cl">defendants.mc -&gt; hans: Lost then withdrew with accusations
 </span></span><span class="line"><span class="ln">22</span><span class="cl">defendants.chesscom -&gt; hans: 72 page report of cheating
-</span></span><span class="line"><span class="ln">23</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">23</span><span class="cl">```</span></span></code></pre></div>
 <div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-d2" id="h-rh-cb-kroki-2" src="/hugo-bearberry/images/kroki/md5-MzExERBNoGGKm/Jokpqsqw==.svg">
 </div><h3 id="mermaid">Mermaid</h3>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=mermaid flexoki=paper}
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">sequenceDiagram
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">  participant Alice
@@ -53,11 +66,15 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">10</span><span class="cl">  John--&gt;Alice: Great!
 </span></span><span class="line"><span class="ln">11</span><span class="cl">  John-&gt;Bob: How about you?
 </span></span><span class="line"><span class="ln">12</span><span class="cl">  Bob--&gt;John: Jolly good!
-</span></span><span class="line"><span class="ln">13</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">```</span></span></code></pre></div>
 <div style="background-color: var(--flexoki-paper); padding: 0.5rem; margin-top: 1rem">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-mermaid" id="h-rh-cb-kroki-4" src="/hugo-bearberry/images/kroki/md5-RTOBEWCeql9Fo24aPRQEFw==.svg">
 </div><h3 id="plantuml">PlantUML</h3>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=plantuml}
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">@startmindmap
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">skinparam monochrome true
@@ -77,14 +94,18 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">17</span><span class="cl">--- Windows 8
 </span></span><span class="line"><span class="ln">18</span><span class="cl">--- Windows 10
 </span></span><span class="line"><span class="ln">19</span><span class="cl">@endmindmap
-</span></span><span class="line"><span class="ln">20</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">20</span><span class="cl">```</span></span></code></pre></div>
 <div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-plantuml" id="h-rh-cb-kroki-6" src="/hugo-bearberry/images/kroki/md5-2ZVn753CxT8GZ86NR0f2BQ==.svg">
 </div><h3 id="excalidraw">Excalidraw</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
-    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">  1</span><span class="cl">```kroki {type=excalidraw}
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">  1</span><span class="cl">```kroki {type=excalidraw}
 </span></span><span class="line"><span class="ln">  2</span><span class="cl">{
 </span></span><span class="line"><span class="ln">  3</span><span class="cl">  &#34;type&#34;: &#34;excalidraw&#34;,
 </span></span><span class="line"><span class="ln">  4</span><span class="cl">  &#34;version&#34;: 2,
@@ -780,14 +801,18 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">694</span><span class="cl">    &#34;gridSize&#34;: 20
 </span></span><span class="line"><span class="ln">695</span><span class="cl">  }
 </span></span><span class="line"><span class="ln">696</span><span class="cl">}
-</span></span><span class="line"><span class="ln">697</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">697</span><span class="cl">```</span></span></code></pre></div>
 </details>
 
 
 <div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-excalidraw" id="h-rh-cb-kroki-7" src="/hugo-bearberry/images/kroki/md5-NZBd00bcK3eiuNsaLYgbRg==.svg">
 </div><h3 id="blockdiag">BlockDiag</h3>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=blockdiag}
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">blockdiag {
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">  Kroki -&gt; generates -&gt; &#34;Block diagrams&#34;;
@@ -797,11 +822,15 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln"> 7</span><span class="cl">  &#34;Block diagrams&#34; [color = &#34;pink&#34;];
 </span></span><span class="line"><span class="ln"> 8</span><span class="cl">  &#34;very easy!&#34; [color = &#34;orange&#34;];
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl">}
-</span></span><span class="line"><span class="ln">10</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">```</span></span></code></pre></div>
 <div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-blockdiag" id="h-rh-cb-kroki-9" src="/hugo-bearberry/images/kroki/md5-gd4TAzIyVKA+/I5idJ87Sg==.svg">
 </div><h3 id="packetdiag">PacketDiag</h3>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=packetdiag color=&#34;#878580&#34;}
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">packetdiag {
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">  colwidth = 32;
@@ -825,11 +854,15 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">21</span><span class="cl">  160-191: (Options and Padding);
 </span></span><span class="line"><span class="ln">22</span><span class="cl">  192-223: data [colheight = 3];
 </span></span><span class="line"><span class="ln">23</span><span class="cl">}
-</span></span><span class="line"><span class="ln">24</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">24</span><span class="cl">```</span></span></code></pre></div>
 <div style="background-color:#878580; padding: 0.5rem; margin-top: 1rem">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-packetdiag" id="h-rh-cb-kroki-11" src="/hugo-bearberry/images/kroki/md5-ODAPKBQzaf3JwnasnRJx4Q==.svg">
 </div><h3 id="c4-with-plantuml">C4 with PlantUML</h3>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=c4plantuml}
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">!include &lt;C4/C4_Context&gt;
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">
@@ -845,14 +878,18 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">13</span><span class="cl">Rel_Back(customer, mail_system, &#34;Sends e-mails to&#34;)
 </span></span><span class="line"><span class="ln">14</span><span class="cl">Rel_Neighbor(banking_system, mail_system, &#34;Sends e-mails&#34;, &#34;SMTP&#34;)
 </span></span><span class="line"><span class="ln">15</span><span class="cl">Rel(banking_system, mainframe, &#34;Uses&#34;)
-</span></span><span class="line"><span class="ln">16</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">```</span></span></code></pre></div>
 <div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-c4plantuml" id="h-rh-cb-kroki-13" src="/hugo-bearberry/images/kroki/md5-ed68oz546E6ok9x+UxLrdg==.svg">
 </div><h3 id="bytefield">Bytefield</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
-    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=bytefield flexoki=150}
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=bytefield flexoki=150}
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">(defattrs :bg-green {:fill &#34;#a0ffa0&#34;})
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">(defattrs :bg-yellow {:fill &#34;#ffffa0&#34;})
 </span></span><span class="line"><span class="ln"> 4</span><span class="cl">(defattrs :bg-pink {:fill &#34;#ffb0a0&#34;})
@@ -918,8 +955,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">64</span><span class="cl">(draw-box (text &#34;length&#34; [:math] [:sub 2]) {:span 4})
 </span></span><span class="line"><span class="ln">65</span><span class="cl">(draw-gap &#34;Unknown bytes&#34; {:min-label-columns 6})
 </span></span><span class="line"><span class="ln">66</span><span class="cl">(draw-bottom)
-</span></span><span class="line"><span class="ln">67</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">67</span><span class="cl">```</span></span></code></pre></div>
 </details>
 
 
@@ -933,40 +969,69 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </li>
 </ol>
 </div>
-]]></content:encoded></item><item><title>Programming Languages</title><link>https://pagliacii.github.io/hugo-bearberry/blog/programming-languages/</link><pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/programming-languages/</guid><description>Python 1def hello_world(): 2 print(&amp;#34;Hello, world!&amp;#34;) C 1#include &amp;lt;stdio.h&amp;gt; 2 3int main() { 4 printf(&amp;#34;Hello, world!\n&amp;#34;); 5 return 0; 6} C++ 1#include &amp;lt;iostream&amp;gt; 2 3int main() { 4 std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world!&amp;#34; &amp;lt;&amp;lt; std::endl; 5 return 0; 6} Go 1package main 2 3import &amp;#34;fmt&amp;#34; 4 5func main() { 6 fmt.Println(&amp;#34;Hello, world!&amp;#34;) 7} JavaScript 1console.log(&amp;#34;Hello, world!&amp;#34;); Rust 1fn main() { 2 println!(&amp;#34;Hello, world!&amp;#34;); 3}</description><content:encoded><![CDATA[<h2 id="python">Python</h2>
+]]></content:encoded></item><item><title>Programming Languages</title><link>https://pagliacii.github.io/hugo-bearberry/blog/programming-languages/</link><pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/programming-languages/</guid><description>Python 1def hello_world(): 2 print(&amp;#34;Hello, world!&amp;#34;)C 1#include &amp;lt;stdio.h&amp;gt; 2 3int main() { 4 printf(&amp;#34;Hello, world!\n&amp;#34;); 5 return 0; 6}C++ 1#include &amp;lt;iostream&amp;gt; 2 3int main() { 4 std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world!&amp;#34; &amp;lt;&amp;lt; std::endl; 5 return 0; 6}Go 1package main 2 3import &amp;#34;fmt&amp;#34; 4 5func main() { 6 fmt.Println(&amp;#34;Hello, world!&amp;#34;) 7}JavaScript 1console.log(&amp;#34;Hello, world!&amp;#34;);Rust 1fn main() { 2 println!(&amp;#34;Hello, world!&amp;#34;); 3}</description><content:encoded><![CDATA[<h2 id="python">Python</h2>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
-</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello, world!&#34;</span><span class="p">)</span>
-</span></span></code></pre></div><h2 id="c">C</h2>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello, world!&#34;</span><span class="p">)</span></span></span></code></pre></div><h2 id="c">C</h2>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="ln">1</span><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="cp"></span>
 </span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Hello, world!</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h2 id="c-1">C++</h2>
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="p">}</span></span></span></code></pre></div><h2 id="c-1">C++</h2>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="ln">1</span><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="cp"></span>
 </span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Hello, world!&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 </span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h2 id="go">Go</h2>
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="p">}</span></span></span></code></pre></div><h2 id="go">Go</h2>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">package</span> <span class="nx">main</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">
 </span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
 </span></span><span class="line"><span class="ln">4</span><span class="cl">
 </span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello, world!&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h2 id="javascript">JavaScript</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="ln">1</span><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Hello, world!&#34;</span><span class="p">);</span>
-</span></span></code></pre></div><h2 id="rust">Rust</h2>
+</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="p">}</span></span></span></code></pre></div><h2 id="javascript">JavaScript</h2>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="ln">1</span><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Hello, world!&#34;</span><span class="p">);</span></span></span></code></pre></div><h2 id="rust">Rust</h2>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Hello, world!&#34;</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
-</span></span></span></code></pre></div>]]></content:encoded></item><item><title>Diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</link><pubDate>Sat, 21 Oct 2023 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</guid><description>This article is a demo of diagrams, using the mermaid and goat tools.</description><content:encoded><![CDATA[<p>This article is a demo of diagrams, using the <a href="https://mermaid.js.org">mermaid</a> and <a href="https://github.com/bep/goat">goat</a> tools.</p>
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>]]></content:encoded></item><item><title>Diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</link><pubDate>Sat, 21 Oct 2023 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</guid><description>This article is a demo of diagrams, using the mermaid and goat tools.</description><content:encoded><![CDATA[<p>This article is a demo of diagrams, using the <a href="https://mermaid.js.org">mermaid</a> and <a href="https://github.com/bep/goat">goat</a> tools.</p>
 <h2 id="mermaid">Mermaid</h2>
 <h3 id="sequence-diagram-example">Sequence Diagram Example</h3>
+
+
+
+
+
 <pre tabindex="0"><code>```mermaid
 sequenceDiagram
     participant Alice
@@ -979,8 +1044,7 @@ sequenceDiagram
     John--&gt;&gt;Alice: Great!
     John-&gt;&gt;Bob: How about you?
     Bob--&gt;&gt;John: Jolly good!
-```
-</code></pre><pre class="mermaid">sequenceDiagram
+```</code></pre><pre class="mermaid">sequenceDiagram
     participant Alice
     participant Bob
     Alice->>John: Hello John, how are you?
@@ -994,6 +1058,11 @@ sequenceDiagram
 </pre>
 
 <h3 id="class-diagram-example">Class Diagram Example</h3>
+
+
+
+
+
 <pre tabindex="0"><code>```mermaid
 ---
 title: Animal example
@@ -1021,8 +1090,7 @@ classDiagram
         +bool is_wild
         +run()
     }
-```
-</code></pre><pre class="mermaid">---
+```</code></pre><pre class="mermaid">---
 title: Animal example
 ---
 classDiagram
@@ -1051,6 +1119,11 @@ classDiagram
 </pre>
 
 <h3 id="gantt-chart-with-specified-theme">Gantt Chart with specified theme</h3>
+
+
+
+
+
 <pre tabindex="0"><code>```mermaid
 %%{init: { &#34;theme&#34;: &#34;forest&#34; } }%%
 gantt
@@ -1065,8 +1138,7 @@ gantt
     section Another
     Task in sec      :2014-01-12  , 12d
     another task      : 24d
-```
-</code></pre><pre class="mermaid">%%{init: { "theme": "forest" } }%%
+```</code></pre><pre class="mermaid">%%{init: { "theme": "forest" } }%%
 gantt
       accTitle: My Gantt Chart Accessibility Title
       accDescr: My Gantt Chart Accessibility Description
@@ -1084,6 +1156,11 @@ gantt
 <h2 id="goat">GoAT</h2>
 <p>Click <a href="https://github.com/bep/goat/tree/master/examples">here</a> to see more examples.</p>
 <h3 id="trees">Trees</h3>
+
+
+
+
+
 <pre tabindex="0"><code>```goat
       .               .                .               .--- 1          .-- 1     / 1
      / \              |                |           .---+            .-+         +
@@ -1093,8 +1170,7 @@ gantt
  /   \ /   \    |   |   |   |    |   |   |   |     &#39;---+            &#39;-+         +
  1   2 3   4    1   2   3   4    1   2   3   4         &#39;--- 4          &#39;-- 4     \ 4
 
-```
-</code></pre>
+```</code></pre>
 
 
 <div class="goat svg-container ">
@@ -1200,14 +1276,18 @@ gantt
   
 </div>
 <h3 id="dot-grids">Dot Grids</h3>
+
+
+
+
+
 <pre tabindex="0"><code>```goat
   o o o o o  * * * * *  * * o o *    o o o      * * *      o o o     · * · · ·     · · ·
   o o o o o  * * * * *  o o o o *   o o o o    * * * *    * o * *    · * * · ·    · · · ·
   o o o o o  * * * * *  o * o o o  o o o o o  * * * * *  o o o o o   · o · · o   · · * * ·
   o o o o o  * * * * *  o * o o o   o o o o    * * * *    o * o o    · · · · o    · · * ·
   o o o o o  * * * * *  * * * * o    o o o      * * *      o * o     · · · · ·     · · *
-```
-</code></pre>
+```</code></pre>
 
 
 <div class="goat svg-container ">
@@ -1401,6 +1481,11 @@ gantt
   
 </div>
 <h3 id="large-nodes">Large Nodes</h3>
+
+
+
+
+
 <pre tabindex="0"><code>```goat
    .---.       .-.        .-.       .-.                                       .-.
    | A +-----&gt;| 1 +&lt;----&gt;| 2 |&lt;----+ 4 +------------------.                  | 8 |
@@ -1410,8 +1495,7 @@ gantt
                           .-.      .-+-.        .-.      .-+-.      .-.       .+.       .---.
                          | 3 +----&gt;| B |&lt;-----&gt;| 5 +----&gt;| C +----&gt;| 6 +----&gt;| 7 |&lt;----&gt;| D |
                           &#39;-&#39;      &#39;---&#39;        &#39;-&#39;      &#39;---&#39;      &#39;-&#39;       &#39;-&#39;       &#39;---&#39;
-```
-</code></pre>
+```</code></pre>
 
 
 <div class="goat svg-container ">
@@ -1529,6 +1613,11 @@ gantt
   
 </div>
 <h3 id="circuits">Circuits</h3>
+
+
+
+
+
 <pre tabindex="0"><code>```goat
                      ____                      *
                     |    |_____.---.           |
@@ -1547,8 +1636,7 @@ gantt
                         |            /___\
                         |              |
                         &#39;--------------&#39;
-```
-</code></pre>
+```</code></pre>
 
 
 <div class="goat svg-container ">
@@ -1750,6 +1838,11 @@ gantt
 </table>
 <h2 id="code-blocks">Code Blocks</h2>
 <h4 id="code-block-with-backticks">Code block with backticks</h4>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
@@ -1759,8 +1852,7 @@ gantt
 </span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="ln"> 8</span><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h4 id="code-block-indented-with-four-spaces">Code block indented with four spaces</h4>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></div><h4 id="code-block-indented-with-four-spaces">Code block indented with four spaces</h4>
 <pre><code>&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -1773,6 +1865,10 @@ gantt
 &lt;/html&gt;
 </code></pre>
 <h4 id="code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo&rsquo;s internal highlight shortcode</h4>
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
@@ -1784,6 +1880,11 @@ gantt
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></div>
 <h4 id="code-block-with-highlight-lines">Code block with highlight lines</h4>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
@@ -1793,8 +1894,7 @@ gantt
 </span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 </span></span><span class="line hl"><span class="ln"> 8</span><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h2 id="list-types">List Types</h2>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></div><h2 id="list-types">List Types</h2>
 <h4 id="ordered-list">Ordered List</h4>
 <ol>
 <li>First item</li>
@@ -1920,10 +2020,14 @@ gantt
 <li>Within this partial reference the <a href="https://katex.org/docs/autorender.html">Auto-render Extension</a> or host these scripts locally.</li>
 <li>Include the partial in your templates like so:</li>
 </ul>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="o">{{</span> <span class="k">if</span> or .Params.math .Site.Params.math <span class="o">}}</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="o">{{</span> partial <span class="s2">&#34;math.html&#34;</span> . <span class="o">}}</span>
-</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="o">{{</span> end <span class="o">}}</span>
-</span></span></code></pre></div><ul>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="o">{{</span> end <span class="o">}}</span></span></span></code></pre></div><ul>
 <li>To enable KaTex globally set the parameter <code>math</code> to <code>true</code> in a project&rsquo;s configuration</li>
 <li>To enable KaTex on a per page basis include the parameter <code>math: true</code> in content files</li>
 </ul>
@@ -1942,6 +2046,10 @@ $$</p>]]></content:encoded></item><item><title>Emoji Support</title><link>https:
 <p>The <a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet</a> is a useful reference for emoji shorthand codes.</p>
 <hr>
 <p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln">1</span><span class="cl">.emoji {
 </span></span><span class="line"><span class="ln">2</span><span class="cl">  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
 </span></span><span class="line"><span class="ln">3</span><span class="cl">}</span></span></code></pre></div>]]></content:encoded></item></channel></rss>

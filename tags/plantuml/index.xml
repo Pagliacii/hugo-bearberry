@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>plantuml on Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/tags/plantuml/</link><description>Recent content in plantuml on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><copyright>[Jason Huang](https://github.com/Pagliacii) © 2023</copyright><lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/tags/plantuml/index.xml" rel="self" type="application/rss+xml"/><item><title>Kroki diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</link><pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</guid><description>Use a fenced code block to embed an SVG image of a diagram in your Hugo site using the free Kroki service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.1
 Thanks for @jmooring and Kroki.
 Performance According to @jmooring&amp;rsquo;s blog, you could edit your site configuration to store getresource cache to optimize performance.
-1[caches] 2 [caches.getresource] 3 dir = &amp;#34;:resourceDir/_gen&amp;#34; 4 maxAge = -1 And don&amp;rsquo;t forget to check the resources directory into source control.</description><content:encoded><![CDATA[<blockquote>
+1[caches] 2 [caches.getresource] 3 dir = &amp;#34;:resourceDir/_gen&amp;#34; 4 maxAge = -1And don&amp;rsquo;t forget to check the resources directory into source control.</description><content:encoded><![CDATA[<blockquote>
 <p>Use a fenced code block to embed an SVG image of a diagram in your <a href="https://gohugo.io/">Hugo</a> site using the free <a href="https://kroki.io/">Kroki</a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 </blockquote>
 <p>Thanks for <a href="https://github.com/jmooring">@jmooring</a> and <a href="https://kroki.io/">Kroki</a>.</p>
 <h2 id="performance">Performance</h2>
 <p>According to <a href="https://github.com/jmooring">@jmooring</a>&rsquo;s <a href="https://www.veriphor.com/articles/diagrams/#performance">blog</a>, you could edit your <a href="https://gohugo.io/getting-started/configuration/#configure-file-caches">site configuration</a> to store <code>getresource</code> cache to optimize performance.</p>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="ln">1</span><span class="cl"><span class="p">[</span><span class="nx">caches</span><span class="p">]</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">getresource</span><span class="p">]</span>
 </span></span><span class="line"><span class="ln">3</span><span class="cl">    <span class="nx">dir</span> <span class="p">=</span> <span class="s2">&#34;:resourceDir/_gen&#34;</span>
-</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span>
-</span></span></code></pre></div><p>And don&rsquo;t forget to check the <code>resources</code> directory into source control.</p>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span></span></span></code></pre></div><p>And don&rsquo;t forget to check the <code>resources</code> directory into source control.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="d2">D2</h3>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=d2}
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl"># Actors
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">hans: Hans Niemann
@@ -36,11 +45,15 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">20</span><span class="cl">defendants.naka -&gt; hans: Accused of cheating on his stream
 </span></span><span class="line"><span class="ln">21</span><span class="cl">defendants.mc -&gt; hans: Lost then withdrew with accusations
 </span></span><span class="line"><span class="ln">22</span><span class="cl">defendants.chesscom -&gt; hans: 72 page report of cheating
-</span></span><span class="line"><span class="ln">23</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">23</span><span class="cl">```</span></span></code></pre></div>
 <div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-d2" id="h-rh-cb-kroki-2" src="/hugo-bearberry/images/kroki/md5-MzExERBNoGGKm/Jokpqsqw==.svg">
 </div><h3 id="mermaid">Mermaid</h3>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=mermaid flexoki=paper}
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">sequenceDiagram
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">  participant Alice
@@ -53,11 +66,15 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">10</span><span class="cl">  John--&gt;Alice: Great!
 </span></span><span class="line"><span class="ln">11</span><span class="cl">  John-&gt;Bob: How about you?
 </span></span><span class="line"><span class="ln">12</span><span class="cl">  Bob--&gt;John: Jolly good!
-</span></span><span class="line"><span class="ln">13</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">```</span></span></code></pre></div>
 <div style="background-color: var(--flexoki-paper); padding: 0.5rem; margin-top: 1rem">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-mermaid" id="h-rh-cb-kroki-4" src="/hugo-bearberry/images/kroki/md5-RTOBEWCeql9Fo24aPRQEFw==.svg">
 </div><h3 id="plantuml">PlantUML</h3>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=plantuml}
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">@startmindmap
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">skinparam monochrome true
@@ -77,14 +94,18 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">17</span><span class="cl">--- Windows 8
 </span></span><span class="line"><span class="ln">18</span><span class="cl">--- Windows 10
 </span></span><span class="line"><span class="ln">19</span><span class="cl">@endmindmap
-</span></span><span class="line"><span class="ln">20</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">20</span><span class="cl">```</span></span></code></pre></div>
 <div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-plantuml" id="h-rh-cb-kroki-6" src="/hugo-bearberry/images/kroki/md5-2ZVn753CxT8GZ86NR0f2BQ==.svg">
 </div><h3 id="excalidraw">Excalidraw</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
-    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">  1</span><span class="cl">```kroki {type=excalidraw}
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">  1</span><span class="cl">```kroki {type=excalidraw}
 </span></span><span class="line"><span class="ln">  2</span><span class="cl">{
 </span></span><span class="line"><span class="ln">  3</span><span class="cl">  &#34;type&#34;: &#34;excalidraw&#34;,
 </span></span><span class="line"><span class="ln">  4</span><span class="cl">  &#34;version&#34;: 2,
@@ -780,14 +801,18 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">694</span><span class="cl">    &#34;gridSize&#34;: 20
 </span></span><span class="line"><span class="ln">695</span><span class="cl">  }
 </span></span><span class="line"><span class="ln">696</span><span class="cl">}
-</span></span><span class="line"><span class="ln">697</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">697</span><span class="cl">```</span></span></code></pre></div>
 </details>
 
 
 <div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-excalidraw" id="h-rh-cb-kroki-7" src="/hugo-bearberry/images/kroki/md5-NZBd00bcK3eiuNsaLYgbRg==.svg">
 </div><h3 id="blockdiag">BlockDiag</h3>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=blockdiag}
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">blockdiag {
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">  Kroki -&gt; generates -&gt; &#34;Block diagrams&#34;;
@@ -797,11 +822,15 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln"> 7</span><span class="cl">  &#34;Block diagrams&#34; [color = &#34;pink&#34;];
 </span></span><span class="line"><span class="ln"> 8</span><span class="cl">  &#34;very easy!&#34; [color = &#34;orange&#34;];
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl">}
-</span></span><span class="line"><span class="ln">10</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">```</span></span></code></pre></div>
 <div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-blockdiag" id="h-rh-cb-kroki-9" src="/hugo-bearberry/images/kroki/md5-gd4TAzIyVKA+/I5idJ87Sg==.svg">
 </div><h3 id="packetdiag">PacketDiag</h3>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=packetdiag color=&#34;#878580&#34;}
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">packetdiag {
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">  colwidth = 32;
@@ -825,11 +854,15 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">21</span><span class="cl">  160-191: (Options and Padding);
 </span></span><span class="line"><span class="ln">22</span><span class="cl">  192-223: data [colheight = 3];
 </span></span><span class="line"><span class="ln">23</span><span class="cl">}
-</span></span><span class="line"><span class="ln">24</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">24</span><span class="cl">```</span></span></code></pre></div>
 <div style="background-color:#878580; padding: 0.5rem; margin-top: 1rem">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-packetdiag" id="h-rh-cb-kroki-11" src="/hugo-bearberry/images/kroki/md5-ODAPKBQzaf3JwnasnRJx4Q==.svg">
 </div><h3 id="c4-with-plantuml">C4 with PlantUML</h3>
+
+
+
+
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=c4plantuml}
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">!include &lt;C4/C4_Context&gt;
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">
@@ -845,14 +878,18 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">13</span><span class="cl">Rel_Back(customer, mail_system, &#34;Sends e-mails to&#34;)
 </span></span><span class="line"><span class="ln">14</span><span class="cl">Rel_Neighbor(banking_system, mail_system, &#34;Sends e-mails&#34;, &#34;SMTP&#34;)
 </span></span><span class="line"><span class="ln">15</span><span class="cl">Rel(banking_system, mainframe, &#34;Uses&#34;)
-</span></span><span class="line"><span class="ln">16</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">```</span></span></code></pre></div>
 <div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-c4plantuml" id="h-rh-cb-kroki-13" src="/hugo-bearberry/images/kroki/md5-ed68oz546E6ok9x+UxLrdg==.svg">
 </div><h3 id="bytefield">Bytefield</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
-    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=bytefield flexoki=150}
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=bytefield flexoki=150}
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">(defattrs :bg-green {:fill &#34;#a0ffa0&#34;})
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">(defattrs :bg-yellow {:fill &#34;#ffffa0&#34;})
 </span></span><span class="line"><span class="ln"> 4</span><span class="cl">(defattrs :bg-pink {:fill &#34;#ffb0a0&#34;})
@@ -918,8 +955,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">64</span><span class="cl">(draw-box (text &#34;length&#34; [:math] [:sub 2]) {:span 4})
 </span></span><span class="line"><span class="ln">65</span><span class="cl">(draw-gap &#34;Unknown bytes&#34; {:min-label-columns 6})
 </span></span><span class="line"><span class="ln">66</span><span class="cl">(draw-bottom)
-</span></span><span class="line"><span class="ln">67</span><span class="cl">```
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="ln">67</span><span class="cl">```</span></span></code></pre></div>
 </details>
 
 
