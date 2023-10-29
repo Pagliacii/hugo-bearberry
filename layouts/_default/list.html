@@ -7,8 +7,8 @@
     {{ range .Pages }}
     <li>
       <span>
-        <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
-          {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
+        <time datetime='{{ .Date.Format (default "2006-01-02" .Site.Params.listDateFormat) }}' pubdate>
+          {{ .Date.Format (default "2006-01-02" .Site.Params.listDateFormat) }}
         </time>
       </span>
       {{ if .Params.link }}

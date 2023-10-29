@@ -36,6 +36,7 @@ echo 'theme = "hugo-bearberry"' >> config.toml
 - Add copy button and language name for code blocks.
 - Add the [back-to-top](https://github.com/vfeskov/vanilla-back-to-top) button at right-bottom corner.
 - Use [tocbot](https://github.com/tscanlin/tocbot) to show the table of contents.
+- Use the free [Kroki](https://kroki.io/) for more diagrams.
 
 ## Configuration
 
@@ -119,7 +120,8 @@ enableRobotsTXT = true
 
   # Dates are displayed following the format below. For more information about
   # formatting, see https://gohugo.io/functions/format/
-  dateFormat = "2006-01-02"
+  listDateFormat = "2006-01-02"
+  pageDateFormat = "2006-01-02 15:04:05"
 
   # If your blog is multilingual but you haven't translated a page, this theme
   # will create a disabled link. By setting `hideUntranslated` to true, you can

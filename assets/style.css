@@ -88,6 +88,10 @@ content h6:not(.tag)::before {
   color: var(--flexoki-light-blue);
 }
 
+content h2 {
+  border-bottom: 1px solid var(--flexoki-light-blue);
+}
+
 a {
   color: #8cc2dd;
   text-decoration: none;
@@ -168,6 +172,8 @@ pre code {
   white-space: pre;
   font-size: 14px;
   overflow-x: auto;
+  overflow-y: auto;
+  max-height: 36rem;
 }
 
 p code {
@@ -320,9 +326,7 @@ pre {
   align-items: center;
   justify-content: space-between;
   background-color: var(--flexoki-850);
-  padding-top: 0.5em;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0.5rem 0.75rem;
 }
 
 .lang {
@@ -341,4 +345,14 @@ img.diagram {
 
 .mermaid {
   background-color: var(--flexoki-300);
+}
+
+.footnotes hr {
+  border: 1px solid var(--flexoki-500);
+}
+
+div.kroki-img {
+  padding: 0.5rem;
+  padding-bottom: 0.1rem;
+  margin-top: 0.75rem;
 }

@@ -3,12 +3,13 @@
 <h1>{{ .Title }}</h1>
 <p style="color: gray; font-size: 0.9rem">
   Published:
-  <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
-    {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
+  {{- $dateFormat := default "2006-01-02 15:04:05" .Site.Params.pageDateFormat }}
+  <time datetime='{{ .Date.Format $dateFormat }}' pubdate>
+    {{ .Date.Format $dateFormat }}
   </time>
   | Updated:
-  <time datetime='{{ .Date.Format "2006-01-02" }}'>
-    {{ .Lastmod.Format (default "2006-01-02" .Site.Params.dateFormat) }}
+  <time datetime='{{ .Lastmod.Format $dateFormat }}'>
+    {{ .Lastmod.Format $dateFormat }}
   </time>
   |
   <span>{{ .FuzzyWordCount }}</span>

@@ -14,5 +14,6 @@ Keep it simple and fast. With more features.
 - Integrate with [Mermaid](https://mermaid.js.org/).
 - ToC via [tocbot](https://github.com/tscanlin/tocbot).
 - back-to-top button via [vanilla-back-to-top](https://github.com/vfeskov/vanilla-back-to-top).
+- Integrate with [Kroki](https://kroki.io/).
 
 Made with 💟 by [Jason Huang](https://github.com/Pagliacii).

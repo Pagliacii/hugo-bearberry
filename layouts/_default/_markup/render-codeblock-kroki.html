@@ -60,8 +60,8 @@ References:
 {{- $supportedTypes := slice
   "actdiag" "blockdiag" "bpmn" "bytefield" "c4plantuml" "ditaa" "d2" "dbml" "erd"
   "excalidraw" "graphviz" "mermaid" "nomnoml" "nwdiag" "packetdiag" "pikchr"
-  "plantuml" "rackdiag" "seqdiag" "structurizr" "svgbob" "umlet" "vega" "vegalite"
-  "wavedrom" "wireviz"
+  "plantuml" "rackdiag" "seqdiag" "structurizr" "svgbob" "tikz" "umlet" "vega"
+  "vegalite" "wavedrom" "wireviz"
 }}
 {{- $typesDelimited := delimit $supportedTypes ", " ", and " }}
 {{- if not (in $supportedTypes $diagramType) }}
@@ -100,12 +100,12 @@ References:
 
 {{- /* Render. */}}
 {{- with $attrs.flexoki }}
-<div style="background-color: var(--flexoki-{{- $attrs.flexoki }}); padding: 0.5rem; margin-top: 1rem">
+<div class="kroki-img" style="background-color: var(--flexoki-{{- $attrs.flexoki }})">
 {{- else }}
   {{- with $attrs.color }}
-<div style="background-color: {{- $attrs.color }}; padding: 0.5rem; margin-top: 1rem">
+<div class="kroki-img" style="background-color: {{- $attrs.color }}">
   {{- else }}
-<div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
   {{- end }}
 {{- end }}
 <img

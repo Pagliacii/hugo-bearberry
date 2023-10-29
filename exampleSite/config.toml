@@ -6,6 +6,7 @@ defaultContentLanguage = "en"
 
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
+enableGitInfo = true
 
 # Your name. For more information on why this must be a list, see
 # https://discourse.gohugo.io/t/site-author-usage/31459/8
@@ -72,7 +73,8 @@ enableRobotsTXT = true
 
   # Dates are displayed following the format below. For more information about
   # formatting, see https://gohugo.io/functions/format/
-  dateFormat = "2006-01-02"
+  listDateFormat = "2006-01-02"
+  pageDateFormat = "2006-01-02 15:04:05"
 
   # If your blog is multilingual but you haven't translated a page, this theme
   # will create a disabled link. By setting `hideUntranslated` to true, you can
