@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/</link><description>Recent content on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><copyright>[Jason Huang](https://github.com/Pagliacii) © 2023</copyright><lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/index.xml" rel="self" type="application/rss+xml"/><item><title>Kroki diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</link><pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</guid><description>Use a fenced code block to embed an SVG image of a diagram in your Hugo site using the free Kroki service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.1
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/</link><description>Recent content on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><copyright>[Jason Huang](https://github.com/Pagliacii) © 2023</copyright><atom:link href="https://pagliacii.github.io/hugo-bearberry/index.xml" rel="self" type="application/rss+xml"/><item><title>Kroki diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</link><pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</guid><description>Use a fenced code block to embed an SVG image of a diagram in your Hugo site using the free Kroki service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.1
 Thanks for @jmooring and Kroki.
 Performance According to @jmooring&amp;rsquo;s blog, you could edit your site configuration to store getresource cache to optimize performance.
 1[caches] 2 [caches.getresource] 3 dir = &amp;#34;:resourceDir/_gen&amp;#34; 4 maxAge = -1And don&amp;rsquo;t forget to check the resources directory into source control.</description><content:encoded><![CDATA[<blockquote>
@@ -16,6 +16,38 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">getresource</span><span class="p">]</span>
 </span></span><span class="line"><span class="ln">3</span><span class="cl">    <span class="nx">dir</span> <span class="p">=</span> <span class="s2">&#34;:resourceDir/_gen&#34;</span>
 </span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span></span></span></code></pre></div><p>And don&rsquo;t forget to check the <code>resources</code> directory into source control.</p>
+<h2 id="diagram-types">Diagram types</h2>
+<p>The following diagram types are available:</p>
+<ul>
+<li><code>blockdiag</code> - <a href="https://github.com/blockdiag/blockdiag">BlockDiag</a></li>
+<li><code>bpmn</code> - <a href="https://github.com/bpmn-io/bpmn-js">BPMN</a></li>
+<li><code>bytefield</code> - <a href="https://github.com/Deep-Symmetry/bytefield-svg/">Bytefield</a></li>
+<li><code>seqdiag</code> - <a href="https://github.com/blockdiag/seqdiag">SeqDiag</a></li>
+<li><code>actdiag</code> - <a href="https://github.com/blockdiag/actdiag">ActDiag</a></li>
+<li><code>nwdiag</code> - <a href="https://github.com/blockdiag/nwdiag">NwDiag</a></li>
+<li><code>packetdiag</code> - <a href="https://github.com/blockdiag/nwdiag">PacketDiag</a></li>
+<li><code>rackdiag</code> - <a href="https://github.com/blockdiag/nwdiag">RackDiag</a></li>
+<li><code>c4plantuml</code> - <a href="https://github.com/RicardoNiepel/C4-PlantUML">C4 with PlantUML</a></li>
+<li><code>d2</code> - <a href="https://github.com/terrastruct/d2">D2</a></li>
+<li><code>dbml</code> - <a href="https://github.com/softwaretechnik-berlin/dbml-renderer">DBML</a></li>
+<li><code>ditaa</code> - <a href="https://ditaa.sourceforge.net/">Ditaa</a></li>
+<li><code>erd</code> - <a href="https://github.com/BurntSushi/erd">Erd</a></li>
+<li><code>excalidraw</code> - <a href="https://github.com/excalidraw/excalidraw">Excalidraw</a></li>
+<li><code>graphviz</code> - <a href="https://www.graphviz.org/">GraphViz</a></li>
+<li><code>mermaid</code> - <a href="https://github.com/knsv/mermaid">Mermaid</a></li>
+<li><code>nomnoml</code> - <a href="https://github.com/skanaar/nomnoml">Nomnoml</a></li>
+<li><code>pikchr</code> - <a href="https://github.com/drhsqlite/pikchr">Pikchr</a></li>
+<li><code>plantuml</code> - <a href="https://github.com/plantuml/plantuml">PlantUML</a></li>
+<li><code>structurizr</code> - <a href="https://github.com/structurizr/dsl">Structurizr</a></li>
+<li><code>svgbob</code> - <a href="https://github.com/ivanceras/svgbob">Svgbob</a></li>
+<li><code>symbolator</code> - <a href="https://github.com/kevinpt/symbolator">Symbolator</a></li>
+<li><code>tikz</code> - <a href="https://github.com/pgf-tikz/pgf">TikZ</a></li>
+<li><code>umlet</code> - <a href="https://github.com/umlet/umlet">UMlet</a></li>
+<li><code>vega</code> - <a href="https://github.com/vega/vega">Vega</a></li>
+<li><code>vegalite</code> - <a href="https://github.com/vega/vega-lite">Vega-Lite</a></li>
+<li><code>wavedrom</code> - <a href="https://github.com/wavedrom/wavedrom">WaveDrom</a></li>
+<li><code>wireviz</code> - <a href="https://github.com/formatc1702/WireViz">WireViz</a></li>
+</ul>
 <h2 id="examples">Examples</h2>
 <h3 id="d2">D2</h3>
 
@@ -46,7 +78,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">21</span><span class="cl">defendants.mc -&gt; hans: Lost then withdrew with accusations
 </span></span><span class="line"><span class="ln">22</span><span class="cl">defendants.chesscom -&gt; hans: 72 page report of cheating
 </span></span><span class="line"><span class="ln">23</span><span class="cl">```</span></span></code></pre></div>
-<div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-d2" id="h-rh-cb-kroki-2" src="/hugo-bearberry/images/kroki/md5-MzExERBNoGGKm/Jokpqsqw==.svg">
 </div><h3 id="mermaid">Mermaid</h3>
 
@@ -67,7 +99,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">11</span><span class="cl">  John-&gt;Bob: How about you?
 </span></span><span class="line"><span class="ln">12</span><span class="cl">  Bob--&gt;John: Jolly good!
 </span></span><span class="line"><span class="ln">13</span><span class="cl">```</span></span></code></pre></div>
-<div style="background-color: var(--flexoki-paper); padding: 0.5rem; margin-top: 1rem">
+<div class="kroki-img" style="background-color: var(--flexoki-paper)">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-mermaid" id="h-rh-cb-kroki-4" src="/hugo-bearberry/images/kroki/md5-WEaQ4KiRPF5jj58jt9GrUg==.svg">
 </div><h3 id="plantuml">PlantUML</h3>
 
@@ -95,7 +127,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">18</span><span class="cl">--- Windows 10
 </span></span><span class="line"><span class="ln">19</span><span class="cl">@endmindmap
 </span></span><span class="line"><span class="ln">20</span><span class="cl">```</span></span></code></pre></div>
-<div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-plantuml" id="h-rh-cb-kroki-6" src="/hugo-bearberry/images/kroki/md5-2ZVn753CxT8GZ86NR0f2BQ==.svg">
 </div><h3 id="excalidraw">Excalidraw</h3>
 <details>
@@ -805,7 +837,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </details>
 
 
-<div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-excalidraw" id="h-rh-cb-kroki-7" src="/hugo-bearberry/images/kroki/md5-NZBd00bcK3eiuNsaLYgbRg==.svg">
 </div><h3 id="blockdiag">BlockDiag</h3>
 
@@ -823,7 +855,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln"> 8</span><span class="cl">  &#34;very easy!&#34; [color = &#34;orange&#34;];
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl">}
 </span></span><span class="line"><span class="ln">10</span><span class="cl">```</span></span></code></pre></div>
-<div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-blockdiag" id="h-rh-cb-kroki-9" src="/hugo-bearberry/images/kroki/md5-gd4TAzIyVKA+/I5idJ87Sg==.svg">
 </div><h3 id="packetdiag">PacketDiag</h3>
 
@@ -855,7 +887,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">22</span><span class="cl">  192-223: data [colheight = 3];
 </span></span><span class="line"><span class="ln">23</span><span class="cl">}
 </span></span><span class="line"><span class="ln">24</span><span class="cl">```</span></span></code></pre></div>
-<div style="background-color:#878580; padding: 0.5rem; margin-top: 1rem">
+<div class="kroki-img" style="background-color:#878580">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-packetdiag" id="h-rh-cb-kroki-11" src="/hugo-bearberry/images/kroki/md5-ODAPKBQzaf3JwnasnRJx4Q==.svg">
 </div><h3 id="c4-with-plantuml">C4 with PlantUML</h3>
 
@@ -879,7 +911,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">14</span><span class="cl">Rel_Neighbor(banking_system, mail_system, &#34;Sends e-mails&#34;, &#34;SMTP&#34;)
 </span></span><span class="line"><span class="ln">15</span><span class="cl">Rel(banking_system, mainframe, &#34;Uses&#34;)
 </span></span><span class="line"><span class="ln">16</span><span class="cl">```</span></span></code></pre></div>
-<div style="background-color: var(--flexoki-300); padding: 0.5rem; margin-top: 1rem">
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-c4plantuml" id="h-rh-cb-kroki-13" src="/hugo-bearberry/images/kroki/md5-ed68oz546E6ok9x+UxLrdg==.svg">
 </div><h3 id="bytefield">Bytefield</h3>
 <details>
@@ -959,9 +991,735 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </details>
 
 
-<div style="background-color: var(--flexoki-150); padding: 0.5rem; margin-top: 1rem">
+<div class="kroki-img" style="background-color: var(--flexoki-150)">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-bytefield" id="h-rh-cb-kroki-14" src="/hugo-bearberry/images/kroki/md5-nTXuBj54sDZ+P4KqyBPDnw==.svg">
-</div><div class="footnotes" role="doc-endnotes">
+</div><h3 id="seqdiag">SeqDiag</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=seqdiag}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">seqdiag {
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  browser  -&gt; webserver [label = &#34;GET /index.html&#34;];
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  browser &lt;-- webserver;
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  browser  -&gt; webserver [label = &#34;POST /blog/comment&#34;];
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  webserver  -&gt; database [label = &#34;INSERT comment&#34;];
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">  webserver &lt;-- database;
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  browser &lt;-- webserver;
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">}
+</span></span><span class="line"><span class="ln">10</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-seqdiag" id="h-rh-cb-kroki-16" src="/hugo-bearberry/images/kroki/md5-7hVnc9gBukTuRa6xNMPk6Q==.svg">
+</div><h3 id="actdiag">ActDiag</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=actdiag}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">actdiag {
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  write -&gt; convert -&gt; image
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  lane user {
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    label = &#34;User&#34;
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    write [label = &#34;Writing reST&#34;];
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    image [label = &#34;Get diagram IMAGE&#34;];
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  }
+</span></span><span class="line"><span class="ln">10</span><span class="cl">  lane actdiag {
+</span></span><span class="line"><span class="ln">11</span><span class="cl">    convert [label = &#34;Convert reST to Image&#34;];
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  }
+</span></span><span class="line"><span class="ln">13</span><span class="cl">}
+</span></span><span class="line"><span class="ln">14</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-actdiag" id="h-rh-cb-kroki-18" src="/hugo-bearberry/images/kroki/md5-PhJgLd5qNs6RGla6cLwa1g==.svg">
+</div><h3 id="nwdiag">NwDiag</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=nwdiag}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">nwdiag {
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  network dmz {
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">    address = &#34;210.x.x.x/24&#34;
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    web01 [address = &#34;210.x.x.1&#34;];
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    web02 [address = &#34;210.x.x.2&#34;];
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  }
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  network internal {
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    address = &#34;172.x.x.x/24&#34;;
+</span></span><span class="line"><span class="ln">11</span><span class="cl">
+</span></span><span class="line"><span class="ln">12</span><span class="cl">    web01 [address = &#34;172.x.x.1&#34;];
+</span></span><span class="line"><span class="ln">13</span><span class="cl">    web02 [address = &#34;172.x.x.2&#34;];
+</span></span><span class="line"><span class="ln">14</span><span class="cl">    db01;
+</span></span><span class="line"><span class="ln">15</span><span class="cl">    db02;
+</span></span><span class="line"><span class="ln">16</span><span class="cl">  }
+</span></span><span class="line"><span class="ln">17</span><span class="cl">}
+</span></span><span class="line"><span class="ln">18</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-nwdiag" id="h-rh-cb-kroki-20" src="/hugo-bearberry/images/kroki/md5-naYmLv4n/+S6+S7wIYyZEg==.svg">
+</div><h3 id="graphviz">GraphViz</h3>
+<details>
+    <summary style="color: var(--flexoki-light-blue)">Code</summary>
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">  1</span><span class="cl">```kroki {type=graphviz}
+</span></span><span class="line"><span class="ln">  2</span><span class="cl">digraph &#34;unix&#34; {
+</span></span><span class="line"><span class="ln">  3</span><span class="cl">  graph [ fontname = &#34;Helvetica-Oblique&#34;,
+</span></span><span class="line"><span class="ln">  4</span><span class="cl">          fontsize = 36,
+</span></span><span class="line"><span class="ln">  5</span><span class="cl">          label = &#34;\n\n\n\nObject Oriented Graphs\nStephen North, 3/19/93&#34;,
+</span></span><span class="line"><span class="ln">  6</span><span class="cl">          size = &#34;6,6&#34; ];
+</span></span><span class="line"><span class="ln">  7</span><span class="cl">  node [ shape = polygon,
+</span></span><span class="line"><span class="ln">  8</span><span class="cl">         sides = 4,
+</span></span><span class="line"><span class="ln">  9</span><span class="cl">         distortion = &#34;0.0&#34;,
+</span></span><span class="line"><span class="ln"> 10</span><span class="cl">         orientation = &#34;0.0&#34;,
+</span></span><span class="line"><span class="ln"> 11</span><span class="cl">         skew = &#34;0.0&#34;,
+</span></span><span class="line"><span class="ln"> 12</span><span class="cl">         color = white,
+</span></span><span class="line"><span class="ln"> 13</span><span class="cl">         style = filled,
+</span></span><span class="line"><span class="ln"> 14</span><span class="cl">         fontname = &#34;Helvetica-Outline&#34; ];
+</span></span><span class="line"><span class="ln"> 15</span><span class="cl">  &#34;5th Edition&#34; [sides=9, distortion=&#34;0.936354&#34;, orientation=28, skew=&#34;-0.126818&#34;, color=salmon2];
+</span></span><span class="line"><span class="ln"> 16</span><span class="cl">  &#34;6th Edition&#34; [sides=5, distortion=&#34;0.238792&#34;, orientation=11, skew=&#34;0.995935&#34;, color=deepskyblue];
+</span></span><span class="line"><span class="ln"> 17</span><span class="cl">  &#34;PWB 1.0&#34; [sides=8, distortion=&#34;0.019636&#34;, orientation=79, skew=&#34;-0.440424&#34;, color=goldenrod2];
+</span></span><span class="line"><span class="ln"> 18</span><span class="cl">  LSX [sides=9, distortion=&#34;-0.698271&#34;, orientation=22, skew=&#34;-0.195492&#34;, color=burlywood2];
+</span></span><span class="line"><span class="ln"> 19</span><span class="cl">  &#34;1 BSD&#34; [sides=7, distortion=&#34;0.265084&#34;, orientation=26, skew=&#34;0.403659&#34;, color=gold1];
+</span></span><span class="line"><span class="ln"> 20</span><span class="cl">  &#34;Mini Unix&#34; [distortion=&#34;0.039386&#34;, orientation=2, skew=&#34;-0.461120&#34;, color=greenyellow];
+</span></span><span class="line"><span class="ln"> 21</span><span class="cl">  Wollongong [sides=5, distortion=&#34;0.228564&#34;, orientation=63, skew=&#34;-0.062846&#34;, color=darkseagreen];
+</span></span><span class="line"><span class="ln"> 22</span><span class="cl">  Interdata [distortion=&#34;0.624013&#34;, orientation=56, skew=&#34;0.101396&#34;, color=dodgerblue1];
+</span></span><span class="line"><span class="ln"> 23</span><span class="cl">  &#34;Unix/TS 3.0&#34; [sides=8, distortion=&#34;0.731383&#34;, orientation=43, skew=&#34;-0.824612&#34;, color=thistle2];
+</span></span><span class="line"><span class="ln"> 24</span><span class="cl">  &#34;PWB 2.0&#34; [sides=6, distortion=&#34;0.592100&#34;, orientation=34, skew=&#34;-0.719269&#34;, color=darkolivegreen3];
+</span></span><span class="line"><span class="ln"> 25</span><span class="cl">  &#34;7th Edition&#34; [sides=10, distortion=&#34;0.298417&#34;, orientation=65, skew=&#34;0.310367&#34;, color=chocolate];
+</span></span><span class="line"><span class="ln"> 26</span><span class="cl">  &#34;8th Edition&#34; [distortion=&#34;-0.997093&#34;, orientation=50, skew=&#34;-0.061117&#34;, color=turquoise3];
+</span></span><span class="line"><span class="ln"> 27</span><span class="cl">  &#34;32V&#34; [sides=7, distortion=&#34;0.878516&#34;, orientation=19, skew=&#34;0.592905&#34;, color=steelblue3];
+</span></span><span class="line"><span class="ln"> 28</span><span class="cl">  V7M [sides=10, distortion=&#34;-0.960249&#34;, orientation=32, skew=&#34;0.460424&#34;, color=navy];
+</span></span><span class="line"><span class="ln"> 29</span><span class="cl">  &#34;Ultrix-11&#34; [sides=10, distortion=&#34;-0.633186&#34;, orientation=10, skew=&#34;0.333125&#34;, color=darkseagreen4];
+</span></span><span class="line"><span class="ln"> 30</span><span class="cl">  Xenix [sides=8, distortion=&#34;-0.337997&#34;, orientation=52, skew=&#34;-0.760726&#34;, color=coral];
+</span></span><span class="line"><span class="ln"> 31</span><span class="cl">  &#34;UniPlus+&#34; [sides=7, distortion=&#34;0.788483&#34;, orientation=39, skew=&#34;-0.526284&#34;, color=darkolivegreen3];
+</span></span><span class="line"><span class="ln"> 32</span><span class="cl">  &#34;9th Edition&#34; [sides=7, distortion=&#34;0.138690&#34;, orientation=55, skew=&#34;0.554049&#34;, color=coral3];
+</span></span><span class="line"><span class="ln"> 33</span><span class="cl">  &#34;2 BSD&#34; [sides=7, distortion=&#34;-0.010661&#34;, orientation=84, skew=&#34;0.179249&#34;, color=blanchedalmond];
+</span></span><span class="line"><span class="ln"> 34</span><span class="cl">  &#34;2.8 BSD&#34; [distortion=&#34;-0.239422&#34;, orientation=44, skew=&#34;0.053841&#34;, color=lightskyblue1];
+</span></span><span class="line"><span class="ln"> 35</span><span class="cl">  &#34;2.9 BSD&#34; [distortion=&#34;-0.843381&#34;, orientation=70, skew=&#34;-0.601395&#34;, color=aquamarine2];
+</span></span><span class="line"><span class="ln"> 36</span><span class="cl">  &#34;3 BSD&#34; [sides=10, distortion=&#34;0.251820&#34;, orientation=18, skew=&#34;-0.530618&#34;, color=lemonchiffon];
+</span></span><span class="line"><span class="ln"> 37</span><span class="cl">  &#34;4 BSD&#34; [sides=5, distortion=&#34;-0.772300&#34;, orientation=24, skew=&#34;-0.028475&#34;, color=darkorange1];
+</span></span><span class="line"><span class="ln"> 38</span><span class="cl">  &#34;4.1 BSD&#34; [distortion=&#34;-0.226170&#34;, orientation=38, skew=&#34;0.504053&#34;, color=lightyellow1];
+</span></span><span class="line"><span class="ln"> 39</span><span class="cl">  &#34;4.2 BSD&#34; [sides=10, distortion=&#34;-0.807349&#34;, orientation=50, skew=&#34;-0.908842&#34;, color=darkorchid4];
+</span></span><span class="line"><span class="ln"> 40</span><span class="cl">  &#34;4.3 BSD&#34; [sides=10, distortion=&#34;-0.030619&#34;, orientation=76, skew=&#34;0.985021&#34;, color=lemonchiffon2];
+</span></span><span class="line"><span class="ln"> 41</span><span class="cl">  &#34;Ultrix-32&#34; [distortion=&#34;-0.644209&#34;, orientation=21, skew=&#34;0.307836&#34;, color=goldenrod3];
+</span></span><span class="line"><span class="ln"> 42</span><span class="cl">  &#34;PWB 1.2&#34; [sides=7, distortion=&#34;0.640971&#34;, orientation=84, skew=&#34;-0.768455&#34;, color=cyan];
+</span></span><span class="line"><span class="ln"> 43</span><span class="cl">  &#34;USG 1.0&#34; [distortion=&#34;0.758942&#34;, orientation=42, skew=&#34;0.039886&#34;, color=blue];
+</span></span><span class="line"><span class="ln"> 44</span><span class="cl">  &#34;CB Unix 1&#34; [sides=9, distortion=&#34;-0.348692&#34;, orientation=42, skew=&#34;0.767058&#34;, color=firebrick];
+</span></span><span class="line"><span class="ln"> 45</span><span class="cl">  &#34;USG 2.0&#34; [distortion=&#34;0.748625&#34;, orientation=74, skew=&#34;-0.647656&#34;, color=chartreuse4];
+</span></span><span class="line"><span class="ln"> 46</span><span class="cl">  &#34;CB Unix 2&#34; [sides=10, distortion=&#34;0.851818&#34;, orientation=32, skew=&#34;-0.020120&#34;, color=greenyellow];
+</span></span><span class="line"><span class="ln"> 47</span><span class="cl">  &#34;CB Unix 3&#34; [sides=10, distortion=&#34;0.992237&#34;, orientation=29, skew=&#34;0.256102&#34;, color=bisque4];
+</span></span><span class="line"><span class="ln"> 48</span><span class="cl">  &#34;Unix/TS++&#34; [sides=6, distortion=&#34;0.545461&#34;, orientation=16, skew=&#34;0.313589&#34;, color=mistyrose2];
+</span></span><span class="line"><span class="ln"> 49</span><span class="cl">  &#34;PDP-11 Sys V&#34; [sides=9, distortion=&#34;-0.267769&#34;, orientation=40, skew=&#34;0.271226&#34;, color=cadetblue1];
+</span></span><span class="line"><span class="ln"> 50</span><span class="cl">  &#34;USG 3.0&#34; [distortion=&#34;-0.848455&#34;, orientation=44, skew=&#34;0.267152&#34;, color=bisque2];
+</span></span><span class="line"><span class="ln"> 51</span><span class="cl">  &#34;Unix/TS 1.0&#34; [distortion=&#34;0.305594&#34;, orientation=75, skew=&#34;0.070516&#34;, color=orangered];
+</span></span><span class="line"><span class="ln"> 52</span><span class="cl">  &#34;TS 4.0&#34; [sides=10, distortion=&#34;-0.641701&#34;, orientation=50, skew=&#34;-0.952502&#34;, color=crimson];
+</span></span><span class="line"><span class="ln"> 53</span><span class="cl">  &#34;System V.0&#34; [sides=9, distortion=&#34;0.021556&#34;, orientation=26, skew=&#34;-0.729938&#34;, color=darkorange1];
+</span></span><span class="line"><span class="ln"> 54</span><span class="cl">  &#34;System V.2&#34; [sides=6, distortion=&#34;0.985153&#34;, orientation=33, skew=&#34;-0.399752&#34;, color=darkolivegreen4];
+</span></span><span class="line"><span class="ln"> 55</span><span class="cl">  &#34;System V.3&#34; [sides=7, distortion=&#34;-0.687574&#34;, orientation=58, skew=&#34;-0.180116&#34;, color=lightsteelblue1];
+</span></span><span class="line"><span class="ln"> 56</span><span class="cl">  &#34;5th Edition&#34; -&gt; &#34;6th Edition&#34;;
+</span></span><span class="line"><span class="ln"> 57</span><span class="cl">  &#34;5th Edition&#34; -&gt; &#34;PWB 1.0&#34;;
+</span></span><span class="line"><span class="ln"> 58</span><span class="cl">  &#34;6th Edition&#34; -&gt; LSX;
+</span></span><span class="line"><span class="ln"> 59</span><span class="cl">  &#34;6th Edition&#34; -&gt; &#34;1 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 60</span><span class="cl">  &#34;6th Edition&#34; -&gt; &#34;Mini Unix&#34;;
+</span></span><span class="line"><span class="ln"> 61</span><span class="cl">  &#34;6th Edition&#34; -&gt; Wollongong;
+</span></span><span class="line"><span class="ln"> 62</span><span class="cl">  &#34;6th Edition&#34; -&gt; Interdata;
+</span></span><span class="line"><span class="ln"> 63</span><span class="cl">  Interdata -&gt; &#34;Unix/TS 3.0&#34;;
+</span></span><span class="line"><span class="ln"> 64</span><span class="cl">  Interdata -&gt; &#34;PWB 2.0&#34;;
+</span></span><span class="line"><span class="ln"> 65</span><span class="cl">  Interdata -&gt; &#34;7th Edition&#34;;
+</span></span><span class="line"><span class="ln"> 66</span><span class="cl">  &#34;7th Edition&#34; -&gt; &#34;8th Edition&#34;;
+</span></span><span class="line"><span class="ln"> 67</span><span class="cl">  &#34;7th Edition&#34; -&gt; &#34;32V&#34;;
+</span></span><span class="line"><span class="ln"> 68</span><span class="cl">  &#34;7th Edition&#34; -&gt; V7M;
+</span></span><span class="line"><span class="ln"> 69</span><span class="cl">  &#34;7th Edition&#34; -&gt; &#34;Ultrix-11&#34;;
+</span></span><span class="line"><span class="ln"> 70</span><span class="cl">  &#34;7th Edition&#34; -&gt; Xenix;
+</span></span><span class="line"><span class="ln"> 71</span><span class="cl">  &#34;7th Edition&#34; -&gt; &#34;UniPlus+&#34;;
+</span></span><span class="line"><span class="ln"> 72</span><span class="cl">  V7M -&gt; &#34;Ultrix-11&#34;;
+</span></span><span class="line"><span class="ln"> 73</span><span class="cl">  &#34;8th Edition&#34; -&gt; &#34;9th Edition&#34;;
+</span></span><span class="line"><span class="ln"> 74</span><span class="cl">  &#34;1 BSD&#34; -&gt; &#34;2 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 75</span><span class="cl">  &#34;2 BSD&#34; -&gt; &#34;2.8 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 76</span><span class="cl">  &#34;2.8 BSD&#34; -&gt; &#34;Ultrix-11&#34;;
+</span></span><span class="line"><span class="ln"> 77</span><span class="cl">  &#34;2.8 BSD&#34; -&gt; &#34;2.9 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 78</span><span class="cl">  &#34;32V&#34; -&gt; &#34;3 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 79</span><span class="cl">  &#34;3 BSD&#34; -&gt; &#34;4 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 80</span><span class="cl">  &#34;4 BSD&#34; -&gt; &#34;4.1 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 81</span><span class="cl">  &#34;4.1 BSD&#34; -&gt; &#34;4.2 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 82</span><span class="cl">  &#34;4.1 BSD&#34; -&gt; &#34;2.8 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 83</span><span class="cl">  &#34;4.1 BSD&#34; -&gt; &#34;8th Edition&#34;;
+</span></span><span class="line"><span class="ln"> 84</span><span class="cl">  &#34;4.2 BSD&#34; -&gt; &#34;4.3 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 85</span><span class="cl">  &#34;4.2 BSD&#34; -&gt; &#34;Ultrix-32&#34;;
+</span></span><span class="line"><span class="ln"> 86</span><span class="cl">  &#34;PWB 1.0&#34; -&gt; &#34;PWB 1.2&#34;;
+</span></span><span class="line"><span class="ln"> 87</span><span class="cl">  &#34;PWB 1.0&#34; -&gt; &#34;USG 1.0&#34;;
+</span></span><span class="line"><span class="ln"> 88</span><span class="cl">  &#34;PWB 1.2&#34; -&gt; &#34;PWB 2.0&#34;;
+</span></span><span class="line"><span class="ln"> 89</span><span class="cl">  &#34;USG 1.0&#34; -&gt; &#34;CB Unix 1&#34;;
+</span></span><span class="line"><span class="ln"> 90</span><span class="cl">  &#34;USG 1.0&#34; -&gt; &#34;USG 2.0&#34;;
+</span></span><span class="line"><span class="ln"> 91</span><span class="cl">  &#34;CB Unix 1&#34; -&gt; &#34;CB Unix 2&#34;;
+</span></span><span class="line"><span class="ln"> 92</span><span class="cl">  &#34;CB Unix 2&#34; -&gt; &#34;CB Unix 3&#34;;
+</span></span><span class="line"><span class="ln"> 93</span><span class="cl">  &#34;CB Unix 3&#34; -&gt; &#34;Unix/TS++&#34;;
+</span></span><span class="line"><span class="ln"> 94</span><span class="cl">  &#34;CB Unix 3&#34; -&gt; &#34;PDP-11 Sys V&#34;;
+</span></span><span class="line"><span class="ln"> 95</span><span class="cl">  &#34;USG 2.0&#34; -&gt; &#34;USG 3.0&#34;;
+</span></span><span class="line"><span class="ln"> 96</span><span class="cl">  &#34;USG 3.0&#34; -&gt; &#34;Unix/TS 3.0&#34;;
+</span></span><span class="line"><span class="ln"> 97</span><span class="cl">  &#34;PWB 2.0&#34; -&gt; &#34;Unix/TS 3.0&#34;;
+</span></span><span class="line"><span class="ln"> 98</span><span class="cl">  &#34;Unix/TS 1.0&#34; -&gt; &#34;Unix/TS 3.0&#34;;
+</span></span><span class="line"><span class="ln"> 99</span><span class="cl">  &#34;Unix/TS 3.0&#34; -&gt; &#34;TS 4.0&#34;;
+</span></span><span class="line"><span class="ln">100</span><span class="cl">  &#34;Unix/TS++&#34; -&gt; &#34;TS 4.0&#34;;
+</span></span><span class="line"><span class="ln">101</span><span class="cl">  &#34;CB Unix 3&#34; -&gt; &#34;TS 4.0&#34;;
+</span></span><span class="line"><span class="ln">102</span><span class="cl">  &#34;TS 4.0&#34; -&gt; &#34;System V.0&#34;;
+</span></span><span class="line"><span class="ln">103</span><span class="cl">  &#34;System V.0&#34; -&gt; &#34;System V.2&#34;;
+</span></span><span class="line"><span class="ln">104</span><span class="cl">  &#34;System V.2&#34; -&gt; &#34;System V.3&#34;;
+</span></span><span class="line"><span class="ln">105</span><span class="cl">}
+</span></span><span class="line"><span class="ln">106</span><span class="cl">```</span></span></code></pre></div>
+</details>
+
+
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-graphviz" id="h-rh-cb-kroki-21" src="/hugo-bearberry/images/kroki/md5-RvwEIGFjt/vQfaFvyngt/Q==.svg">
+</div><h3 id="pikchr">Pikchr</h3>
+<details>
+    <summary style="color: var(--flexoki-light-blue)">Code</summary>
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=pikchr}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">scale = 0.8
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">fill = white
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">linewid *= 0.5
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">circle &#34;C0&#34; fit
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">circlerad = previous.radius
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">circle &#34;C1&#34;
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">10</span><span class="cl">circle &#34;C2&#34;
+</span></span><span class="line"><span class="ln">11</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">12</span><span class="cl">circle &#34;C4&#34;
+</span></span><span class="line"><span class="ln">13</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">14</span><span class="cl">circle &#34;C6&#34;
+</span></span><span class="line"><span class="ln">15</span><span class="cl">circle &#34;C3&#34; at dist(C2,C4) heading 30 from C2
+</span></span><span class="line"><span class="ln">16</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">17</span><span class="cl">circle &#34;C5&#34;
+</span></span><span class="line"><span class="ln">18</span><span class="cl">arrow from C2 to C3 chop
+</span></span><span class="line"><span class="ln">19</span><span class="cl">C3P: circle &#34;C3&#39;&#34; at dist(C4,C6) heading 30 from C6
+</span></span><span class="line"><span class="ln">20</span><span class="cl">arrow right from C3P.e
+</span></span><span class="line"><span class="ln">21</span><span class="cl">C5P: circle &#34;C5&#39;&#34;
+</span></span><span class="line"><span class="ln">22</span><span class="cl">arrow from C6 to C3P chop
+</span></span><span class="line"><span class="ln">23</span><span class="cl">
+</span></span><span class="line"><span class="ln">24</span><span class="cl">box height C3.y-C2.y \
+</span></span><span class="line"><span class="ln">25</span><span class="cl">    width (C5P.e.x-C0.w.x)+linewid \
+</span></span><span class="line"><span class="ln">26</span><span class="cl">    with .w at 0.5*linewid west of C0.w \
+</span></span><span class="line"><span class="ln">27</span><span class="cl">    behind C0 \
+</span></span><span class="line"><span class="ln">28</span><span class="cl">    fill 0xc6e2ff thin color gray
+</span></span><span class="line"><span class="ln">29</span><span class="cl">box same width previous.e.x - C2.w.x \
+</span></span><span class="line"><span class="ln">30</span><span class="cl">    with .se at previous.ne \
+</span></span><span class="line"><span class="ln">31</span><span class="cl">    fill 0x9accfc
+</span></span><span class="line"><span class="ln">32</span><span class="cl">&#34;trunk&#34; below at 2nd last box.s
+</span></span><span class="line"><span class="ln">33</span><span class="cl">&#34;feature branch&#34; above at last box.n
+</span></span><span class="line"><span class="ln">34</span><span class="cl">
+</span></span><span class="line"><span class="ln">35</span><span class="cl">circle &#34;C0&#34; at 3.7cm south of C0
+</span></span><span class="line"><span class="ln">36</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">37</span><span class="cl">circle &#34;C1&#34;
+</span></span><span class="line"><span class="ln">38</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">39</span><span class="cl">circle &#34;C2&#34;
+</span></span><span class="line"><span class="ln">40</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">41</span><span class="cl">circle &#34;C4&#34;
+</span></span><span class="line"><span class="ln">42</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">43</span><span class="cl">circle &#34;C6&#34;
+</span></span><span class="line"><span class="ln">44</span><span class="cl">circle &#34;C3&#34; at dist(C2,C4) heading 30 from C2
+</span></span><span class="line"><span class="ln">45</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">46</span><span class="cl">circle &#34;C5&#34;
+</span></span><span class="line"><span class="ln">47</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">48</span><span class="cl">circle &#34;C7&#34;
+</span></span><span class="line"><span class="ln">49</span><span class="cl">arrow from C2 to C3 chop
+</span></span><span class="line"><span class="ln">50</span><span class="cl">arrow from C6 to C7 chop
+</span></span><span class="line"><span class="ln">51</span><span class="cl">
+</span></span><span class="line"><span class="ln">52</span><span class="cl">box height C3.y-C2.y \
+</span></span><span class="line"><span class="ln">53</span><span class="cl">    width (C7.e.x-C0.w.x)+1.5*C1.radius \
+</span></span><span class="line"><span class="ln">54</span><span class="cl">    with .w at 0.5*linewid west of C0.w \
+</span></span><span class="line"><span class="ln">55</span><span class="cl">    behind C0 \
+</span></span><span class="line"><span class="ln">56</span><span class="cl">    fill 0xc6e2ff thin color gray
+</span></span><span class="line"><span class="ln">57</span><span class="cl">box same width previous.e.x - C2.w.x \
+</span></span><span class="line"><span class="ln">58</span><span class="cl">    with .se at previous.ne \
+</span></span><span class="line"><span class="ln">59</span><span class="cl">    fill 0x9accfc
+</span></span><span class="line"><span class="ln">60</span><span class="cl">&#34;trunk&#34; below at 2nd last box.s
+</span></span><span class="line"><span class="ln">61</span><span class="cl">&#34;feature branch&#34; above at last box.n
+</span></span><span class="line"><span class="ln">62</span><span class="cl">```</span></span></code></pre></div>
+</details>
+
+
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-pikchr" id="h-rh-cb-kroki-22" src="/hugo-bearberry/images/kroki/md5-elFIBQg8zBTsieq14SjcjA==.svg">
+</div><h3 id="erd">Erd</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=erd}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">[Person]
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">*name
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">height
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">weight
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">+birth_location_id
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">[Location]
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">*id
+</span></span><span class="line"><span class="ln">10</span><span class="cl">city
+</span></span><span class="line"><span class="ln">11</span><span class="cl">state
+</span></span><span class="line"><span class="ln">12</span><span class="cl">country
+</span></span><span class="line"><span class="ln">13</span><span class="cl">
+</span></span><span class="line"><span class="ln">14</span><span class="cl">Person *--1 Location
+</span></span><span class="line"><span class="ln">15</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-erd" id="h-rh-cb-kroki-24" src="/hugo-bearberry/images/kroki/md5-GI8vlUGkpgQrHOxHOwUcKg==.svg">
+</div><h3 id="vega">Vega</h3>
+<details>
+    <summary style="color: var(--flexoki-light-blue)">Code</summary>
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=vega flexoki=paper}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">{
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  &#34;$schema&#34;: &#34;https://vega.github.io/schema/vega/v5.json&#34;,
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  &#34;width&#34;: 800,
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  &#34;height&#34;: 400,
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  &#34;padding&#34;: 0,
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  &#34;data&#34;: [
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">10</span><span class="cl">      &#34;name&#34;: &#34;table&#34;,
+</span></span><span class="line"><span class="ln">11</span><span class="cl">      &#34;values&#34;: [
+</span></span><span class="line"><span class="ln">12</span><span class="cl">        &#34;Declarative visualization grammars can accelerate development, facilitate retargeting across platforms, and allow language-level optimizations. However, existing declarative visualization languages are primarily concerned with visual encoding, and rely on imperative event handlers for interactive behaviors. In response, we introduce a model of declarative interaction design for data visualizations. Adopting methods from reactive programming, we model low-level events as composable data streams from which we form higher-level semantic signals. Signals feed predicates and scale inversions, which allow us to generalize interactive selections at the level of item geometry (pixels) into interactive queries over the data domain. Production rules then use these queries to manipulate the visualization’s appearance. To facilitate reuse and sharing, these constructs can be encapsulated as named interactors: standalone, purely declarative specifications of interaction techniques. We assess our model’s feasibility and expressivity by instantiating it with extensions to the Vega visualization grammar. Through a diverse range of examples, we demonstrate coverage over an established taxonomy of visualization interaction techniques.&#34;,
+</span></span><span class="line"><span class="ln">13</span><span class="cl">        &#34;We present Reactive Vega, a system architecture that provides the first robust and comprehensive treatment of declarative visual and interaction design for data visualization. Starting from a single declarative specification, Reactive Vega constructs a dataflow graph in which input data, scene graph elements, and interaction events are all treated as first-class streaming data sources. To support expressive interactive visualizations that may involve time-varying scalar, relational, or hierarchical data, Reactive Vega’s dataflow graph can dynamically re-write itself at runtime by extending or pruning branches in a data-driven fashion. We discuss both compile- and run-time optimizations applied within Reactive Vega, and share the results of benchmark studies that indicate superior interactive performance to both D3 and the original, non-reactive Vega system.&#34;,
+</span></span><span class="line"><span class="ln">14</span><span class="cl">        &#34;We present Vega-Lite, a high-level grammar that enables rapid specification of interactive data visualizations. Vega-Lite combines a traditional grammar of graphics, providing visual encoding rules and a composition algebra for layered and multi-view displays, with a novel grammar of interaction. Users specify interactive semantics by composing selections. In Vega-Lite, a selection is an abstraction that defines input event processing, points of interest, and a predicate function for inclusion testing. Selections parameterize visual encodings by serving as input data, defining scale extents, or by driving conditional logic. The Vega-Lite compiler automatically synthesizes requisite data flow and event handling logic, which users can override for further customization. In contrast to existing reactive specifications, Vega-Lite selections decompose an interaction design into concise, enumerable semantic units. We evaluate Vega-Lite through a range of examples, demonstrating succinct specification of both customized interaction methods and common techniques such as panning, zooming, and linked selection.&#34;
+</span></span><span class="line"><span class="ln">15</span><span class="cl">      ],
+</span></span><span class="line"><span class="ln">16</span><span class="cl">      &#34;transform&#34;: [
+</span></span><span class="line"><span class="ln">17</span><span class="cl">        {
+</span></span><span class="line"><span class="ln">18</span><span class="cl">          &#34;type&#34;: &#34;countpattern&#34;,
+</span></span><span class="line"><span class="ln">19</span><span class="cl">          &#34;field&#34;: &#34;data&#34;,
+</span></span><span class="line"><span class="ln">20</span><span class="cl">          &#34;case&#34;: &#34;upper&#34;,
+</span></span><span class="line"><span class="ln">21</span><span class="cl">          &#34;pattern&#34;: &#34;[\\w&#39;]{3,}&#34;,
+</span></span><span class="line"><span class="ln">22</span><span class="cl">          &#34;stopwords&#34;: &#34;(i|me|my|myself|we|us|our|ours|ourselves|you|your|yours|yourself|yourselves|he|him|his|himself|she|her|hers|herself|it|its|itself|they|them|their|theirs|themselves|what|which|who|whom|whose|this|that|these|those|am|is|are|was|were|be|been|being|have|has|had|having|do|does|did|doing|will|would|should|can|could|ought|i&#39;m|you&#39;re|he&#39;s|she&#39;s|it&#39;s|we&#39;re|they&#39;re|i&#39;ve|you&#39;ve|we&#39;ve|they&#39;ve|i&#39;d|you&#39;d|he&#39;d|she&#39;d|we&#39;d|they&#39;d|i&#39;ll|you&#39;ll|he&#39;ll|she&#39;ll|we&#39;ll|they&#39;ll|isn&#39;t|aren&#39;t|wasn&#39;t|weren&#39;t|hasn&#39;t|haven&#39;t|hadn&#39;t|doesn&#39;t|don&#39;t|didn&#39;t|won&#39;t|wouldn&#39;t|shan&#39;t|shouldn&#39;t|can&#39;t|cannot|couldn&#39;t|mustn&#39;t|let&#39;s|that&#39;s|who&#39;s|what&#39;s|here&#39;s|there&#39;s|when&#39;s|where&#39;s|why&#39;s|how&#39;s|a|an|the|and|but|if|or|because|as|until|while|of|at|by|for|with|about|against|between|into|through|during|before|after|above|below|to|from|up|upon|down|in|out|on|off|over|under|again|further|then|once|here|there|when|where|why|how|all|any|both|each|few|more|most|other|some|such|no|nor|not|only|own|same|so|than|too|very|say|says|said|shall)&#34;
+</span></span><span class="line"><span class="ln">23</span><span class="cl">        },
+</span></span><span class="line"><span class="ln">24</span><span class="cl">        {
+</span></span><span class="line"><span class="ln">25</span><span class="cl">          &#34;type&#34;: &#34;formula&#34;, &#34;as&#34;: &#34;angle&#34;,
+</span></span><span class="line"><span class="ln">26</span><span class="cl">          &#34;expr&#34;: &#34;[-45, 0, 45][~~(random() * 3)]&#34;
+</span></span><span class="line"><span class="ln">27</span><span class="cl">        },
+</span></span><span class="line"><span class="ln">28</span><span class="cl">        {
+</span></span><span class="line"><span class="ln">29</span><span class="cl">          &#34;type&#34;: &#34;formula&#34;, &#34;as&#34;: &#34;weight&#34;,
+</span></span><span class="line"><span class="ln">30</span><span class="cl">          &#34;expr&#34;: &#34;if(datum.text==&#39;VEGA&#39;, 600, 300)&#34;
+</span></span><span class="line"><span class="ln">31</span><span class="cl">        }
+</span></span><span class="line"><span class="ln">32</span><span class="cl">      ]
+</span></span><span class="line"><span class="ln">33</span><span class="cl">    }
+</span></span><span class="line"><span class="ln">34</span><span class="cl">  ],
+</span></span><span class="line"><span class="ln">35</span><span class="cl">
+</span></span><span class="line"><span class="ln">36</span><span class="cl">  &#34;scales&#34;: [
+</span></span><span class="line"><span class="ln">37</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">38</span><span class="cl">      &#34;name&#34;: &#34;color&#34;,
+</span></span><span class="line"><span class="ln">39</span><span class="cl">      &#34;type&#34;: &#34;ordinal&#34;,
+</span></span><span class="line"><span class="ln">40</span><span class="cl">      &#34;domain&#34;: {&#34;data&#34;: &#34;table&#34;, &#34;field&#34;: &#34;text&#34;},
+</span></span><span class="line"><span class="ln">41</span><span class="cl">      &#34;range&#34;: [&#34;#d5a928&#34;, &#34;#652c90&#34;, &#34;#939597&#34;]
+</span></span><span class="line"><span class="ln">42</span><span class="cl">    }
+</span></span><span class="line"><span class="ln">43</span><span class="cl">  ],
+</span></span><span class="line"><span class="ln">44</span><span class="cl">
+</span></span><span class="line"><span class="ln">45</span><span class="cl">  &#34;marks&#34;: [
+</span></span><span class="line"><span class="ln">46</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">47</span><span class="cl">      &#34;type&#34;: &#34;text&#34;,
+</span></span><span class="line"><span class="ln">48</span><span class="cl">      &#34;from&#34;: {&#34;data&#34;: &#34;table&#34;},
+</span></span><span class="line"><span class="ln">49</span><span class="cl">      &#34;encode&#34;: {
+</span></span><span class="line"><span class="ln">50</span><span class="cl">        &#34;enter&#34;: {
+</span></span><span class="line"><span class="ln">51</span><span class="cl">          &#34;text&#34;: {&#34;field&#34;: &#34;text&#34;},
+</span></span><span class="line"><span class="ln">52</span><span class="cl">          &#34;align&#34;: {&#34;value&#34;: &#34;center&#34;},
+</span></span><span class="line"><span class="ln">53</span><span class="cl">          &#34;baseline&#34;: {&#34;value&#34;: &#34;alphabetic&#34;},
+</span></span><span class="line"><span class="ln">54</span><span class="cl">          &#34;fill&#34;: {&#34;scale&#34;: &#34;color&#34;, &#34;field&#34;: &#34;text&#34;}
+</span></span><span class="line"><span class="ln">55</span><span class="cl">        },
+</span></span><span class="line"><span class="ln">56</span><span class="cl">        &#34;update&#34;: {
+</span></span><span class="line"><span class="ln">57</span><span class="cl">          &#34;fillOpacity&#34;: {&#34;value&#34;: 1}
+</span></span><span class="line"><span class="ln">58</span><span class="cl">        },
+</span></span><span class="line"><span class="ln">59</span><span class="cl">        &#34;hover&#34;: {
+</span></span><span class="line"><span class="ln">60</span><span class="cl">          &#34;fillOpacity&#34;: {&#34;value&#34;: 0.5}
+</span></span><span class="line"><span class="ln">61</span><span class="cl">        }
+</span></span><span class="line"><span class="ln">62</span><span class="cl">      },
+</span></span><span class="line"><span class="ln">63</span><span class="cl">      &#34;transform&#34;: [
+</span></span><span class="line"><span class="ln">64</span><span class="cl">        {
+</span></span><span class="line"><span class="ln">65</span><span class="cl">          &#34;type&#34;: &#34;wordcloud&#34;,
+</span></span><span class="line"><span class="ln">66</span><span class="cl">          &#34;size&#34;: [800, 400],
+</span></span><span class="line"><span class="ln">67</span><span class="cl">          &#34;text&#34;: {&#34;field&#34;: &#34;text&#34;},
+</span></span><span class="line"><span class="ln">68</span><span class="cl">          &#34;rotate&#34;: {&#34;field&#34;: &#34;datum.angle&#34;},
+</span></span><span class="line"><span class="ln">69</span><span class="cl">          &#34;font&#34;: &#34;Helvetica Neue, Arial&#34;,
+</span></span><span class="line"><span class="ln">70</span><span class="cl">          &#34;fontSize&#34;: {&#34;field&#34;: &#34;datum.count&#34;},
+</span></span><span class="line"><span class="ln">71</span><span class="cl">          &#34;fontWeight&#34;: {&#34;field&#34;: &#34;datum.weight&#34;},
+</span></span><span class="line"><span class="ln">72</span><span class="cl">          &#34;fontSizeRange&#34;: [12, 56],
+</span></span><span class="line"><span class="ln">73</span><span class="cl">          &#34;padding&#34;: 2
+</span></span><span class="line"><span class="ln">74</span><span class="cl">        }
+</span></span><span class="line"><span class="ln">75</span><span class="cl">      ]
+</span></span><span class="line"><span class="ln">76</span><span class="cl">    }
+</span></span><span class="line"><span class="ln">77</span><span class="cl">  ]
+</span></span><span class="line"><span class="ln">78</span><span class="cl">}
+</span></span><span class="line"><span class="ln">79</span><span class="cl">```</span></span></code></pre></div>
+</details>
+
+
+<div class="kroki-img" style="background-color: var(--flexoki-paper)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-f2hapjo+L8WDEQoe5Y0uEg==.svg">
+</div><h3 id="vega-lite">Vega-Lite</h3>
+<details>
+    <summary style="color: var(--flexoki-light-blue)">Code</summary>
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">  1</span><span class="cl">```kroki {type=vegalite}
+</span></span><span class="line"><span class="ln">  2</span><span class="cl">{
+</span></span><span class="line"><span class="ln">  3</span><span class="cl">  &#34;$schema&#34;: &#34;https://vega.github.io/schema/vega-lite/v4.json&#34;,
+</span></span><span class="line"><span class="ln">  4</span><span class="cl">  &#34;description&#34;: &#34;A diverging stacked bar chart for sentiments towards a set of eight questions, displayed as percentages with neutral responses straddling the 0% mark&#34;,
+</span></span><span class="line"><span class="ln">  5</span><span class="cl">  &#34;data&#34;: {
+</span></span><span class="line"><span class="ln">  6</span><span class="cl">    &#34;values&#34;: [
+</span></span><span class="line"><span class="ln">  7</span><span class="cl">      {&#34;question&#34;: &#34;Question 1&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 24, &#34;percentage&#34;: 0.7},
+</span></span><span class="line"><span class="ln">  8</span><span class="cl">      {&#34;question&#34;: &#34;Question 1&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 294, &#34;percentage&#34;: 9.1},
+</span></span><span class="line"><span class="ln">  9</span><span class="cl">      {&#34;question&#34;: &#34;Question 1&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 594, &#34;percentage&#34;: 18.5},
+</span></span><span class="line"><span class="ln"> 10</span><span class="cl">      {&#34;question&#34;: &#34;Question 1&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 1927, &#34;percentage&#34;: 59.9},
+</span></span><span class="line"><span class="ln"> 11</span><span class="cl">      {&#34;question&#34;: &#34;Question 1&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 376, &#34;percentage&#34;: 11.7},
+</span></span><span class="line"><span class="ln"> 12</span><span class="cl">      {&#34;question&#34;: &#34;Question 2&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 18.2},
+</span></span><span class="line"><span class="ln"> 13</span><span class="cl">      {&#34;question&#34;: &#34;Question 2&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 18.2},
+</span></span><span class="line"><span class="ln"> 14</span><span class="cl">      {&#34;question&#34;: &#34;Question 2&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 15</span><span class="cl">      {&#34;question&#34;: &#34;Question 2&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 7, &#34;percentage&#34;: 63.6},
+</span></span><span class="line"><span class="ln"> 16</span><span class="cl">      {&#34;question&#34;: &#34;Question 2&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 11, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 17</span><span class="cl">      {&#34;question&#34;: &#34;Question 3&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 20},
+</span></span><span class="line"><span class="ln"> 18</span><span class="cl">      {&#34;question&#34;: &#34;Question 3&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 19</span><span class="cl">      {&#34;question&#34;: &#34;Question 3&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 20},
+</span></span><span class="line"><span class="ln"> 20</span><span class="cl">      {&#34;question&#34;: &#34;Question 3&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 4, &#34;percentage&#34;: 40},
+</span></span><span class="line"><span class="ln"> 21</span><span class="cl">      {&#34;question&#34;: &#34;Question 3&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 20},
+</span></span><span class="line"><span class="ln"> 22</span><span class="cl">      {&#34;question&#34;: &#34;Question 4&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 23</span><span class="cl">      {&#34;question&#34;: &#34;Question 4&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 12.5},
+</span></span><span class="line"><span class="ln"> 24</span><span class="cl">      {&#34;question&#34;: &#34;Question 4&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 1, &#34;percentage&#34;: 6.3},
+</span></span><span class="line"><span class="ln"> 25</span><span class="cl">      {&#34;question&#34;: &#34;Question 4&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 7, &#34;percentage&#34;: 43.8},
+</span></span><span class="line"><span class="ln"> 26</span><span class="cl">      {&#34;question&#34;: &#34;Question 4&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 6, &#34;percentage&#34;: 37.5},
+</span></span><span class="line"><span class="ln"> 27</span><span class="cl">      {&#34;question&#34;: &#34;Question 5&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 28</span><span class="cl">      {&#34;question&#34;: &#34;Question 5&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 1, &#34;percentage&#34;: 4.2},
+</span></span><span class="line"><span class="ln"> 29</span><span class="cl">      {&#34;question&#34;: &#34;Question 5&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 3, &#34;percentage&#34;: 12.5},
+</span></span><span class="line"><span class="ln"> 30</span><span class="cl">      {&#34;question&#34;: &#34;Question 5&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 16, &#34;percentage&#34;: 66.7},
+</span></span><span class="line"><span class="ln"> 31</span><span class="cl">      {&#34;question&#34;: &#34;Question 5&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 4, &#34;percentage&#34;: 16.7},
+</span></span><span class="line"><span class="ln"> 32</span><span class="cl">      {&#34;question&#34;: &#34;Question 6&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 1, &#34;percentage&#34;: 6.3},
+</span></span><span class="line"><span class="ln"> 33</span><span class="cl">      {&#34;question&#34;: &#34;Question 6&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 1, &#34;percentage&#34;: 6.3},
+</span></span><span class="line"><span class="ln"> 34</span><span class="cl">      {&#34;question&#34;: &#34;Question 6&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 12.5},
+</span></span><span class="line"><span class="ln"> 35</span><span class="cl">      {&#34;question&#34;: &#34;Question 6&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 9, &#34;percentage&#34;: 56.3},
+</span></span><span class="line"><span class="ln"> 36</span><span class="cl">      {&#34;question&#34;: &#34;Question 6&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 3, &#34;percentage&#34;: 18.8},
+</span></span><span class="line"><span class="ln"> 37</span><span class="cl">      {&#34;question&#34;: &#34;Question 7&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 38</span><span class="cl">      {&#34;question&#34;: &#34;Question 7&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 39</span><span class="cl">      {&#34;question&#34;: &#34;Question 7&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 1, &#34;percentage&#34;: 20},
+</span></span><span class="line"><span class="ln"> 40</span><span class="cl">      {&#34;question&#34;: &#34;Question 7&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 4, &#34;percentage&#34;: 80},
+</span></span><span class="line"><span class="ln"> 41</span><span class="cl">      {&#34;question&#34;: &#34;Question 7&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 42</span><span class="cl">      {&#34;question&#34;: &#34;Question 8&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 43</span><span class="cl">      {&#34;question&#34;: &#34;Question 8&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 44</span><span class="cl">      {&#34;question&#34;: &#34;Question 8&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 45</span><span class="cl">      {&#34;question&#34;: &#34;Question 8&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 46</span><span class="cl">      {&#34;question&#34;: &#34;Question 8&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 100}
+</span></span><span class="line"><span class="ln"> 47</span><span class="cl">    ]
+</span></span><span class="line"><span class="ln"> 48</span><span class="cl">  },
+</span></span><span class="line"><span class="ln"> 49</span><span class="cl">  &#34;transform&#34;: [
+</span></span><span class="line"><span class="ln"> 50</span><span class="cl">    {
+</span></span><span class="line"><span class="ln"> 51</span><span class="cl">      &#34;calculate&#34;: &#34;if(datum.type === &#39;Strongly disagree&#39;,-2,0) + if(datum.type===&#39;Disagree&#39;,-1,0) + if(datum.type ==&#39;Neither agree nor disagree&#39;,0,0) + if(datum.type ===&#39;Agree&#39;,1,0) + if(datum.type ===&#39;Strongly agree&#39;,2,0)&#34;,
+</span></span><span class="line"><span class="ln"> 52</span><span class="cl">      &#34;as&#34;: &#34;q_order&#34;
+</span></span><span class="line"><span class="ln"> 53</span><span class="cl">    },
+</span></span><span class="line"><span class="ln"> 54</span><span class="cl">    {
+</span></span><span class="line"><span class="ln"> 55</span><span class="cl">      &#34;calculate&#34;: &#34;if(datum.type === &#39;Disagree&#39; || datum.type === &#39;Strongly disagree&#39;, datum.percentage,0) + if(datum.type === &#39;Neither agree nor disagree&#39;, datum.percentage / 2,0)&#34;,
+</span></span><span class="line"><span class="ln"> 56</span><span class="cl">      &#34;as&#34;: &#34;signed_percentage&#34;
+</span></span><span class="line"><span class="ln"> 57</span><span class="cl">    },
+</span></span><span class="line"><span class="ln"> 58</span><span class="cl">    {&#34;stack&#34;: &#34;percentage&#34;, &#34;as&#34;: [&#34;v1&#34;, &#34;v2&#34;], &#34;groupby&#34;: [&#34;question&#34;]},
+</span></span><span class="line"><span class="ln"> 59</span><span class="cl">    {
+</span></span><span class="line"><span class="ln"> 60</span><span class="cl">      &#34;joinaggregate&#34;: [
+</span></span><span class="line"><span class="ln"> 61</span><span class="cl">        {
+</span></span><span class="line"><span class="ln"> 62</span><span class="cl">          &#34;field&#34;: &#34;signed_percentage&#34;,
+</span></span><span class="line"><span class="ln"> 63</span><span class="cl">          &#34;op&#34;: &#34;sum&#34;,
+</span></span><span class="line"><span class="ln"> 64</span><span class="cl">          &#34;as&#34;: &#34;offset&#34;
+</span></span><span class="line"><span class="ln"> 65</span><span class="cl">        }
+</span></span><span class="line"><span class="ln"> 66</span><span class="cl">      ],
+</span></span><span class="line"><span class="ln"> 67</span><span class="cl">      &#34;groupby&#34;: [&#34;question&#34;]
+</span></span><span class="line"><span class="ln"> 68</span><span class="cl">    },
+</span></span><span class="line"><span class="ln"> 69</span><span class="cl">    {&#34;calculate&#34;: &#34;datum.v1 - datum.offset&#34;, &#34;as&#34;: &#34;nx&#34;},
+</span></span><span class="line"><span class="ln"> 70</span><span class="cl">    {&#34;calculate&#34;: &#34;datum.v2 - datum.offset&#34;, &#34;as&#34;: &#34;nx2&#34;}
+</span></span><span class="line"><span class="ln"> 71</span><span class="cl">  ],
+</span></span><span class="line"><span class="ln"> 72</span><span class="cl">  &#34;mark&#34;: &#34;bar&#34;,
+</span></span><span class="line"><span class="ln"> 73</span><span class="cl">  &#34;encoding&#34;: {
+</span></span><span class="line"><span class="ln"> 74</span><span class="cl">    &#34;x&#34;: {
+</span></span><span class="line"><span class="ln"> 75</span><span class="cl">      &#34;field&#34;: &#34;nx&#34;,
+</span></span><span class="line"><span class="ln"> 76</span><span class="cl">      &#34;type&#34;: &#34;quantitative&#34;,
+</span></span><span class="line"><span class="ln"> 77</span><span class="cl">      &#34;axis&#34;: {
+</span></span><span class="line"><span class="ln"> 78</span><span class="cl">        &#34;title&#34;: &#34;Percentage&#34;
+</span></span><span class="line"><span class="ln"> 79</span><span class="cl">      }
+</span></span><span class="line"><span class="ln"> 80</span><span class="cl">    },
+</span></span><span class="line"><span class="ln"> 81</span><span class="cl">    &#34;x2&#34;: {&#34;field&#34;: &#34;nx2&#34;},
+</span></span><span class="line"><span class="ln"> 82</span><span class="cl">    &#34;y&#34;: {
+</span></span><span class="line"><span class="ln"> 83</span><span class="cl">      &#34;field&#34;: &#34;question&#34;,
+</span></span><span class="line"><span class="ln"> 84</span><span class="cl">      &#34;type&#34;: &#34;nominal&#34;,
+</span></span><span class="line"><span class="ln"> 85</span><span class="cl">      &#34;axis&#34;: {
+</span></span><span class="line"><span class="ln"> 86</span><span class="cl">        &#34;title&#34;: &#34;Question&#34;,
+</span></span><span class="line"><span class="ln"> 87</span><span class="cl">        &#34;offset&#34;: 5,
+</span></span><span class="line"><span class="ln"> 88</span><span class="cl">        &#34;ticks&#34;: false,
+</span></span><span class="line"><span class="ln"> 89</span><span class="cl">        &#34;minExtent&#34;: 60,
+</span></span><span class="line"><span class="ln"> 90</span><span class="cl">        &#34;domain&#34;: false
+</span></span><span class="line"><span class="ln"> 91</span><span class="cl">      }
+</span></span><span class="line"><span class="ln"> 92</span><span class="cl">    },
+</span></span><span class="line"><span class="ln"> 93</span><span class="cl">    &#34;color&#34;: {
+</span></span><span class="line"><span class="ln"> 94</span><span class="cl">      &#34;field&#34;: &#34;type&#34;,
+</span></span><span class="line"><span class="ln"> 95</span><span class="cl">      &#34;type&#34;: &#34;nominal&#34;,
+</span></span><span class="line"><span class="ln"> 96</span><span class="cl">      &#34;legend&#34;: {
+</span></span><span class="line"><span class="ln"> 97</span><span class="cl">        &#34;title&#34;: &#34;Response&#34;
+</span></span><span class="line"><span class="ln"> 98</span><span class="cl">      },
+</span></span><span class="line"><span class="ln"> 99</span><span class="cl">      &#34;scale&#34;: {
+</span></span><span class="line"><span class="ln">100</span><span class="cl">        &#34;domain&#34;: [&#34;Strongly disagree&#34;, &#34;Disagree&#34;, &#34;Neither agree nor disagree&#34;, &#34;Agree&#34;, &#34;Strongly agree&#34;],
+</span></span><span class="line"><span class="ln">101</span><span class="cl">        &#34;range&#34;: [&#34;#c30d24&#34;, &#34;#f3a583&#34;, &#34;#cccccc&#34;, &#34;#94c6da&#34;, &#34;#1770ab&#34;],
+</span></span><span class="line"><span class="ln">102</span><span class="cl">        &#34;type&#34;: &#34;ordinal&#34;
+</span></span><span class="line"><span class="ln">103</span><span class="cl">      }
+</span></span><span class="line"><span class="ln">104</span><span class="cl">    }
+</span></span><span class="line"><span class="ln">105</span><span class="cl">  }
+</span></span><span class="line"><span class="ln">106</span><span class="cl">}
+</span></span><span class="line"><span class="ln">107</span><span class="cl">```</span></span></code></pre></div>
+</details>
+
+
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vegalite" id="h-rh-cb-kroki-26" src="/hugo-bearberry/images/kroki/md5-OasvGN3bSjQQE+apq4s0kQ==.svg">
+</div><h3 id="ditaa">Ditaa</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=ditaa}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">                          +-------------+
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">                          |             |
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">                          | Exponential |
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">                          |             |
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">                          +-------------+
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">                                 |
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">                          lambda |
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">                                 v
+</span></span><span class="line"><span class="ln">10</span><span class="cl">+-------------+           +-------------+           +-------------+
+</span></span><span class="line"><span class="ln">11</span><span class="cl">|             |   tau     |             |   lambda  |             |
+</span></span><span class="line"><span class="ln">12</span><span class="cl">|  Lognormal  |----------&gt;|    Gamma    |&lt;----------| Poisson     |
+</span></span><span class="line"><span class="ln">13</span><span class="cl">|             |           |             |---+       |             |
+</span></span><span class="line"><span class="ln">14</span><span class="cl">+-------------+           +-------------+   |       +-------------+
+</span></span><span class="line"><span class="ln">15</span><span class="cl">      |                         ^ ^         | beta
+</span></span><span class="line"><span class="ln">16</span><span class="cl">      |                   tau   | |         |
+</span></span><span class="line"><span class="ln">17</span><span class="cl">      | tau                     | +---------+
+</span></span><span class="line"><span class="ln">18</span><span class="cl">      |                   +-------------+
+</span></span><span class="line"><span class="ln">19</span><span class="cl">      +------------------&gt;|             |
+</span></span><span class="line"><span class="ln">20</span><span class="cl">                          |     Normal  |
+</span></span><span class="line"><span class="ln">21</span><span class="cl">                          |             |----+
+</span></span><span class="line"><span class="ln">22</span><span class="cl">                          +-------------+    |
+</span></span><span class="line"><span class="ln">23</span><span class="cl">                                     ^       | mu
+</span></span><span class="line"><span class="ln">24</span><span class="cl">                                     |       |
+</span></span><span class="line"><span class="ln">25</span><span class="cl">                                     +-------+
+</span></span><span class="line"><span class="ln">26</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-ditaa" id="h-rh-cb-kroki-28" src="/hugo-bearberry/images/kroki/md5-iDom6/ZwIJSt6rlvQXdvNA==.svg">
+</div><h3 id="dbml">DBML</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=dbml}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">Table users {
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  id integer
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  username varchar
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  role varchar
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  created_at timestamp
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">}
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">Table posts {
+</span></span><span class="line"><span class="ln">10</span><span class="cl">  id integer [primary key]
+</span></span><span class="line"><span class="ln">11</span><span class="cl">  title varchar
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  body text [note: &#39;Content of the post&#39;]
+</span></span><span class="line"><span class="ln">13</span><span class="cl">  user_id integer
+</span></span><span class="line"><span class="ln">14</span><span class="cl">  status post_status
+</span></span><span class="line"><span class="ln">15</span><span class="cl">  created_at timestamp
+</span></span><span class="line"><span class="ln">16</span><span class="cl">}
+</span></span><span class="line"><span class="ln">17</span><span class="cl">
+</span></span><span class="line"><span class="ln">18</span><span class="cl">Enum post_status {
+</span></span><span class="line"><span class="ln">19</span><span class="cl">  draft
+</span></span><span class="line"><span class="ln">20</span><span class="cl">  published
+</span></span><span class="line"><span class="ln">21</span><span class="cl">  private [note: &#39;visible via URL only&#39;]
+</span></span><span class="line"><span class="ln">22</span><span class="cl">}
+</span></span><span class="line"><span class="ln">23</span><span class="cl">
+</span></span><span class="line"><span class="ln">24</span><span class="cl">Ref: posts.user_id &gt; users.id // many-to-one
+</span></span><span class="line"><span class="ln">25</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-dbml" id="h-rh-cb-kroki-30" src="/hugo-bearberry/images/kroki/md5-tvhGJpkIayCFUONw4xlxcA==.svg">
+</div><h3 id="tikz">TikZ</h3>
+<details>
+    <summary style="color: var(--flexoki-light-blue)">Code</summary>
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=tikz flexoki=paper}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">\documentclass{article}
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">\usepackage{tikz}
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">\usepackage{tikz-3dplot}
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">\usetikzlibrary{math}
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">\usepackage[active,tightpage]{preview}
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">\PreviewEnvironment{tikzpicture}
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">\setlength\PreviewBorder{0.125pt}
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">%
+</span></span><span class="line"><span class="ln">10</span><span class="cl">% File name: directional-angles.tex
+</span></span><span class="line"><span class="ln">11</span><span class="cl">% Description:
+</span></span><span class="line"><span class="ln">12</span><span class="cl">% The directional angles of a vector are geometrically represented.
+</span></span><span class="line"><span class="ln">13</span><span class="cl">%
+</span></span><span class="line"><span class="ln">14</span><span class="cl">% Date of creation: July, 25th, 2021.
+</span></span><span class="line"><span class="ln">15</span><span class="cl">% Date of last modification: October, 9th, 2022.
+</span></span><span class="line"><span class="ln">16</span><span class="cl">% Author: Efra�n Soto Apolinar.
+</span></span><span class="line"><span class="ln">17</span><span class="cl">% https://www.aprendematematicas.org.mx/author/efrain-soto-apolinar/instructing-courses/
+</span></span><span class="line"><span class="ln">18</span><span class="cl">% Source: page 11 of the
+</span></span><span class="line"><span class="ln">19</span><span class="cl">% Glosario Ilustrado de Matematicas Escolares.
+</span></span><span class="line"><span class="ln">20</span><span class="cl">% https://tinyurl.com/5udm2ufy
+</span></span><span class="line"><span class="ln">21</span><span class="cl">%
+</span></span><span class="line"><span class="ln">22</span><span class="cl">% Terms of use:
+</span></span><span class="line"><span class="ln">23</span><span class="cl">% According to TikZ.net
+</span></span><span class="line"><span class="ln">24</span><span class="cl">% https://creativecommons.org/licenses/by-nc-sa/4.0/
+</span></span><span class="line"><span class="ln">25</span><span class="cl">% Your commitment to the terms of use is greatly appreciated.
+</span></span><span class="line"><span class="ln">26</span><span class="cl">%
+</span></span><span class="line"><span class="ln">27</span><span class="cl">\begin{document}
+</span></span><span class="line"><span class="ln">28</span><span class="cl">  \tdplotsetmaincoords{80}{120}
+</span></span><span class="line"><span class="ln">29</span><span class="cl">  %
+</span></span><span class="line"><span class="ln">30</span><span class="cl">  \begin{tikzpicture}[tdplot_main_coords,scale=0.75]
+</span></span><span class="line"><span class="ln">31</span><span class="cl">    % Indicate the components of the vector in rectangular coordinates
+</span></span><span class="line"><span class="ln">32</span><span class="cl">    \pgfmathsetmacro{\ux}{4}
+</span></span><span class="line"><span class="ln">33</span><span class="cl">    \pgfmathsetmacro{\uy}{4}
+</span></span><span class="line"><span class="ln">34</span><span class="cl">    \pgfmathsetmacro{\uz}{3}
+</span></span><span class="line"><span class="ln">35</span><span class="cl">    % Length of each axis
+</span></span><span class="line"><span class="ln">36</span><span class="cl">    \pgfmathsetmacro{\ejex}{\ux+0.5}
+</span></span><span class="line"><span class="ln">37</span><span class="cl">    \pgfmathsetmacro{\ejey}{\uy+0.5}
+</span></span><span class="line"><span class="ln">38</span><span class="cl">    \pgfmathsetmacro{\ejez}{\uz+0.5}
+</span></span><span class="line"><span class="ln">39</span><span class="cl">    \pgfmathsetmacro{\umag}{sqrt(\ux*\ux+\uy*\uy+\uz*\uz)} % Magnitude of vector $\vec{u}$
+</span></span><span class="line"><span class="ln">40</span><span class="cl">    % Compute the angle $\theta$
+</span></span><span class="line"><span class="ln">41</span><span class="cl">    \pgfmathsetmacro{\angthetax}{pi*atan(\uy/\ux)/180}
+</span></span><span class="line"><span class="ln">42</span><span class="cl">    \pgfmathsetmacro{\angthetay}{pi*atan(\ux/\uz)/180}
+</span></span><span class="line"><span class="ln">43</span><span class="cl">    \pgfmathsetmacro{\angthetaz}{pi*atan(\uz/\uy)/180}
+</span></span><span class="line"><span class="ln">44</span><span class="cl">    % Compute the angle $\phi$
+</span></span><span class="line"><span class="ln">45</span><span class="cl">    \pgfmathsetmacro{\angphix}{pi*acos(\ux/\umag)/180}
+</span></span><span class="line"><span class="ln">46</span><span class="cl">    \pgfmathsetmacro{\angphiy}{pi*acos(\uy/\umag)/180}
+</span></span><span class="line"><span class="ln">47</span><span class="cl">    \pgfmathsetmacro{\angphiz}{pi*acos(\uz/\umag)/180}
+</span></span><span class="line"><span class="ln">48</span><span class="cl">    % Compute rho sin(phi) to simplify computations
+</span></span><span class="line"><span class="ln">49</span><span class="cl">    \pgfmathsetmacro{\costz}{cos(\angthetax r)}
+</span></span><span class="line"><span class="ln">50</span><span class="cl">    \pgfmathsetmacro{\sintz}{sin(\angthetax r)}
+</span></span><span class="line"><span class="ln">51</span><span class="cl">    \pgfmathsetmacro{\costy}{cos(\angthetay r)}
+</span></span><span class="line"><span class="ln">52</span><span class="cl">    \pgfmathsetmacro{\sinty}{sin(\angthetay r)}
+</span></span><span class="line"><span class="ln">53</span><span class="cl">    \pgfmathsetmacro{\costx}{cos(\angthetaz r)}
+</span></span><span class="line"><span class="ln">54</span><span class="cl">    \pgfmathsetmacro{\sintx}{sin(\angthetaz r)}
+</span></span><span class="line"><span class="ln">55</span><span class="cl">    % Coordinate axis
+</span></span><span class="line"><span class="ln">56</span><span class="cl">    \draw[thick,-&gt;] (0,0,0) -- (\ejex,0,0) node[below left] {$x$};
+</span></span><span class="line"><span class="ln">57</span><span class="cl">    \draw[thick,-&gt;] (0,0,0) -- (0,\ejey,0) node[right] {$y$};
+</span></span><span class="line"><span class="ln">58</span><span class="cl">    \draw[thick,-&gt;] (0,0,0) -- (0,0,\ejez) node[above] {$z$};
+</span></span><span class="line"><span class="ln">59</span><span class="cl">    % Projections of the components in the axis
+</span></span><span class="line"><span class="ln">60</span><span class="cl">    \draw[gray,very thin,opacity=0.5] (0,0,0) -- (\ux,0,0) -- (\ux,\uy,0) -- (0,\uy,0) -- (0,0,0);	% face on the plane z = 0
+</span></span><span class="line"><span class="ln">61</span><span class="cl">    \draw[gray,very thin,opacity=0.5] (0,0,\uz) -- (\ux,0,\uz) -- (\ux,\uy,\uz) -- (0,\uy,\uz) -- (0,0,\uz);	% face on the plane z = \uz
+</span></span><span class="line"><span class="ln">62</span><span class="cl">    \draw[gray,very thin,opacity=0.5] (0,0,0) -- (0,0,\uz) -- (\ux,0,\uz) -- (\ux,0,0) -- (0,0,0);	% face on the plane y = 0
+</span></span><span class="line"><span class="ln">63</span><span class="cl">    \draw[gray,very thin,opacity=0.5] (0,\uy,0) -- (0,\uy,\uz) -- (\ux,\uy,\uz) -- (\ux,\uy,0) -- (0,\uy,0);	% face on the plane y = \uy
+</span></span><span class="line"><span class="ln">64</span><span class="cl">    \draw[gray,very thin,opacity=0.5] (0,0,0) -- (0,\uy,0) -- (0,\uy,\uz) -- (0,0,\uz) -- (0,0,0); % face on the plane x = 0
+</span></span><span class="line"><span class="ln">65</span><span class="cl">    \draw[gray,very thin,opacity=0.5] (\ux,0,0) -- (\ux,\uy,0) -- (\ux,\uy,\uz) -- (\ux,0,\uz) -- (\ux,0,0); % face on the plane x = \ux
+</span></span><span class="line"><span class="ln">66</span><span class="cl">    % Arc indicating the angle $\alpha$
+</span></span><span class="line"><span class="ln">67</span><span class="cl">    % (angle formed by the vector $\vec{v}$ and the $x$ axis)
+</span></span><span class="line"><span class="ln">68</span><span class="cl">    \draw[red,thick] plot[domain=0:\angphix,smooth,variable=\t] ({cos(\t r)},{sin(\t r)*\costx},{sin(\t r)*\sintx});
+</span></span><span class="line"><span class="ln">69</span><span class="cl">    % Arc indicating the angle $\beta$
+</span></span><span class="line"><span class="ln">70</span><span class="cl">    % (angle formed by the vector $\vec{v}$ and the $y$ axis)
+</span></span><span class="line"><span class="ln">71</span><span class="cl">    \draw[red,thick] plot[domain=0:\angphiy,smooth,variable=\t] ({sin(\t r)*\sinty},{cos(\t r)},{sin(\t r)*\costy});
+</span></span><span class="line"><span class="ln">72</span><span class="cl">    % Arc indicating the angle $\gamma$
+</span></span><span class="line"><span class="ln">73</span><span class="cl">    % (angle formed by the vector $\vec{v}$ and the $z$ axis)
+</span></span><span class="line"><span class="ln">74</span><span class="cl">    \draw[red,thick] plot[domain=0:\angphiz,smooth,variable=\t] ({sin(\t r)*\costz},{sin(\t r)*\sintz},{cos(\t r)});
+</span></span><span class="line"><span class="ln">75</span><span class="cl">    % Vector $\vec{u}$
+</span></span><span class="line"><span class="ln">76</span><span class="cl">    \draw[blue,thick,-&gt;] (0,0,0) -- (\ux,\uy,\uz) node [below right] {$\vec{u}$};
+</span></span><span class="line"><span class="ln">77</span><span class="cl">    % Nodes indicating the direction angles
+</span></span><span class="line"><span class="ln">78</span><span class="cl">    \pgfmathsetmacro{\xa}{1.85*cos(0.5*\angphix r)}
+</span></span><span class="line"><span class="ln">79</span><span class="cl">    \pgfmathsetmacro{\ya}{1.85*sin(0.5*\angphix r)*\costx}
+</span></span><span class="line"><span class="ln">80</span><span class="cl">    \pgfmathsetmacro{\za}{1.85*sin(0.5*\angphiz r)*\sintx}
+</span></span><span class="line"><span class="ln">81</span><span class="cl">    \node[red] at (\xa,\ya,\za) {\footnotesize$\alpha$};
+</span></span><span class="line"><span class="ln">82</span><span class="cl">    %
+</span></span><span class="line"><span class="ln">83</span><span class="cl">    \pgfmathsetmacro{\xb}{1.5*sin(0.5*\angphiy r)*\sinty}
+</span></span><span class="line"><span class="ln">84</span><span class="cl">    \pgfmathsetmacro{\yb}{1.5*cos(0.5*\angphiy r)}
+</span></span><span class="line"><span class="ln">85</span><span class="cl">    \pgfmathsetmacro{\zb}{1.5*sin(0.5*\angphiy r)*\costy}
+</span></span><span class="line"><span class="ln">86</span><span class="cl">    \node[red] at (\xb,\yb,\zb) {\footnotesize$\beta$};
+</span></span><span class="line"><span class="ln">87</span><span class="cl">    %
+</span></span><span class="line"><span class="ln">88</span><span class="cl">    \pgfmathsetmacro{\xc}{1.5*sin(0.5*\angphiz r)*\costz}
+</span></span><span class="line"><span class="ln">89</span><span class="cl">    \pgfmathsetmacro{\yc}{1.5*sin(0.5*\angphiz r)*\sintz}
+</span></span><span class="line"><span class="ln">90</span><span class="cl">    \pgfmathsetmacro{\zc}{1.5*cos(0.5*\angphiz r)}
+</span></span><span class="line"><span class="ln">91</span><span class="cl">    \node[red] at (\xc,\yc,\zc) {\footnotesize$\gamma$};
+</span></span><span class="line"><span class="ln">92</span><span class="cl">    %
+</span></span><span class="line"><span class="ln">93</span><span class="cl">  \end{tikzpicture}
+</span></span><span class="line"><span class="ln">94</span><span class="cl">  %
+</span></span><span class="line"><span class="ln">95</span><span class="cl">\end{document}
+</span></span><span class="line"><span class="ln">96</span><span class="cl">```</span></span></code></pre></div>
+</details>
+
+
+<div class="kroki-img" style="background-color: var(--flexoki-paper)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-31" src="/hugo-bearberry/images/kroki/md5-N/s/RRTQM4PoOqGD8faLpg==.svg">
+</div><h3 id="wavedrom">WaveDrom</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">```kroki {type=wavedrom}
+</span></span><span class="line"><span class="ln">2</span><span class="cl">{ signal: [
+</span></span><span class="line"><span class="ln">3</span><span class="cl">  { name: &#34;clk&#34;,         wave: &#34;p.....|...&#34; },
+</span></span><span class="line"><span class="ln">4</span><span class="cl">  { name: &#34;Data&#34;,        wave: &#34;x.345x|=.x&#34;, data: [&#34;head&#34;, &#34;body&#34;, &#34;tail&#34;, &#34;data&#34;] },
+</span></span><span class="line"><span class="ln">5</span><span class="cl">  { name: &#34;Request&#34;,     wave: &#34;0.1..0|1.0&#34; },
+</span></span><span class="line"><span class="ln">6</span><span class="cl">  {},
+</span></span><span class="line"><span class="ln">7</span><span class="cl">  { name: &#34;Acknowledge&#34;, wave: &#34;1.....|01.&#34; }
+</span></span><span class="line"><span class="ln">8</span><span class="cl">]}
+</span></span><span class="line"><span class="ln">9</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-wavedrom" id="h-rh-cb-kroki-33" src="/hugo-bearberry/images/kroki/md5-Tno2lJbS15XjfdZpmVQGkA==.svg">
+</div><h3 id="wireviz">WireViz</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=wireviz}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">connectors:
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  X1:
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">    type: D-Sub
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">    subtype: female
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    pinlabels: [DCD, RX, TX, DTR, GND, DSR, RTS, CTS, RI]
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">  X2:
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    type: Molex KK 254
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    subtype: female
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    pinlabels: [GND, RX, TX]
+</span></span><span class="line"><span class="ln">11</span><span class="cl">
+</span></span><span class="line"><span class="ln">12</span><span class="cl">cables:
+</span></span><span class="line"><span class="ln">13</span><span class="cl">  W1:
+</span></span><span class="line"><span class="ln">14</span><span class="cl">    gauge: 0.25 mm2
+</span></span><span class="line"><span class="ln">15</span><span class="cl">    length: 0.2
+</span></span><span class="line"><span class="ln">16</span><span class="cl">    color_code: DIN
+</span></span><span class="line"><span class="ln">17</span><span class="cl">    wirecount: 3
+</span></span><span class="line"><span class="ln">18</span><span class="cl">    shield: true
+</span></span><span class="line"><span class="ln">19</span><span class="cl">
+</span></span><span class="line"><span class="ln">20</span><span class="cl">connections:
+</span></span><span class="line"><span class="ln">21</span><span class="cl">  -
+</span></span><span class="line"><span class="ln">22</span><span class="cl">    - X1: [5,2,3]
+</span></span><span class="line"><span class="ln">23</span><span class="cl">    - W1: [1,2,3]
+</span></span><span class="line"><span class="ln">24</span><span class="cl">    - X2: [1,3,2]
+</span></span><span class="line"><span class="ln">25</span><span class="cl">  -
+</span></span><span class="line"><span class="ln">26</span><span class="cl">    - X1: 5
+</span></span><span class="line"><span class="ln">27</span><span class="cl">    - W1: s
+</span></span><span class="line"><span class="ln">28</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-300)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-wireviz" id="h-rh-cb-kroki-35" src="/hugo-bearberry/images/kroki/md5-VQZWJwCLLm44Z45qRda77A==.svg">
+</div><h3 id="more-examples">More Examples</h3>
+<p>Go to the <a href="https://kroki.io/examples.html">Kroki examples</a> page.</p>
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1">
