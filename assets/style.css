@@ -158,6 +158,7 @@ img {
 }
 
 code {
+  font-family: JetBrainsMono Nerd Font, Hack NF;
   padding: 2px 5px;
   color: var(--flexoki-100);
   background-color: var(--flexoki-850);
