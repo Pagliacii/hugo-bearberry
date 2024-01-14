@@ -31,6 +31,7 @@ echo 'theme = "hugo-bearberry"' >> config.toml
 - Show the update date, words and reading time in the post page.
 - Heading prefix with "#".
 - Enable [katex](https://katex.org/) to render math expressions by including `math = true` in a post's [front matter](https://gohugo.io/content-management/front-matter/).
+  - You can choose the [mathjax](https://www.mathjax.org/) as the renderer by including `mathjax = true`.
 - Use [giscus](https://giscus.app/) as the comment system.
 - Use [mermaid.js](https://mermaid.js.org/) to draw diagrams.
 - Add copy button and language name for code blocks.
