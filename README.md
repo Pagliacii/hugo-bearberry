@@ -55,11 +55,6 @@ defaultContentLanguage = "en"
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
 
-# Your name. For more information on why this must be a list, see
-# https://discourse.gohugo.io/t/site-author-usage/31459/8
-[author]
-  name = "Jason Huang"
-
 # Setup syntax highlighting without inline styles. For more information about
 # why you'd want to avoid inline styles, see
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src#unsafe_inline_styles
@@ -134,6 +129,18 @@ enableRobotsTXT = true
   # `generateSocialCard` to false, you can prevent this behavior. For more
   # information see layouts/partials/seo_tags.html
   generateSocialCard = true
+
+  # Social media. Delete any item you aren't using to make sure it won't show up
+  # in your website's metadata.
+  [params.social]
+    twitter = "example" # Twitter handle (without '@')
+    facebook_admin = "0000000000" # Facebook Page Admin ID
+
+  # Author metadata. This is mostly used for the RSS feed of your site, but the
+  # email is also added to the footer of each post
+  [params.author]
+    name = "Jason Huang" # Your name as shown in the RSS feed metadata
+    email = "me@example.com" # Added to the footer so readers can reply to posts
 
   # For information about giscus, see https://giscus.app/
   [params.giscus]

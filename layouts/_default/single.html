@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ if not .Params.menu }}
 <h1>{{ .Title }}</h1>
-<p style="color: gray; font-size: 0.9rem">
+<p class="byline" style="color: gray; font-size: 0.9rem">
   Published:
   {{- $dateFormat := default "2006-01-02 15:04:05" .Site.Params.pageDateFormat }}
   <time datetime='{{ .Date.Format $dateFormat }}' pubdate>
