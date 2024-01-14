@@ -155,13 +155,6 @@ enableRobotsTXT = true
     # lang = "en"
     # theme = "preferred_color_scheme"
 
-# Social media. Delete any item you aren't using to make sure it won't show up
-# in your website's metadata.
-[social]
-  email = "me@example.com" # Added to the footer so readers can reply to posts
-  twitter = "example" # Twitter handle (without '@')
-  facebook_admin = "0000000000" # Facebook Page Admin ID
-
 # Use Hugo cache to optimize performance in a CI/CD environment. For more information see links below:
 # https://gohugo.io/getting-started/configuration/#configure-file-caches
 # https://www.veriphor.com/articles/diagrams/#performance
