@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>shortcodes on Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/tags/shortcodes/</link><description>Recent content in shortcodes on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><copyright>[Jason Huang](https://github.com/Pagliacii) © 2023</copyright><lastBuildDate>Sun, 29 Oct 2023 17:09:08 +0800</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/tags/shortcodes/index.xml" rel="self" type="application/rss+xml"/><item><title>More Shortcodes</title><link>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</link><pubDate>Sun, 29 Oct 2023 17:09:08 +0800</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</guid><description>This is a page with more custom shortcodes.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>shortcodes on Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/tags/shortcodes/</link><description>Recent content in shortcodes on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2023</copyright><lastBuildDate>Sun, 29 Oct 2023 17:09:08 +0800</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/tags/shortcodes/index.xml" rel="self" type="application/rss+xml"/><item><title>More Shortcodes</title><link>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</link><pubDate>Sun, 29 Oct 2023 17:09:08 +0800</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</guid><description>This is a page with more custom shortcodes.
 Alerts Note alert 1{{&amp;lt; note &amp;gt;}} 2Highlights information that users should take into account, even when skimming. 3{{&amp;lt; /note &amp;gt;}} Note Highlights information that users should take into account, even when skimming.
-Important alert 1{{&amp;lt; important &amp;gt;}} 2Crucial information necessary for users to succeed. 3{{&amp;lt; /important &amp;gt;}} Important Crucial information necessary for users to succeed.
-Warning alert 1{{&amp;lt; warning &amp;gt;}} 2Critical content demanding immediate user attention due to potential risks.</description><content:encoded><![CDATA[<p>This is a page with more custom shortcodes.</p>
+Tip alert 1{{&amp;lt; tip &amp;gt;}} 2Optional information to help a user be more successful. 3{{&amp;lt; /tip &amp;gt;}} Tip Optional information to help a user be more successful.
+Important alert 1{{&amp;lt; important &amp;gt;}} 2Crucial information necessary for users to succeed.</description><content:encoded><![CDATA[<p>This is a page with more custom shortcodes.</p>
 <h2 id="alerts">Alerts</h2>
 <h3 id="note-alert">Note alert</h3>
 
@@ -21,6 +21,26 @@ Warning alert 1{{&amp;lt; warning &amp;gt;}} 2Critical content demanding immedia
     </span>
   </p>
   <p class="alert-text">Highlights information that users should take into account, even when skimming.</p>
+</div>
+
+<h3 id="tip-alert">Tip alert</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; tip &gt;}}
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Optional information to help a user be more successful.
+</span></span><span class="line"><span class="ln">3</span><span class="cl">{{&lt; /tip &gt;}}</span></span></code></pre></div><div class="alert alert-tip">
+  <p class="alert-title">
+    <span class="alert-icon alert-tip-icon">
+      <svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path>
+      </svg>
+      Tip
+    </span>
+   </p>
+   <p class="alert-text">Optional information to help a user be more successful.</p>
 </div>
 
 <h3 id="important-alert">Important alert</h3>
@@ -61,6 +81,26 @@ Warning alert 1{{&amp;lt; warning &amp;gt;}} 2Critical content demanding immedia
     </span>
    </p>
    <p class="alert-text">Critical content demanding immediate user attention due to potential risks.</p>
+</div>
+
+<h3 id="caution-alert">Caution alert</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; caution &gt;}}
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Negative potential consequences of an action.
+</span></span><span class="line"><span class="ln">3</span><span class="cl">{{&lt; /caution &gt;}}</span></span></code></pre></div><div class="alert alert-caution">
+  <p class="alert-title">
+    <span class="alert-icon alert-caution-icon">
+      <svg class="octicon octicon-stop mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
+      </svg>
+      Caution
+    </span>
+   </p>
+   <p class="alert-text">Negative potential consequences of an action.</p>
 </div>
 
 <h2 id="details">Details</h2>
@@ -113,7 +153,7 @@ Warning alert 1{{&amp;lt; warning &amp;gt;}} 2Critical content demanding immedia
 
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; at name=Hugo type=github id=gohugoio &gt;}}
-</span></span><span class="line"><span class="ln">2</span><span class="cl">{{&lt; at name=&#34;GoHugo.io&#34; type=twitter id=gohugoio &gt;}}</span></span></code></pre></div>]]></content:encoded></item><item><title>Rich Content</title><link>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</guid><description>Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</description><content:encoded><![CDATA[<p>Hugo ships with several <a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes</a> for rich content, along with a <a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config</a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</p>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">{{&lt; at name=&#34;GoHugo.io&#34; type=twitter id=gohugoio &gt;}}</span></span></code></pre></div>]]></content:encoded></item><item><title>Rich Content</title><link>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</guid><description>&lt;p>Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes&lt;/a> for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config&lt;/a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p></description><content:encoded><![CDATA[<p>Hugo ships with several <a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes</a> for rich content, along with a <a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config</a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</p>
 <hr>
 <h2 id="youtube-privacy-enhanced-shortcode">YouTube Privacy Enhanced Shortcode</h2>
 
@@ -126,6 +166,7 @@ Warning alert 1{{&amp;lt; warning &amp;gt;}} 2Critical content demanding immedia
 <h2 id="twitter-simple-shortcode">Twitter Simple Shortcode</h2>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”<br>— Jan Tschichold <a href="https://t.co/gcv7SrhvJb">pic.twitter.com/gcv7SrhvJb</a></p>&mdash; Design Reviewed | Graphic Design History (@DesignReviewed) <a href="https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw">January 17, 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 <br>
 <hr>

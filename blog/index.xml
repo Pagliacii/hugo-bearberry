@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Blog on Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/blog/</link><description>Recent content in Blog on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><copyright>[Jason Huang](https://github.com/Pagliacii) © 2023</copyright><atom:link href="https://pagliacii.github.io/hugo-bearberry/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>More Shortcodes</title><link>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</link><pubDate>Sun, 29 Oct 2023 17:09:08 +0800</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</guid><description>This is a page with more custom shortcodes.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Blog on Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/blog/</link><description>Recent content in Blog on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2023</copyright><atom:link href="https://pagliacii.github.io/hugo-bearberry/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>More Shortcodes</title><link>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</link><pubDate>Sun, 29 Oct 2023 17:09:08 +0800</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</guid><description>This is a page with more custom shortcodes.
 Alerts Note alert 1{{&amp;lt; note &amp;gt;}} 2Highlights information that users should take into account, even when skimming. 3{{&amp;lt; /note &amp;gt;}} Note Highlights information that users should take into account, even when skimming.
-Important alert 1{{&amp;lt; important &amp;gt;}} 2Crucial information necessary for users to succeed. 3{{&amp;lt; /important &amp;gt;}} Important Crucial information necessary for users to succeed.
-Warning alert 1{{&amp;lt; warning &amp;gt;}} 2Critical content demanding immediate user attention due to potential risks.</description><content:encoded><![CDATA[<p>This is a page with more custom shortcodes.</p>
+Tip alert 1{{&amp;lt; tip &amp;gt;}} 2Optional information to help a user be more successful. 3{{&amp;lt; /tip &amp;gt;}} Tip Optional information to help a user be more successful.
+Important alert 1{{&amp;lt; important &amp;gt;}} 2Crucial information necessary for users to succeed.</description><content:encoded><![CDATA[<p>This is a page with more custom shortcodes.</p>
 <h2 id="alerts">Alerts</h2>
 <h3 id="note-alert">Note alert</h3>
 
@@ -21,6 +21,26 @@ Warning alert 1{{&amp;lt; warning &amp;gt;}} 2Critical content demanding immedia
     </span>
   </p>
   <p class="alert-text">Highlights information that users should take into account, even when skimming.</p>
+</div>
+
+<h3 id="tip-alert">Tip alert</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; tip &gt;}}
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Optional information to help a user be more successful.
+</span></span><span class="line"><span class="ln">3</span><span class="cl">{{&lt; /tip &gt;}}</span></span></code></pre></div><div class="alert alert-tip">
+  <p class="alert-title">
+    <span class="alert-icon alert-tip-icon">
+      <svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path>
+      </svg>
+      Tip
+    </span>
+   </p>
+   <p class="alert-text">Optional information to help a user be more successful.</p>
 </div>
 
 <h3 id="important-alert">Important alert</h3>
@@ -61,6 +81,26 @@ Warning alert 1{{&amp;lt; warning &amp;gt;}} 2Critical content demanding immedia
     </span>
    </p>
    <p class="alert-text">Critical content demanding immediate user attention due to potential risks.</p>
+</div>
+
+<h3 id="caution-alert">Caution alert</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; caution &gt;}}
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Negative potential consequences of an action.
+</span></span><span class="line"><span class="ln">3</span><span class="cl">{{&lt; /caution &gt;}}</span></span></code></pre></div><div class="alert alert-caution">
+  <p class="alert-title">
+    <span class="alert-icon alert-caution-icon">
+      <svg class="octicon octicon-stop mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
+      </svg>
+      Caution
+    </span>
+   </p>
+   <p class="alert-text">Negative potential consequences of an action.</p>
 </div>
 
 <h2 id="details">Details</h2>
@@ -113,7 +153,7 @@ Warning alert 1{{&amp;lt; warning &amp;gt;}} 2Critical content demanding immedia
 
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; at name=Hugo type=github id=gohugoio &gt;}}
-</span></span><span class="line"><span class="ln">2</span><span class="cl">{{&lt; at name=&#34;GoHugo.io&#34; type=twitter id=gohugoio &gt;}}</span></span></code></pre></div>]]></content:encoded></item><item><title>Kroki diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</link><pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</guid><description>Use a fenced code block to embed an SVG image of a diagram in your Hugo site using the free Kroki service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.1
+</span></span><span class="line"><span class="ln">2</span><span class="cl">{{&lt; at name=&#34;GoHugo.io&#34; type=twitter id=gohugoio &gt;}}</span></span></code></pre></div>]]></content:encoded></item><item><title>Kroki diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</link><pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</guid><description>Use a fenced code block to embed an SVG image of a diagram in your Hugo site using the free Kroki service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.1
 Thanks for @jmooring and Kroki.
 Performance According to @jmooring&amp;rsquo;s blog, you could edit your site configuration to store getresource cache to optimize performance.
 1[caches] 2 [caches.getresource] 3 dir = &amp;#34;:resourceDir/_gen&amp;#34; 4 maxAge = -1And don&amp;rsquo;t forget to check the resources directory into source control.</description><content:encoded><![CDATA[<blockquote>
@@ -213,10 +253,19 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">10</span><span class="cl">  John--&gt;Alice: Great!
 </span></span><span class="line"><span class="ln">11</span><span class="cl">  John-&gt;Bob: How about you?
 </span></span><span class="line"><span class="ln">12</span><span class="cl">  Bob--&gt;John: Jolly good!
-</span></span><span class="line"><span class="ln">13</span><span class="cl">```</span></span></code></pre></div>
-<div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-mermaid" id="h-rh-cb-kroki-4" src="/hugo-bearberry/images/kroki/md5-WEaQ4KiRPF5jj58jt9GrUg==.svg">
-</div><h3 id="plantuml">PlantUML</h3>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">```</span></span></code></pre></div><div class="alert alert-caution">
+  <p class="alert-title">
+    <span class="alert-icon alert-caution-icon">
+      <svg class="octicon octicon-stop mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
+      </svg>
+      Caution
+    </span>
+   </p>
+   <p class="alert-text">Disable the mermaid rendering because <a href="https://kroki.io">kroki.io</a> seems to have a <a href="https://kroki.zulipchat.com/#narrow/stream/232085-users/topic/.E2.9C.94.20kroki.2Eio.20returns.20400.20on.20Mermaid.20diagrams">bug</a>.</p>
+</div>
+
+<h3 id="plantuml">PlantUML</h3>
 
 
 
@@ -243,7 +292,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">19</span><span class="cl">@endmindmap
 </span></span><span class="line"><span class="ln">20</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-300)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-plantuml" id="h-rh-cb-kroki-6" src="/hugo-bearberry/images/kroki/md5-2ZVn753CxT8GZ86NR0f2BQ==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-plantuml" id="h-rh-cb-kroki-5" src="/hugo-bearberry/images/kroki/md5-2ZVn753CxT8GZ86NR0f2BQ==.svg">
 </div><h3 id="excalidraw">Excalidraw</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -953,7 +1002,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-300)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-excalidraw" id="h-rh-cb-kroki-7" src="/hugo-bearberry/images/kroki/md5-NZBd00bcK3eiuNsaLYgbRg==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-excalidraw" id="h-rh-cb-kroki-6" src="/hugo-bearberry/images/kroki/md5-NZBd00bcK3eiuNsaLYgbRg==.svg">
 </div><h3 id="blockdiag">BlockDiag</h3>
 
 
@@ -971,7 +1020,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl">}
 </span></span><span class="line"><span class="ln">10</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-300)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-blockdiag" id="h-rh-cb-kroki-9" src="/hugo-bearberry/images/kroki/md5-gd4TAzIyVKA+/I5idJ87Sg==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-blockdiag" id="h-rh-cb-kroki-8" src="/hugo-bearberry/images/kroki/md5-gd4TAzIyVKA+/I5idJ87Sg==.svg">
 </div><h3 id="packetdiag">PacketDiag</h3>
 
 
@@ -1003,7 +1052,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">23</span><span class="cl">}
 </span></span><span class="line"><span class="ln">24</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color:#878580">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-packetdiag" id="h-rh-cb-kroki-11" src="/hugo-bearberry/images/kroki/md5-ODAPKBQzaf3JwnasnRJx4Q==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-packetdiag" id="h-rh-cb-kroki-10" src="/hugo-bearberry/images/kroki/md5-ODAPKBQzaf3JwnasnRJx4Q==.svg">
 </div><h3 id="c4-with-plantuml">C4 with PlantUML</h3>
 
 
@@ -1027,7 +1076,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">15</span><span class="cl">Rel(banking_system, mainframe, &#34;Uses&#34;)
 </span></span><span class="line"><span class="ln">16</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-300)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-c4plantuml" id="h-rh-cb-kroki-13" src="/hugo-bearberry/images/kroki/md5-ed68oz546E6ok9x+UxLrdg==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-c4plantuml" id="h-rh-cb-kroki-12" src="/hugo-bearberry/images/kroki/md5-ed68oz546E6ok9x+UxLrdg==.svg">
 </div><h3 id="bytefield">Bytefield</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1107,7 +1156,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-150)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-bytefield" id="h-rh-cb-kroki-14" src="/hugo-bearberry/images/kroki/md5-nTXuBj54sDZ+P4KqyBPDnw==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-bytefield" id="h-rh-cb-kroki-13" src="/hugo-bearberry/images/kroki/md5-nTXuBj54sDZ+P4KqyBPDnw==.svg">
 </div><h3 id="seqdiag">SeqDiag</h3>
 
 
@@ -1125,7 +1174,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl">}
 </span></span><span class="line"><span class="ln">10</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-300)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-seqdiag" id="h-rh-cb-kroki-16" src="/hugo-bearberry/images/kroki/md5-7hVnc9gBukTuRa6xNMPk6Q==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-seqdiag" id="h-rh-cb-kroki-15" src="/hugo-bearberry/images/kroki/md5-7hVnc9gBukTuRa6xNMPk6Q==.svg">
 </div><h3 id="actdiag">ActDiag</h3>
 
 
@@ -1147,7 +1196,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">13</span><span class="cl">}
 </span></span><span class="line"><span class="ln">14</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-300)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-actdiag" id="h-rh-cb-kroki-18" src="/hugo-bearberry/images/kroki/md5-PhJgLd5qNs6RGla6cLwa1g==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-actdiag" id="h-rh-cb-kroki-17" src="/hugo-bearberry/images/kroki/md5-PhJgLd5qNs6RGla6cLwa1g==.svg">
 </div><h3 id="nwdiag">NwDiag</h3>
 
 
@@ -1173,7 +1222,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">17</span><span class="cl">}
 </span></span><span class="line"><span class="ln">18</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-300)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-nwdiag" id="h-rh-cb-kroki-20" src="/hugo-bearberry/images/kroki/md5-naYmLv4n/+S6+S7wIYyZEg==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-nwdiag" id="h-rh-cb-kroki-19" src="/hugo-bearberry/images/kroki/md5-naYmLv4n/+S6+S7wIYyZEg==.svg">
 </div><h3 id="graphviz">GraphViz</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1292,7 +1341,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-300)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-graphviz" id="h-rh-cb-kroki-21" src="/hugo-bearberry/images/kroki/md5-RvwEIGFjt/vQfaFvyngt/Q==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-graphviz" id="h-rh-cb-kroki-20" src="/hugo-bearberry/images/kroki/md5-RvwEIGFjt/vQfaFvyngt/Q==.svg">
 </div><h3 id="pikchr">Pikchr</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1367,7 +1416,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-300)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-pikchr" id="h-rh-cb-kroki-22" src="/hugo-bearberry/images/kroki/md5-elFIBQg8zBTsieq14SjcjA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-pikchr" id="h-rh-cb-kroki-21" src="/hugo-bearberry/images/kroki/md5-elFIBQg8zBTsieq14SjcjA==.svg">
 </div><h3 id="erd">Erd</h3>
 
 
@@ -1390,7 +1439,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">14</span><span class="cl">Person *--1 Location
 </span></span><span class="line"><span class="ln">15</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-300)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-erd" id="h-rh-cb-kroki-24" src="/hugo-bearberry/images/kroki/md5-GI8vlUGkpgQrHOxHOwUcKg==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-erd" id="h-rh-cb-kroki-23" src="/hugo-bearberry/images/kroki/md5-GI8vlUGkpgQrHOxHOwUcKg==.svg">
 </div><h3 id="vega">Vega</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1482,7 +1531,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-Y7zYbyoGmMWvKeCGBQFGEw==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-24" src="/hugo-bearberry/images/kroki/md5-Bx4WF8R+uVsykzMIp8FtLw==.svg">
 </div><h3 id="vega-lite">Vega-Lite</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1602,7 +1651,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-300)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vegalite" id="h-rh-cb-kroki-26" src="/hugo-bearberry/images/kroki/md5-OasvGN3bSjQQE+apq4s0kQ==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vegalite" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-OasvGN3bSjQQE+apq4s0kQ==.svg">
 </div><h3 id="ditaa">Ditaa</h3>
 
 
@@ -1636,7 +1685,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">25</span><span class="cl">                                     +-------+
 </span></span><span class="line"><span class="ln">26</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-300)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-ditaa" id="h-rh-cb-kroki-28" src="/hugo-bearberry/images/kroki/md5-iDom6/ZwIJSt6rlvQXdvNA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-ditaa" id="h-rh-cb-kroki-27" src="/hugo-bearberry/images/kroki/md5-iDom6/ZwIJSt6rlvQXdvNA==.svg">
 </div><h3 id="dbml">DBML</h3>
 
 
@@ -1669,7 +1718,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">24</span><span class="cl">Ref: posts.user_id &gt; users.id // many-to-one
 </span></span><span class="line"><span class="ln">25</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-300)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-dbml" id="h-rh-cb-kroki-30" src="/hugo-bearberry/images/kroki/md5-tvhGJpkIayCFUONw4xlxcA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-dbml" id="h-rh-cb-kroki-29" src="/hugo-bearberry/images/kroki/md5-tvhGJpkIayCFUONw4xlxcA==.svg">
 </div><h3 id="tikz">TikZ</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1778,7 +1827,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-31" src="/hugo-bearberry/images/kroki/md5-VSuHvCXxgtY2bRpX8HJgPQ==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-30" src="/hugo-bearberry/images/kroki/md5-uRxAQF6z7ATP2xNDnTRNuQ==.svg">
 </div><h3 id="wavedrom">WaveDrom</h3>
 
 
@@ -1795,7 +1844,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">8</span><span class="cl">]}
 </span></span><span class="line"><span class="ln">9</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-300)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-wavedrom" id="h-rh-cb-kroki-33" src="/hugo-bearberry/images/kroki/md5-Tno2lJbS15XjfdZpmVQGkA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-wavedrom" id="h-rh-cb-kroki-32" src="/hugo-bearberry/images/kroki/md5-Tno2lJbS15XjfdZpmVQGkA==.svg">
 </div><h3 id="wireviz">WireViz</h3>
 
 
@@ -1831,7 +1880,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </span></span><span class="line"><span class="ln">27</span><span class="cl">    - W1: s
 </span></span><span class="line"><span class="ln">28</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-300)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-wireviz" id="h-rh-cb-kroki-35" src="/hugo-bearberry/images/kroki/md5-VQZWJwCLLm44Z45qRda77A==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-wireviz" id="h-rh-cb-kroki-34" src="/hugo-bearberry/images/kroki/md5-VQZWJwCLLm44Z45qRda77A==.svg">
 </div><h3 id="more-examples">More Examples</h3>
 <p>Go to the <a href="https://kroki.io/examples.html">Kroki examples</a> page.</p>
 <div class="footnotes" role="doc-endnotes">
@@ -1842,7 +1891,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 </li>
 </ol>
 </div>
-]]></content:encoded></item><item><title>Programming Languages</title><link>https://pagliacii.github.io/hugo-bearberry/blog/programming-languages/</link><pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/programming-languages/</guid><description>Python 1def hello_world(): 2 print(&amp;#34;Hello, world!&amp;#34;)C 1#include &amp;lt;stdio.h&amp;gt; 2 3int main() { 4 printf(&amp;#34;Hello, world!\n&amp;#34;); 5 return 0; 6}C++ 1#include &amp;lt;iostream&amp;gt; 2 3int main() { 4 std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world!&amp;#34; &amp;lt;&amp;lt; std::endl; 5 return 0; 6}Go 1package main 2 3import &amp;#34;fmt&amp;#34; 4 5func main() { 6 fmt.Println(&amp;#34;Hello, world!&amp;#34;) 7}JavaScript 1console.log(&amp;#34;Hello, world!&amp;#34;);Rust 1fn main() { 2 println!(&amp;#34;Hello, world!&amp;#34;); 3}</description><content:encoded><![CDATA[<h2 id="python">Python</h2>
+]]></content:encoded></item><item><title>Programming Languages</title><link>https://pagliacii.github.io/hugo-bearberry/blog/programming-languages/</link><pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/programming-languages/</guid><description>Python 1def hello_world(): 2 print(&amp;#34;Hello, world!&amp;#34;)C 1#include &amp;lt;stdio.h&amp;gt; 2 3int main() { 4 printf(&amp;#34;Hello, world!\n&amp;#34;); 5 return 0; 6}C++ 1#include &amp;lt;iostream&amp;gt; 2 3int main() { 4 std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world!&amp;#34; &amp;lt;&amp;lt; std::endl; 5 return 0; 6}Go 1package main 2 3import &amp;#34;fmt&amp;#34; 4 5func main() { 6 fmt.Println(&amp;#34;Hello, world!&amp;#34;) 7}JavaScript 1console.log(&amp;#34;Hello, world!&amp;#34;);Rust 1fn main() { 2 println!(&amp;#34;Hello, world!&amp;#34;); 3}</description><content:encoded><![CDATA[<h2 id="python">Python</h2>
 
 
 
@@ -1897,7 +1946,7 @@ Performance According to @jmooring&amp;rsquo;s blog, you could edit your site co
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Hello, world!&#34;</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>]]></content:encoded></item><item><title>Diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</link><pubDate>Sat, 21 Oct 2023 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</guid><description>This article is a demo of diagrams, using the mermaid and goat tools.</description><content:encoded><![CDATA[<p>This article is a demo of diagrams, using the <a href="https://mermaid.js.org">mermaid</a> and <a href="https://github.com/bep/goat">goat</a> tools.</p>
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>]]></content:encoded></item><item><title>Diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</link><pubDate>Sat, 21 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</guid><description>&lt;p>This article is a demo of diagrams, using the &lt;a href="https://mermaid.js.org">mermaid&lt;/a> and &lt;a href="https://github.com/bep/goat">goat&lt;/a> tools.&lt;/p></description><content:encoded><![CDATA[<p>This article is a demo of diagrams, using the <a href="https://mermaid.js.org">mermaid</a> and <a href="https://github.com/bep/goat">goat</a> tools.</p>
 <h2 id="mermaid">Mermaid</h2>
 <h3 id="sequence-diagram-example">Sequence Diagram Example</h3>
 
@@ -2648,7 +2697,7 @@ gantt
 
     </svg>
   
-</div>]]></content:encoded></item><item><title>Markdown Syntax Guide</title><link>https://pagliacii.github.io/hugo-bearberry/blog/markdown-syntax/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/markdown-syntax/</guid><description>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</description><content:encoded><![CDATA[<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
+</div>]]></content:encoded></item><item><title>Markdown Syntax Guide</title><link>https://pagliacii.github.io/hugo-bearberry/blog/markdown-syntax/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/markdown-syntax/</guid><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p></description><content:encoded><![CDATA[<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
 <h2 id="headings">Headings</h2>
 <p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
 <h1 id="h1">H1</h1>
@@ -2809,7 +2858,7 @@ gantt
 <p>The above quote is excerpted from Rob Pike&rsquo;s <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk</a> during Gopherfest, November 18, 2015.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</div>]]></content:encoded></item><item><title>Rich Content</title><link>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</guid><description>Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</description><content:encoded><![CDATA[<p>Hugo ships with several <a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes</a> for rich content, along with a <a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config</a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</p>
+</div>]]></content:encoded></item><item><title>Rich Content</title><link>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</guid><description>&lt;p>Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes&lt;/a> for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config&lt;/a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p></description><content:encoded><![CDATA[<p>Hugo ships with several <a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes</a> for rich content, along with a <a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config</a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</p>
 <hr>
 <h2 id="youtube-privacy-enhanced-shortcode">YouTube Privacy Enhanced Shortcode</h2>
 
@@ -2822,6 +2871,7 @@ gantt
 <h2 id="twitter-simple-shortcode">Twitter Simple Shortcode</h2>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”<br>— Jan Tschichold <a href="https://t.co/gcv7SrhvJb">pic.twitter.com/gcv7SrhvJb</a></p>&mdash; Design Reviewed | Graphic Design History (@DesignReviewed) <a href="https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw">January 17, 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 <br>
 <hr>
@@ -2864,7 +2914,7 @@ gantt
 
 
 <img src="https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640" srcset="https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640 1x, https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640 2x" alt="Sing Jan Swing - Kinetic Type">
-<div class="play"><svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61"><circle cx="30.5" cy="30.5" r="30.5" opacity=".8" fill="#000"></circle><path d="M25.3 19.2c-2.1-1.2-3.8-.2-3.8 2.2v18.1c0 2.4 1.7 3.4 3.8 2.2l16.6-9.1c2.1-1.2 2.1-3.2 0-4.4l-16.6-9z" fill="#fff"></path></svg></div></a></div>]]></content:encoded></item><item><title>Placeholder Text</title><link>https://pagliacii.github.io/hugo-bearberry/blog/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/placeholder-text/</guid><description>Lorem est tota propiore conpellat pectoribus de pectora summo.</description><content:encoded><![CDATA[<p>Lorem est tota propiore conpellat pectoribus de pectora summo.</p>
+<div class="play"><svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61"><circle cx="30.5" cy="30.5" r="30.5" opacity=".8" fill="#000"></circle><path d="M25.3 19.2c-2.1-1.2-3.8-.2-3.8 2.2v18.1c0 2.4 1.7 3.4 3.8 2.2l16.6-9.1c2.1-1.2 2.1-3.2 0-4.4l-16.6-9z" fill="#fff"></path></svg></div></a></div>]]></content:encoded></item><item><title>Placeholder Text</title><link>https://pagliacii.github.io/hugo-bearberry/blog/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/placeholder-text/</guid><description>&lt;p>Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p></description><content:encoded><![CDATA[<p>Lorem est tota propiore conpellat pectoribus de pectora summo.</p>
 <p>Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.</p>
 <ol>
 <li>Exierant elisi ambit vivere dedere</li>
@@ -2886,7 +2936,7 @@ gantt
 <h2 id="mane-refeci-capiebant-unda-mulcebat">Mane refeci capiebant unda mulcebat</h2>
 <p>Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. <strong>Faces illo pepulere</strong> tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.</p>
 <p>Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.</p>
-<p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel <strong>mitis temploque</strong> vocatus, inque alis, <em>oculos nomen</em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides <strong>parte</strong>.</p>]]></content:encoded></item><item><title>Math Typesetting</title><link>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting/</link><pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting/</guid><description>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</description><content:encoded><![CDATA[<p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
+<p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel <strong>mitis temploque</strong> vocatus, inque alis, <em>oculos nomen</em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides <strong>parte</strong>.</p>]]></content:encoded></item><item><title>Math Typesetting</title><link>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting/</link><pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting/</guid><description>&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p></description><content:encoded><![CDATA[<p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
 <p>In this example we will be using <a href="https://katex.org/">KaTeX</a></p>
 <ul>
 <li>Create a partial under <code>/layouts/partials/math.html</code></li>
@@ -2911,7 +2961,7 @@ gantt
 <p>Block math:
 $$
 \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$</p>]]></content:encoded></item><item><title>Emoji Support</title><link>https://pagliacii.github.io/hugo-bearberry/blog/emoji-support/</link><pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><author>Hugo Authors</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/emoji-support/</guid><description>Emoji can be enabled in a Hugo project in a number of ways.</description><content:encoded><![CDATA[<p>Emoji can be enabled in a Hugo project in a number of ways.</p>
+$$</p>]]></content:encoded></item><item><title>Emoji Support</title><link>https://pagliacii.github.io/hugo-bearberry/blog/emoji-support/</link><pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/emoji-support/</guid><description>&lt;p>Emoji can be enabled in a Hugo project in a number of ways.&lt;/p></description><content:encoded><![CDATA[<p>Emoji can be enabled in a Hugo project in a number of ways.</p>
 <p>The <a href="https://gohugo.io/functions/emojify/"><code>emojify</code></a> function can be called directly in templates or <a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes</a>.</p>
 <p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site&rsquo;s <a href="https://gohugo.io/getting-started/configuration/">configuration</a> and then you can type emoji shorthand codes directly in content files; e.g.</p>
 <p><span class="nowrap"><span class="emojify">🙈</span> <code>:see_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙉</span> <code>:hear_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙊</span> <code>:speak_no_evil:</code></span></p>
