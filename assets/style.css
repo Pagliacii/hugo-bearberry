@@ -438,6 +438,30 @@ p.alert-text {
   color: var(--flexoki-light-yellow);
 }
 
+.alert-tip {
+  border-left-color: var(--flexoki-light-green);
+}
+
+.alert-tip > .alert-title {
+  background-color: #879A3940;
+}
+
+.alert-tip-icon {
+  color: var(--flexoki-light-green);
+}
+
+.alert-caution {
+  border-left-color: var(--flexoki-light-red);
+}
+
+.alert-caution > .alert-title {
+  background-color: #D14D4140;
+}
+
+.alert-caution-icon {
+  color: var(--flexoki-light-red);
+}
+
 .quote {
   margin: 0.5em 0;
   background-color: rgba(64, 62, 60, 0.4);

@@ -26,6 +26,18 @@ Highlights information that users should take into account, even when skimming.
 Highlights information that users should take into account, even when skimming.
 {{< /note >}}
 
+### Tip alert
+
+```text
+{{</* tip >}}
+Optional information to help a user be more successful.
+{{< /tip */>}}
+```
+
+{{< tip >}}
+Optional information to help a user be more successful.
+{{< /tip >}}
+
 ### Important alert
 
 ```text
@@ -49,6 +61,18 @@ Critical content demanding immediate user attention due to potential risks.
 {{< warning >}}
 Critical content demanding immediate user attention due to potential risks.
 {{< /warning >}}
+
+### Caution alert
+
+```text
+{{</* caution >}}
+Negative potential consequences of an action.
+{{< /caution */>}}
+```
+
+{{< caution >}}
+Negative potential consequences of an action.
+{{< /caution >}}
 
 ## Details
 
