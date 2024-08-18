@@ -45,51 +45,68 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 strong,
 b {
   color: var(--flexoki-light-cyan);
 }
 
 content h1:not(.tag)::before {
-  content: "# ";
+  content: "◉ ";
+}
+
+content h1 {
+  color: var(--flexoki-light-red);
+  border-bottom: 1px solid var(--flexoki-dark-green);
 }
 
 content h2:not(.tag)::before {
-  content: "## ";
-}
-
-content h3:not(.tag)::before {
-  content: "### ";
-}
-
-content h4:not(.tag)::before {
-  content: "#### ";
-}
-
-content h5:not(.tag)::before {
-  content: "##### ";
-}
-
-content h6:not(.tag)::before {
-  content: "###### ";
-}
-
-content h1:not(.tag)::before,
-content h2:not(.tag)::before,
-content h3:not(.tag)::before,
-content h4:not(.tag)::before,
-content h5:not(.tag)::before,
-content h6:not(.tag)::before {
-  color: var(--flexoki-light-blue);
+  content: "◯ ";
+  display: inline-block;
+  margin-left: -0.15em;
+  margin-right: 0.25em;
+  transform: scale(0.75);
 }
 
 content h2 {
-  border-bottom: 1px solid var(--flexoki-light-blue);
+  color: var(--flexoki-light-orange);
+  border-bottom: 1px solid var(--flexoki-dark-cyan);
+  font-size: 135%;
+}
+
+content h3:not(.tag)::before {
+  content: "◆ ";
+}
+
+content h3 {
+  color: var(--flexoki-light-yellow);
+  border-bottom: 1px solid var(--flexoki-dark-orange);
+}
+
+content h4:not(.tag)::before {
+  content: "◇ ";
+}
+
+content h4 {
+  color: var(--flexoki-light-green);
+  border-bottom: 1px solid var(--flexoki-dark-orange);
+}
+
+content h5:not(.tag)::before {
+  content: "★ ";
+}
+
+content h5 {
+  color: var(--flexoki-light-cyan);
+  border-bottom: 1px solid var(--flexoki-dark-orange);
+}
+
+content h6:not(.tag)::before {
+  content: "✸ ";
+}
+
+content h6 {
+  color: var(--flexoki-light-purple);
+  border-bottom: 1px solid var(--flexoki-dark-orange);
 }
 
 a {
@@ -104,6 +121,10 @@ a {
 
 a:hover, a:focus {
   background-size: 100% 2px;
+}
+
+content a {
+  color: var(--flexoki-dark-yellow);
 }
 
 .title {

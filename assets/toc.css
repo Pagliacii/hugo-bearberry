@@ -38,3 +38,7 @@
 .toc .is-active-link::before {
   background-color: var(--flexoki-light-blue);
 }
+
+.toc .toc-list {
+  color: var(--flexoki-light-blue);
+}
