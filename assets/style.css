@@ -168,10 +168,19 @@ table {
 table,
 th,
 td {
-  border: 1px solid;
+  border: 2px solid;
   border-collapse: collapse;
-  border-color: var(--flexoki-light-blue);
-  padding: 5px;
+  border-color: var(--flexoki-light-purple);
+  padding: 4px;
+}
+
+th {
+  color: var(--flexoki-paper);
+  background-color: var(--flexoki-700);
+}
+
+td {
+  background-color: var(--flexoki-950);
 }
 
 img {
