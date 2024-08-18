@@ -41,7 +41,7 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
-  color: var(--flexoki-100);
+  color: var(--flexoki-50);
 }
 
 h1,
@@ -52,7 +52,7 @@ h5,
 h6,
 strong,
 b {
-  color: var(--flexoki-50);
+  color: var(--flexoki-light-cyan);
 }
 
 content h1:not(.tag)::before {
@@ -162,6 +162,7 @@ code {
   padding: 2px 5px;
   color: var(--flexoki-100);
   background-color: var(--flexoki-850);
+  white-space: nowrap;
 }
 
 pre code {
@@ -178,8 +179,11 @@ pre code {
 }
 
 p code {
-  padding: 1px 4px;
-  color: var(--flexoki-light-cyan);
+  padding: 0 2px;
+  color: var(--flexoki-light-yellow);
+  background-color: var(--flexoki-black);
+  border-radius: 4px;
+  font-size: 85%;
 }
 
 blockquote {
@@ -479,4 +483,24 @@ p.alert-text {
   color: var(--flexoki-300);
   text-align: right;
   font-size: 0.875rem;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 10px;
+  color: var(--flexoki-light-orange);
+  vertical-align: middle;
+  background-color: var(--flexoki-200);
+  border: solid 1px var(--flexoki-300);
+  border-bottom-color: var(--flexoki-500);
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 var(--flexoki-500);
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.sidebar {
+  color: var(--flexoki-300);
 }

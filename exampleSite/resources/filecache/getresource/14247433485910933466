@@ -1,0 +1,24 @@
+HTTP/2.0 200 OK
+Cache-Control: must-revalidate, max-age=3153600000
+Content-Disposition: attachment; filename=json.json
+Content-Type: application/json; charset=utf-8
+Date: Sun, 18 Aug 2024 06:13:36 GMT
+Expires: Tue, 25 Jul 2124 06:13:36 GMT
+Last-Modified: Sun, 18 Aug 2024 06:13:36 GMT
+Perf: 7402827104
+Server: tsa_m
+Set-Cookie: guest_id_marketing=v1%3A172396161681250481; Max-Age=63072000; Expires=Tue, 18 Aug 2026 06:13:36 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: guest_id_ads=v1%3A172396161681250481; Max-Age=63072000; Expires=Tue, 18 Aug 2026 06:13:36 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: personalization_id="v1_tE4rqbYX2vSeEjFeRVd+/Q=="; Max-Age=63072000; Expires=Tue, 18 Aug 2026 06:13:36 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: guest_id=v1%3A172396161681250481; Max-Age=63072000; Expires=Tue, 18 Aug 2026 06:13:36 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Strict-Transport-Security: max-age=631138519
+X-Connection-Hash: 276c94900bec42b09edc2d809b085ab54238fe3262315d63d03a3bb21b719dbe
+X-Content-Type-Options: nosniff
+X-Etags-1: 4146532586c3833c7ecf079ee7736776
+X-Etags-2: 4146532586c3833c7ecf079ee7736776
+X-Frame-Options: SAMEORIGIN
+X-Response-Time: 112
+X-Transaction-Id: 616f22e057791b9b
+X-Xss-Protection: 0
+
+{"url":"https:\/\/twitter.com\/DesignReviewed\/status\/1085870671291310081","author_name":"Design Reviewed | Graphic Design History","author_url":"https:\/\/twitter.com\/DesignReviewed","html":"\u003Cblockquote class=\"twitter-tweet\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003E“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”\u003Cbr\u003E— Jan Tschichold \u003Ca href=\"https:\/\/t.co\/gcv7SrhvJb\"\u003Epic.twitter.com\/gcv7SrhvJb\u003C\/a\u003E\u003C\/p\u003E&mdash; Design Reviewed | Graphic Design History (@DesignReviewed) \u003Ca href=\"https:\/\/twitter.com\/DesignReviewed\/status\/1085870671291310081?ref_src=twsrc%5Etfw\"\u003EJanuary 17, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"}
