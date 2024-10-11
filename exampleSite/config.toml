@@ -92,7 +92,7 @@ categoryID = "DIC_kwDOKjHQV84CaU_R"
 mapping = "og:title"
 reactionsEnabled = true
 emitMetadata = true
-theme = "dark_tritanopia"
+theme = "https://giscus.catppuccin.com/themes/latte.css"
 
 # Social media. Delete any item you aren't using to make sure it won't show up
 # in your website's metadata.

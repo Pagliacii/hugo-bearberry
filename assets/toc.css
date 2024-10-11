@@ -36,9 +36,9 @@
 }
 
 .toc .is-active-link::before {
-  background-color: var(--flexoki-light-blue);
+  background-color: var(--flexoki-light-cyan);
 }
 
 .toc .toc-list {
-  color: var(--flexoki-light-blue);
+  color: var(--flexoki-light-cyan);
 }

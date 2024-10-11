@@ -37,80 +37,78 @@ body {
   padding: 20px;
   max-width: 720px;
   text-align: left;
-  background-color: var(--flexoki-900);
+  background-color: var(--flexoki-50);
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
-  color: var(--flexoki-50);
+  color: var(--flexoki-950);
 }
 
 h1,
-strong,
 b {
   color: var(--flexoki-light-cyan);
 }
 
+strong {
+  color: var(--flexoki-light-blue);
+}
+
 content h1:not(.tag)::before {
-  content: "◉ ";
+  content: "# ";
 }
 
 content h1 {
-  color: var(--flexoki-light-red);
-  border-bottom: 1px solid var(--flexoki-dark-green);
+  color: var(--flexoki-light-orange);
+  border-bottom: 1px solid var(--flexoki-200);
 }
 
 content h2:not(.tag)::before {
-  content: "◯ ";
-  display: inline-block;
-  margin-left: -0.15em;
-  margin-right: 0.25em;
-  transform: scale(0.75);
+  content: "# ";
 }
 
 content h2 {
-  color: var(--flexoki-light-orange);
-  border-bottom: 1px solid var(--flexoki-dark-cyan);
-  font-size: 135%;
+  color: var(--flexoki-light-cyan);
+  border-bottom: 1px solid var(--flexoki-200);
 }
 
 content h3:not(.tag)::before {
-  content: "◆ ";
+  content: "# ";
 }
 
 content h3 {
-  color: var(--flexoki-light-yellow);
-  border-bottom: 1px solid var(--flexoki-dark-orange);
+  color: var(--flexoki-light-blue);
+  border-bottom: 1px solid var(--flexoki-200);
 }
 
 content h4:not(.tag)::before {
-  content: "◇ ";
+  content: "# ";
 }
 
 content h4 {
   color: var(--flexoki-light-green);
-  border-bottom: 1px solid var(--flexoki-dark-orange);
+  border-bottom: 1px solid var(--flexoki-200);
 }
 
 content h5:not(.tag)::before {
-  content: "★ ";
+  content: "# ";
 }
 
 content h5 {
-  color: var(--flexoki-light-cyan);
-  border-bottom: 1px solid var(--flexoki-dark-orange);
+  color: var(--flexoki-light-magenta);
+  border-bottom: 1px solid var(--flexoki-200);
 }
 
 content h6:not(.tag)::before {
-  content: "✸ ";
+  content: "# ";
 }
 
 content h6 {
   color: var(--flexoki-light-purple);
-  border-bottom: 1px solid var(--flexoki-dark-orange);
+  border-bottom: 1px solid var(--flexoki-200);
 }
 
 a {
-  color: #8cc2dd;
+  color: var(--flexoki-light-cyan);
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
@@ -123,14 +121,11 @@ a:hover, a:focus {
   background-size: 100% 2px;
 }
 
-content a {
-  color: var(--flexoki-dark-yellow);
-}
-
 .title {
   text-decoration: none;
   border: 0;
 }
+
 .title h1 {
   font-size: 24px;
   margin: 19.92px 0 19.92px 0;
@@ -170,17 +165,17 @@ th,
 td {
   border: 2px solid;
   border-collapse: collapse;
-  border-color: var(--flexoki-light-purple);
+  border-color: var(--flexoki-300);
   padding: 4px;
 }
 
 th {
-  color: var(--flexoki-paper);
-  background-color: var(--flexoki-700);
+  color: var(--flexoki-600);
+  background-color: var(--flexoki-200);
 }
 
 td {
-  background-color: var(--flexoki-950);
+  background-color: var(--flexoki-50);
 }
 
 img {
@@ -188,11 +183,15 @@ img {
 }
 
 code {
-  font-family: JetBrainsMono Nerd Font, Hack NF;
-  padding: 2px 5px;
-  color: var(--flexoki-100);
-  background-color: var(--flexoki-850);
+  font-family: Iosevka Term SS14, JetBrainsMono Nerd Font, Hack NF;
+  background-color: var(--flexoki-100);
+  color: var(--flexoki-700);
+  padding: 2px 4px;
+  border-radius: 4px;
   white-space: nowrap;
+  font-weight: bolder;
+  font-stretch: expanded;
+  font-size: 95%;
 }
 
 pre code {
@@ -201,6 +200,7 @@ pre code {
   padding-bottom: 16px;
   padding-left: 16px;
   padding-right: 16px;
+  border-radius: 0 0 .6rem .6rem;
   white-space: pre;
   font-size: 14px;
   overflow-x: auto;
@@ -208,19 +208,11 @@ pre code {
   max-height: 36rem;
 }
 
-p code {
-  padding: 0 2px;
-  color: var(--flexoki-light-yellow);
-  background-color: var(--flexoki-black);
-  border-radius: 4px;
-  font-size: 85%;
-}
-
 blockquote {
   border-left: 6px solid var(--flexoki-light-blue);
-  color: var(--flexoki-150);
+  color: var(--flexoki-500);
   font-style: normal;
-  background-color: rgba(64, 62, 60, .4);
+  background-color: var(--flexoki-paper);
   padding: 0.2em 2em;
   margin-left: 0;
   margin-right: 0;
@@ -264,11 +256,18 @@ ul.blog-posts li span {
 }
 
 ul.blog-posts li a:visited {
-  color: #8b6fcb;
+  color: var(--flexoki-dark-blue);
+}
+
+ul.blog-posts li time {
+  color: var(--flexoki-700);
+  font-size: 0.875rem;
 }
 
 a.blog-tags {
   line-height: 2;
+  font-size: smaller;
+  color: var(--flexoki-light-blue);
 }
 
 h3.blog-filter {
@@ -276,13 +275,13 @@ h3.blog-filter {
 }
 
 .disabled {
-  color: currentColor;
+  color: var(--flexoki-200);
   cursor: not-allowed;
   opacity: 0.7;
 }
 
 p.byline {
-  font-style: italic;
+  color: var(--flexoki-300)!important;
 }
 
 /* "Skip to main content" link */
@@ -291,7 +290,7 @@ p.byline {
   top: 5;
   transform: translateY(-600%);
   transition: transform 0.5s;
-  background-color: #1d1f27;
+  background-color: var(--flexoki-paper);
   padding: 6px;
 }
 
@@ -313,11 +312,11 @@ figcaption > p {
 
 /* Code block copy button */
 .copy-code-button {
-  color: var(--flexoki-light-blue);
-  background-color: var(--flexoki-850);
-  border-color: var(--flexoki-light-blue);
+  color: var(--flexoki-light-cyan);
+  background-color: var(--flexoki-200);
+  border-color: var(--flexoki-light-cyan);
   border: 2px solid;
-  border-radius: 2px 2px 2px 2px;
+  border-radius: 4px;
 
   /* right-align */
   display: block;
@@ -331,9 +330,9 @@ figcaption > p {
 
 .copy-code-button:hover {
   cursor: pointer;
-  background-color: var(--flexoki-dark-blue);
-  color: var(--flexoki-50);
-  border-color: var(--flexoki-light-blue);
+  background-color: var(--flexoki-light-cyan);
+  color: var(--flexoki-100);
+  border-color: var(--flexoki-light-cyan);
 }
 
 .copy-code-button:focus {
@@ -361,13 +360,12 @@ pre {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--flexoki-850);
+  background-color: var(--flexoki-200);
   padding: 0.5rem 0.75rem;
 }
 
 .lang {
   text-transform: uppercase;
-  opacity: 0.8;
   margin-right: 0.5em;
   font-size: 0.6em;
   font-weight: bold;
@@ -380,7 +378,7 @@ img.diagram {
 }
 
 .mermaid {
-  background-color: var(--flexoki-300);
+  background-color: var(--flexoki-100);
 }
 
 .footnotes hr {
@@ -397,7 +395,7 @@ div.kroki-img {
   padding: 0.5rem 0.5rem;
   margin: 16px 0;
   border-left: 0.25em solid var(--flexoki-500);
-  background-color: var(--flexoki-950);
+  background-color: var(--flexoki-paper);
   border-radius: 0.25rem;
   box-shadow: 0 0.2rem 0.5rem rgba(52, 51, 49, .05),
               0 0 0.0625rem rgba(52, 51, 49, .1);
@@ -418,7 +416,7 @@ p.alert-text {
   margin: 0;
   padding-top: 0.5rem;
   font-size: 0.875rem;
-  color: var(--flexoki-200);
+  color: var(--flexoki-600);
 }
 
 .alert-icon {
@@ -498,13 +496,13 @@ p.alert-text {
 
 .quote {
   margin: 0.5em 0;
-  background-color: rgba(64, 62, 60, 0.4);
+  background-color: var(--flexoki-paper);
   border-left-color: var(--flexoki-light-cyan);
   border-radius: 0.25rem;
 }
 
 .quote-text {
-  color: var(--flexoki-50);
+  color: var(--flexoki-600);
   font-weight: bold;
   font-size: 1.125rem;
 }
@@ -517,20 +515,43 @@ p.alert-text {
 
 kbd {
   display: inline-block;
-  padding: 3px 5px;
-  font-size: 11px;
+  padding: 4px 8px;
+  font-size: 14px;
   font-weight: bold;
-  line-height: 10px;
-  color: var(--flexoki-light-orange);
+  line-height: 12px;
+  color: var(--flexoki-800);
   vertical-align: middle;
-  background-color: var(--flexoki-200);
-  border: solid 1px var(--flexoki-300);
-  border-bottom-color: var(--flexoki-500);
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 var(--flexoki-500);
+  background-color: var(--flexoki-paper);
+  border: solid 1px var(--flexoki-200);
+  border-bottom-color: var(--flexoki-300);
+  border-radius: 4px;
+  box-shadow: inset 0 -1px 0 var(--flexoki-600);
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 .sidebar {
   color: var(--flexoki-300);
+}
+
+em {
+  font-style: italic;
+  color: var(--flexoki-dark-green);
+}
+
+ol > li::marker {
+  color: var(--flexoki-light-purple);
+}
+
+ul > li::marker {
+  color: var(--flexoki-light-magenta);
+}
+
+mark {
+  background-color: var(--flexoki-light-cyan);
+  color: var(--flexoki-paper);
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+  text-decoration-color: var(--flexoki-light-cyan);
 }

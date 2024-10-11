@@ -22,7 +22,7 @@ function getLanguageColor(language) {
 
 function addCopyButtons(clipboard) {
     document.querySelectorAll('pre > code').forEach(function (codeBlock) {
-        let codeLang = 'text'; 
+        let codeLang = 'text';
 
         if(codeBlock.className) {
           const classes = codeBlock.className.split('-');
@@ -65,7 +65,7 @@ function addCopyButtons(clipboard) {
 
                 setTimeout(function () {
                     button.innerText = 'Copy';
-                }, 2000);
+                }, 1000);
             }, function (error) {
                 button.innerText = 'Error';
             });
