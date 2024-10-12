@@ -29,6 +29,8 @@
   --flexoki-light-blue:    #4385BE;
   --flexoki-light-purple:  #8B7EC8;
   --flexoki-light-magenta: #CE5D97;
+
+  --font-mono: ui-monospace, "Iosevka Term SS14", "JetBrainsMono Nerd Font", "Hack NF", SFMono-Regular, "Cascadia Code", "IBM Plex Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
 }
 
 body {
@@ -37,11 +39,11 @@ body {
   padding: 20px;
   max-width: 720px;
   text-align: left;
-  background-color: var(--flexoki-50);
+  background-color: var(--flexoki-paper);
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
-  color: var(--flexoki-950);
+  color: var(--flexoki-black);
 }
 
 h1,
@@ -67,7 +69,7 @@ content h2:not(.tag)::before {
 }
 
 content h2 {
-  color: var(--flexoki-light-cyan);
+  color: var(--flexoki-light-yellow);
   border-bottom: 1px solid var(--flexoki-200);
 }
 
@@ -140,15 +142,15 @@ nav a {
 }
 
 textarea {
-  background-color: #252525;
-  color: #ddd;
+  background-color: var(--flexoki-950);
+  color: var(--flexoki-150);
   width: 100%;
   font-size: 16px;
 }
 
 input {
-  background-color: #252525;
-  color: #ddd;
+  background-color: var(--flexoki-950);
+  color: var(--flexoki-150)
   font-size: 16px;
 }
 
@@ -183,15 +185,15 @@ img {
 }
 
 code {
-  font-family: Iosevka Term SS14, JetBrainsMono Nerd Font, Hack NF;
-  background-color: var(--flexoki-100);
-  color: var(--flexoki-700);
-  padding: 2px 4px;
+  font-family: var(--font-mono);
+  background-color: var(--flexoki-50);
+  color: var(--flexoki-black);
+  padding: 0.1em 0.2em;
   border-radius: 4px;
   white-space: nowrap;
   font-weight: bolder;
   font-stretch: expanded;
-  font-size: 95%;
+  font-size: 90%;
 }
 
 pre code {
@@ -206,13 +208,14 @@ pre code {
   overflow-x: auto;
   overflow-y: auto;
   max-height: 36rem;
+  color: var(--flexoki-800)
 }
 
 blockquote {
   border-left: 6px solid var(--flexoki-light-blue);
-  color: var(--flexoki-500);
+  color: var(--flexoki-700);
   font-style: normal;
-  background-color: var(--flexoki-paper);
+  background-color: var(--flexoki-50);
   padding: 0.2em 2em;
   margin-left: 0;
   margin-right: 0;
@@ -231,12 +234,12 @@ footer {
 }
 
 .helptext {
-  color: #aaa;
+  color: var(--flexoki-600);
   font-size: small;
 }
 
 .errorlist {
-  color: #eba613;
+  color: var(--flexoki-light-red);
   font-size: small;
 }
 
@@ -378,7 +381,7 @@ img.diagram {
 }
 
 .mermaid {
-  background-color: var(--flexoki-100);
+  background-color: var(--flexoki-50);
 }
 
 .footnotes hr {
@@ -496,7 +499,7 @@ p.alert-text {
 
 .quote {
   margin: 0.5em 0;
-  background-color: var(--flexoki-paper);
+  background-color: var(--flexoki-50);
   border-left-color: var(--flexoki-light-cyan);
   border-radius: 0.25rem;
 }
@@ -526,7 +529,7 @@ kbd {
   border-bottom-color: var(--flexoki-300);
   border-radius: 4px;
   box-shadow: inset 0 -1px 0 var(--flexoki-600);
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: var(--font-mono);
 }
 
 .sidebar {
@@ -539,11 +542,11 @@ em {
 }
 
 ol > li::marker {
-  color: var(--flexoki-light-purple);
+  color: var(--flexoki-300);
 }
 
 ul > li::marker {
-  color: var(--flexoki-light-magenta);
+  color: var(--flexoki-300);
 }
 
 mark {
