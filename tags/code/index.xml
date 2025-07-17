@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Code on Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/tags/code/</link><description>Recent content in Code on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2024</copyright><lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/tags/code/index.xml" rel="self" type="application/rss+xml"/><item><title>Kroki diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</link><pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</guid><description>&lt;blockquote>
-&lt;p>Use a fenced code block to embed an SVG image of a diagram in your &lt;a href="https://gohugo.io/">Hugo&lt;/a> site using the free &lt;a href="https://kroki.io/">Kroki&lt;/a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>Use a fenced code block to embed an SVG image of a diagram in your &lt;a href="https://gohugo.io/">Hugo&lt;/a> site using the free &lt;a href="https://kroki.io/">Kroki&lt;/a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;p>Thanks for &lt;a href="https://github.com/jmooring">@jmooring&lt;/a> and &lt;a href="https://kroki.io/">Kroki&lt;/a>.&lt;/p>
 &lt;h2 id="performance">Performance&lt;/h2>
 &lt;p>According to &lt;a href="https://github.com/jmooring">@jmooring&lt;/a>&amp;rsquo;s &lt;a href="https://www.veriphor.com/articles/diagrams/#performance">blog&lt;/a>, you could edit your &lt;a href="https://gohugo.io/getting-started/configuration/#configure-file-caches">site configuration&lt;/a> to store &lt;code>getresource&lt;/code> cache to optimize performance.&lt;/p>
@@ -15,8 +14,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> &lt;span class="nx">maxAge&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">-1&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And don&amp;rsquo;t forget to check the &lt;code>resources&lt;/code> directory into source control.&lt;/p>
 &lt;h2 id="diagram-types">Diagram types&lt;/h2>
 &lt;p>The following diagram types are available:&lt;/p></description><content:encoded><![CDATA[<blockquote>
-<p>Use a fenced code block to embed an SVG image of a diagram in your <a href="https://gohugo.io/">Hugo</a> site using the free <a href="https://kroki.io/">Kroki</a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-</blockquote>
+<p>Use a fenced code block to embed an SVG image of a diagram in your <a href="https://gohugo.io/">Hugo</a> site using the free <a href="https://kroki.io/">Kroki</a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p></blockquote>
 <p>Thanks for <a href="https://github.com/jmooring">@jmooring</a> and <a href="https://kroki.io/">Kroki</a>.</p>
 <h2 id="performance">Performance</h2>
 <p>According to <a href="https://github.com/jmooring">@jmooring</a>&rsquo;s <a href="https://www.veriphor.com/articles/diagrams/#performance">blog</a>, you could edit your <a href="https://gohugo.io/getting-started/configuration/#configure-file-caches">site configuration</a> to store <code>getresource</code> cache to optimize performance.</p>
@@ -92,7 +90,7 @@
 </span></span><span class="line"><span class="ln">22</span><span class="cl">defendants.chesscom -&gt; hans: 72 page report of cheating
 </span></span><span class="line"><span class="ln">23</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-d2" id="h-rh-cb-kroki-2" src="/hugo-bearberry/images/kroki/md5-Qn+pg0wTLP9csGo6grANSQ==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-d2" id="h-rh-cb-kroki-2" src="/hugo-bearberry/images/kroki/md5-m7/vsbptAIcMlwJMLnAnQ==.svg">
 </div><h3 id="mermaid">Mermaid</h3>
 
 
@@ -150,7 +148,7 @@
 </span></span><span class="line"><span class="ln">19</span><span class="cl">@endmindmap
 </span></span><span class="line"><span class="ln">20</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-plantuml" id="h-rh-cb-kroki-5" src="/hugo-bearberry/images/kroki/md5-0Mti5EQ6P+15+xC+NMqB6g==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-plantuml" id="h-rh-cb-kroki-5" src="/hugo-bearberry/images/kroki/md5-5cerodPBULB8VAVWL2RUKA==.svg">
 </div><h3 id="excalidraw">Excalidraw</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -860,7 +858,7 @@
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-excalidraw" id="h-rh-cb-kroki-6" src="/hugo-bearberry/images/kroki/md5-f1D4ndZrOZa/O0RmOzgUOw==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-excalidraw" id="h-rh-cb-kroki-6" src="/hugo-bearberry/images/kroki/md5-wbDeQq1vnr2zPeuksJIJKA==.svg">
 </div><h3 id="blockdiag">BlockDiag</h3>
 
 
@@ -934,7 +932,7 @@
 </span></span><span class="line"><span class="ln">15</span><span class="cl">Rel(banking_system, mainframe, &#34;Uses&#34;)
 </span></span><span class="line"><span class="ln">16</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-c4plantuml" id="h-rh-cb-kroki-12" src="/hugo-bearberry/images/kroki/md5-ed68oz546E6ok9x+UxLrdg==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-c4plantuml" id="h-rh-cb-kroki-12" src="/hugo-bearberry/images/kroki/md5-fX76Miz4HCOpj8Alxjs+ig==.svg">
 </div><h3 id="bytefield">Bytefield</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1014,7 +1012,7 @@
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-150)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-bytefield" id="h-rh-cb-kroki-13" src="/hugo-bearberry/images/kroki/md5-nTXuBj54sDZ+P4KqyBPDnw==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-bytefield" id="h-rh-cb-kroki-13" src="/hugo-bearberry/images/kroki/md5-rD6c/P+LqWmsUQhl/uc7wg==.svg">
 </div><h3 id="seqdiag">SeqDiag</h3>
 
 
@@ -1274,7 +1272,7 @@
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-pikchr" id="h-rh-cb-kroki-21" src="/hugo-bearberry/images/kroki/md5-elFIBQg8zBTsieq14SjcjA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-pikchr" id="h-rh-cb-kroki-21" src="/hugo-bearberry/images/kroki/md5-1II12VfFUgQErOM9IPHRuQ==.svg">
 </div><h3 id="erd">Erd</h3>
 
 
@@ -1389,7 +1387,7 @@
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-24" src="/hugo-bearberry/images/kroki/md5-Y3x7je7EIyq3gNUu4wGGTg==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-24" src="/hugo-bearberry/images/kroki/md5-BFVTHSnZp9AB44cBq1XSAQ==.svg">
 </div><h3 id="vega-lite">Vega-Lite</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1685,7 +1683,7 @@
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-30" src="/hugo-bearberry/images/kroki/md5-cktcFjY42U5UAjIjI244ig==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-30" src="/hugo-bearberry/images/kroki/md5-1y+ttjUvfmTpqOtMV3uS2A==.svg">
 </div><h3 id="wavedrom">WaveDrom</h3>
 
 

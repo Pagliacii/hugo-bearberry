@@ -143,8 +143,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
     <summary style="color: var(--flexoki-light-blue)">More details</summary>
     <blockquote>
 <p>The past is never dead. It&rsquo;s not even past.</p>
-<p>&ndash; William Faulkner, Requiem for a Nun</p>
-</blockquote>
+<p>&ndash; William Faulkner, Requiem for a Nun</p></blockquote>
 
 </details>
 
@@ -180,8 +179,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; at name=Hugo type=github id=gohugoio &gt;}}
 </span></span><span class="line"><span class="ln">2</span><span class="cl">{{&lt; at name=&#34;GoHugo.io&#34; type=twitter id=gohugoio &gt;}}</span></span></code></pre></div>]]></content:encoded></item><item><title>Kroki diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</link><pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</guid><description>&lt;blockquote>
-&lt;p>Use a fenced code block to embed an SVG image of a diagram in your &lt;a href="https://gohugo.io/">Hugo&lt;/a> site using the free &lt;a href="https://kroki.io/">Kroki&lt;/a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>Use a fenced code block to embed an SVG image of a diagram in your &lt;a href="https://gohugo.io/">Hugo&lt;/a> site using the free &lt;a href="https://kroki.io/">Kroki&lt;/a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;p>Thanks for &lt;a href="https://github.com/jmooring">@jmooring&lt;/a> and &lt;a href="https://kroki.io/">Kroki&lt;/a>.&lt;/p>
 &lt;h2 id="performance">Performance&lt;/h2>
 &lt;p>According to &lt;a href="https://github.com/jmooring">@jmooring&lt;/a>&amp;rsquo;s &lt;a href="https://www.veriphor.com/articles/diagrams/#performance">blog&lt;/a>, you could edit your &lt;a href="https://gohugo.io/getting-started/configuration/#configure-file-caches">site configuration&lt;/a> to store &lt;code>getresource&lt;/code> cache to optimize performance.&lt;/p>
@@ -196,8 +194,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> &lt;span class="nx">maxAge&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">-1&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And don&amp;rsquo;t forget to check the &lt;code>resources&lt;/code> directory into source control.&lt;/p>
 &lt;h2 id="diagram-types">Diagram types&lt;/h2>
 &lt;p>The following diagram types are available:&lt;/p></description><content:encoded><![CDATA[<blockquote>
-<p>Use a fenced code block to embed an SVG image of a diagram in your <a href="https://gohugo.io/">Hugo</a> site using the free <a href="https://kroki.io/">Kroki</a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-</blockquote>
+<p>Use a fenced code block to embed an SVG image of a diagram in your <a href="https://gohugo.io/">Hugo</a> site using the free <a href="https://kroki.io/">Kroki</a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p></blockquote>
 <p>Thanks for <a href="https://github.com/jmooring">@jmooring</a> and <a href="https://kroki.io/">Kroki</a>.</p>
 <h2 id="performance">Performance</h2>
 <p>According to <a href="https://github.com/jmooring">@jmooring</a>&rsquo;s <a href="https://www.veriphor.com/articles/diagrams/#performance">blog</a>, you could edit your <a href="https://gohugo.io/getting-started/configuration/#configure-file-caches">site configuration</a> to store <code>getresource</code> cache to optimize performance.</p>
@@ -273,7 +270,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 </span></span><span class="line"><span class="ln">22</span><span class="cl">defendants.chesscom -&gt; hans: 72 page report of cheating
 </span></span><span class="line"><span class="ln">23</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-d2" id="h-rh-cb-kroki-2" src="/hugo-bearberry/images/kroki/md5-Qn+pg0wTLP9csGo6grANSQ==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-d2" id="h-rh-cb-kroki-2" src="/hugo-bearberry/images/kroki/md5-m7/vsbptAIcMlwJMLnAnQ==.svg">
 </div><h3 id="mermaid">Mermaid</h3>
 
 
@@ -331,7 +328,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 </span></span><span class="line"><span class="ln">19</span><span class="cl">@endmindmap
 </span></span><span class="line"><span class="ln">20</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-plantuml" id="h-rh-cb-kroki-5" src="/hugo-bearberry/images/kroki/md5-0Mti5EQ6P+15+xC+NMqB6g==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-plantuml" id="h-rh-cb-kroki-5" src="/hugo-bearberry/images/kroki/md5-5cerodPBULB8VAVWL2RUKA==.svg">
 </div><h3 id="excalidraw">Excalidraw</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1041,7 +1038,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-excalidraw" id="h-rh-cb-kroki-6" src="/hugo-bearberry/images/kroki/md5-f1D4ndZrOZa/O0RmOzgUOw==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-excalidraw" id="h-rh-cb-kroki-6" src="/hugo-bearberry/images/kroki/md5-wbDeQq1vnr2zPeuksJIJKA==.svg">
 </div><h3 id="blockdiag">BlockDiag</h3>
 
 
@@ -1115,7 +1112,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 </span></span><span class="line"><span class="ln">15</span><span class="cl">Rel(banking_system, mainframe, &#34;Uses&#34;)
 </span></span><span class="line"><span class="ln">16</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-c4plantuml" id="h-rh-cb-kroki-12" src="/hugo-bearberry/images/kroki/md5-ed68oz546E6ok9x+UxLrdg==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-c4plantuml" id="h-rh-cb-kroki-12" src="/hugo-bearberry/images/kroki/md5-fX76Miz4HCOpj8Alxjs+ig==.svg">
 </div><h3 id="bytefield">Bytefield</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1195,7 +1192,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-150)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-bytefield" id="h-rh-cb-kroki-13" src="/hugo-bearberry/images/kroki/md5-nTXuBj54sDZ+P4KqyBPDnw==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-bytefield" id="h-rh-cb-kroki-13" src="/hugo-bearberry/images/kroki/md5-rD6c/P+LqWmsUQhl/uc7wg==.svg">
 </div><h3 id="seqdiag">SeqDiag</h3>
 
 
@@ -1455,7 +1452,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-pikchr" id="h-rh-cb-kroki-21" src="/hugo-bearberry/images/kroki/md5-elFIBQg8zBTsieq14SjcjA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-pikchr" id="h-rh-cb-kroki-21" src="/hugo-bearberry/images/kroki/md5-1II12VfFUgQErOM9IPHRuQ==.svg">
 </div><h3 id="erd">Erd</h3>
 
 
@@ -1570,7 +1567,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-24" src="/hugo-bearberry/images/kroki/md5-Y3x7je7EIyq3gNUu4wGGTg==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-24" src="/hugo-bearberry/images/kroki/md5-BFVTHSnZp9AB44cBq1XSAQ==.svg">
 </div><h3 id="vega-lite">Vega-Lite</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1866,7 +1863,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-30" src="/hugo-bearberry/images/kroki/md5-cktcFjY42U5UAjIjI244ig==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-30" src="/hugo-bearberry/images/kroki/md5-1y+ttjUvfmTpqOtMV3uS2A==.svg">
 </div><h3 id="wavedrom">WaveDrom</h3>
 
 
@@ -2808,30 +2805,28 @@ gantt
 <h4 id="blockquote-without-attribution">Blockquote without attribution</h4>
 <blockquote>
 <p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p>
-</blockquote>
+<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p></blockquote>
 <h4 id="blockquote-with-attribution">Blockquote with attribution</h4>
 <blockquote>
 <p>Don&rsquo;t communicate by sharing memory, share memory by communicating.<br>
-— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p>
-</blockquote>
+— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p></blockquote>
 <h2 id="tables">Tables</h2>
 <p>Tables aren&rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Name</th>
-          <th style="text-align: left">Age</th>
+          <th>Name</th>
+          <th>Age</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Bob</td>
-          <td style="text-align: left">27</td>
+          <td>Bob</td>
+          <td>27</td>
       </tr>
       <tr>
-          <td style="text-align: left">Alice</td>
-          <td style="text-align: left">23</td>
+          <td>Alice</td>
+          <td>23</td>
       </tr>
   </tbody>
 </table>
@@ -2839,16 +2834,16 @@ gantt
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Italics</th>
-          <th style="text-align: left">Bold</th>
-          <th style="text-align: left">Code</th>
+          <th>Italics</th>
+          <th>Bold</th>
+          <th>Code</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><em>italics</em></td>
-          <td style="text-align: left"><strong>bold</strong></td>
-          <td style="text-align: left"><code>code</code></td>
+          <td><em>italics</em></td>
+          <td><strong>bold</strong></td>
+          <td><code>code</code></td>
       </tr>
   </tbody>
 </table>
@@ -2952,15 +2947,12 @@ gantt
 <p>The above quote is excerpted from Rob Pike&rsquo;s <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk</a> during Gopherfest, November 18, 2015.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</div>]]></content:encoded></item><item><title>Rich Content</title><link>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</guid><description>&lt;p>Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes&lt;/a> for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config&lt;/a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p></description><content:encoded><![CDATA[<p>Hugo ships with several <a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes</a> for rich content, along with a <a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config</a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</p>
-<hr>
+</div>]]></content:encoded></item><item><title>Rich Content</title><link>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</guid><description>&lt;p>Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes&lt;/a> for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config&lt;/a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p>
+&lt;h2>&lt;/h2></description><content:encoded><![CDATA[<p>Hugo ships with several <a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes</a> for rich content, along with a <a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config</a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</p>
+<h2></h2>
 <h2 id="youtube-privacy-enhanced-shortcode">YouTube Privacy Enhanced Shortcode</h2>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZJthWmvUzzc?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZJthWmvUzzc?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
 <br>
@@ -2998,8 +2990,8 @@ gantt
    cursor: pointer;
 }
 </style><div class="s_video_simple __h_video">
-          <a href="https://vimeo.com/4.8912912e&#43;07" rel="noopener" target="_blank">
-            <img src="https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640" srcset="https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640 1x, https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640 2x" alt="Sing Jan Swing - Kinetic Type">
+          <a href="https://vimeo.com/48912912" rel="noopener" target="_blank">
+            <img src="https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us" srcset="https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us 1x, https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us 2x" alt="Sing Jan Swing - Kinetic Type">
             <div class="play">
               <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61"><circle cx="30.5" cy="30.5" r="30.5" opacity=".8" fill="#000"></circle><path d="M25.3 19.2c-2.1-1.2-3.8-.2-3.8 2.2v18.1c0 2.4 1.7 3.4 3.8 2.2l16.6-9.1c2.1-1.2 2.1-3.2 0-4.4l-16.6-9z" fill="#fff"></path></svg>
             </div>
