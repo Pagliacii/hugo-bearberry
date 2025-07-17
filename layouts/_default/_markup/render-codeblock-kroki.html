@@ -86,16 +86,13 @@ References:
 {{- /* Get diagram. */}}
 {{- $body := dict "diagram_source" $inner "diagram_type" $diagramType "output_format" "SVG" | jsonify }}
 {{- $opts := dict "method" "post" "body" $body }}
-{{- with resources.GetRemote $apiEndpoint $opts }}
-  {{- with .Err }}
-    {{- errorf "The %q code block render hook was unable to get the remote diagram. See %s. %s" $renderHookName $position . }}
-  {{- else }}
-    {{- $img := resources.Fingerprint "md5" . }}
-    {{- $img := resources.Copy (printf "images/kroki/%s.svg" $img.Data.Integrity) $img }}
-    {{- $attrs = merge $attrs (dict "src" $img.RelPermalink) }}
-  {{- end }}
+{{- $resource := resources.GetRemote $apiEndpoint $opts }}
+{{- with $resource }}
+  {{- $img := resources.Fingerprint "md5" . }}
+  {{- $img := resources.Copy (printf "images/kroki/%s.svg" $img.Data.Integrity) $img }}
+  {{- $attrs = merge $attrs (dict "src" $img.RelPermalink) }}
 {{- else }}
-  {{- errorf "The %q code block render hook was unable to get the remote diagram. See %s" $renderHookName $position }}
+  {{- errorf "The %q code block render hook was unable to get the remote diagram. See %s. %s" $renderHookName $position . }}
 {{- end }}
 
 {{- /* Render. */}}
