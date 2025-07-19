@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Plantuml on 熊莓</title><link>https://pagliacii.github.io/hugo-bearberry/zh/tags/plantuml/</link><description>Recent content in Plantuml on 熊莓</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/zh/tags/plantuml/index.xml" rel="self" type="application/rss+xml"/><item><title>Kroki 图表</title><link>https://pagliacii.github.io/hugo-bearberry/zh/blog/kroki-diagrams/</link><pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/zh/blog/kroki-diagrams/</guid><description>&lt;blockquote>
+&lt;p>使用代码围栏块在你的 &lt;a href="https://gohugo.io/">Hugo&lt;/a> 站点中嵌入图表的 SVG 图像，使用免费的 &lt;a href="https://kroki.io/">Kroki&lt;/a> 服务。与需要客户端渲染的 JavaScript 解决方案不同，这种方法在页面中嵌入 SVG 图像。&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>&lt;/blockquote>
+&lt;p>感谢 &lt;a href="https://github.com/jmooring">@jmooring&lt;/a> 和 &lt;a href="https://kroki.io/">Kroki&lt;/a>。&lt;/p>
+&lt;h2 id="性能">性能&lt;/h2>
+&lt;p>根据 &lt;a href="https://github.com/jmooring">@jmooring&lt;/a> 的&lt;a href="https://www.veriphor.com/articles/diagrams/#performance">博客&lt;/a>，你可以编辑你的&lt;a href="https://gohugo.io/getting-started/configuration/#configure-file-caches">站点配置&lt;/a>来存储 &lt;code>getresource&lt;/code> 缓存以优化性能。&lt;/p>
+
+
+
+
+
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="nx">caches&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nx">caches&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getresource&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl"> &lt;span class="nx">dir&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;:resourceDir/_gen&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> &lt;span class="nx">maxAge&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">-1&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>不要忘记将 &lt;code>resources&lt;/code> 目录检入源代码控制。&lt;/p>
+&lt;h2 id="图表类型">图表类型&lt;/h2>
+&lt;p>以下图表类型可用：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>blockdiag&lt;/code> - &lt;a href="https://github.com/blockdiag/blockdiag">BlockDiag&lt;/a>&lt;/li>
+&lt;li>&lt;code>bpmn&lt;/code> - &lt;a href="https://github.com/bpmn-io/bpmn-js">BPMN&lt;/a>&lt;/li>
+&lt;li>&lt;code>bytefield&lt;/code> - &lt;a href="https://github.com/Deep-Symmetry/bytefield-svg/">Bytefield&lt;/a>&lt;/li>
+&lt;li>&lt;code>seqdiag&lt;/code> - &lt;a href="https://github.com/blockdiag/seqdiag">SeqDiag&lt;/a>&lt;/li>
+&lt;li>&lt;code>actdiag&lt;/code> - &lt;a href="https://github.com/blockdiag/actdiag">ActDiag&lt;/a>&lt;/li>
+&lt;li>&lt;code>nwdiag&lt;/code> - &lt;a href="https://github.com/blockdiag/nwdiag">NwDiag&lt;/a>&lt;/li>
+&lt;li>&lt;code>packetdiag&lt;/code> - &lt;a href="https://github.com/blockdiag/nwdiag">PacketDiag&lt;/a>&lt;/li>
+&lt;li>&lt;code>rackdiag&lt;/code> - &lt;a href="https://github.com/blockdiag/nwdiag">RackDiag&lt;/a>&lt;/li>
+&lt;li>&lt;code>c4plantuml&lt;/code> - &lt;a href="https://github.com/RicardoNiepel/C4-PlantUML">C4 with PlantUML&lt;/a>&lt;/li>
+&lt;li>&lt;code>d2&lt;/code> - &lt;a href="https://github.com/terrastruct/d2">D2&lt;/a>&lt;/li>
+&lt;li>&lt;code>dbml&lt;/code> - &lt;a href="https://github.com/softwaretechnik-berlin/dbml-renderer">DBML&lt;/a>&lt;/li>
+&lt;li>&lt;code>ditaa&lt;/code> - &lt;a href="https://ditaa.sourceforge.net/">Ditaa&lt;/a>&lt;/li>
+&lt;li>&lt;code>erd&lt;/code> - &lt;a href="https://github.com/BurntSushi/erd">Erd&lt;/a>&lt;/li>
+&lt;li>&lt;code>excalidraw&lt;/code> - &lt;a href="https://github.com/excalidraw/excalidraw">Excalidraw&lt;/a>&lt;/li>
+&lt;li>&lt;code>graphviz&lt;/code> - &lt;a href="https://www.graphviz.org/">GraphViz&lt;/a>&lt;/li>
+&lt;li>&lt;code>mermaid&lt;/code> - &lt;a href="https://github.com/knsv/mermaid">Mermaid&lt;/a>&lt;/li>
+&lt;li>&lt;code>nomnoml&lt;/code> - &lt;a href="https://github.com/skanaar/nomnoml">Nomnoml&lt;/a>&lt;/li>
+&lt;li>&lt;code>pikchr&lt;/code> - &lt;a href="https://github.com/drhsqlite/pikchr">Pikchr&lt;/a>&lt;/li>
+&lt;li>&lt;code>plantuml&lt;/code> - &lt;a href="https://github.com/plantuml/plantuml">PlantUML&lt;/a>&lt;/li>
+&lt;li>&lt;code>structurizr&lt;/code> - &lt;a href="https://github.com/structurizr/dsl">Structurizr&lt;/a>&lt;/li>
+&lt;li>&lt;code>svgbob&lt;/code> - &lt;a href="https://github.com/ivanceras/svgbob">Svgbob&lt;/a>&lt;/li>
+&lt;li>&lt;code>symbolator&lt;/code> - &lt;a href="https://github.com/kevinpt/symbolator">Symbolator&lt;/a>&lt;/li>
+&lt;li>&lt;code>tikz&lt;/code> - &lt;a href="https://github.com/pgf-tikz/pgf">TikZ&lt;/a>&lt;/li>
+&lt;li>&lt;code>umlet&lt;/code> - &lt;a href="https://github.com/umlet/umlet">UMlet&lt;/a>&lt;/li>
+&lt;li>&lt;code>vega&lt;/code> - &lt;a href="https://github.com/vega/vega">Vega&lt;/a>&lt;/li>
+&lt;li>&lt;code>vegalite&lt;/code> - &lt;a href="https://github.com/vega/vega-lite">Vega-Lite&lt;/a>&lt;/li>
+&lt;li>&lt;code>wavedrom&lt;/code> - &lt;a href="https://github.com/wavedrom/wavedrom">WaveDrom&lt;/a>&lt;/li>
+&lt;li>&lt;code>wireviz&lt;/code> - &lt;a href="https://github.com/formatc1702/WireViz">WireViz&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="示例">示例&lt;/h2>
+&lt;h3 id="d2">D2&lt;/h3>
+
+
+
+
+
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">```kroki {type=d2}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl"># 参与者
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">hans: Hans Niemann
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">defendants: {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl"> mc: Magnus Carlsen
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl"> playmagnus: Play Magnus Group
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> chesscom: Chess.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> naka: Hikaru Nakamura
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> mc -&amp;gt; playmagnus: 拥有多数股权
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> playmagnus &amp;lt;-&amp;gt; chesscom: 合并谈判
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl"> chesscom -&amp;gt; naka: 赞助
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl"># 指控
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">hans -&amp;gt; defendants: &amp;#39;起诉要求1亿美元&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl"># 冒犯
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl">defendants.naka -&amp;gt; hans: 在直播中指控作弊
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl">defendants.mc -&amp;gt; hans: 败失后退出并指控
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl">defendants.chesscom -&amp;gt; hans: 72页作弊报告
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">23&lt;/span>&lt;span class="cl">```&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="kroki-img" style="background-color: var(--flexoki-100)">
+&lt;img alt="diagram" class="diagram diagram-kroki diagram-kroki-d2" id="h-rh-cb-kroki-2" src="https://pagliacii.github.io/hugo-bearberry/images/kroki/md5-m7/vsbptAIcMlwJMLnAnQ==.svg">
+&lt;/div>&lt;h3 id="mermaid">Mermaid&lt;/h3>
+
+
+
+
+
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">```kroki {type=mermaid flexoki=paper}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">sequenceDiagram
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl"> participant Alice
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl"> participant Bob
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> Alice-&amp;gt;John: Hello John, how are you?
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl"> loop Healthcheck
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl"> John-&amp;gt;John: Fight against hypochondria...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> end
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> Note right of John: Rational thoughts prevail...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> John--&amp;gt;Alice: Great!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> John-&amp;gt;Bob: How about you?
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> Bob--&amp;gt;John: Jolly good!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl">```&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="kroki-img" style="background-color: var(--flexoki-paper)">
+&lt;img alt="diagram" class="diagram diagram-kroki diagram-kroki-mermaid" id="h-rh-cb-kroki-4" src="https://pagliacii.github.io/hugo-bearberry/images/kroki/md5-4hvUQrv6bby9YZX4/peJRw==.svg">
+&lt;/div>&lt;h3 id="更多示例">更多示例&lt;/h3>
+&lt;p>前往 &lt;a href="https://kroki.io/examples.html">Kroki 示例&lt;/a>页面查看更多内容。&lt;/p></description><content:encoded><![CDATA[<blockquote>
+<p>使用代码围栏块在你的 <a href="https://gohugo.io/">Hugo</a> 站点中嵌入图表的 SVG 图像，使用免费的 <a href="https://kroki.io/">Kroki</a> 服务。与需要客户端渲染的 JavaScript 解决方案不同，这种方法在页面中嵌入 SVG 图像。<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p></blockquote>
+<p>感谢 <a href="https://github.com/jmooring">@jmooring</a> 和 <a href="https://kroki.io/">Kroki</a>。</p>
+<h2 id="性能">性能</h2>
+<p>根据 <a href="https://github.com/jmooring">@jmooring</a> 的<a href="https://www.veriphor.com/articles/diagrams/#performance">博客</a>，你可以编辑你的<a href="https://gohugo.io/getting-started/configuration/#configure-file-caches">站点配置</a>来存储 <code>getresource</code> 缓存以优化性能。</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="ln">1</span><span class="cl"><span class="p">[</span><span class="nx">caches</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">getresource</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">    <span class="nx">dir</span> <span class="p">=</span> <span class="s2">&#34;:resourceDir/_gen&#34;</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span></span></span></code></pre></div><p>不要忘记将 <code>resources</code> 目录检入源代码控制。</p>
+<h2 id="图表类型">图表类型</h2>
+<p>以下图表类型可用：</p>
+<ul>
+<li><code>blockdiag</code> - <a href="https://github.com/blockdiag/blockdiag">BlockDiag</a></li>
+<li><code>bpmn</code> - <a href="https://github.com/bpmn-io/bpmn-js">BPMN</a></li>
+<li><code>bytefield</code> - <a href="https://github.com/Deep-Symmetry/bytefield-svg/">Bytefield</a></li>
+<li><code>seqdiag</code> - <a href="https://github.com/blockdiag/seqdiag">SeqDiag</a></li>
+<li><code>actdiag</code> - <a href="https://github.com/blockdiag/actdiag">ActDiag</a></li>
+<li><code>nwdiag</code> - <a href="https://github.com/blockdiag/nwdiag">NwDiag</a></li>
+<li><code>packetdiag</code> - <a href="https://github.com/blockdiag/nwdiag">PacketDiag</a></li>
+<li><code>rackdiag</code> - <a href="https://github.com/blockdiag/nwdiag">RackDiag</a></li>
+<li><code>c4plantuml</code> - <a href="https://github.com/RicardoNiepel/C4-PlantUML">C4 with PlantUML</a></li>
+<li><code>d2</code> - <a href="https://github.com/terrastruct/d2">D2</a></li>
+<li><code>dbml</code> - <a href="https://github.com/softwaretechnik-berlin/dbml-renderer">DBML</a></li>
+<li><code>ditaa</code> - <a href="https://ditaa.sourceforge.net/">Ditaa</a></li>
+<li><code>erd</code> - <a href="https://github.com/BurntSushi/erd">Erd</a></li>
+<li><code>excalidraw</code> - <a href="https://github.com/excalidraw/excalidraw">Excalidraw</a></li>
+<li><code>graphviz</code> - <a href="https://www.graphviz.org/">GraphViz</a></li>
+<li><code>mermaid</code> - <a href="https://github.com/knsv/mermaid">Mermaid</a></li>
+<li><code>nomnoml</code> - <a href="https://github.com/skanaar/nomnoml">Nomnoml</a></li>
+<li><code>pikchr</code> - <a href="https://github.com/drhsqlite/pikchr">Pikchr</a></li>
+<li><code>plantuml</code> - <a href="https://github.com/plantuml/plantuml">PlantUML</a></li>
+<li><code>structurizr</code> - <a href="https://github.com/structurizr/dsl">Structurizr</a></li>
+<li><code>svgbob</code> - <a href="https://github.com/ivanceras/svgbob">Svgbob</a></li>
+<li><code>symbolator</code> - <a href="https://github.com/kevinpt/symbolator">Symbolator</a></li>
+<li><code>tikz</code> - <a href="https://github.com/pgf-tikz/pgf">TikZ</a></li>
+<li><code>umlet</code> - <a href="https://github.com/umlet/umlet">UMlet</a></li>
+<li><code>vega</code> - <a href="https://github.com/vega/vega">Vega</a></li>
+<li><code>vegalite</code> - <a href="https://github.com/vega/vega-lite">Vega-Lite</a></li>
+<li><code>wavedrom</code> - <a href="https://github.com/wavedrom/wavedrom">WaveDrom</a></li>
+<li><code>wireviz</code> - <a href="https://github.com/formatc1702/WireViz">WireViz</a></li>
+</ul>
+<h2 id="示例">示例</h2>
+<h3 id="d2">D2</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=d2}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"># 参与者
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">hans: Hans Niemann
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">defendants: {
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  mc: Magnus Carlsen
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">  playmagnus: Play Magnus Group
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  chesscom: Chess.com
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  naka: Hikaru Nakamura
+</span></span><span class="line"><span class="ln">10</span><span class="cl">
+</span></span><span class="line"><span class="ln">11</span><span class="cl">  mc -&gt; playmagnus: 拥有多数股权
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  playmagnus &lt;-&gt; chesscom: 合并谈判
+</span></span><span class="line"><span class="ln">13</span><span class="cl">  chesscom -&gt; naka: 赞助
+</span></span><span class="line"><span class="ln">14</span><span class="cl">}
+</span></span><span class="line"><span class="ln">15</span><span class="cl">
+</span></span><span class="line"><span class="ln">16</span><span class="cl"># 指控
+</span></span><span class="line"><span class="ln">17</span><span class="cl">hans -&gt; defendants: &#39;起诉要求1亿美元&#39;
+</span></span><span class="line"><span class="ln">18</span><span class="cl">
+</span></span><span class="line"><span class="ln">19</span><span class="cl"># 冒犯
+</span></span><span class="line"><span class="ln">20</span><span class="cl">defendants.naka -&gt; hans: 在直播中指控作弊
+</span></span><span class="line"><span class="ln">21</span><span class="cl">defendants.mc -&gt; hans: 败失后退出并指控
+</span></span><span class="line"><span class="ln">22</span><span class="cl">defendants.chesscom -&gt; hans: 72页作弊报告
+</span></span><span class="line"><span class="ln">23</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-d2" id="h-rh-cb-kroki-2" src="/hugo-bearberry/images/kroki/md5-m7/vsbptAIcMlwJMLnAnQ==.svg">
+</div><h3 id="mermaid">Mermaid</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=mermaid flexoki=paper}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">sequenceDiagram
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  participant Alice
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  participant Bob
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  Alice-&gt;John: Hello John, how are you?
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  loop Healthcheck
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    John-&gt;John: Fight against hypochondria...
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  end
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  Note right of John: Rational thoughts prevail...
+</span></span><span class="line"><span class="ln">10</span><span class="cl">  John--&gt;Alice: Great!
+</span></span><span class="line"><span class="ln">11</span><span class="cl">  John-&gt;Bob: How about you?
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  Bob--&gt;John: Jolly good!
+</span></span><span class="line"><span class="ln">13</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-paper)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-mermaid" id="h-rh-cb-kroki-4" src="/hugo-bearberry/images/kroki/md5-4hvUQrv6bby9YZX4/peJRw==.svg">
+</div><h3 id="更多示例">更多示例</h3>
+<p>前往 <a href="https://kroki.io/examples.html">Kroki 示例</a>页面查看更多内容。</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://www.veriphor.com/articles/diagrams/">https://www.veriphor.com/articles/diagrams/</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded></item></channel></rss>

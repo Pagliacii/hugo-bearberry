@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Kroki on Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/tags/kroki/</link><description>Recent content in Kroki on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2024</copyright><lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/tags/kroki/index.xml" rel="self" type="application/rss+xml"/><item><title>Kroki diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</link><pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Kroki on Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/tags/kroki/</link><description>Recent content in Kroki on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/tags/kroki/index.xml" rel="self" type="application/rss+xml"/><item><title>Kroki diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</link><pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</guid><description>&lt;blockquote>
 &lt;p>Use a fenced code block to embed an SVG image of a diagram in your &lt;a href="https://gohugo.io/">Hugo&lt;/a> site using the free &lt;a href="https://kroki.io/">Kroki&lt;/a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;p>Thanks for &lt;a href="https://github.com/jmooring">@jmooring&lt;/a> and &lt;a href="https://kroki.io/">Kroki&lt;/a>.&lt;/p>
 &lt;h2 id="performance">Performance&lt;/h2>
@@ -109,19 +109,10 @@
 </span></span><span class="line"><span class="ln">10</span><span class="cl">  John--&gt;Alice: Great!
 </span></span><span class="line"><span class="ln">11</span><span class="cl">  John-&gt;Bob: How about you?
 </span></span><span class="line"><span class="ln">12</span><span class="cl">  Bob--&gt;John: Jolly good!
-</span></span><span class="line"><span class="ln">13</span><span class="cl">```</span></span></code></pre></div><div class="alert alert-caution">
-  <p class="alert-title">
-    <span class="alert-icon alert-caution-icon">
-      <svg class="octicon octicon-stop mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
-        <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
-      </svg>
-      Caution
-    </span>
-   </p>
-   <p class="alert-text">Disable the mermaid rendering because <a href="https://kroki.io">kroki.io</a> seems to have a <a href="https://kroki.zulipchat.com/#narrow/stream/232085-users/topic/.E2.9C.94.20kroki.2Eio.20returns.20400.20on.20Mermaid.20diagrams">bug</a>.</p>
-</div>
-
-<h3 id="plantuml">PlantUML</h3>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-paper)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-mermaid" id="h-rh-cb-kroki-4" src="/hugo-bearberry/images/kroki/md5-4hvUQrv6bby9YZX4/peJRw==.svg">
+</div><h3 id="plantuml">PlantUML</h3>
 
 
 
@@ -148,7 +139,7 @@
 </span></span><span class="line"><span class="ln">19</span><span class="cl">@endmindmap
 </span></span><span class="line"><span class="ln">20</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-plantuml" id="h-rh-cb-kroki-5" src="/hugo-bearberry/images/kroki/md5-5cerodPBULB8VAVWL2RUKA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-plantuml" id="h-rh-cb-kroki-6" src="/hugo-bearberry/images/kroki/md5-5cerodPBULB8VAVWL2RUKA==.svg">
 </div><h3 id="excalidraw">Excalidraw</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -858,7 +849,7 @@
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-excalidraw" id="h-rh-cb-kroki-6" src="/hugo-bearberry/images/kroki/md5-wbDeQq1vnr2zPeuksJIJKA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-excalidraw" id="h-rh-cb-kroki-7" src="/hugo-bearberry/images/kroki/md5-wbDeQq1vnr2zPeuksJIJKA==.svg">
 </div><h3 id="blockdiag">BlockDiag</h3>
 
 
@@ -876,7 +867,7 @@
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl">}
 </span></span><span class="line"><span class="ln">10</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-blockdiag" id="h-rh-cb-kroki-8" src="/hugo-bearberry/images/kroki/md5-gd4TAzIyVKA+/I5idJ87Sg==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-blockdiag" id="h-rh-cb-kroki-9" src="/hugo-bearberry/images/kroki/md5-gd4TAzIyVKA+/I5idJ87Sg==.svg">
 </div><h3 id="packetdiag">PacketDiag</h3>
 
 
@@ -908,7 +899,7 @@
 </span></span><span class="line"><span class="ln">23</span><span class="cl">}
 </span></span><span class="line"><span class="ln">24</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color:#878580">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-packetdiag" id="h-rh-cb-kroki-10" src="/hugo-bearberry/images/kroki/md5-ODAPKBQzaf3JwnasnRJx4Q==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-packetdiag" id="h-rh-cb-kroki-11" src="/hugo-bearberry/images/kroki/md5-ODAPKBQzaf3JwnasnRJx4Q==.svg">
 </div><h3 id="c4-with-plantuml">C4 with PlantUML</h3>
 
 
@@ -932,7 +923,7 @@
 </span></span><span class="line"><span class="ln">15</span><span class="cl">Rel(banking_system, mainframe, &#34;Uses&#34;)
 </span></span><span class="line"><span class="ln">16</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-c4plantuml" id="h-rh-cb-kroki-12" src="/hugo-bearberry/images/kroki/md5-fX76Miz4HCOpj8Alxjs+ig==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-c4plantuml" id="h-rh-cb-kroki-13" src="/hugo-bearberry/images/kroki/md5-fX76Miz4HCOpj8Alxjs+ig==.svg">
 </div><h3 id="bytefield">Bytefield</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1012,7 +1003,7 @@
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-150)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-bytefield" id="h-rh-cb-kroki-13" src="/hugo-bearberry/images/kroki/md5-rD6c/P+LqWmsUQhl/uc7wg==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-bytefield" id="h-rh-cb-kroki-14" src="/hugo-bearberry/images/kroki/md5-rD6c/P+LqWmsUQhl/uc7wg==.svg">
 </div><h3 id="seqdiag">SeqDiag</h3>
 
 
@@ -1030,7 +1021,7 @@
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl">}
 </span></span><span class="line"><span class="ln">10</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-seqdiag" id="h-rh-cb-kroki-15" src="/hugo-bearberry/images/kroki/md5-7hVnc9gBukTuRa6xNMPk6Q==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-seqdiag" id="h-rh-cb-kroki-16" src="/hugo-bearberry/images/kroki/md5-7hVnc9gBukTuRa6xNMPk6Q==.svg">
 </div><h3 id="actdiag">ActDiag</h3>
 
 
@@ -1052,7 +1043,7 @@
 </span></span><span class="line"><span class="ln">13</span><span class="cl">}
 </span></span><span class="line"><span class="ln">14</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-actdiag" id="h-rh-cb-kroki-17" src="/hugo-bearberry/images/kroki/md5-PhJgLd5qNs6RGla6cLwa1g==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-actdiag" id="h-rh-cb-kroki-18" src="/hugo-bearberry/images/kroki/md5-PhJgLd5qNs6RGla6cLwa1g==.svg">
 </div><h3 id="nwdiag">NwDiag</h3>
 
 
@@ -1078,7 +1069,7 @@
 </span></span><span class="line"><span class="ln">17</span><span class="cl">}
 </span></span><span class="line"><span class="ln">18</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-nwdiag" id="h-rh-cb-kroki-19" src="/hugo-bearberry/images/kroki/md5-naYmLv4n/+S6+S7wIYyZEg==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-nwdiag" id="h-rh-cb-kroki-20" src="/hugo-bearberry/images/kroki/md5-naYmLv4n/+S6+S7wIYyZEg==.svg">
 </div><h3 id="graphviz">GraphViz</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1197,7 +1188,7 @@
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-graphviz" id="h-rh-cb-kroki-20" src="/hugo-bearberry/images/kroki/md5-RvwEIGFjt/vQfaFvyngt/Q==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-graphviz" id="h-rh-cb-kroki-21" src="/hugo-bearberry/images/kroki/md5-RvwEIGFjt/vQfaFvyngt/Q==.svg">
 </div><h3 id="pikchr">Pikchr</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1272,7 +1263,7 @@
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-pikchr" id="h-rh-cb-kroki-21" src="/hugo-bearberry/images/kroki/md5-1II12VfFUgQErOM9IPHRuQ==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-pikchr" id="h-rh-cb-kroki-22" src="/hugo-bearberry/images/kroki/md5-1II12VfFUgQErOM9IPHRuQ==.svg">
 </div><h3 id="erd">Erd</h3>
 
 
@@ -1295,7 +1286,7 @@
 </span></span><span class="line"><span class="ln">14</span><span class="cl">Person *--1 Location
 </span></span><span class="line"><span class="ln">15</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-erd" id="h-rh-cb-kroki-23" src="/hugo-bearberry/images/kroki/md5-GI8vlUGkpgQrHOxHOwUcKg==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-erd" id="h-rh-cb-kroki-24" src="/hugo-bearberry/images/kroki/md5-GI8vlUGkpgQrHOxHOwUcKg==.svg">
 </div><h3 id="vega">Vega</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1387,7 +1378,7 @@
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-24" src="/hugo-bearberry/images/kroki/md5-BFVTHSnZp9AB44cBq1XSAQ==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-NHdI1nnf9XSzvOJZmOsRag==.svg">
 </div><h3 id="vega-lite">Vega-Lite</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1507,7 +1498,7 @@
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vegalite" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-OasvGN3bSjQQE+apq4s0kQ==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vegalite" id="h-rh-cb-kroki-26" src="/hugo-bearberry/images/kroki/md5-OasvGN3bSjQQE+apq4s0kQ==.svg">
 </div><h3 id="ditaa">Ditaa</h3>
 
 
@@ -1541,7 +1532,7 @@
 </span></span><span class="line"><span class="ln">25</span><span class="cl">                                     +-------+
 </span></span><span class="line"><span class="ln">26</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-ditaa" id="h-rh-cb-kroki-27" src="/hugo-bearberry/images/kroki/md5-iDom6/ZwIJSt6rlvQXdvNA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-ditaa" id="h-rh-cb-kroki-28" src="/hugo-bearberry/images/kroki/md5-iDom6/ZwIJSt6rlvQXdvNA==.svg">
 </div><h3 id="dbml">DBML</h3>
 
 
@@ -1574,7 +1565,7 @@
 </span></span><span class="line"><span class="ln">24</span><span class="cl">Ref: posts.user_id &gt; users.id // many-to-one
 </span></span><span class="line"><span class="ln">25</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-dbml" id="h-rh-cb-kroki-29" src="/hugo-bearberry/images/kroki/md5-tvhGJpkIayCFUONw4xlxcA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-dbml" id="h-rh-cb-kroki-30" src="/hugo-bearberry/images/kroki/md5-tvhGJpkIayCFUONw4xlxcA==.svg">
 </div><h3 id="tikz">TikZ</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1683,7 +1674,7 @@
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-30" src="/hugo-bearberry/images/kroki/md5-1y+ttjUvfmTpqOtMV3uS2A==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-31" src="/hugo-bearberry/images/kroki/md5-h5CIZEzoV/lI7uLDi32rWA==.svg">
 </div><h3 id="wavedrom">WaveDrom</h3>
 
 
@@ -1700,7 +1691,7 @@
 </span></span><span class="line"><span class="ln">8</span><span class="cl">]}
 </span></span><span class="line"><span class="ln">9</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-wavedrom" id="h-rh-cb-kroki-32" src="/hugo-bearberry/images/kroki/md5-Tno2lJbS15XjfdZpmVQGkA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-wavedrom" id="h-rh-cb-kroki-33" src="/hugo-bearberry/images/kroki/md5-Tno2lJbS15XjfdZpmVQGkA==.svg">
 </div><h3 id="wireviz">WireViz</h3>
 
 
@@ -1736,7 +1727,7 @@
 </span></span><span class="line"><span class="ln">27</span><span class="cl">    - W1: s
 </span></span><span class="line"><span class="ln">28</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-wireviz" id="h-rh-cb-kroki-34" src="/hugo-bearberry/images/kroki/md5-VQZWJwCLLm44Z45qRda77A==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-wireviz" id="h-rh-cb-kroki-35" src="/hugo-bearberry/images/kroki/md5-VQZWJwCLLm44Z45qRda77A==.svg">
 </div><h3 id="more-examples">More Examples</h3>
 <p>Go to the <a href="https://kroki.io/examples.html">Kroki examples</a> page.</p>
 <div class="footnotes" role="doc-endnotes">
