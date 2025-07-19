@@ -16,7 +16,7 @@
   max-width: 720px;
 }
 
-@media(min-width: 720px) {
+@media(min-width: 721px) {
   .sidebar {
     position: absolute;
     top: 0;
@@ -32,6 +32,41 @@
     position: sticky;
     top: 2vmin;
     align-self: start;
+  }
+}
+
+@media(max-width: 720px) {
+  .article {
+    display: block;
+  }
+  
+  .sidebar {
+    position: static;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .toc-container {
+    position: static;
+    font-size: 0.8rem; /* Smaller font size for mobile */
+    line-height: 1.4; /* Better line spacing */
+  }
+  
+  /* Force expand TOC on mobile */
+  .mobile-toc-expanded .toc-list-item {
+    display: block !important;
+    margin-bottom: 0.5rem; /* Add spacing between items */
+  }
+  
+  .mobile-toc-expanded .toc-list {
+    max-height: none !important;
+    overflow: hidden !important; /* Remove scrollbar */
+    padding-left: 1rem; /* Indent nested items */
+    padding-right: 0.5rem; /* Add some padding */
+  }
+  
+  .mobile-toc-expanded .toc-link {
+    padding: 0.3rem 0; /* Better click target */
   }
 }
 
