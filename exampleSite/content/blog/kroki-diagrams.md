@@ -140,9 +140,19 @@ sequenceDiagram
 ```
 ````
 
-{{< caution >}}
-Disable the mermaid rendering because [kroki.io](https://kroki.io) seems to have a [bug](https://kroki.zulipchat.com/#narrow/stream/232085-users/topic/.E2.9C.94.20kroki.2Eio.20returns.20400.20on.20Mermaid.20diagrams).
-{{< /caution >}}
+```kroki {type=mermaid flexoki=paper}
+sequenceDiagram
+  participant Alice
+  participant Bob
+  Alice->John: Hello John, how are you?
+  loop Healthcheck
+    John->John: Fight against hypochondria...
+  end
+  Note right of John: Rational thoughts prevail...
+  John-->Alice: Great!
+  John->Bob: How about you?
+  Bob-->John: Jolly good!
+```
 
 ### PlantUML
 
