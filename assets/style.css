@@ -46,6 +46,54 @@ body {
   color: var(--flexoki-black);
 }
 
+@media (max-width: 720px) {
+  body {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  content {
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  pre code {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .byline {
+    font-size: 0.65rem !important;
+    color: var(--flexoki-300) !important;
+  }
+  
+  p.byline {
+    font-size: 0.65rem !important;
+    color: var(--flexoki-300) !important;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+  }
+  
+  content h1 {
+    font-size: 1.1rem;
+  }
+  
+  content h2 {
+    font-size: 1rem;
+  }
+  
+  content h3 {
+    font-size: 0.9rem;
+  }
+}
+
 h1,
 b {
   color: var(--flexoki-light-cyan);
@@ -250,21 +298,78 @@ ul.blog-posts {
 }
 
 ul.blog-posts li {
+  margin-bottom: 12px;
+  padding: 8px 0;
+}
+
+.blog-post-content {
   display: flex;
-  margin-bottom: 10px;
+  flex-direction: column;
+  width: 100%;
 }
 
-ul.blog-posts li span {
-  flex: 0 0 130px;
+.blog-post-title {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 4px;
 }
 
-ul.blog-posts li a:visited {
+.blog-post-title a {
+  color: var(--flexoki-light-cyan);
+  text-decoration: none;
+}
+
+.blog-post-title a:hover {
+  color: var(--flexoki-dark-cyan);
+}
+
+.blog-post-title a:visited {
   color: var(--flexoki-dark-blue);
 }
 
-ul.blog-posts li time {
-  color: var(--flexoki-700);
-  font-size: 0.875rem;
+.blog-post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-post-date time {
+  color: var(--flexoki-500);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.blog-post-tags {
+  display: flex;
+  gap: 4px;
+}
+
+@media screen and (max-width: 720px) {
+  .blog-post-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .blog-post-title {
+    margin-bottom: 0;
+    flex: 1;
+  }
+  
+  .blog-post-meta {
+    margin-left: 20px;
+  }
+  
+  .blog-post-tags {
+    display: none;
+  }
+  
+  ul.blog-posts li {
+    margin-bottom: 8px;
+    padding: 4px 0;
+  }
 }
 
 a.blog-tags {
