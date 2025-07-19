@@ -6,16 +6,29 @@
   <ul class="blog-posts">
     {{ range .Pages }}
     <li>
-      <span>
-        <time datetime='{{ .Date.Format (default "2006-01-02" .Site.Params.listDateFormat) }}' pubdate>
-          {{ .Date.Format (default "2006-01-02" .Site.Params.listDateFormat) }}
-        </time>
-      </span>
-      {{ if .Params.link }}
-        <a href="{{ .Params.link }}" target="_blank">{{ .Title }} ↪</a>
-      {{ else }}
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      {{ end }}
+      <div class="blog-post-content">
+        <div class="blog-post-title">
+          {{ if .Params.link }}
+            <a href="{{ .Params.link }}" target="_blank">{{ .Title }} ↪</a>
+          {{ else }}
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          {{ end }}
+        </div>
+        <div class="blog-post-meta">
+          <div class="blog-post-date">
+            <time datetime='{{ .Date.Format (default "2006-01-02" .Site.Params.listDateFormat) }}' pubdate>
+              {{ .Date.Format (default "2006-01-02" .Site.Params.listDateFormat) }}
+            </time>
+          </div>
+          {{ if .Params.tags }}
+          <div class="blog-post-tags">
+            {{ range first 3 .Params.tags }}
+              <a class="blog-tags" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
     </li>
     {{ else }}
     <li>
