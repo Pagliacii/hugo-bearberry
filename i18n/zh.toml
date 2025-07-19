@@ -8,7 +8,7 @@
   other = "回复 "
 
 [email-reply]
-  other = "通过电邮回复此帖"
+  other = "通过邮件回复此帖"
 
 [skip-link]
   other = "跳转至主要内容"
