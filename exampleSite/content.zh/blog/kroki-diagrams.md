@@ -74,7 +74,7 @@ toc = true
 
 ````text
 ```kroki {type=d2}
-# 参与者
+# Actors
 hans: Hans Niemann
 
 defendants: {
@@ -83,18 +83,18 @@ defendants: {
   chesscom: Chess.com
   naka: Hikaru Nakamura
 
-  mc -> playmagnus: 拥有多数股权
-  playmagnus <-> chesscom: 合并谈判
-  chesscom -> naka: 赞助
+  mc -> playmagnus: Owns majority
+  playmagnus <-> chesscom: Merger talks
+  chesscom -> naka: Sponsoring
 }
 
-# 指控
-hans -> defendants: '起诉要求1亿美元'
+# Accusations
+hans -> defendants: 'sueing for $100M'
 
-# 冒犯
-defendants.naka -> hans: 在直播中指控作弊
-defendants.mc -> hans: 败失后退出并指控
-defendants.chesscom -> hans: 72页作弊报告
+# Offense
+defendants.naka -> hans: Accused of cheating on his stream
+defendants.mc -> hans: Lost then withdrew with accusations
+defendants.chesscom -> hans: 72 page report of cheating
 ```
 ````
 
@@ -157,3 +157,4 @@ sequenceDiagram
 ### 更多示例
 
 前往 [Kroki 示例](https://kroki.io/examples.html)页面查看更多内容。
+
