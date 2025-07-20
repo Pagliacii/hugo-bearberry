@@ -232,7 +232,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">```kroki {type=d2}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl"># 参与者
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl"># Actors
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">hans: Hans Niemann
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">defendants: {
@@ -241,18 +241,18 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl"> chesscom: Chess.com
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> naka: Hikaru Nakamura
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> mc -&amp;gt; playmagnus: 拥有多数股权
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> playmagnus &amp;lt;-&amp;gt; chesscom: 合并谈判
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl"> chesscom -&amp;gt; naka: 赞助
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> mc -&amp;gt; playmagnus: Owns majority
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> playmagnus &amp;lt;-&amp;gt; chesscom: Merger talks
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl"> chesscom -&amp;gt; naka: Sponsoring
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">}
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl"># 指控
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">hans -&amp;gt; defendants: &amp;#39;起诉要求1亿美元&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl"># Accusations
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">hans -&amp;gt; defendants: &amp;#39;sueing for $100M&amp;#39;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl"># 冒犯
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl">defendants.naka -&amp;gt; hans: 在直播中指控作弊
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl">defendants.mc -&amp;gt; hans: 败失后退出并指控
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl">defendants.chesscom -&amp;gt; hans: 72页作弊报告
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl"># Offense
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl">defendants.naka -&amp;gt; hans: Accused of cheating on his stream
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl">defendants.mc -&amp;gt; hans: Lost then withdrew with accusations
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl">defendants.chesscom -&amp;gt; hans: 72 page report of cheating
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">23&lt;/span>&lt;span class="cl">```&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
 &lt;div class="kroki-img" style="background-color: var(--flexoki-100)">
 &lt;img alt="diagram" class="diagram diagram-kroki diagram-kroki-d2" id="h-rh-cb-kroki-2" src="https://pagliacii.github.io/hugo-bearberry/images/kroki/md5-m7/vsbptAIcMlwJMLnAnQ==.svg">
@@ -332,7 +332,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=d2}
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl"># 参与者
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"># Actors
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">hans: Hans Niemann
 </span></span><span class="line"><span class="ln"> 4</span><span class="cl">
 </span></span><span class="line"><span class="ln"> 5</span><span class="cl">defendants: {
@@ -341,18 +341,18 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 </span></span><span class="line"><span class="ln"> 8</span><span class="cl">  chesscom: Chess.com
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl">  naka: Hikaru Nakamura
 </span></span><span class="line"><span class="ln">10</span><span class="cl">
-</span></span><span class="line"><span class="ln">11</span><span class="cl">  mc -&gt; playmagnus: 拥有多数股权
-</span></span><span class="line"><span class="ln">12</span><span class="cl">  playmagnus &lt;-&gt; chesscom: 合并谈判
-</span></span><span class="line"><span class="ln">13</span><span class="cl">  chesscom -&gt; naka: 赞助
+</span></span><span class="line"><span class="ln">11</span><span class="cl">  mc -&gt; playmagnus: Owns majority
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  playmagnus &lt;-&gt; chesscom: Merger talks
+</span></span><span class="line"><span class="ln">13</span><span class="cl">  chesscom -&gt; naka: Sponsoring
 </span></span><span class="line"><span class="ln">14</span><span class="cl">}
 </span></span><span class="line"><span class="ln">15</span><span class="cl">
-</span></span><span class="line"><span class="ln">16</span><span class="cl"># 指控
-</span></span><span class="line"><span class="ln">17</span><span class="cl">hans -&gt; defendants: &#39;起诉要求1亿美元&#39;
+</span></span><span class="line"><span class="ln">16</span><span class="cl"># Accusations
+</span></span><span class="line"><span class="ln">17</span><span class="cl">hans -&gt; defendants: &#39;sueing for $100M&#39;
 </span></span><span class="line"><span class="ln">18</span><span class="cl">
-</span></span><span class="line"><span class="ln">19</span><span class="cl"># 冒犯
-</span></span><span class="line"><span class="ln">20</span><span class="cl">defendants.naka -&gt; hans: 在直播中指控作弊
-</span></span><span class="line"><span class="ln">21</span><span class="cl">defendants.mc -&gt; hans: 败失后退出并指控
-</span></span><span class="line"><span class="ln">22</span><span class="cl">defendants.chesscom -&gt; hans: 72页作弊报告
+</span></span><span class="line"><span class="ln">19</span><span class="cl"># Offense
+</span></span><span class="line"><span class="ln">20</span><span class="cl">defendants.naka -&gt; hans: Accused of cheating on his stream
+</span></span><span class="line"><span class="ln">21</span><span class="cl">defendants.mc -&gt; hans: Lost then withdrew with accusations
+</span></span><span class="line"><span class="ln">22</span><span class="cl">defendants.chesscom -&gt; hans: 72 page report of cheating
 </span></span><span class="line"><span class="ln">23</span><span class="cl">```</span></span></code></pre></div>
 <div class="kroki-img" style="background-color: var(--flexoki-100)">
 <img alt="diagram" class="diagram diagram-kroki diagram-kroki-d2" id="h-rh-cb-kroki-2" src="/hugo-bearberry/images/kroki/md5-m7/vsbptAIcMlwJMLnAnQ==.svg">
