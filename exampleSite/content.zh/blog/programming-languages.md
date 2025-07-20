@@ -2,7 +2,7 @@
 author = "Hugo Authors"
 title = "编程语言"
 date = "2023-10-22"
-description = "使用代码围栏块展示各种编程语言示例。"
+description = "使用代码块展示各种编程语言示例。"
 tags = [
     "markdown",
     "code",

@@ -16,7 +16,7 @@ tags = [
 toc = true
 +++
 
-> 使用代码围栏块在你的 [Hugo](https://gohugo.io/) 站点中嵌入图表的 SVG 图像，使用免费的 [Kroki](https://kroki.io/) 服务。与需要客户端渲染的 JavaScript 解决方案不同，这种方法在页面中嵌入 SVG 图像。[^1]
+> 使用代码块在你的 [Hugo](https://gohugo.io/) 站点中嵌入图表的 SVG 图像，使用免费的 [Kroki](https://kroki.io/) 服务。与需要客户端渲染的 JavaScript 解决方案不同，这种方法在页面中嵌入 SVG 图像。[^1]
 
 [^1]: https://www.veriphor.com/articles/diagrams/
 
