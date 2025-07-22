@@ -1,29 +1,39 @@
 <!-- Dynamic social card generation -->
-{{ $font := resources.GetRemote "https://github.com/google/fonts/raw/main/ofl/firamono/FiraMono-Bold.ttf" }}
+{{ $fontPath := "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf" }}
+{{ $font := "" }}
+{{ with try (resources.GetRemote $fontPath) }}
+  {{ with .Err }}
+    {{ errorf "Failed to load font: %s" . }}
+  {{ else with .Value }}
+    {{ $font = . }}
+  {{ end }}
+{{ end }}
 {{ $fg := resources.Get "images/social_card_fg.png"}}
 {{ $bg := resources.Get "images/social_card_bg.png"}}
 
-{{ $fg = $fg.Filter (images.Text .Title (dict
-    "font" $font
+{{ $titleOptions := dict
     "color" "#f8f8f2"
     "size" 130
     "linespacing" 20
     "x" 0
     "y" 0
-)) }}
+}}
+{{ if $font }}{{ $titleOptions = merge $titleOptions (dict "font" $font) }}{{ end }}
+{{ $fg = $fg.Filter (images.Text .Title $titleOptions) }}
 
 {{ $date := .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
 {{ $author := (default $.Site.Params.author.name ($.Param "author") ) }}
 {{ $byline := (printf "%s | %s" $author $date) }}
 
-{{ $fg = $fg.Filter (images.Text $byline (dict
-    "font" $font
+{{ $bylineOptions := dict
     "color" "#c9d1d9"
     "size" 60
     "linespacing" 30
     "x" 0
     "y" 425
-)) }}
+}}
+{{ if $font }}{{ $bylineOptions = merge $bylineOptions (dict "font" $font) }}{{ end }}
+{{ $fg = $fg.Filter (images.Text $byline $bylineOptions) }}
 
 {{ $card := $bg.Filter (images.Overlay $fg 112 140 ) }}
 {{ $card := $card.Resize "900x webp q100" }}
