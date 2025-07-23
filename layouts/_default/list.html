@@ -20,10 +20,10 @@
               {{ .Date.Format (default "2006-01-02" .Site.Params.listDateFormat) }}
             </time>
           </div>
-          {{ if .Params.tags }}
+          {{ if .GetTerms "tags" }}
           <div class="blog-post-tags">
-            {{ range first 3 .Params.tags }}
-              <a class="blog-tags" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
+            {{ range first 3 (.GetTerms "tags") }}
+              <a class="blog-tags" href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
             {{ end }}
           </div>
           {{ end }}
