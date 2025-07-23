@@ -3,7 +3,7 @@ baseURL = "https://example.com"
 theme = "hugo-bearberry"
 copyright = "[Jason Huang](https://github.com/Pagliacii) © 2025"
 defaultContentLanguage = "en"
-timeout = "60s"
+timeout = "120s"
 
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
