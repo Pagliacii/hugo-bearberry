@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/</link><description>Recent content on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><atom:link href="https://pagliacii.github.io/hugo-bearberry/index.xml" rel="self" type="application/rss+xml"/><item><title>Math Typesetting via Mathjax</title><link>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting-mathjax/</link><pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting-mathjax/</guid><description>&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p></description><content:encoded><![CDATA[<p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/</link><description>Recent content on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><atom:link href="https://pagliacii.github.io/hugo-bearberry/index.xml" rel="self" type="application/rss+xml"/><item><title>中文测试文章：如何使用Hugo创建静态网站</title><link>https://pagliacii.github.io/hugo-bearberry/blog/chinese-test/</link><pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/chinese-test/</guid><description>&lt;h1 id="中文标题测试">中文标题测试&lt;/h1>
+&lt;p>这是一个测试中文内容在社交媒体分享卡片中显示效果的文章。我们将验证中文文字是否能够正确显示，而不是显示为空白方块。&lt;/p></description><content:encoded><![CDATA[<h1 id="中文标题测试">中文标题测试</h1>
+<p>这是一个测试中文内容在社交媒体分享卡片中显示效果的文章。我们将验证中文文字是否能够正确显示，而不是显示为空白方块。</p>
+<h2 id="主要内容">主要内容</h2>
+<p>中文内容应该能够正常显示在社交媒体上，包括微信、微博等平台。</p>
+<h3 id="测试要点">测试要点</h3>
+<ol>
+<li>中文标题显示</li>
+<li>中文作者名称显示</li>
+<li>中文描述显示</li>
+<li>字体渲染效果</li>
+</ol>
+<h2 id="结论">结论</h2>
+<p>如果中文能够正常显示，那么这个功能就测试成功了。</p>]]></content:encoded></item><item><title>Math Typesetting via Mathjax</title><link>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting-mathjax/</link><pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting-mathjax/</guid><description>&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p></description><content:encoded><![CDATA[<p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
 <h2 id="configuration">Configuration</h2>
 <p>You can enable Mathjax by using the <code>mathjax</code> option in your site&rsquo;s configuration file or in the front matter:</p>
 
@@ -1558,7 +1571,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-zRWMt3T4G7FLUtv2N+2jsA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-OCIWoKnBQ6RcxGh3p02qTg==.svg">
 </div><h3 id="vega-lite">Vega-Lite</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1854,7 +1867,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-31" src="/hugo-bearberry/images/kroki/md5-YIaLpkajTYuHQZdqccSBMA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-31" src="/hugo-bearberry/images/kroki/md5-tHQieEASfoUxi9GhOsdr6Q==.svg">
 </div><h3 id="wavedrom">WaveDrom</h3>
 
 
