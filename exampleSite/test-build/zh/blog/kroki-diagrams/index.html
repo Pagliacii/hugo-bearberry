@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="apple-touch-icon" size="180x180" href="https://pagliacii.github.io/hugo-bearberry/images/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://pagliacii.github.io/hugo-bearberry/images/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://pagliacii.github.io/hugo-bearberry/images/favicon-16x16.png" />
+<link rel="manifest" href="https://pagliacii.github.io/hugo-bearberry/images/site.webmanifest" />
+<link rel="mask-icon" href="https://pagliacii.github.io/hugo-bearberry/images/safari-pinned-tab.svg" color='#5bbad5' />
+<link rel="shortcut icon" href="https://pagliacii.github.io/hugo-bearberry/images/favicon.ico" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="msapplication-config" content="https://pagliacii.github.io/hugo-bearberry/images/browserconfig.xml" />
+<meta name="theme-color" content="#fff" />
+<title>Kroki 图表 | 熊莓</title>
+<meta name="title" content="Kroki 图表" />
+<meta name="description" content="使用免费的 Kroki 服务在 Hugo 站点中嵌入图表的 SVG 图像。" />
+<meta name="keywords" content="markdown,code,diagram,mermaid,kroki,plantuml,d2,c4," />
+
+
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Kroki 图表" />
+<meta property="og:description" content="使用免费的 Kroki 服务在 Hugo 站点中嵌入图表的 SVG 图像。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pagliacii.github.io/hugo-bearberry/zh/blog/kroki-diagrams/" />
+
+<meta property="og:image" content="https://pagliacii.github.io/hugo-bearberry/images/social_card_bg_hu_7d5c8606fbb3528.webp"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-10-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-07-20T23:17:16+08:00" /><meta property="og:site_name" content="Bear Berry" />
+<meta property="fb:admins" content="0000000000" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://pagliacii.github.io/hugo-bearberry/images/social_card_bg_hu_7d5c8606fbb3528.webp"/>
+<meta name="twitter:title" content="Kroki 图表"/>
+<meta name="twitter:description" content="使用免费的 Kroki 服务在 Hugo 站点中嵌入图表的 SVG 图像。"/>
+<meta name="twitter:site" content="@example"/>
+
+
+
+<meta itemprop="name" content="Kroki 图表">
+<meta itemprop="description" content="使用免费的 Kroki 服务在 Hugo 站点中嵌入图表的 SVG 图像。"><meta itemprop="datePublished" content="2023-10-28T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2025-07-20T23:17:16+08:00" />
+<meta itemprop="wordCount" content="261">
+
+<meta itemprop="image" content="https://pagliacii.github.io/hugo-bearberry/images/social_card_bg_hu_7d5c8606fbb3528.webp"/>
+
+
+<meta itemprop="keywords" content="markdown,code,diagram,mermaid,kroki,plantuml,d2,c4," />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  
+  <link href="/hugo-bearberry/style.min.css" rel="stylesheet">
+
+  
+    
+    <link href="/hugo-bearberry/syntax.min.css" rel="stylesheet">
+  
+
+  
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.21.2/tocbot.css">
+    
+    <link href="/hugo-bearberry/toc.min.css" rel="stylesheet">
+  
+
+  
+</head>
+
+<body>
+  <header><a class="skip-link" href="#main-content">跳转至主要内容</a>
+
+<a href="/hugo-bearberry/zh/" class="title"><h1>熊莓</h1></a>
+<nav>
+  <a href="/hugo-bearberry/zh/">首页</a>
+
+  <a href="/hugo-bearberry/zh/blog/">文章</a>
+
+  <a href="/hugo-bearberry/zh/tags/">标签</a>
+
+<a href='https://pagliacii.github.io/hugo-bearberry/index.xml'>RSS</a>
+
+
+
+
+  
+
+
+
+
+  
+    <a href="https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/">en-US 🇺🇸</a>
+  
+
+</nav>
+</header>
+  <main id="main-content">
+
+<h1>Kroki 图表</h1>
+<p class="byline" style="color: gray; font-size: 0.9rem">
+  Published:
+  <time datetime='2023-10-28 00:00:00' pubdate>
+    2023-10-28 00:00:00
+  </time>
+  | Updated:
+  <time datetime='2025-07-20 23:17:16'>
+    2025-07-20 23:17:16
+  </time>
+  |
+  <span>300</span>
+  <span>words</span>
+  |
+  <span>2</span>
+  <span>mins</span>
+</p>
+
+
+
+<article class="article">
+  <aside class="sidebar">
+    <div class="toc-container">
+      <div style="font-weight: bold; margin-bottom: 0.4rem">文章目录</div>
+      <div class="toc"></div>
+    </div>
+  </aside>
+
+  <content class="content">
+    <blockquote>
+<p>使用代码块在你的 <a href="https://gohugo.io/">Hugo</a> 站点中嵌入图表的 SVG 图像，使用免费的 <a href="https://kroki.io/">Kroki</a> 服务。与需要客户端渲染的 JavaScript 解决方案不同，这种方法在页面中嵌入 SVG 图像。<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p></blockquote>
+<p>感谢 <a href="https://github.com/jmooring">@jmooring</a> 和 <a href="https://kroki.io/">Kroki</a>。</p>
+<h2 id="性能">性能</h2>
+<p>根据 <a href="https://github.com/jmooring">@jmooring</a> 的<a href="https://www.veriphor.com/articles/diagrams/#performance">博客</a>，你可以编辑你的<a href="https://gohugo.io/getting-started/configuration/#configure-file-caches">站点配置</a>来存储 <code>getresource</code> 缓存以优化性能。</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="ln">1</span><span class="cl"><span class="p">[</span><span class="nx">caches</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">getresource</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">    <span class="nx">dir</span> <span class="p">=</span> <span class="s2">&#34;:resourceDir/_gen&#34;</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span></span></span></code></pre></div><p>不要忘记将 <code>resources</code> 目录检入源代码控制。</p>
+<h2 id="图表类型">图表类型</h2>
+<p>以下图表类型可用：</p>
+<ul>
+<li><code>blockdiag</code> - <a href="https://github.com/blockdiag/blockdiag">BlockDiag</a></li>
+<li><code>bpmn</code> - <a href="https://github.com/bpmn-io/bpmn-js">BPMN</a></li>
+<li><code>bytefield</code> - <a href="https://github.com/Deep-Symmetry/bytefield-svg/">Bytefield</a></li>
+<li><code>seqdiag</code> - <a href="https://github.com/blockdiag/seqdiag">SeqDiag</a></li>
+<li><code>actdiag</code> - <a href="https://github.com/blockdiag/actdiag">ActDiag</a></li>
+<li><code>nwdiag</code> - <a href="https://github.com/blockdiag/nwdiag">NwDiag</a></li>
+<li><code>packetdiag</code> - <a href="https://github.com/blockdiag/nwdiag">PacketDiag</a></li>
+<li><code>rackdiag</code> - <a href="https://github.com/blockdiag/nwdiag">RackDiag</a></li>
+<li><code>c4plantuml</code> - <a href="https://github.com/RicardoNiepel/C4-PlantUML">C4 with PlantUML</a></li>
+<li><code>d2</code> - <a href="https://github.com/terrastruct/d2">D2</a></li>
+<li><code>dbml</code> - <a href="https://github.com/softwaretechnik-berlin/dbml-renderer">DBML</a></li>
+<li><code>ditaa</code> - <a href="https://ditaa.sourceforge.net/">Ditaa</a></li>
+<li><code>erd</code> - <a href="https://github.com/BurntSushi/erd">Erd</a></li>
+<li><code>excalidraw</code> - <a href="https://github.com/excalidraw/excalidraw">Excalidraw</a></li>
+<li><code>graphviz</code> - <a href="https://www.graphviz.org/">GraphViz</a></li>
+<li><code>mermaid</code> - <a href="https://github.com/knsv/mermaid">Mermaid</a></li>
+<li><code>nomnoml</code> - <a href="https://github.com/skanaar/nomnoml">Nomnoml</a></li>
+<li><code>pikchr</code> - <a href="https://github.com/drhsqlite/pikchr">Pikchr</a></li>
+<li><code>plantuml</code> - <a href="https://github.com/plantuml/plantuml">PlantUML</a></li>
+<li><code>structurizr</code> - <a href="https://github.com/structurizr/dsl">Structurizr</a></li>
+<li><code>svgbob</code> - <a href="https://github.com/ivanceras/svgbob">Svgbob</a></li>
+<li><code>symbolator</code> - <a href="https://github.com/kevinpt/symbolator">Symbolator</a></li>
+<li><code>tikz</code> - <a href="https://github.com/pgf-tikz/pgf">TikZ</a></li>
+<li><code>umlet</code> - <a href="https://github.com/umlet/umlet">UMlet</a></li>
+<li><code>vega</code> - <a href="https://github.com/vega/vega">Vega</a></li>
+<li><code>vegalite</code> - <a href="https://github.com/vega/vega-lite">Vega-Lite</a></li>
+<li><code>wavedrom</code> - <a href="https://github.com/wavedrom/wavedrom">WaveDrom</a></li>
+<li><code>wireviz</code> - <a href="https://github.com/formatc1702/WireViz">WireViz</a></li>
+</ul>
+<h2 id="示例">示例</h2>
+<h3 id="d2">D2</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=d2}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"># Actors
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">hans: Hans Niemann
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">defendants: {
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  mc: Magnus Carlsen
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">  playmagnus: Play Magnus Group
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  chesscom: Chess.com
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  naka: Hikaru Nakamura
+</span></span><span class="line"><span class="ln">10</span><span class="cl">
+</span></span><span class="line"><span class="ln">11</span><span class="cl">  mc -&gt; playmagnus: Owns majority
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  playmagnus &lt;-&gt; chesscom: Merger talks
+</span></span><span class="line"><span class="ln">13</span><span class="cl">  chesscom -&gt; naka: Sponsoring
+</span></span><span class="line"><span class="ln">14</span><span class="cl">}
+</span></span><span class="line"><span class="ln">15</span><span class="cl">
+</span></span><span class="line"><span class="ln">16</span><span class="cl"># Accusations
+</span></span><span class="line"><span class="ln">17</span><span class="cl">hans -&gt; defendants: &#39;sueing for $100M&#39;
+</span></span><span class="line"><span class="ln">18</span><span class="cl">
+</span></span><span class="line"><span class="ln">19</span><span class="cl"># Offense
+</span></span><span class="line"><span class="ln">20</span><span class="cl">defendants.naka -&gt; hans: Accused of cheating on his stream
+</span></span><span class="line"><span class="ln">21</span><span class="cl">defendants.mc -&gt; hans: Lost then withdrew with accusations
+</span></span><span class="line"><span class="ln">22</span><span class="cl">defendants.chesscom -&gt; hans: 72 page report of cheating
+</span></span><span class="line"><span class="ln">23</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-d2" id="h-rh-cb-kroki-2" src="/hugo-bearberry/images/kroki/md5-Qn+pg0wTLP9csGo6grANSQ==.svg">
+</div><h3 id="mermaid">Mermaid</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=mermaid flexoki=paper}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">sequenceDiagram
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  participant Alice
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  participant Bob
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  Alice-&gt;John: Hello John, how are you?
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  loop Healthcheck
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    John-&gt;John: Fight against hypochondria...
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  end
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  Note right of John: Rational thoughts prevail...
+</span></span><span class="line"><span class="ln">10</span><span class="cl">  John--&gt;Alice: Great!
+</span></span><span class="line"><span class="ln">11</span><span class="cl">  John-&gt;Bob: How about you?
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  Bob--&gt;John: Jolly good!
+</span></span><span class="line"><span class="ln">13</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-paper)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-mermaid" id="h-rh-cb-kroki-4" src="/hugo-bearberry/images/kroki/md5-4hvUQrv6bby9YZX4/peJRw==.svg">
+</div><h3 id="更多示例">更多示例</h3>
+<p>前往 <a href="https://kroki.io/examples.html">Kroki 示例</a>页面查看更多内容。</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://www.veriphor.com/articles/diagrams/">https://www.veriphor.com/articles/diagrams/</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+  </content>
+  <p>
+    
+      <a class="blog-tags" href="https://pagliacii.github.io/hugo-bearberry/zh/tags/markdown/">#Markdown</a>&nbsp;&nbsp;
+    
+      <a class="blog-tags" href="https://pagliacii.github.io/hugo-bearberry/zh/tags/code/">#Code</a>&nbsp;&nbsp;
+    
+      <a class="blog-tags" href="https://pagliacii.github.io/hugo-bearberry/zh/tags/diagram/">#Diagram</a>&nbsp;&nbsp;
+    
+      <a class="blog-tags" href="https://pagliacii.github.io/hugo-bearberry/zh/tags/mermaid/">#Mermaid</a>&nbsp;&nbsp;
+    
+      <a class="blog-tags" href="https://pagliacii.github.io/hugo-bearberry/zh/tags/kroki/">#Kroki</a>&nbsp;&nbsp;
+    
+      <a class="blog-tags" href="https://pagliacii.github.io/hugo-bearberry/zh/tags/plantuml/">#Plantuml</a>&nbsp;&nbsp;
+    
+      <a class="blog-tags" href="https://pagliacii.github.io/hugo-bearberry/zh/tags/d2/">#D2</a>&nbsp;&nbsp;
+    
+      <a class="blog-tags" href="https://pagliacii.github.io/hugo-bearberry/zh/tags/c4/">#C4</a>&nbsp;&nbsp;
+    
+  </p>
+
+</article>
+
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="Pagliacii/hugo-bearberry"
+        data-repo-id="R_kgDOKjHQVw"
+        data-category="Comments"
+        data-category-id="DIC_kwDOKjHQV84CaU_R"
+        data-mapping='og:title'
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position='top'
+        data-theme='https://giscus.catppuccin.com/themes/latte.css'
+        data-lang='en'
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  <p>
+    <a href='mailto:me@example.com?subject=%e5%9b%9e%e5%a4%8d%20"Kroki%20%e5%9b%be%e8%a1%a8"'>
+      通过邮件回复此帖 ↪
+    </a>
+  </p>
+
+
+
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  cornerOffset: 32,
+  diameter: 48,
+  backgroundColor: "var(--flexoki-dark-cyan)",
+  textColor: "var(--flexoki-50)",
+  showWhenScrollTopIs: 512, 
+})</script>
+
+  
+  <script src="/hugo-bearberry/js/copy-code-button.min.js"></script>
+
+
+
+  </main>
+  <footer><small>
+  <a href="https://github.com/Pagliacii">Jason Huang</a> © 2025 | 由 <a href="https://github.com/Pagliacii/hugo-bearberry">Bear Berry</a> 驱动
+</small>
+</footer>
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.21.2/tocbot.min.js"></script>
+    
+    <script src="/hugo-bearberry/js/toc.min.js"></script>
+  
+
+    
+</body>
+
+</html>

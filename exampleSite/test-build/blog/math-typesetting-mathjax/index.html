@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="apple-touch-icon" size="180x180" href="https://pagliacii.github.io/hugo-bearberry/images/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://pagliacii.github.io/hugo-bearberry/images/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://pagliacii.github.io/hugo-bearberry/images/favicon-16x16.png" />
+<link rel="manifest" href="https://pagliacii.github.io/hugo-bearberry/images/site.webmanifest" />
+<link rel="mask-icon" href="https://pagliacii.github.io/hugo-bearberry/images/safari-pinned-tab.svg" color='#5bbad5' />
+<link rel="shortcut icon" href="https://pagliacii.github.io/hugo-bearberry/images/favicon.ico" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="msapplication-config" content="https://pagliacii.github.io/hugo-bearberry/images/browserconfig.xml" />
+<meta name="theme-color" content="#fff" />
+<title>Math Typesetting via Mathjax | Bear Berry</title>
+<meta name="title" content="Math Typesetting via Mathjax" />
+<meta name="description" content="Using Mathjax to render mathematical notations" />
+<meta name="keywords" content="" />
+
+
+
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Math Typesetting via Mathjax" />
+<meta property="og:description" content="Using Mathjax to render mathematical notations" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting-mathjax/" />
+
+<meta property="og:image" content="https://pagliacii.github.io/hugo-bearberry/images/social_card_bg_hu_3bcd460313a34793.webp"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2024-01-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-01-14T15:48:34+08:00" /><meta property="og:site_name" content="Bear Berry" />
+<meta property="fb:admins" content="0000000000" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://pagliacii.github.io/hugo-bearberry/images/social_card_bg_hu_3bcd460313a34793.webp"/>
+<meta name="twitter:title" content="Math Typesetting via Mathjax"/>
+<meta name="twitter:description" content="Using Mathjax to render mathematical notations"/>
+<meta name="twitter:site" content="@example"/>
+
+
+
+<meta itemprop="name" content="Math Typesetting via Mathjax">
+<meta itemprop="description" content="Using Mathjax to render mathematical notations"><meta itemprop="datePublished" content="2024-01-14T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-01-14T15:48:34+08:00" />
+<meta itemprop="wordCount" content="67">
+
+<meta itemprop="image" content="https://pagliacii.github.io/hugo-bearberry/images/social_card_bg_hu_3bcd460313a34793.webp"/>
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  
+  <link href="/hugo-bearberry/style.min.css" rel="stylesheet">
+
+  
+    
+    <link href="/hugo-bearberry/syntax.min.css" rel="stylesheet">
+  
+
+  
+
+  
+
+  
+</head>
+
+<body>
+  <header><a class="skip-link" href="#main-content">Skip to main content</a>
+
+<a href="/hugo-bearberry" class="title"><h1>Bear Berry</h1></a>
+<nav>
+  <a href="/hugo-bearberry/">Home</a>
+
+  <a href="/hugo-bearberry/blog/">Blog</a>
+
+  <a href="/hugo-bearberry/tags/">Tags</a>
+
+<a href='https://pagliacii.github.io/hugo-bearberry/index.xml'>RSS</a>
+
+
+
+
+  
+
+
+
+
+  
+    <a href="https://pagliacii.github.io/hugo-bearberry/zh/blog/math-typesetting-mathjax/">zh-CN 🇨🇳</a>
+  
+
+</nav>
+</header>
+  <main id="main-content">
+
+<h1>Math Typesetting via Mathjax</h1>
+<p class="byline" style="color: gray; font-size: 0.9rem">
+  Published:
+  <time datetime='2024-01-14 00:00:00' pubdate>
+    2024-01-14 00:00:00
+  </time>
+  | Updated:
+  <time datetime='2024-01-14 15:48:34'>
+    2024-01-14 15:48:34
+  </time>
+  |
+  <span>100</span>
+  <span>words</span>
+  |
+  <span>1</span>
+  <span>mins</span>
+</p>
+
+
+
+  <content class="content">
+    <p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
+<h2 id="configuration">Configuration</h2>
+<p>You can enable Mathjax by using the <code>mathjax</code> option in your site&rsquo;s configuration file or in the front matter:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="ln">1</span><span class="cl"><span class="nx">math</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nx">mathjax</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div><h2 id="example">Example</h2>
+<p>When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
+  </content>
+  <p>
+    
+  </p>
+
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="Pagliacii/hugo-bearberry"
+        data-repo-id="R_kgDOKjHQVw"
+        data-category="Comments"
+        data-category-id="DIC_kwDOKjHQV84CaU_R"
+        data-mapping='og:title'
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position='top'
+        data-theme='https://giscus.catppuccin.com/themes/latte.css'
+        data-lang='en'
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  <p>
+    <a href='mailto:me@example.com?subject=Reply%20to%20"Math%20Typesetting%20via%20Mathjax"'>
+      Reply to this post by email ↪
+    </a>
+  </p>
+
+
+
+
+<script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+        MathJax.Hub.Config({
+            
+            TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+    </script>
+
+
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  cornerOffset: 32,
+  diameter: 48,
+  backgroundColor: "var(--flexoki-dark-cyan)",
+  textColor: "var(--flexoki-50)",
+  showWhenScrollTopIs: 512, 
+})</script>
+
+  
+  <script src="/hugo-bearberry/js/copy-code-button.min.js"></script>
+
+
+
+  </main>
+  <footer><small>
+  <a href="https://github.com/Pagliacii">Jason Huang</a> © 2025 | Made with <a href="https://github.com/Pagliacii/hugo-bearberry">Bear Berry</a>
+</small>
+</footer>
+
+  
+
+    
+</body>
+
+</html>

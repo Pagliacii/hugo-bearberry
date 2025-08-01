@@ -230,6 +230,7 @@ td {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 code {
@@ -256,7 +257,8 @@ pre code {
   overflow-x: auto;
   overflow-y: auto;
   max-height: 36rem;
-  color: var(--flexoki-800)
+  color: var(--flexoki-800);
+  text-wrap: nowrap;
 }
 
 blockquote {
@@ -376,6 +378,7 @@ a.blog-tags {
   line-height: 2;
   font-size: smaller;
   color: var(--flexoki-light-blue);
+  margin-right: 12px;
 }
 
 h3.blog-filter {

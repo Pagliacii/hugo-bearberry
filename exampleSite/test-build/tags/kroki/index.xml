@@ -1,0 +1,1748 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Kroki on Bear Berry</title>
+    <link>https://pagliacii.github.io/hugo-bearberry/tags/kroki/</link>
+    <description>Recent content in Kroki on Bear Berry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>me@example.com (Jason Huang)</managingEditor>
+    <webMaster>me@example.com (Jason Huang)</webMaster>
+    <copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright>
+    <lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pagliacii.github.io/hugo-bearberry/tags/kroki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kroki diagrams</title>
+      <link>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</link>
+      <pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author>
+      <guid>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Use a fenced code block to embed an SVG image of a diagram in your &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; site using the free &lt;a href=&#34;https://kroki.io/&#34;&gt;Kroki&lt;/a&gt; service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Thanks for &lt;a href=&#34;https://github.com/jmooring&#34;&gt;@jmooring&lt;/a&gt; and &lt;a href=&#34;https://kroki.io/&#34;&gt;Kroki&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;performance&#34;&gt;Performance&lt;/h2&gt;&#xA;&lt;p&gt;According to &lt;a href=&#34;https://github.com/jmooring&#34;&gt;@jmooring&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://www.veriphor.com/articles/diagrams/#performance&#34;&gt;blog&lt;/a&gt;, you could edit your &lt;a href=&#34;https://gohugo.io/getting-started/configuration/#configure-file-caches&#34;&gt;site configuration&lt;/a&gt; to store &lt;code&gt;getresource&lt;/code&gt; cache to optimize performance.&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;caches&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;caches&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;getresource&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;dir&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;:resourceDir/_gen&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;maxAge&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;-1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And don&amp;rsquo;t forget to check the &lt;code&gt;resources&lt;/code&gt; directory into source control.&lt;/p&gt;&#xA;&lt;h2 id=&#34;diagram-types&#34;&gt;Diagram types&lt;/h2&gt;&#xA;&lt;p&gt;The following diagram types are available:&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>Use a fenced code block to embed an SVG image of a diagram in your <a href="https://gohugo.io/">Hugo</a> site using the free <a href="https://kroki.io/">Kroki</a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p></blockquote>
+<p>Thanks for <a href="https://github.com/jmooring">@jmooring</a> and <a href="https://kroki.io/">Kroki</a>.</p>
+<h2 id="performance">Performance</h2>
+<p>According to <a href="https://github.com/jmooring">@jmooring</a>&rsquo;s <a href="https://www.veriphor.com/articles/diagrams/#performance">blog</a>, you could edit your <a href="https://gohugo.io/getting-started/configuration/#configure-file-caches">site configuration</a> to store <code>getresource</code> cache to optimize performance.</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="ln">1</span><span class="cl"><span class="p">[</span><span class="nx">caches</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">getresource</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">    <span class="nx">dir</span> <span class="p">=</span> <span class="s2">&#34;:resourceDir/_gen&#34;</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span></span></span></code></pre></div><p>And don&rsquo;t forget to check the <code>resources</code> directory into source control.</p>
+<h2 id="diagram-types">Diagram types</h2>
+<p>The following diagram types are available:</p>
+<ul>
+<li><code>blockdiag</code> - <a href="https://github.com/blockdiag/blockdiag">BlockDiag</a></li>
+<li><code>bpmn</code> - <a href="https://github.com/bpmn-io/bpmn-js">BPMN</a></li>
+<li><code>bytefield</code> - <a href="https://github.com/Deep-Symmetry/bytefield-svg/">Bytefield</a></li>
+<li><code>seqdiag</code> - <a href="https://github.com/blockdiag/seqdiag">SeqDiag</a></li>
+<li><code>actdiag</code> - <a href="https://github.com/blockdiag/actdiag">ActDiag</a></li>
+<li><code>nwdiag</code> - <a href="https://github.com/blockdiag/nwdiag">NwDiag</a></li>
+<li><code>packetdiag</code> - <a href="https://github.com/blockdiag/nwdiag">PacketDiag</a></li>
+<li><code>rackdiag</code> - <a href="https://github.com/blockdiag/nwdiag">RackDiag</a></li>
+<li><code>c4plantuml</code> - <a href="https://github.com/RicardoNiepel/C4-PlantUML">C4 with PlantUML</a></li>
+<li><code>d2</code> - <a href="https://github.com/terrastruct/d2">D2</a></li>
+<li><code>dbml</code> - <a href="https://github.com/softwaretechnik-berlin/dbml-renderer">DBML</a></li>
+<li><code>ditaa</code> - <a href="https://ditaa.sourceforge.net/">Ditaa</a></li>
+<li><code>erd</code> - <a href="https://github.com/BurntSushi/erd">Erd</a></li>
+<li><code>excalidraw</code> - <a href="https://github.com/excalidraw/excalidraw">Excalidraw</a></li>
+<li><code>graphviz</code> - <a href="https://www.graphviz.org/">GraphViz</a></li>
+<li><code>mermaid</code> - <a href="https://github.com/knsv/mermaid">Mermaid</a></li>
+<li><code>nomnoml</code> - <a href="https://github.com/skanaar/nomnoml">Nomnoml</a></li>
+<li><code>pikchr</code> - <a href="https://github.com/drhsqlite/pikchr">Pikchr</a></li>
+<li><code>plantuml</code> - <a href="https://github.com/plantuml/plantuml">PlantUML</a></li>
+<li><code>structurizr</code> - <a href="https://github.com/structurizr/dsl">Structurizr</a></li>
+<li><code>svgbob</code> - <a href="https://github.com/ivanceras/svgbob">Svgbob</a></li>
+<li><code>symbolator</code> - <a href="https://github.com/kevinpt/symbolator">Symbolator</a></li>
+<li><code>tikz</code> - <a href="https://github.com/pgf-tikz/pgf">TikZ</a></li>
+<li><code>umlet</code> - <a href="https://github.com/umlet/umlet">UMlet</a></li>
+<li><code>vega</code> - <a href="https://github.com/vega/vega">Vega</a></li>
+<li><code>vegalite</code> - <a href="https://github.com/vega/vega-lite">Vega-Lite</a></li>
+<li><code>wavedrom</code> - <a href="https://github.com/wavedrom/wavedrom">WaveDrom</a></li>
+<li><code>wireviz</code> - <a href="https://github.com/formatc1702/WireViz">WireViz</a></li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="d2">D2</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=d2}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"># Actors
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">hans: Hans Niemann
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">defendants: {
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  mc: Magnus Carlsen
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">  playmagnus: Play Magnus Group
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  chesscom: Chess.com
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  naka: Hikaru Nakamura
+</span></span><span class="line"><span class="ln">10</span><span class="cl">
+</span></span><span class="line"><span class="ln">11</span><span class="cl">  mc -&gt; playmagnus: Owns majority
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  playmagnus &lt;-&gt; chesscom: Merger talks
+</span></span><span class="line"><span class="ln">13</span><span class="cl">  chesscom -&gt; naka: Sponsoring
+</span></span><span class="line"><span class="ln">14</span><span class="cl">}
+</span></span><span class="line"><span class="ln">15</span><span class="cl">
+</span></span><span class="line"><span class="ln">16</span><span class="cl"># Accusations
+</span></span><span class="line"><span class="ln">17</span><span class="cl">hans -&gt; defendants: &#39;sueing for $100M&#39;
+</span></span><span class="line"><span class="ln">18</span><span class="cl">
+</span></span><span class="line"><span class="ln">19</span><span class="cl"># Offense
+</span></span><span class="line"><span class="ln">20</span><span class="cl">defendants.naka -&gt; hans: Accused of cheating on his stream
+</span></span><span class="line"><span class="ln">21</span><span class="cl">defendants.mc -&gt; hans: Lost then withdrew with accusations
+</span></span><span class="line"><span class="ln">22</span><span class="cl">defendants.chesscom -&gt; hans: 72 page report of cheating
+</span></span><span class="line"><span class="ln">23</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-d2" id="h-rh-cb-kroki-2" src="/hugo-bearberry/images/kroki/md5-Qn+pg0wTLP9csGo6grANSQ==.svg">
+</div><h3 id="mermaid">Mermaid</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=mermaid flexoki=paper}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">sequenceDiagram
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  participant Alice
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  participant Bob
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  Alice-&gt;John: Hello John, how are you?
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  loop Healthcheck
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    John-&gt;John: Fight against hypochondria...
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  end
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  Note right of John: Rational thoughts prevail...
+</span></span><span class="line"><span class="ln">10</span><span class="cl">  John--&gt;Alice: Great!
+</span></span><span class="line"><span class="ln">11</span><span class="cl">  John-&gt;Bob: How about you?
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  Bob--&gt;John: Jolly good!
+</span></span><span class="line"><span class="ln">13</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-paper)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-mermaid" id="h-rh-cb-kroki-4" src="/hugo-bearberry/images/kroki/md5-4hvUQrv6bby9YZX4/peJRw==.svg">
+</div><h3 id="plantuml">PlantUML</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=plantuml}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">@startmindmap
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">skinparam monochrome true
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">+ OS
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">++ Ubuntu
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">+++ Linux Mint
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">+++ Kubuntu
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">+++ Lubuntu
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">+++ KDE Neon
+</span></span><span class="line"><span class="ln">10</span><span class="cl">++ LMDE
+</span></span><span class="line"><span class="ln">11</span><span class="cl">++ SolydXK
+</span></span><span class="line"><span class="ln">12</span><span class="cl">++ SteamOS
+</span></span><span class="line"><span class="ln">13</span><span class="cl">++ Raspbian
+</span></span><span class="line"><span class="ln">14</span><span class="cl">-- Windows 95
+</span></span><span class="line"><span class="ln">15</span><span class="cl">-- Windows 98
+</span></span><span class="line"><span class="ln">16</span><span class="cl">-- Windows NT
+</span></span><span class="line"><span class="ln">17</span><span class="cl">--- Windows 8
+</span></span><span class="line"><span class="ln">18</span><span class="cl">--- Windows 10
+</span></span><span class="line"><span class="ln">19</span><span class="cl">@endmindmap
+</span></span><span class="line"><span class="ln">20</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-plantuml" id="h-rh-cb-kroki-6" src="/hugo-bearberry/images/kroki/md5-0Mti5EQ6P+15+xC+NMqB6g==.svg">
+</div><h3 id="excalidraw">Excalidraw</h3>
+<details>
+    <summary style="color: var(--flexoki-light-blue)">Code</summary>
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">  1</span><span class="cl">```kroki {type=excalidraw}
+</span></span><span class="line"><span class="ln">  2</span><span class="cl">{
+</span></span><span class="line"><span class="ln">  3</span><span class="cl">  &#34;type&#34;: &#34;excalidraw&#34;,
+</span></span><span class="line"><span class="ln">  4</span><span class="cl">  &#34;version&#34;: 2,
+</span></span><span class="line"><span class="ln">  5</span><span class="cl">  &#34;source&#34;: &#34;https://excalidraw.com&#34;,
+</span></span><span class="line"><span class="ln">  6</span><span class="cl">  &#34;elements&#34;: [
+</span></span><span class="line"><span class="ln">  7</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">  8</span><span class="cl">      &#34;type&#34;: &#34;rectangle&#34;,
+</span></span><span class="line"><span class="ln">  9</span><span class="cl">      &#34;version&#34;: 175,
+</span></span><span class="line"><span class="ln"> 10</span><span class="cl">      &#34;versionNonce&#34;: 279344008,
+</span></span><span class="line"><span class="ln"> 11</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln"> 12</span><span class="cl">      &#34;id&#34;: &#34;2ZYh24ed28FJ0yE-S3YNY&#34;,
+</span></span><span class="line"><span class="ln"> 13</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln"> 14</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln"> 15</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln"> 16</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln"> 17</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln"> 18</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln"> 19</span><span class="cl">      &#34;x&#34;: 580,
+</span></span><span class="line"><span class="ln"> 20</span><span class="cl">      &#34;y&#34;: 140,
+</span></span><span class="line"><span class="ln"> 21</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln"> 22</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#15aabf&#34;,
+</span></span><span class="line"><span class="ln"> 23</span><span class="cl">      &#34;width&#34;: 80,
+</span></span><span class="line"><span class="ln"> 24</span><span class="cl">      &#34;height&#34;: 19.999999999999996,
+</span></span><span class="line"><span class="ln"> 25</span><span class="cl">      &#34;seed&#34;: 521916552,
+</span></span><span class="line"><span class="ln"> 26</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln"> 27</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;sharp&#34;,
+</span></span><span class="line"><span class="ln"> 28</span><span class="cl">      &#34;boundElementIds&#34;: [
+</span></span><span class="line"><span class="ln"> 29</span><span class="cl">        &#34;Be1y2yzhV3Zd4nwCro__8&#34;
+</span></span><span class="line"><span class="ln"> 30</span><span class="cl">      ]
+</span></span><span class="line"><span class="ln"> 31</span><span class="cl">    },
+</span></span><span class="line"><span class="ln"> 32</span><span class="cl">    {
+</span></span><span class="line"><span class="ln"> 33</span><span class="cl">      &#34;type&#34;: &#34;rectangle&#34;,
+</span></span><span class="line"><span class="ln"> 34</span><span class="cl">      &#34;version&#34;: 180,
+</span></span><span class="line"><span class="ln"> 35</span><span class="cl">      &#34;versionNonce&#34;: 164784376,
+</span></span><span class="line"><span class="ln"> 36</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln"> 37</span><span class="cl">      &#34;id&#34;: &#34;bO0OVt6m7LowYpq22ePCA&#34;,
+</span></span><span class="line"><span class="ln"> 38</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln"> 39</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln"> 40</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln"> 41</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln"> 42</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln"> 43</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln"> 44</span><span class="cl">      &#34;x&#34;: 660,
+</span></span><span class="line"><span class="ln"> 45</span><span class="cl">      &#34;y&#34;: 140,
+</span></span><span class="line"><span class="ln"> 46</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln"> 47</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#4c6ef5&#34;,
+</span></span><span class="line"><span class="ln"> 48</span><span class="cl">      &#34;width&#34;: 120,
+</span></span><span class="line"><span class="ln"> 49</span><span class="cl">      &#34;height&#34;: 19.999999999999996,
+</span></span><span class="line"><span class="ln"> 50</span><span class="cl">      &#34;seed&#34;: 1303206904,
+</span></span><span class="line"><span class="ln"> 51</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln"> 52</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;sharp&#34;,
+</span></span><span class="line"><span class="ln"> 53</span><span class="cl">      &#34;boundElementIds&#34;: [
+</span></span><span class="line"><span class="ln"> 54</span><span class="cl">        &#34;KaCO9-QjUenSyCuuanoTo&#34;
+</span></span><span class="line"><span class="ln"> 55</span><span class="cl">      ]
+</span></span><span class="line"><span class="ln"> 56</span><span class="cl">    },
+</span></span><span class="line"><span class="ln"> 57</span><span class="cl">    {
+</span></span><span class="line"><span class="ln"> 58</span><span class="cl">      &#34;type&#34;: &#34;rectangle&#34;,
+</span></span><span class="line"><span class="ln"> 59</span><span class="cl">      &#34;version&#34;: 183,
+</span></span><span class="line"><span class="ln"> 60</span><span class="cl">      &#34;versionNonce&#34;: 27181704,
+</span></span><span class="line"><span class="ln"> 61</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln"> 62</span><span class="cl">      &#34;id&#34;: &#34;jz0Huq9-s6pNxDw0RqHcR&#34;,
+</span></span><span class="line"><span class="ln"> 63</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln"> 64</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln"> 65</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln"> 66</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln"> 67</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln"> 68</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln"> 69</span><span class="cl">      &#34;x&#34;: 780,
+</span></span><span class="line"><span class="ln"> 70</span><span class="cl">      &#34;y&#34;: 140,
+</span></span><span class="line"><span class="ln"> 71</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln"> 72</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#fab005&#34;,
+</span></span><span class="line"><span class="ln"> 73</span><span class="cl">      &#34;width&#34;: 180,
+</span></span><span class="line"><span class="ln"> 74</span><span class="cl">      &#34;height&#34;: 19.999999999999996,
+</span></span><span class="line"><span class="ln"> 75</span><span class="cl">      &#34;seed&#34;: 861962120,
+</span></span><span class="line"><span class="ln"> 76</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln"> 77</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;sharp&#34;,
+</span></span><span class="line"><span class="ln"> 78</span><span class="cl">      &#34;boundElementIds&#34;: [
+</span></span><span class="line"><span class="ln"> 79</span><span class="cl">        &#34;74ifmqmu0vN0NK0_0FwPm&#34;
+</span></span><span class="line"><span class="ln"> 80</span><span class="cl">      ]
+</span></span><span class="line"><span class="ln"> 81</span><span class="cl">    },
+</span></span><span class="line"><span class="ln"> 82</span><span class="cl">    {
+</span></span><span class="line"><span class="ln"> 83</span><span class="cl">      &#34;type&#34;: &#34;rectangle&#34;,
+</span></span><span class="line"><span class="ln"> 84</span><span class="cl">      &#34;version&#34;: 192,
+</span></span><span class="line"><span class="ln"> 85</span><span class="cl">      &#34;versionNonce&#34;: 2123008504,
+</span></span><span class="line"><span class="ln"> 86</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln"> 87</span><span class="cl">      &#34;id&#34;: &#34;UnmNTmwJtm6moubcGtSgB&#34;,
+</span></span><span class="line"><span class="ln"> 88</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln"> 89</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln"> 90</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln"> 91</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln"> 92</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln"> 93</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln"> 94</span><span class="cl">      &#34;x&#34;: 960,
+</span></span><span class="line"><span class="ln"> 95</span><span class="cl">      &#34;y&#34;: 140,
+</span></span><span class="line"><span class="ln"> 96</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln"> 97</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#fa5252&#34;,
+</span></span><span class="line"><span class="ln"> 98</span><span class="cl">      &#34;width&#34;: 80,
+</span></span><span class="line"><span class="ln"> 99</span><span class="cl">      &#34;height&#34;: 19.999999999999996,
+</span></span><span class="line"><span class="ln">100</span><span class="cl">      &#34;seed&#34;: 277814520,
+</span></span><span class="line"><span class="ln">101</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">102</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;sharp&#34;,
+</span></span><span class="line"><span class="ln">103</span><span class="cl">      &#34;boundElementIds&#34;: [
+</span></span><span class="line"><span class="ln">104</span><span class="cl">        &#34;1v60NED2criGG-wo9-oQL&#34;
+</span></span><span class="line"><span class="ln">105</span><span class="cl">      ]
+</span></span><span class="line"><span class="ln">106</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">107</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">108</span><span class="cl">      &#34;type&#34;: &#34;rectangle&#34;,
+</span></span><span class="line"><span class="ln">109</span><span class="cl">      &#34;version&#34;: 202,
+</span></span><span class="line"><span class="ln">110</span><span class="cl">      &#34;versionNonce&#34;: 1823814024,
+</span></span><span class="line"><span class="ln">111</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">112</span><span class="cl">      &#34;id&#34;: &#34;of76J4WOJHnHi0L61Vst_&#34;,
+</span></span><span class="line"><span class="ln">113</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">114</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">115</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">116</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">117</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">118</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">119</span><span class="cl">      &#34;x&#34;: 1040,
+</span></span><span class="line"><span class="ln">120</span><span class="cl">      &#34;y&#34;: 140,
+</span></span><span class="line"><span class="ln">121</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">122</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#be4bdb&#34;,
+</span></span><span class="line"><span class="ln">123</span><span class="cl">      &#34;width&#34;: 180,
+</span></span><span class="line"><span class="ln">124</span><span class="cl">      &#34;height&#34;: 19.999999999999996,
+</span></span><span class="line"><span class="ln">125</span><span class="cl">      &#34;seed&#34;: 1496796808,
+</span></span><span class="line"><span class="ln">126</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">127</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;sharp&#34;,
+</span></span><span class="line"><span class="ln">128</span><span class="cl">      &#34;boundElementIds&#34;: [
+</span></span><span class="line"><span class="ln">129</span><span class="cl">        &#34;jjuPzyRneMv3f65lps_6a&#34;
+</span></span><span class="line"><span class="ln">130</span><span class="cl">      ]
+</span></span><span class="line"><span class="ln">131</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">132</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">133</span><span class="cl">      &#34;type&#34;: &#34;rectangle&#34;,
+</span></span><span class="line"><span class="ln">134</span><span class="cl">      &#34;version&#34;: 193,
+</span></span><span class="line"><span class="ln">135</span><span class="cl">      &#34;versionNonce&#34;: 1234602744,
+</span></span><span class="line"><span class="ln">136</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">137</span><span class="cl">      &#34;id&#34;: &#34;SlvbjeV-9lXbcrlKib-hj&#34;,
+</span></span><span class="line"><span class="ln">138</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">139</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">140</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">141</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">142</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">143</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">144</span><span class="cl">      &#34;x&#34;: 1220,
+</span></span><span class="line"><span class="ln">145</span><span class="cl">      &#34;y&#34;: 140,
+</span></span><span class="line"><span class="ln">146</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">147</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#868e96&#34;,
+</span></span><span class="line"><span class="ln">148</span><span class="cl">      &#34;width&#34;: 60,
+</span></span><span class="line"><span class="ln">149</span><span class="cl">      &#34;height&#34;: 19.999999999999996,
+</span></span><span class="line"><span class="ln">150</span><span class="cl">      &#34;seed&#34;: 1938865656,
+</span></span><span class="line"><span class="ln">151</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">152</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;sharp&#34;,
+</span></span><span class="line"><span class="ln">153</span><span class="cl">      &#34;boundElementIds&#34;: [
+</span></span><span class="line"><span class="ln">154</span><span class="cl">        &#34;5QQzhw_uqk_rBaW2wMriT&#34;
+</span></span><span class="line"><span class="ln">155</span><span class="cl">      ]
+</span></span><span class="line"><span class="ln">156</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">157</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">158</span><span class="cl">      &#34;type&#34;: &#34;text&#34;,
+</span></span><span class="line"><span class="ln">159</span><span class="cl">      &#34;version&#34;: 81,
+</span></span><span class="line"><span class="ln">160</span><span class="cl">      &#34;versionNonce&#34;: 1188901129,
+</span></span><span class="line"><span class="ln">161</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">162</span><span class="cl">      &#34;id&#34;: &#34;vrdt3JfbD2Xwz4K4TWScI&#34;,
+</span></span><span class="line"><span class="ln">163</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">164</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">165</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">166</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">167</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">168</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">169</span><span class="cl">      &#34;x&#34;: 840,
+</span></span><span class="line"><span class="ln">170</span><span class="cl">      &#34;y&#34;: -60,
+</span></span><span class="line"><span class="ln">171</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">172</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#868e96&#34;,
+</span></span><span class="line"><span class="ln">173</span><span class="cl">      &#34;width&#34;: 190,
+</span></span><span class="line"><span class="ln">174</span><span class="cl">      &#34;height&#34;: 45,
+</span></span><span class="line"><span class="ln">175</span><span class="cl">      &#34;seed&#34;: 1499217288,
+</span></span><span class="line"><span class="ln">176</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">177</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;sharp&#34;,
+</span></span><span class="line"><span class="ln">178</span><span class="cl">      &#34;boundElementIds&#34;: [],
+</span></span><span class="line"><span class="ln">179</span><span class="cl">      &#34;fontSize&#34;: 36,
+</span></span><span class="line"><span class="ln">180</span><span class="cl">      &#34;fontFamily&#34;: 1,
+</span></span><span class="line"><span class="ln">181</span><span class="cl">      &#34;text&#34;: &#34;JavaScript&#34;,
+</span></span><span class="line"><span class="ln">182</span><span class="cl">      &#34;baseline&#34;: 32,
+</span></span><span class="line"><span class="ln">183</span><span class="cl">      &#34;textAlign&#34;: &#34;left&#34;,
+</span></span><span class="line"><span class="ln">184</span><span class="cl">      &#34;verticalAlign&#34;: &#34;top&#34;
+</span></span><span class="line"><span class="ln">185</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">186</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">187</span><span class="cl">      &#34;type&#34;: &#34;arrow&#34;,
+</span></span><span class="line"><span class="ln">188</span><span class="cl">      &#34;version&#34;: 343,
+</span></span><span class="line"><span class="ln">189</span><span class="cl">      &#34;versionNonce&#34;: 1369065096,
+</span></span><span class="line"><span class="ln">190</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">191</span><span class="cl">      &#34;id&#34;: &#34;Be1y2yzhV3Zd4nwCro__8&#34;,
+</span></span><span class="line"><span class="ln">192</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">193</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">194</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">195</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">196</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">197</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">198</span><span class="cl">      &#34;x&#34;: 597.5075333823274,
+</span></span><span class="line"><span class="ln">199</span><span class="cl">      &#34;y&#34;: 299,
+</span></span><span class="line"><span class="ln">200</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">201</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#868e96&#34;,
+</span></span><span class="line"><span class="ln">202</span><span class="cl">      &#34;width&#34;: 40,
+</span></span><span class="line"><span class="ln">203</span><span class="cl">      &#34;height&#34;: 139,
+</span></span><span class="line"><span class="ln">204</span><span class="cl">      &#34;seed&#34;: 666255096,
+</span></span><span class="line"><span class="ln">205</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">206</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;round&#34;,
+</span></span><span class="line"><span class="ln">207</span><span class="cl">      &#34;boundElementIds&#34;: [],
+</span></span><span class="line"><span class="ln">208</span><span class="cl">      &#34;startBinding&#34;: {
+</span></span><span class="line"><span class="ln">209</span><span class="cl">        &#34;focus&#34;: -0.41953339688473495,
+</span></span><span class="line"><span class="ln">210</span><span class="cl">        &#34;gap&#34;: 1,
+</span></span><span class="line"><span class="ln">211</span><span class="cl">        &#34;elementId&#34;: &#34;UxgtvUBaIPnDWJZ9kUQH8&#34;
+</span></span><span class="line"><span class="ln">212</span><span class="cl">      },
+</span></span><span class="line"><span class="ln">213</span><span class="cl">      &#34;endBinding&#34;: {
+</span></span><span class="line"><span class="ln">214</span><span class="cl">        &#34;focus&#34;: -0.11111111111111113,
+</span></span><span class="line"><span class="ln">215</span><span class="cl">        &#34;gap&#34;: 1,
+</span></span><span class="line"><span class="ln">216</span><span class="cl">        &#34;elementId&#34;: &#34;2ZYh24ed28FJ0yE-S3YNY&#34;
+</span></span><span class="line"><span class="ln">217</span><span class="cl">      },
+</span></span><span class="line"><span class="ln">218</span><span class="cl">      &#34;points&#34;: [
+</span></span><span class="line"><span class="ln">219</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">220</span><span class="cl">          0,
+</span></span><span class="line"><span class="ln">221</span><span class="cl">          0
+</span></span><span class="line"><span class="ln">222</span><span class="cl">        ],
+</span></span><span class="line"><span class="ln">223</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">224</span><span class="cl">          -17.507533382327438,
+</span></span><span class="line"><span class="ln">225</span><span class="cl">          -59
+</span></span><span class="line"><span class="ln">226</span><span class="cl">        ],
+</span></span><span class="line"><span class="ln">227</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">228</span><span class="cl">          22.492466617672562,
+</span></span><span class="line"><span class="ln">229</span><span class="cl">          -139
+</span></span><span class="line"><span class="ln">230</span><span class="cl">        ]
+</span></span><span class="line"><span class="ln">231</span><span class="cl">      ],
+</span></span><span class="line"><span class="ln">232</span><span class="cl">      &#34;lastCommittedPoint&#34;: null,
+</span></span><span class="line"><span class="ln">233</span><span class="cl">      &#34;startArrowhead&#34;: null,
+</span></span><span class="line"><span class="ln">234</span><span class="cl">      &#34;endArrowhead&#34;: &#34;arrow&#34;
+</span></span><span class="line"><span class="ln">235</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">236</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">237</span><span class="cl">      &#34;type&#34;: &#34;text&#34;,
+</span></span><span class="line"><span class="ln">238</span><span class="cl">      &#34;version&#34;: 81,
+</span></span><span class="line"><span class="ln">239</span><span class="cl">      &#34;versionNonce&#34;: 690339976,
+</span></span><span class="line"><span class="ln">240</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">241</span><span class="cl">      &#34;id&#34;: &#34;UxgtvUBaIPnDWJZ9kUQH8&#34;,
+</span></span><span class="line"><span class="ln">242</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">243</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">244</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">245</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">246</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">247</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">248</span><span class="cl">      &#34;x&#34;: 580,
+</span></span><span class="line"><span class="ln">249</span><span class="cl">      &#34;y&#34;: 300,
+</span></span><span class="line"><span class="ln">250</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">251</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#868e96&#34;,
+</span></span><span class="line"><span class="ln">252</span><span class="cl">      &#34;width&#34;: 94,
+</span></span><span class="line"><span class="ln">253</span><span class="cl">      &#34;height&#34;: 45,
+</span></span><span class="line"><span class="ln">254</span><span class="cl">      &#34;seed&#34;: 84626568,
+</span></span><span class="line"><span class="ln">255</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">256</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;sharp&#34;,
+</span></span><span class="line"><span class="ln">257</span><span class="cl">      &#34;boundElementIds&#34;: [
+</span></span><span class="line"><span class="ln">258</span><span class="cl">        &#34;Be1y2yzhV3Zd4nwCro__8&#34;
+</span></span><span class="line"><span class="ln">259</span><span class="cl">      ],
+</span></span><span class="line"><span class="ln">260</span><span class="cl">      &#34;fontSize&#34;: 36,
+</span></span><span class="line"><span class="ln">261</span><span class="cl">      &#34;fontFamily&#34;: 1,
+</span></span><span class="line"><span class="ln">262</span><span class="cl">      &#34;text&#34;: &#34;Fetch&#34;,
+</span></span><span class="line"><span class="ln">263</span><span class="cl">      &#34;baseline&#34;: 32,
+</span></span><span class="line"><span class="ln">264</span><span class="cl">      &#34;textAlign&#34;: &#34;left&#34;,
+</span></span><span class="line"><span class="ln">265</span><span class="cl">      &#34;verticalAlign&#34;: &#34;top&#34;
+</span></span><span class="line"><span class="ln">266</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">267</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">268</span><span class="cl">      &#34;type&#34;: &#34;rectangle&#34;,
+</span></span><span class="line"><span class="ln">269</span><span class="cl">      &#34;version&#34;: 60,
+</span></span><span class="line"><span class="ln">270</span><span class="cl">      &#34;versionNonce&#34;: 897215480,
+</span></span><span class="line"><span class="ln">271</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">272</span><span class="cl">      &#34;id&#34;: &#34;-Lq0agjWQ31TR_Av5Z4HW&#34;,
+</span></span><span class="line"><span class="ln">273</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">274</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">275</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">276</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">277</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">278</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">279</span><span class="cl">      &#34;x&#34;: 520,
+</span></span><span class="line"><span class="ln">280</span><span class="cl">      &#34;y&#34;: -60,
+</span></span><span class="line"><span class="ln">281</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">282</span><span class="cl">      &#34;backgroundColor&#34;: &#34;transparent&#34;,
+</span></span><span class="line"><span class="ln">283</span><span class="cl">      &#34;width&#34;: 820,
+</span></span><span class="line"><span class="ln">284</span><span class="cl">      &#34;height&#34;: 540,
+</span></span><span class="line"><span class="ln">285</span><span class="cl">      &#34;seed&#34;: 495165432,
+</span></span><span class="line"><span class="ln">286</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">287</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;sharp&#34;,
+</span></span><span class="line"><span class="ln">288</span><span class="cl">      &#34;boundElementIds&#34;: [
+</span></span><span class="line"><span class="ln">289</span><span class="cl">        &#34;jjuPzyRneMv3f65lps_6a&#34;
+</span></span><span class="line"><span class="ln">290</span><span class="cl">      ]
+</span></span><span class="line"><span class="ln">291</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">292</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">293</span><span class="cl">      &#34;type&#34;: &#34;arrow&#34;,
+</span></span><span class="line"><span class="ln">294</span><span class="cl">      &#34;version&#34;: 537,
+</span></span><span class="line"><span class="ln">295</span><span class="cl">      &#34;versionNonce&#34;: 1626949112,
+</span></span><span class="line"><span class="ln">296</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">297</span><span class="cl">      &#34;id&#34;: &#34;KaCO9-QjUenSyCuuanoTo&#34;,
+</span></span><span class="line"><span class="ln">298</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">299</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">300</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">301</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">302</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">303</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">304</span><span class="cl">      &#34;x&#34;: 721.0588599991052,
+</span></span><span class="line"><span class="ln">305</span><span class="cl">      &#34;y&#34;: 60.17790458606555,
+</span></span><span class="line"><span class="ln">306</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">307</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#868e96&#34;,
+</span></span><span class="line"><span class="ln">308</span><span class="cl">      &#34;width&#34;: 1.0588599991051524,
+</span></span><span class="line"><span class="ln">309</span><span class="cl">      &#34;height&#34;: 79.82209541393445,
+</span></span><span class="line"><span class="ln">310</span><span class="cl">      &#34;seed&#34;: 637565832,
+</span></span><span class="line"><span class="ln">311</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">312</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;round&#34;,
+</span></span><span class="line"><span class="ln">313</span><span class="cl">      &#34;boundElementIds&#34;: [],
+</span></span><span class="line"><span class="ln">314</span><span class="cl">      &#34;startBinding&#34;: null,
+</span></span><span class="line"><span class="ln">315</span><span class="cl">      &#34;endBinding&#34;: {
+</span></span><span class="line"><span class="ln">316</span><span class="cl">        &#34;focus&#34;: 0,
+</span></span><span class="line"><span class="ln">317</span><span class="cl">        &#34;gap&#34;: 1,
+</span></span><span class="line"><span class="ln">318</span><span class="cl">        &#34;elementId&#34;: &#34;bO0OVt6m7LowYpq22ePCA&#34;
+</span></span><span class="line"><span class="ln">319</span><span class="cl">      },
+</span></span><span class="line"><span class="ln">320</span><span class="cl">      &#34;points&#34;: [
+</span></span><span class="line"><span class="ln">321</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">322</span><span class="cl">          0,
+</span></span><span class="line"><span class="ln">323</span><span class="cl">          0
+</span></span><span class="line"><span class="ln">324</span><span class="cl">        ],
+</span></span><span class="line"><span class="ln">325</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">326</span><span class="cl">          -1.0588599991051524,
+</span></span><span class="line"><span class="ln">327</span><span class="cl">          39.82209541393445
+</span></span><span class="line"><span class="ln">328</span><span class="cl">        ],
+</span></span><span class="line"><span class="ln">329</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">330</span><span class="cl">          -1.0588599991051524,
+</span></span><span class="line"><span class="ln">331</span><span class="cl">          79.82209541393445
+</span></span><span class="line"><span class="ln">332</span><span class="cl">        ]
+</span></span><span class="line"><span class="ln">333</span><span class="cl">      ],
+</span></span><span class="line"><span class="ln">334</span><span class="cl">      &#34;lastCommittedPoint&#34;: null,
+</span></span><span class="line"><span class="ln">335</span><span class="cl">      &#34;startArrowhead&#34;: null,
+</span></span><span class="line"><span class="ln">336</span><span class="cl">      &#34;endArrowhead&#34;: &#34;arrow&#34;
+</span></span><span class="line"><span class="ln">337</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">338</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">339</span><span class="cl">      &#34;type&#34;: &#34;text&#34;,
+</span></span><span class="line"><span class="ln">340</span><span class="cl">      &#34;version&#34;: 112,
+</span></span><span class="line"><span class="ln">341</span><span class="cl">      &#34;versionNonce&#34;: 358083143,
+</span></span><span class="line"><span class="ln">342</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">343</span><span class="cl">      &#34;id&#34;: &#34;4hEOdlcwK6AHyVhjc-MXS&#34;,
+</span></span><span class="line"><span class="ln">344</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">345</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">346</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">347</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">348</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">349</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">350</span><span class="cl">      &#34;x&#34;: 660,
+</span></span><span class="line"><span class="ln">351</span><span class="cl">      &#34;y&#34;: 20,
+</span></span><span class="line"><span class="ln">352</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">353</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#868e96&#34;,
+</span></span><span class="line"><span class="ln">354</span><span class="cl">      &#34;width&#34;: 103,
+</span></span><span class="line"><span class="ln">355</span><span class="cl">      &#34;height&#34;: 45,
+</span></span><span class="line"><span class="ln">356</span><span class="cl">      &#34;seed&#34;: 352116984,
+</span></span><span class="line"><span class="ln">357</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">358</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;sharp&#34;,
+</span></span><span class="line"><span class="ln">359</span><span class="cl">      &#34;boundElementIds&#34;: [],
+</span></span><span class="line"><span class="ln">360</span><span class="cl">      &#34;fontSize&#34;: 36,
+</span></span><span class="line"><span class="ln">361</span><span class="cl">      &#34;fontFamily&#34;: 1,
+</span></span><span class="line"><span class="ln">362</span><span class="cl">      &#34;text&#34;: &#34;Parse&#34;,
+</span></span><span class="line"><span class="ln">363</span><span class="cl">      &#34;baseline&#34;: 32,
+</span></span><span class="line"><span class="ln">364</span><span class="cl">      &#34;textAlign&#34;: &#34;left&#34;,
+</span></span><span class="line"><span class="ln">365</span><span class="cl">      &#34;verticalAlign&#34;: &#34;top&#34;
+</span></span><span class="line"><span class="ln">366</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">367</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">368</span><span class="cl">      &#34;type&#34;: &#34;arrow&#34;,
+</span></span><span class="line"><span class="ln">369</span><span class="cl">      &#34;version&#34;: 534,
+</span></span><span class="line"><span class="ln">370</span><span class="cl">      &#34;versionNonce&#34;: 983577992,
+</span></span><span class="line"><span class="ln">371</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">372</span><span class="cl">      &#34;id&#34;: &#34;74ifmqmu0vN0NK0_0FwPm&#34;,
+</span></span><span class="line"><span class="ln">373</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">374</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">375</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">376</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">377</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">378</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">379</span><span class="cl">      &#34;x&#34;: 841.6574209245741,
+</span></span><span class="line"><span class="ln">380</span><span class="cl">      &#34;y&#34;: 219,
+</span></span><span class="line"><span class="ln">381</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">382</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#868e96&#34;,
+</span></span><span class="line"><span class="ln">383</span><span class="cl">      &#34;width&#34;: 43.15128973100309,
+</span></span><span class="line"><span class="ln">384</span><span class="cl">      &#34;height&#34;: 59.174989629909305,
+</span></span><span class="line"><span class="ln">385</span><span class="cl">      &#34;seed&#34;: 1853344392,
+</span></span><span class="line"><span class="ln">386</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">387</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;round&#34;,
+</span></span><span class="line"><span class="ln">388</span><span class="cl">      &#34;boundElementIds&#34;: [],
+</span></span><span class="line"><span class="ln">389</span><span class="cl">      &#34;startBinding&#34;: {
+</span></span><span class="line"><span class="ln">390</span><span class="cl">        &#34;focus&#34;: 0.09211398277003865,
+</span></span><span class="line"><span class="ln">391</span><span class="cl">        &#34;gap&#34;: 1,
+</span></span><span class="line"><span class="ln">392</span><span class="cl">        &#34;elementId&#34;: &#34;K4so-arfr0JX0NJx8vd7T&#34;
+</span></span><span class="line"><span class="ln">393</span><span class="cl">      },
+</span></span><span class="line"><span class="ln">394</span><span class="cl">      &#34;endBinding&#34;: {
+</span></span><span class="line"><span class="ln">395</span><span class="cl">        &#34;focus&#34;: -0.2163077865936296,
+</span></span><span class="line"><span class="ln">396</span><span class="cl">        &#34;gap&#34;: 1,
+</span></span><span class="line"><span class="ln">397</span><span class="cl">        &#34;elementId&#34;: &#34;jz0Huq9-s6pNxDw0RqHcR&#34;
+</span></span><span class="line"><span class="ln">398</span><span class="cl">      },
+</span></span><span class="line"><span class="ln">399</span><span class="cl">      &#34;points&#34;: [
+</span></span><span class="line"><span class="ln">400</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">401</span><span class="cl">          0,
+</span></span><span class="line"><span class="ln">402</span><span class="cl">          0
+</span></span><span class="line"><span class="ln">403</span><span class="cl">        ],
+</span></span><span class="line"><span class="ln">404</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">405</span><span class="cl">          -1.6574209245741258,
+</span></span><span class="line"><span class="ln">406</span><span class="cl">          1
+</span></span><span class="line"><span class="ln">407</span><span class="cl">        ],
+</span></span><span class="line"><span class="ln">408</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">409</span><span class="cl">          41.493868806428964,
+</span></span><span class="line"><span class="ln">410</span><span class="cl">          -58.174989629909305
+</span></span><span class="line"><span class="ln">411</span><span class="cl">        ]
+</span></span><span class="line"><span class="ln">412</span><span class="cl">      ],
+</span></span><span class="line"><span class="ln">413</span><span class="cl">      &#34;lastCommittedPoint&#34;: null,
+</span></span><span class="line"><span class="ln">414</span><span class="cl">      &#34;startArrowhead&#34;: null,
+</span></span><span class="line"><span class="ln">415</span><span class="cl">      &#34;endArrowhead&#34;: &#34;arrow&#34;
+</span></span><span class="line"><span class="ln">416</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">417</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">418</span><span class="cl">      &#34;type&#34;: &#34;text&#34;,
+</span></span><span class="line"><span class="ln">419</span><span class="cl">      &#34;version&#34;: 118,
+</span></span><span class="line"><span class="ln">420</span><span class="cl">      &#34;versionNonce&#34;: 1185705864,
+</span></span><span class="line"><span class="ln">421</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">422</span><span class="cl">      &#34;id&#34;: &#34;K4so-arfr0JX0NJx8vd7T&#34;,
+</span></span><span class="line"><span class="ln">423</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">424</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">425</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">426</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">427</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">428</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">429</span><span class="cl">      &#34;x&#34;: 640,
+</span></span><span class="line"><span class="ln">430</span><span class="cl">      &#34;y&#34;: 220,
+</span></span><span class="line"><span class="ln">431</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">432</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#868e96&#34;,
+</span></span><span class="line"><span class="ln">433</span><span class="cl">      &#34;width&#34;: 366,
+</span></span><span class="line"><span class="ln">434</span><span class="cl">      &#34;height&#34;: 45,
+</span></span><span class="line"><span class="ln">435</span><span class="cl">      &#34;seed&#34;: 765854200,
+</span></span><span class="line"><span class="ln">436</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">437</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;sharp&#34;,
+</span></span><span class="line"><span class="ln">438</span><span class="cl">      &#34;boundElementIds&#34;: [
+</span></span><span class="line"><span class="ln">439</span><span class="cl">        &#34;74ifmqmu0vN0NK0_0FwPm&#34;
+</span></span><span class="line"><span class="ln">440</span><span class="cl">      ],
+</span></span><span class="line"><span class="ln">441</span><span class="cl">      &#34;fontSize&#34;: 36,
+</span></span><span class="line"><span class="ln">442</span><span class="cl">      &#34;fontFamily&#34;: 1,
+</span></span><span class="line"><span class="ln">443</span><span class="cl">      &#34;text&#34;: &#34;Compile and Optimize&#34;,
+</span></span><span class="line"><span class="ln">444</span><span class="cl">      &#34;baseline&#34;: 32,
+</span></span><span class="line"><span class="ln">445</span><span class="cl">      &#34;textAlign&#34;: &#34;left&#34;,
+</span></span><span class="line"><span class="ln">446</span><span class="cl">      &#34;verticalAlign&#34;: &#34;top&#34;
+</span></span><span class="line"><span class="ln">447</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">448</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">449</span><span class="cl">      &#34;type&#34;: &#34;arrow&#34;,
+</span></span><span class="line"><span class="ln">450</span><span class="cl">      &#34;version&#34;: 791,
+</span></span><span class="line"><span class="ln">451</span><span class="cl">      &#34;versionNonce&#34;: 1724761848,
+</span></span><span class="line"><span class="ln">452</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">453</span><span class="cl">      &#34;id&#34;: &#34;1v60NED2criGG-wo9-oQL&#34;,
+</span></span><span class="line"><span class="ln">454</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">455</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">456</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">457</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">458</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">459</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">460</span><span class="cl">      &#34;x&#34;: 960,
+</span></span><span class="line"><span class="ln">461</span><span class="cl">      &#34;y&#34;: 320,
+</span></span><span class="line"><span class="ln">462</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">463</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#868e96&#34;,
+</span></span><span class="line"><span class="ln">464</span><span class="cl">      &#34;width&#34;: 80,
+</span></span><span class="line"><span class="ln">465</span><span class="cl">      &#34;height&#34;: 160,
+</span></span><span class="line"><span class="ln">466</span><span class="cl">      &#34;seed&#34;: 1764571528,
+</span></span><span class="line"><span class="ln">467</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">468</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;round&#34;,
+</span></span><span class="line"><span class="ln">469</span><span class="cl">      &#34;boundElementIds&#34;: [],
+</span></span><span class="line"><span class="ln">470</span><span class="cl">      &#34;startBinding&#34;: {
+</span></span><span class="line"><span class="ln">471</span><span class="cl">        &#34;focus&#34;: -0.1637630662020906,
+</span></span><span class="line"><span class="ln">472</span><span class="cl">        &#34;gap&#34;: 1,
+</span></span><span class="line"><span class="ln">473</span><span class="cl">        &#34;elementId&#34;: &#34;dviXudWNxiHYQMZfqHWsH&#34;
+</span></span><span class="line"><span class="ln">474</span><span class="cl">      },
+</span></span><span class="line"><span class="ln">475</span><span class="cl">      &#34;endBinding&#34;: {
+</span></span><span class="line"><span class="ln">476</span><span class="cl">        &#34;focus&#34;: 0.07692307692307691,
+</span></span><span class="line"><span class="ln">477</span><span class="cl">        &#34;gap&#34;: 1,
+</span></span><span class="line"><span class="ln">478</span><span class="cl">        &#34;elementId&#34;: &#34;UnmNTmwJtm6moubcGtSgB&#34;
+</span></span><span class="line"><span class="ln">479</span><span class="cl">      },
+</span></span><span class="line"><span class="ln">480</span><span class="cl">      &#34;points&#34;: [
+</span></span><span class="line"><span class="ln">481</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">482</span><span class="cl">          0,
+</span></span><span class="line"><span class="ln">483</span><span class="cl">          0
+</span></span><span class="line"><span class="ln">484</span><span class="cl">        ],
+</span></span><span class="line"><span class="ln">485</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">486</span><span class="cl">          80,
+</span></span><span class="line"><span class="ln">487</span><span class="cl">          -40
+</span></span><span class="line"><span class="ln">488</span><span class="cl">        ],
+</span></span><span class="line"><span class="ln">489</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">490</span><span class="cl">          40,
+</span></span><span class="line"><span class="ln">491</span><span class="cl">          -160
+</span></span><span class="line"><span class="ln">492</span><span class="cl">        ]
+</span></span><span class="line"><span class="ln">493</span><span class="cl">      ],
+</span></span><span class="line"><span class="ln">494</span><span class="cl">      &#34;lastCommittedPoint&#34;: null,
+</span></span><span class="line"><span class="ln">495</span><span class="cl">      &#34;startArrowhead&#34;: null,
+</span></span><span class="line"><span class="ln">496</span><span class="cl">      &#34;endArrowhead&#34;: &#34;arrow&#34;
+</span></span><span class="line"><span class="ln">497</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">498</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">499</span><span class="cl">      &#34;type&#34;: &#34;text&#34;,
+</span></span><span class="line"><span class="ln">500</span><span class="cl">      &#34;version&#34;: 194,
+</span></span><span class="line"><span class="ln">501</span><span class="cl">      &#34;versionNonce&#34;: 473574648,
+</span></span><span class="line"><span class="ln">502</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">503</span><span class="cl">      &#34;id&#34;: &#34;dviXudWNxiHYQMZfqHWsH&#34;,
+</span></span><span class="line"><span class="ln">504</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">505</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">506</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">507</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">508</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">509</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">510</span><span class="cl">      &#34;x&#34;: 720,
+</span></span><span class="line"><span class="ln">511</span><span class="cl">      &#34;y&#34;: 320,
+</span></span><span class="line"><span class="ln">512</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">513</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#868e96&#34;,
+</span></span><span class="line"><span class="ln">514</span><span class="cl">      &#34;width&#34;: 484,
+</span></span><span class="line"><span class="ln">515</span><span class="cl">      &#34;height&#34;: 45,
+</span></span><span class="line"><span class="ln">516</span><span class="cl">      &#34;seed&#34;: 1988297464,
+</span></span><span class="line"><span class="ln">517</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">518</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;sharp&#34;,
+</span></span><span class="line"><span class="ln">519</span><span class="cl">      &#34;boundElementIds&#34;: [
+</span></span><span class="line"><span class="ln">520</span><span class="cl">        &#34;1v60NED2criGG-wo9-oQL&#34;
+</span></span><span class="line"><span class="ln">521</span><span class="cl">      ],
+</span></span><span class="line"><span class="ln">522</span><span class="cl">      &#34;fontSize&#34;: 36,
+</span></span><span class="line"><span class="ln">523</span><span class="cl">      &#34;fontFamily&#34;: 1,
+</span></span><span class="line"><span class="ln">524</span><span class="cl">      &#34;text&#34;: &#34;Re-optimize and Deoptimize&#34;,
+</span></span><span class="line"><span class="ln">525</span><span class="cl">      &#34;baseline&#34;: 32,
+</span></span><span class="line"><span class="ln">526</span><span class="cl">      &#34;textAlign&#34;: &#34;left&#34;,
+</span></span><span class="line"><span class="ln">527</span><span class="cl">      &#34;verticalAlign&#34;: &#34;top&#34;
+</span></span><span class="line"><span class="ln">528</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">529</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">530</span><span class="cl">      &#34;type&#34;: &#34;arrow&#34;,
+</span></span><span class="line"><span class="ln">531</span><span class="cl">      &#34;version&#34;: 708,
+</span></span><span class="line"><span class="ln">532</span><span class="cl">      &#34;versionNonce&#34;: 185615496,
+</span></span><span class="line"><span class="ln">533</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">534</span><span class="cl">      &#34;id&#34;: &#34;jjuPzyRneMv3f65lps_6a&#34;,
+</span></span><span class="line"><span class="ln">535</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">536</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">537</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">538</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">539</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">540</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">541</span><span class="cl">      &#34;x&#34;: 1140,
+</span></span><span class="line"><span class="ln">542</span><span class="cl">      &#34;y&#34;: 80,
+</span></span><span class="line"><span class="ln">543</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">544</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#868e96&#34;,
+</span></span><span class="line"><span class="ln">545</span><span class="cl">      &#34;width&#34;: 20,
+</span></span><span class="line"><span class="ln">546</span><span class="cl">      &#34;height&#34;: 60,
+</span></span><span class="line"><span class="ln">547</span><span class="cl">      &#34;seed&#34;: 1767688328,
+</span></span><span class="line"><span class="ln">548</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">549</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;round&#34;,
+</span></span><span class="line"><span class="ln">550</span><span class="cl">      &#34;boundElementIds&#34;: [],
+</span></span><span class="line"><span class="ln">551</span><span class="cl">      &#34;startBinding&#34;: {
+</span></span><span class="line"><span class="ln">552</span><span class="cl">        &#34;focus&#34;: -0.3021784319542362,
+</span></span><span class="line"><span class="ln">553</span><span class="cl">        &#34;gap&#34;: 14.800415739789742,
+</span></span><span class="line"><span class="ln">554</span><span class="cl">        &#34;elementId&#34;: &#34;qhkjvI1VmWZdnKvU5QKZK&#34;
+</span></span><span class="line"><span class="ln">555</span><span class="cl">      },
+</span></span><span class="line"><span class="ln">556</span><span class="cl">      &#34;endBinding&#34;: {
+</span></span><span class="line"><span class="ln">557</span><span class="cl">        &#34;focus&#34;: 0.15789473684210528,
+</span></span><span class="line"><span class="ln">558</span><span class="cl">        &#34;gap&#34;: 1,
+</span></span><span class="line"><span class="ln">559</span><span class="cl">        &#34;elementId&#34;: &#34;of76J4WOJHnHi0L61Vst_&#34;
+</span></span><span class="line"><span class="ln">560</span><span class="cl">      },
+</span></span><span class="line"><span class="ln">561</span><span class="cl">      &#34;points&#34;: [
+</span></span><span class="line"><span class="ln">562</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">563</span><span class="cl">          0,
+</span></span><span class="line"><span class="ln">564</span><span class="cl">          0
+</span></span><span class="line"><span class="ln">565</span><span class="cl">        ],
+</span></span><span class="line"><span class="ln">566</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">567</span><span class="cl">          -20,
+</span></span><span class="line"><span class="ln">568</span><span class="cl">          20
+</span></span><span class="line"><span class="ln">569</span><span class="cl">        ],
+</span></span><span class="line"><span class="ln">570</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">571</span><span class="cl">          0,
+</span></span><span class="line"><span class="ln">572</span><span class="cl">          60
+</span></span><span class="line"><span class="ln">573</span><span class="cl">        ]
+</span></span><span class="line"><span class="ln">574</span><span class="cl">      ],
+</span></span><span class="line"><span class="ln">575</span><span class="cl">      &#34;lastCommittedPoint&#34;: null,
+</span></span><span class="line"><span class="ln">576</span><span class="cl">      &#34;startArrowhead&#34;: null,
+</span></span><span class="line"><span class="ln">577</span><span class="cl">      &#34;endArrowhead&#34;: &#34;arrow&#34;
+</span></span><span class="line"><span class="ln">578</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">579</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">580</span><span class="cl">      &#34;type&#34;: &#34;text&#34;,
+</span></span><span class="line"><span class="ln">581</span><span class="cl">      &#34;version&#34;: 213,
+</span></span><span class="line"><span class="ln">582</span><span class="cl">      &#34;versionNonce&#34;: 2105884296,
+</span></span><span class="line"><span class="ln">583</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">584</span><span class="cl">      &#34;id&#34;: &#34;qhkjvI1VmWZdnKvU5QKZK&#34;,
+</span></span><span class="line"><span class="ln">585</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">586</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">587</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">588</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">589</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">590</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">591</span><span class="cl">      &#34;x&#34;: 1080,
+</span></span><span class="line"><span class="ln">592</span><span class="cl">      &#34;y&#34;: 20.19958426021026,
+</span></span><span class="line"><span class="ln">593</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">594</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#868e96&#34;,
+</span></span><span class="line"><span class="ln">595</span><span class="cl">      &#34;width&#34;: 139,
+</span></span><span class="line"><span class="ln">596</span><span class="cl">      &#34;height&#34;: 45,
+</span></span><span class="line"><span class="ln">597</span><span class="cl">      &#34;seed&#34;: 2115494904,
+</span></span><span class="line"><span class="ln">598</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">599</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;sharp&#34;,
+</span></span><span class="line"><span class="ln">600</span><span class="cl">      &#34;boundElementIds&#34;: [
+</span></span><span class="line"><span class="ln">601</span><span class="cl">        &#34;jjuPzyRneMv3f65lps_6a&#34;
+</span></span><span class="line"><span class="ln">602</span><span class="cl">      ],
+</span></span><span class="line"><span class="ln">603</span><span class="cl">      &#34;fontSize&#34;: 36,
+</span></span><span class="line"><span class="ln">604</span><span class="cl">      &#34;fontFamily&#34;: 1,
+</span></span><span class="line"><span class="ln">605</span><span class="cl">      &#34;text&#34;: &#34;Execute&#34;,
+</span></span><span class="line"><span class="ln">606</span><span class="cl">      &#34;baseline&#34;: 32,
+</span></span><span class="line"><span class="ln">607</span><span class="cl">      &#34;textAlign&#34;: &#34;left&#34;,
+</span></span><span class="line"><span class="ln">608</span><span class="cl">      &#34;verticalAlign&#34;: &#34;top&#34;
+</span></span><span class="line"><span class="ln">609</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">610</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">611</span><span class="cl">      &#34;type&#34;: &#34;arrow&#34;,
+</span></span><span class="line"><span class="ln">612</span><span class="cl">      &#34;version&#34;: 707,
+</span></span><span class="line"><span class="ln">613</span><span class="cl">      &#34;versionNonce&#34;: 543827960,
+</span></span><span class="line"><span class="ln">614</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">615</span><span class="cl">      &#34;id&#34;: &#34;5QQzhw_uqk_rBaW2wMriT&#34;,
+</span></span><span class="line"><span class="ln">616</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">617</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">618</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">619</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">620</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">621</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">622</span><span class="cl">      &#34;x&#34;: 1220,
+</span></span><span class="line"><span class="ln">623</span><span class="cl">      &#34;y&#34;: 240,
+</span></span><span class="line"><span class="ln">624</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">625</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#868e96&#34;,
+</span></span><span class="line"><span class="ln">626</span><span class="cl">      &#34;width&#34;: 20,
+</span></span><span class="line"><span class="ln">627</span><span class="cl">      &#34;height&#34;: 80,
+</span></span><span class="line"><span class="ln">628</span><span class="cl">      &#34;seed&#34;: 2059564936,
+</span></span><span class="line"><span class="ln">629</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">630</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;round&#34;,
+</span></span><span class="line"><span class="ln">631</span><span class="cl">      &#34;boundElementIds&#34;: [],
+</span></span><span class="line"><span class="ln">632</span><span class="cl">      &#34;startBinding&#34;: {
+</span></span><span class="line"><span class="ln">633</span><span class="cl">        &#34;focus&#34;: 0.7391304347826086,
+</span></span><span class="line"><span class="ln">634</span><span class="cl">        &#34;gap&#34;: 2,
+</span></span><span class="line"><span class="ln">635</span><span class="cl">        &#34;elementId&#34;: &#34;C6fyzTg2FHAmrRYfC_THm&#34;
+</span></span><span class="line"><span class="ln">636</span><span class="cl">      },
+</span></span><span class="line"><span class="ln">637</span><span class="cl">      &#34;endBinding&#34;: {
+</span></span><span class="line"><span class="ln">638</span><span class="cl">        &#34;focus&#34;: 0.3333333333333333,
+</span></span><span class="line"><span class="ln">639</span><span class="cl">        &#34;gap&#34;: 1,
+</span></span><span class="line"><span class="ln">640</span><span class="cl">        &#34;elementId&#34;: &#34;SlvbjeV-9lXbcrlKib-hj&#34;
+</span></span><span class="line"><span class="ln">641</span><span class="cl">      },
+</span></span><span class="line"><span class="ln">642</span><span class="cl">      &#34;points&#34;: [
+</span></span><span class="line"><span class="ln">643</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">644</span><span class="cl">          0,
+</span></span><span class="line"><span class="ln">645</span><span class="cl">          0
+</span></span><span class="line"><span class="ln">646</span><span class="cl">        ],
+</span></span><span class="line"><span class="ln">647</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">648</span><span class="cl">          20,
+</span></span><span class="line"><span class="ln">649</span><span class="cl">          -40
+</span></span><span class="line"><span class="ln">650</span><span class="cl">        ],
+</span></span><span class="line"><span class="ln">651</span><span class="cl">        [
+</span></span><span class="line"><span class="ln">652</span><span class="cl">          20,
+</span></span><span class="line"><span class="ln">653</span><span class="cl">          -80
+</span></span><span class="line"><span class="ln">654</span><span class="cl">        ]
+</span></span><span class="line"><span class="ln">655</span><span class="cl">      ],
+</span></span><span class="line"><span class="ln">656</span><span class="cl">      &#34;lastCommittedPoint&#34;: null,
+</span></span><span class="line"><span class="ln">657</span><span class="cl">      &#34;startArrowhead&#34;: null,
+</span></span><span class="line"><span class="ln">658</span><span class="cl">      &#34;endArrowhead&#34;: &#34;arrow&#34;
+</span></span><span class="line"><span class="ln">659</span><span class="cl">    },
+</span></span><span class="line"><span class="ln">660</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">661</span><span class="cl">      &#34;type&#34;: &#34;text&#34;,
+</span></span><span class="line"><span class="ln">662</span><span class="cl">      &#34;version&#34;: 227,
+</span></span><span class="line"><span class="ln">663</span><span class="cl">      &#34;versionNonce&#34;: 2002374136,
+</span></span><span class="line"><span class="ln">664</span><span class="cl">      &#34;isDeleted&#34;: false,
+</span></span><span class="line"><span class="ln">665</span><span class="cl">      &#34;id&#34;: &#34;C6fyzTg2FHAmrRYfC_THm&#34;,
+</span></span><span class="line"><span class="ln">666</span><span class="cl">      &#34;fillStyle&#34;: &#34;hachure&#34;,
+</span></span><span class="line"><span class="ln">667</span><span class="cl">      &#34;strokeWidth&#34;: 1,
+</span></span><span class="line"><span class="ln">668</span><span class="cl">      &#34;strokeStyle&#34;: &#34;solid&#34;,
+</span></span><span class="line"><span class="ln">669</span><span class="cl">      &#34;roughness&#34;: 1,
+</span></span><span class="line"><span class="ln">670</span><span class="cl">      &#34;opacity&#34;: 100,
+</span></span><span class="line"><span class="ln">671</span><span class="cl">      &#34;angle&#34;: 0,
+</span></span><span class="line"><span class="ln">672</span><span class="cl">      &#34;x&#34;: 1160,
+</span></span><span class="line"><span class="ln">673</span><span class="cl">      &#34;y&#34;: 220,
+</span></span><span class="line"><span class="ln">674</span><span class="cl">      &#34;strokeColor&#34;: &#34;#000000&#34;,
+</span></span><span class="line"><span class="ln">675</span><span class="cl">      &#34;backgroundColor&#34;: &#34;#868e96&#34;,
+</span></span><span class="line"><span class="ln">676</span><span class="cl">      &#34;width&#34;: 58,
+</span></span><span class="line"><span class="ln">677</span><span class="cl">      &#34;height&#34;: 45,
+</span></span><span class="line"><span class="ln">678</span><span class="cl">      &#34;seed&#34;: 1651025144,
+</span></span><span class="line"><span class="ln">679</span><span class="cl">      &#34;groupIds&#34;: [],
+</span></span><span class="line"><span class="ln">680</span><span class="cl">      &#34;strokeSharpness&#34;: &#34;sharp&#34;,
+</span></span><span class="line"><span class="ln">681</span><span class="cl">      &#34;boundElementIds&#34;: [
+</span></span><span class="line"><span class="ln">682</span><span class="cl">        &#34;5QQzhw_uqk_rBaW2wMriT&#34;
+</span></span><span class="line"><span class="ln">683</span><span class="cl">      ],
+</span></span><span class="line"><span class="ln">684</span><span class="cl">      &#34;fontSize&#34;: 36,
+</span></span><span class="line"><span class="ln">685</span><span class="cl">      &#34;fontFamily&#34;: 1,
+</span></span><span class="line"><span class="ln">686</span><span class="cl">      &#34;text&#34;: &#34;GC&#34;,
+</span></span><span class="line"><span class="ln">687</span><span class="cl">      &#34;baseline&#34;: 32,
+</span></span><span class="line"><span class="ln">688</span><span class="cl">      &#34;textAlign&#34;: &#34;left&#34;,
+</span></span><span class="line"><span class="ln">689</span><span class="cl">      &#34;verticalAlign&#34;: &#34;top&#34;
+</span></span><span class="line"><span class="ln">690</span><span class="cl">    }
+</span></span><span class="line"><span class="ln">691</span><span class="cl">  ],
+</span></span><span class="line"><span class="ln">692</span><span class="cl">  &#34;appState&#34;: {
+</span></span><span class="line"><span class="ln">693</span><span class="cl">    &#34;viewBackgroundColor&#34;: &#34;#ffffff&#34;,
+</span></span><span class="line"><span class="ln">694</span><span class="cl">    &#34;gridSize&#34;: 20
+</span></span><span class="line"><span class="ln">695</span><span class="cl">  }
+</span></span><span class="line"><span class="ln">696</span><span class="cl">}
+</span></span><span class="line"><span class="ln">697</span><span class="cl">```</span></span></code></pre></div>
+</details>
+
+
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-excalidraw" id="h-rh-cb-kroki-7" src="/hugo-bearberry/images/kroki/md5-f1D4ndZrOZa/O0RmOzgUOw==.svg">
+</div><h3 id="blockdiag">BlockDiag</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=blockdiag}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">blockdiag {
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  Kroki -&gt; generates -&gt; &#34;Block diagrams&#34;;
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  Kroki -&gt; is -&gt; &#34;very easy!&#34;;
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  Kroki [color = &#34;greenyellow&#34;];
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">  &#34;Block diagrams&#34; [color = &#34;pink&#34;];
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  &#34;very easy!&#34; [color = &#34;orange&#34;];
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">}
+</span></span><span class="line"><span class="ln">10</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-blockdiag" id="h-rh-cb-kroki-9" src="/hugo-bearberry/images/kroki/md5-3lCQ5pm65u5FTwWADMg7zw==.svg">
+</div><h3 id="packetdiag">PacketDiag</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=packetdiag color=&#34;#878580&#34;}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">packetdiag {
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  colwidth = 32;
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  node_height = 72;
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  0-15: Source Port;
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">  16-31: Destination Port;
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  32-63: Sequence Number;
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  64-95: Acknowledgment Number;
+</span></span><span class="line"><span class="ln">10</span><span class="cl">  96-99: Data Offset;
+</span></span><span class="line"><span class="ln">11</span><span class="cl">  100-105: Reserved;
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  106: URG [rotate = 270];
+</span></span><span class="line"><span class="ln">13</span><span class="cl">  107: ACK [rotate = 270];
+</span></span><span class="line"><span class="ln">14</span><span class="cl">  108: PSH [rotate = 270];
+</span></span><span class="line"><span class="ln">15</span><span class="cl">  109: RST [rotate = 270];
+</span></span><span class="line"><span class="ln">16</span><span class="cl">  110: SYN [rotate = 270];
+</span></span><span class="line"><span class="ln">17</span><span class="cl">  111: FIN [rotate = 270];
+</span></span><span class="line"><span class="ln">18</span><span class="cl">  112-127: Window;
+</span></span><span class="line"><span class="ln">19</span><span class="cl">  128-143: Checksum;
+</span></span><span class="line"><span class="ln">20</span><span class="cl">  144-159: Urgent Pointer;
+</span></span><span class="line"><span class="ln">21</span><span class="cl">  160-191: (Options and Padding);
+</span></span><span class="line"><span class="ln">22</span><span class="cl">  192-223: data [colheight = 3];
+</span></span><span class="line"><span class="ln">23</span><span class="cl">}
+</span></span><span class="line"><span class="ln">24</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color:#878580">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-packetdiag" id="h-rh-cb-kroki-11" src="/hugo-bearberry/images/kroki/md5-agPP+z6DG9K+bdC+C4jE9A==.svg">
+</div><h3 id="c4-with-plantuml">C4 with PlantUML</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=c4plantuml}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">!include &lt;C4/C4_Context&gt;
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">title System Context diagram for Internet Banking System
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">Person(customer, &#34;Banking Customer&#34;, &#34;A customer of the bank, with personal bank accounts.&#34;)
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">System(banking_system, &#34;Internet Banking System&#34;, &#34;Allows customers to check their accounts.&#34;)
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">System_Ext(mail_system, &#34;E-mail system&#34;, &#34;The internal Microsoft Exchange e-mail system.&#34;)
+</span></span><span class="line"><span class="ln">10</span><span class="cl">System_Ext(mainframe, &#34;Mainframe Banking System&#34;, &#34;Stores all of the core banking information.&#34;)
+</span></span><span class="line"><span class="ln">11</span><span class="cl">
+</span></span><span class="line"><span class="ln">12</span><span class="cl">Rel(customer, banking_system, &#34;Uses&#34;)
+</span></span><span class="line"><span class="ln">13</span><span class="cl">Rel_Back(customer, mail_system, &#34;Sends e-mails to&#34;)
+</span></span><span class="line"><span class="ln">14</span><span class="cl">Rel_Neighbor(banking_system, mail_system, &#34;Sends e-mails&#34;, &#34;SMTP&#34;)
+</span></span><span class="line"><span class="ln">15</span><span class="cl">Rel(banking_system, mainframe, &#34;Uses&#34;)
+</span></span><span class="line"><span class="ln">16</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-c4plantuml" id="h-rh-cb-kroki-13" src="/hugo-bearberry/images/kroki/md5-ed68oz546E6ok9x+UxLrdg==.svg">
+</div><h3 id="bytefield">Bytefield</h3>
+<details>
+    <summary style="color: var(--flexoki-light-blue)">Code</summary>
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=bytefield flexoki=150}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">(defattrs :bg-green {:fill &#34;#a0ffa0&#34;})
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">(defattrs :bg-yellow {:fill &#34;#ffffa0&#34;})
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">(defattrs :bg-pink {:fill &#34;#ffb0a0&#34;})
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">(defattrs :bg-cyan {:fill &#34;#a0fafa&#34;})
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">(defattrs :bg-purple {:fill &#34;#e4b5f7&#34;})
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">(defn draw-group-label-header
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  [span label]
+</span></span><span class="line"><span class="ln">10</span><span class="cl">  (draw-box (text label [:math {:font-size 12}]) {:span span :borders #{} :height 14}))
+</span></span><span class="line"><span class="ln">11</span><span class="cl">
+</span></span><span class="line"><span class="ln">12</span><span class="cl">(defn draw-remotedb-header
+</span></span><span class="line"><span class="ln">13</span><span class="cl">  [kind args]
+</span></span><span class="line"><span class="ln">14</span><span class="cl">  (draw-column-headers)
+</span></span><span class="line"><span class="ln">15</span><span class="cl">  (draw-group-label-header 5 &#34;start&#34;)
+</span></span><span class="line"><span class="ln">16</span><span class="cl">  (draw-group-label-header 5 &#34;TxID&#34;)
+</span></span><span class="line"><span class="ln">17</span><span class="cl">  (draw-group-label-header 3 &#34;type&#34;)
+</span></span><span class="line"><span class="ln">18</span><span class="cl">  (draw-group-label-header 2 &#34;args&#34;)
+</span></span><span class="line"><span class="ln">19</span><span class="cl">  (draw-group-label-header 1 &#34;tags&#34;)
+</span></span><span class="line"><span class="ln">20</span><span class="cl">  (next-row 18)
+</span></span><span class="line"><span class="ln">21</span><span class="cl">
+</span></span><span class="line"><span class="ln">22</span><span class="cl">  (draw-box 0x11 :bg-green)
+</span></span><span class="line"><span class="ln">23</span><span class="cl">  (draw-box 0x872349ae [{:span 4} :bg-green])
+</span></span><span class="line"><span class="ln">24</span><span class="cl">  (draw-box 0x11 :bg-yellow)
+</span></span><span class="line"><span class="ln">25</span><span class="cl">  (draw-box (text &#34;TxID&#34; :math) [{:span 4} :bg-yellow])
+</span></span><span class="line"><span class="ln">26</span><span class="cl">  (draw-box 0x10 :bg-pink)
+</span></span><span class="line"><span class="ln">27</span><span class="cl">  (draw-box (hex-text kind 4 :bold) [{:span 2} :bg-pink])
+</span></span><span class="line"><span class="ln">28</span><span class="cl">  (draw-box 0x0f :bg-cyan)
+</span></span><span class="line"><span class="ln">29</span><span class="cl">  (draw-box (hex-text args 2 :bold) :bg-cyan)
+</span></span><span class="line"><span class="ln">30</span><span class="cl">  (draw-box 0x14 :bg-purple)
+</span></span><span class="line"><span class="ln">31</span><span class="cl">
+</span></span><span class="line"><span class="ln">32</span><span class="cl">  (draw-box (text &#34;0000000c&#34; :hex [[:plain {:font-weight &#34;light&#34; :font-size 16}] &#34; (12)&#34;]) [{:span 4} :bg-purple])
+</span></span><span class="line"><span class="ln">33</span><span class="cl">  (draw-box (hex-text 6 2 :bold) [:box-first :bg-purple])
+</span></span><span class="line"><span class="ln">34</span><span class="cl">  (doseq [val [6 6 3 6 6 6 6 3]]
+</span></span><span class="line"><span class="ln">35</span><span class="cl">    (draw-box (hex-text val 2 :bold) [:box-related :bg-purple]))
+</span></span><span class="line"><span class="ln">36</span><span class="cl">  (doseq [val [0 0]]
+</span></span><span class="line"><span class="ln">37</span><span class="cl">    (draw-box val [:box-related :bg-purple]))
+</span></span><span class="line"><span class="ln">38</span><span class="cl">  (draw-box 0 [:box-last :bg-purple]))
+</span></span><span class="line"><span class="ln">39</span><span class="cl">
+</span></span><span class="line"><span class="ln">40</span><span class="cl">(draw-remotedb-header 0x4702 9)
+</span></span><span class="line"><span class="ln">41</span><span class="cl">
+</span></span><span class="line"><span class="ln">42</span><span class="cl">(draw-box 0x11)
+</span></span><span class="line"><span class="ln">43</span><span class="cl">(draw-box 0x2104 {:span 4})
+</span></span><span class="line"><span class="ln">44</span><span class="cl">(draw-box 0x11)
+</span></span><span class="line"><span class="ln">45</span><span class="cl">(draw-box 0 {:span 4})
+</span></span><span class="line"><span class="ln">46</span><span class="cl">(draw-box 0x11)
+</span></span><span class="line"><span class="ln">47</span><span class="cl">(draw-box (text &#34;length&#34; [:math] [:sub 1]) {:span 4})
+</span></span><span class="line"><span class="ln">48</span><span class="cl">(draw-box 0x14)
+</span></span><span class="line"><span class="ln">49</span><span class="cl">
+</span></span><span class="line"><span class="ln">50</span><span class="cl">(draw-box (text &#34;length&#34; [:math] [:sub 1]) {:span 4})
+</span></span><span class="line"><span class="ln">51</span><span class="cl">(draw-gap &#34;Cue and loop point bytes&#34;)
+</span></span><span class="line"><span class="ln">52</span><span class="cl">
+</span></span><span class="line"><span class="ln">53</span><span class="cl">(draw-box nil :box-below)
+</span></span><span class="line"><span class="ln">54</span><span class="cl">(draw-box 0x11)
+</span></span><span class="line"><span class="ln">55</span><span class="cl">(draw-box 0x36 {:span 4})
+</span></span><span class="line"><span class="ln">56</span><span class="cl">(draw-box 0x11)
+</span></span><span class="line"><span class="ln">57</span><span class="cl">(draw-box (text &#34;num&#34; [:math] [:sub &#34;hot&#34;]) {:span 4})
+</span></span><span class="line"><span class="ln">58</span><span class="cl">(draw-box 0x11)
+</span></span><span class="line"><span class="ln">59</span><span class="cl">(draw-box (text &#34;num&#34; [:math] [:sub &#34;cue&#34;]) {:span 4})
+</span></span><span class="line"><span class="ln">60</span><span class="cl">
+</span></span><span class="line"><span class="ln">61</span><span class="cl">(draw-box 0x11)
+</span></span><span class="line"><span class="ln">62</span><span class="cl">(draw-box (text &#34;length&#34; [:math] [:sub 2]) {:span 4})
+</span></span><span class="line"><span class="ln">63</span><span class="cl">(draw-box 0x14)
+</span></span><span class="line"><span class="ln">64</span><span class="cl">(draw-box (text &#34;length&#34; [:math] [:sub 2]) {:span 4})
+</span></span><span class="line"><span class="ln">65</span><span class="cl">(draw-gap &#34;Unknown bytes&#34; {:min-label-columns 6})
+</span></span><span class="line"><span class="ln">66</span><span class="cl">(draw-bottom)
+</span></span><span class="line"><span class="ln">67</span><span class="cl">```</span></span></code></pre></div>
+</details>
+
+
+<div class="kroki-img" style="background-color: var(--flexoki-150)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-bytefield" id="h-rh-cb-kroki-14" src="/hugo-bearberry/images/kroki/md5-nTXuBj54sDZ+P4KqyBPDnw==.svg">
+</div><h3 id="seqdiag">SeqDiag</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=seqdiag}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">seqdiag {
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  browser  -&gt; webserver [label = &#34;GET /index.html&#34;];
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  browser &lt;-- webserver;
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  browser  -&gt; webserver [label = &#34;POST /blog/comment&#34;];
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  webserver  -&gt; database [label = &#34;INSERT comment&#34;];
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">  webserver &lt;-- database;
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  browser &lt;-- webserver;
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">}
+</span></span><span class="line"><span class="ln">10</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-seqdiag" id="h-rh-cb-kroki-16" src="/hugo-bearberry/images/kroki/md5-tQ7juZ/LXh/jG5E9j4ZlUQ==.svg">
+</div><h3 id="actdiag">ActDiag</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=actdiag}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">actdiag {
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  write -&gt; convert -&gt; image
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  lane user {
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    label = &#34;User&#34;
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    write [label = &#34;Writing reST&#34;];
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    image [label = &#34;Get diagram IMAGE&#34;];
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  }
+</span></span><span class="line"><span class="ln">10</span><span class="cl">  lane actdiag {
+</span></span><span class="line"><span class="ln">11</span><span class="cl">    convert [label = &#34;Convert reST to Image&#34;];
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  }
+</span></span><span class="line"><span class="ln">13</span><span class="cl">}
+</span></span><span class="line"><span class="ln">14</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-actdiag" id="h-rh-cb-kroki-18" src="/hugo-bearberry/images/kroki/md5-glGMh53QfaW7O4wLTi99Hg==.svg">
+</div><h3 id="nwdiag">NwDiag</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=nwdiag}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">nwdiag {
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  network dmz {
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">    address = &#34;210.x.x.x/24&#34;
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    web01 [address = &#34;210.x.x.1&#34;];
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    web02 [address = &#34;210.x.x.2&#34;];
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  }
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  network internal {
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    address = &#34;172.x.x.x/24&#34;;
+</span></span><span class="line"><span class="ln">11</span><span class="cl">
+</span></span><span class="line"><span class="ln">12</span><span class="cl">    web01 [address = &#34;172.x.x.1&#34;];
+</span></span><span class="line"><span class="ln">13</span><span class="cl">    web02 [address = &#34;172.x.x.2&#34;];
+</span></span><span class="line"><span class="ln">14</span><span class="cl">    db01;
+</span></span><span class="line"><span class="ln">15</span><span class="cl">    db02;
+</span></span><span class="line"><span class="ln">16</span><span class="cl">  }
+</span></span><span class="line"><span class="ln">17</span><span class="cl">}
+</span></span><span class="line"><span class="ln">18</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-nwdiag" id="h-rh-cb-kroki-20" src="/hugo-bearberry/images/kroki/md5-CFsaaWenYGV5I5wKfyJvpw==.svg">
+</div><h3 id="graphviz">GraphViz</h3>
+<details>
+    <summary style="color: var(--flexoki-light-blue)">Code</summary>
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">  1</span><span class="cl">```kroki {type=graphviz}
+</span></span><span class="line"><span class="ln">  2</span><span class="cl">digraph &#34;unix&#34; {
+</span></span><span class="line"><span class="ln">  3</span><span class="cl">  graph [ fontname = &#34;Helvetica-Oblique&#34;,
+</span></span><span class="line"><span class="ln">  4</span><span class="cl">          fontsize = 36,
+</span></span><span class="line"><span class="ln">  5</span><span class="cl">          label = &#34;\n\n\n\nObject Oriented Graphs\nStephen North, 3/19/93&#34;,
+</span></span><span class="line"><span class="ln">  6</span><span class="cl">          size = &#34;6,6&#34; ];
+</span></span><span class="line"><span class="ln">  7</span><span class="cl">  node [ shape = polygon,
+</span></span><span class="line"><span class="ln">  8</span><span class="cl">         sides = 4,
+</span></span><span class="line"><span class="ln">  9</span><span class="cl">         distortion = &#34;0.0&#34;,
+</span></span><span class="line"><span class="ln"> 10</span><span class="cl">         orientation = &#34;0.0&#34;,
+</span></span><span class="line"><span class="ln"> 11</span><span class="cl">         skew = &#34;0.0&#34;,
+</span></span><span class="line"><span class="ln"> 12</span><span class="cl">         color = white,
+</span></span><span class="line"><span class="ln"> 13</span><span class="cl">         style = filled,
+</span></span><span class="line"><span class="ln"> 14</span><span class="cl">         fontname = &#34;Helvetica-Outline&#34; ];
+</span></span><span class="line"><span class="ln"> 15</span><span class="cl">  &#34;5th Edition&#34; [sides=9, distortion=&#34;0.936354&#34;, orientation=28, skew=&#34;-0.126818&#34;, color=salmon2];
+</span></span><span class="line"><span class="ln"> 16</span><span class="cl">  &#34;6th Edition&#34; [sides=5, distortion=&#34;0.238792&#34;, orientation=11, skew=&#34;0.995935&#34;, color=deepskyblue];
+</span></span><span class="line"><span class="ln"> 17</span><span class="cl">  &#34;PWB 1.0&#34; [sides=8, distortion=&#34;0.019636&#34;, orientation=79, skew=&#34;-0.440424&#34;, color=goldenrod2];
+</span></span><span class="line"><span class="ln"> 18</span><span class="cl">  LSX [sides=9, distortion=&#34;-0.698271&#34;, orientation=22, skew=&#34;-0.195492&#34;, color=burlywood2];
+</span></span><span class="line"><span class="ln"> 19</span><span class="cl">  &#34;1 BSD&#34; [sides=7, distortion=&#34;0.265084&#34;, orientation=26, skew=&#34;0.403659&#34;, color=gold1];
+</span></span><span class="line"><span class="ln"> 20</span><span class="cl">  &#34;Mini Unix&#34; [distortion=&#34;0.039386&#34;, orientation=2, skew=&#34;-0.461120&#34;, color=greenyellow];
+</span></span><span class="line"><span class="ln"> 21</span><span class="cl">  Wollongong [sides=5, distortion=&#34;0.228564&#34;, orientation=63, skew=&#34;-0.062846&#34;, color=darkseagreen];
+</span></span><span class="line"><span class="ln"> 22</span><span class="cl">  Interdata [distortion=&#34;0.624013&#34;, orientation=56, skew=&#34;0.101396&#34;, color=dodgerblue1];
+</span></span><span class="line"><span class="ln"> 23</span><span class="cl">  &#34;Unix/TS 3.0&#34; [sides=8, distortion=&#34;0.731383&#34;, orientation=43, skew=&#34;-0.824612&#34;, color=thistle2];
+</span></span><span class="line"><span class="ln"> 24</span><span class="cl">  &#34;PWB 2.0&#34; [sides=6, distortion=&#34;0.592100&#34;, orientation=34, skew=&#34;-0.719269&#34;, color=darkolivegreen3];
+</span></span><span class="line"><span class="ln"> 25</span><span class="cl">  &#34;7th Edition&#34; [sides=10, distortion=&#34;0.298417&#34;, orientation=65, skew=&#34;0.310367&#34;, color=chocolate];
+</span></span><span class="line"><span class="ln"> 26</span><span class="cl">  &#34;8th Edition&#34; [distortion=&#34;-0.997093&#34;, orientation=50, skew=&#34;-0.061117&#34;, color=turquoise3];
+</span></span><span class="line"><span class="ln"> 27</span><span class="cl">  &#34;32V&#34; [sides=7, distortion=&#34;0.878516&#34;, orientation=19, skew=&#34;0.592905&#34;, color=steelblue3];
+</span></span><span class="line"><span class="ln"> 28</span><span class="cl">  V7M [sides=10, distortion=&#34;-0.960249&#34;, orientation=32, skew=&#34;0.460424&#34;, color=navy];
+</span></span><span class="line"><span class="ln"> 29</span><span class="cl">  &#34;Ultrix-11&#34; [sides=10, distortion=&#34;-0.633186&#34;, orientation=10, skew=&#34;0.333125&#34;, color=darkseagreen4];
+</span></span><span class="line"><span class="ln"> 30</span><span class="cl">  Xenix [sides=8, distortion=&#34;-0.337997&#34;, orientation=52, skew=&#34;-0.760726&#34;, color=coral];
+</span></span><span class="line"><span class="ln"> 31</span><span class="cl">  &#34;UniPlus+&#34; [sides=7, distortion=&#34;0.788483&#34;, orientation=39, skew=&#34;-0.526284&#34;, color=darkolivegreen3];
+</span></span><span class="line"><span class="ln"> 32</span><span class="cl">  &#34;9th Edition&#34; [sides=7, distortion=&#34;0.138690&#34;, orientation=55, skew=&#34;0.554049&#34;, color=coral3];
+</span></span><span class="line"><span class="ln"> 33</span><span class="cl">  &#34;2 BSD&#34; [sides=7, distortion=&#34;-0.010661&#34;, orientation=84, skew=&#34;0.179249&#34;, color=blanchedalmond];
+</span></span><span class="line"><span class="ln"> 34</span><span class="cl">  &#34;2.8 BSD&#34; [distortion=&#34;-0.239422&#34;, orientation=44, skew=&#34;0.053841&#34;, color=lightskyblue1];
+</span></span><span class="line"><span class="ln"> 35</span><span class="cl">  &#34;2.9 BSD&#34; [distortion=&#34;-0.843381&#34;, orientation=70, skew=&#34;-0.601395&#34;, color=aquamarine2];
+</span></span><span class="line"><span class="ln"> 36</span><span class="cl">  &#34;3 BSD&#34; [sides=10, distortion=&#34;0.251820&#34;, orientation=18, skew=&#34;-0.530618&#34;, color=lemonchiffon];
+</span></span><span class="line"><span class="ln"> 37</span><span class="cl">  &#34;4 BSD&#34; [sides=5, distortion=&#34;-0.772300&#34;, orientation=24, skew=&#34;-0.028475&#34;, color=darkorange1];
+</span></span><span class="line"><span class="ln"> 38</span><span class="cl">  &#34;4.1 BSD&#34; [distortion=&#34;-0.226170&#34;, orientation=38, skew=&#34;0.504053&#34;, color=lightyellow1];
+</span></span><span class="line"><span class="ln"> 39</span><span class="cl">  &#34;4.2 BSD&#34; [sides=10, distortion=&#34;-0.807349&#34;, orientation=50, skew=&#34;-0.908842&#34;, color=darkorchid4];
+</span></span><span class="line"><span class="ln"> 40</span><span class="cl">  &#34;4.3 BSD&#34; [sides=10, distortion=&#34;-0.030619&#34;, orientation=76, skew=&#34;0.985021&#34;, color=lemonchiffon2];
+</span></span><span class="line"><span class="ln"> 41</span><span class="cl">  &#34;Ultrix-32&#34; [distortion=&#34;-0.644209&#34;, orientation=21, skew=&#34;0.307836&#34;, color=goldenrod3];
+</span></span><span class="line"><span class="ln"> 42</span><span class="cl">  &#34;PWB 1.2&#34; [sides=7, distortion=&#34;0.640971&#34;, orientation=84, skew=&#34;-0.768455&#34;, color=cyan];
+</span></span><span class="line"><span class="ln"> 43</span><span class="cl">  &#34;USG 1.0&#34; [distortion=&#34;0.758942&#34;, orientation=42, skew=&#34;0.039886&#34;, color=blue];
+</span></span><span class="line"><span class="ln"> 44</span><span class="cl">  &#34;CB Unix 1&#34; [sides=9, distortion=&#34;-0.348692&#34;, orientation=42, skew=&#34;0.767058&#34;, color=firebrick];
+</span></span><span class="line"><span class="ln"> 45</span><span class="cl">  &#34;USG 2.0&#34; [distortion=&#34;0.748625&#34;, orientation=74, skew=&#34;-0.647656&#34;, color=chartreuse4];
+</span></span><span class="line"><span class="ln"> 46</span><span class="cl">  &#34;CB Unix 2&#34; [sides=10, distortion=&#34;0.851818&#34;, orientation=32, skew=&#34;-0.020120&#34;, color=greenyellow];
+</span></span><span class="line"><span class="ln"> 47</span><span class="cl">  &#34;CB Unix 3&#34; [sides=10, distortion=&#34;0.992237&#34;, orientation=29, skew=&#34;0.256102&#34;, color=bisque4];
+</span></span><span class="line"><span class="ln"> 48</span><span class="cl">  &#34;Unix/TS++&#34; [sides=6, distortion=&#34;0.545461&#34;, orientation=16, skew=&#34;0.313589&#34;, color=mistyrose2];
+</span></span><span class="line"><span class="ln"> 49</span><span class="cl">  &#34;PDP-11 Sys V&#34; [sides=9, distortion=&#34;-0.267769&#34;, orientation=40, skew=&#34;0.271226&#34;, color=cadetblue1];
+</span></span><span class="line"><span class="ln"> 50</span><span class="cl">  &#34;USG 3.0&#34; [distortion=&#34;-0.848455&#34;, orientation=44, skew=&#34;0.267152&#34;, color=bisque2];
+</span></span><span class="line"><span class="ln"> 51</span><span class="cl">  &#34;Unix/TS 1.0&#34; [distortion=&#34;0.305594&#34;, orientation=75, skew=&#34;0.070516&#34;, color=orangered];
+</span></span><span class="line"><span class="ln"> 52</span><span class="cl">  &#34;TS 4.0&#34; [sides=10, distortion=&#34;-0.641701&#34;, orientation=50, skew=&#34;-0.952502&#34;, color=crimson];
+</span></span><span class="line"><span class="ln"> 53</span><span class="cl">  &#34;System V.0&#34; [sides=9, distortion=&#34;0.021556&#34;, orientation=26, skew=&#34;-0.729938&#34;, color=darkorange1];
+</span></span><span class="line"><span class="ln"> 54</span><span class="cl">  &#34;System V.2&#34; [sides=6, distortion=&#34;0.985153&#34;, orientation=33, skew=&#34;-0.399752&#34;, color=darkolivegreen4];
+</span></span><span class="line"><span class="ln"> 55</span><span class="cl">  &#34;System V.3&#34; [sides=7, distortion=&#34;-0.687574&#34;, orientation=58, skew=&#34;-0.180116&#34;, color=lightsteelblue1];
+</span></span><span class="line"><span class="ln"> 56</span><span class="cl">  &#34;5th Edition&#34; -&gt; &#34;6th Edition&#34;;
+</span></span><span class="line"><span class="ln"> 57</span><span class="cl">  &#34;5th Edition&#34; -&gt; &#34;PWB 1.0&#34;;
+</span></span><span class="line"><span class="ln"> 58</span><span class="cl">  &#34;6th Edition&#34; -&gt; LSX;
+</span></span><span class="line"><span class="ln"> 59</span><span class="cl">  &#34;6th Edition&#34; -&gt; &#34;1 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 60</span><span class="cl">  &#34;6th Edition&#34; -&gt; &#34;Mini Unix&#34;;
+</span></span><span class="line"><span class="ln"> 61</span><span class="cl">  &#34;6th Edition&#34; -&gt; Wollongong;
+</span></span><span class="line"><span class="ln"> 62</span><span class="cl">  &#34;6th Edition&#34; -&gt; Interdata;
+</span></span><span class="line"><span class="ln"> 63</span><span class="cl">  Interdata -&gt; &#34;Unix/TS 3.0&#34;;
+</span></span><span class="line"><span class="ln"> 64</span><span class="cl">  Interdata -&gt; &#34;PWB 2.0&#34;;
+</span></span><span class="line"><span class="ln"> 65</span><span class="cl">  Interdata -&gt; &#34;7th Edition&#34;;
+</span></span><span class="line"><span class="ln"> 66</span><span class="cl">  &#34;7th Edition&#34; -&gt; &#34;8th Edition&#34;;
+</span></span><span class="line"><span class="ln"> 67</span><span class="cl">  &#34;7th Edition&#34; -&gt; &#34;32V&#34;;
+</span></span><span class="line"><span class="ln"> 68</span><span class="cl">  &#34;7th Edition&#34; -&gt; V7M;
+</span></span><span class="line"><span class="ln"> 69</span><span class="cl">  &#34;7th Edition&#34; -&gt; &#34;Ultrix-11&#34;;
+</span></span><span class="line"><span class="ln"> 70</span><span class="cl">  &#34;7th Edition&#34; -&gt; Xenix;
+</span></span><span class="line"><span class="ln"> 71</span><span class="cl">  &#34;7th Edition&#34; -&gt; &#34;UniPlus+&#34;;
+</span></span><span class="line"><span class="ln"> 72</span><span class="cl">  V7M -&gt; &#34;Ultrix-11&#34;;
+</span></span><span class="line"><span class="ln"> 73</span><span class="cl">  &#34;8th Edition&#34; -&gt; &#34;9th Edition&#34;;
+</span></span><span class="line"><span class="ln"> 74</span><span class="cl">  &#34;1 BSD&#34; -&gt; &#34;2 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 75</span><span class="cl">  &#34;2 BSD&#34; -&gt; &#34;2.8 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 76</span><span class="cl">  &#34;2.8 BSD&#34; -&gt; &#34;Ultrix-11&#34;;
+</span></span><span class="line"><span class="ln"> 77</span><span class="cl">  &#34;2.8 BSD&#34; -&gt; &#34;2.9 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 78</span><span class="cl">  &#34;32V&#34; -&gt; &#34;3 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 79</span><span class="cl">  &#34;3 BSD&#34; -&gt; &#34;4 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 80</span><span class="cl">  &#34;4 BSD&#34; -&gt; &#34;4.1 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 81</span><span class="cl">  &#34;4.1 BSD&#34; -&gt; &#34;4.2 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 82</span><span class="cl">  &#34;4.1 BSD&#34; -&gt; &#34;2.8 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 83</span><span class="cl">  &#34;4.1 BSD&#34; -&gt; &#34;8th Edition&#34;;
+</span></span><span class="line"><span class="ln"> 84</span><span class="cl">  &#34;4.2 BSD&#34; -&gt; &#34;4.3 BSD&#34;;
+</span></span><span class="line"><span class="ln"> 85</span><span class="cl">  &#34;4.2 BSD&#34; -&gt; &#34;Ultrix-32&#34;;
+</span></span><span class="line"><span class="ln"> 86</span><span class="cl">  &#34;PWB 1.0&#34; -&gt; &#34;PWB 1.2&#34;;
+</span></span><span class="line"><span class="ln"> 87</span><span class="cl">  &#34;PWB 1.0&#34; -&gt; &#34;USG 1.0&#34;;
+</span></span><span class="line"><span class="ln"> 88</span><span class="cl">  &#34;PWB 1.2&#34; -&gt; &#34;PWB 2.0&#34;;
+</span></span><span class="line"><span class="ln"> 89</span><span class="cl">  &#34;USG 1.0&#34; -&gt; &#34;CB Unix 1&#34;;
+</span></span><span class="line"><span class="ln"> 90</span><span class="cl">  &#34;USG 1.0&#34; -&gt; &#34;USG 2.0&#34;;
+</span></span><span class="line"><span class="ln"> 91</span><span class="cl">  &#34;CB Unix 1&#34; -&gt; &#34;CB Unix 2&#34;;
+</span></span><span class="line"><span class="ln"> 92</span><span class="cl">  &#34;CB Unix 2&#34; -&gt; &#34;CB Unix 3&#34;;
+</span></span><span class="line"><span class="ln"> 93</span><span class="cl">  &#34;CB Unix 3&#34; -&gt; &#34;Unix/TS++&#34;;
+</span></span><span class="line"><span class="ln"> 94</span><span class="cl">  &#34;CB Unix 3&#34; -&gt; &#34;PDP-11 Sys V&#34;;
+</span></span><span class="line"><span class="ln"> 95</span><span class="cl">  &#34;USG 2.0&#34; -&gt; &#34;USG 3.0&#34;;
+</span></span><span class="line"><span class="ln"> 96</span><span class="cl">  &#34;USG 3.0&#34; -&gt; &#34;Unix/TS 3.0&#34;;
+</span></span><span class="line"><span class="ln"> 97</span><span class="cl">  &#34;PWB 2.0&#34; -&gt; &#34;Unix/TS 3.0&#34;;
+</span></span><span class="line"><span class="ln"> 98</span><span class="cl">  &#34;Unix/TS 1.0&#34; -&gt; &#34;Unix/TS 3.0&#34;;
+</span></span><span class="line"><span class="ln"> 99</span><span class="cl">  &#34;Unix/TS 3.0&#34; -&gt; &#34;TS 4.0&#34;;
+</span></span><span class="line"><span class="ln">100</span><span class="cl">  &#34;Unix/TS++&#34; -&gt; &#34;TS 4.0&#34;;
+</span></span><span class="line"><span class="ln">101</span><span class="cl">  &#34;CB Unix 3&#34; -&gt; &#34;TS 4.0&#34;;
+</span></span><span class="line"><span class="ln">102</span><span class="cl">  &#34;TS 4.0&#34; -&gt; &#34;System V.0&#34;;
+</span></span><span class="line"><span class="ln">103</span><span class="cl">  &#34;System V.0&#34; -&gt; &#34;System V.2&#34;;
+</span></span><span class="line"><span class="ln">104</span><span class="cl">  &#34;System V.2&#34; -&gt; &#34;System V.3&#34;;
+</span></span><span class="line"><span class="ln">105</span><span class="cl">}
+</span></span><span class="line"><span class="ln">106</span><span class="cl">```</span></span></code></pre></div>
+</details>
+
+
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-graphviz" id="h-rh-cb-kroki-21" src="/hugo-bearberry/images/kroki/md5-RvwEIGFjt/vQfaFvyngt/Q==.svg">
+</div><h3 id="pikchr">Pikchr</h3>
+<details>
+    <summary style="color: var(--flexoki-light-blue)">Code</summary>
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=pikchr}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">scale = 0.8
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">fill = white
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">linewid *= 0.5
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">circle &#34;C0&#34; fit
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">circlerad = previous.radius
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">circle &#34;C1&#34;
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">10</span><span class="cl">circle &#34;C2&#34;
+</span></span><span class="line"><span class="ln">11</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">12</span><span class="cl">circle &#34;C4&#34;
+</span></span><span class="line"><span class="ln">13</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">14</span><span class="cl">circle &#34;C6&#34;
+</span></span><span class="line"><span class="ln">15</span><span class="cl">circle &#34;C3&#34; at dist(C2,C4) heading 30 from C2
+</span></span><span class="line"><span class="ln">16</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">17</span><span class="cl">circle &#34;C5&#34;
+</span></span><span class="line"><span class="ln">18</span><span class="cl">arrow from C2 to C3 chop
+</span></span><span class="line"><span class="ln">19</span><span class="cl">C3P: circle &#34;C3&#39;&#34; at dist(C4,C6) heading 30 from C6
+</span></span><span class="line"><span class="ln">20</span><span class="cl">arrow right from C3P.e
+</span></span><span class="line"><span class="ln">21</span><span class="cl">C5P: circle &#34;C5&#39;&#34;
+</span></span><span class="line"><span class="ln">22</span><span class="cl">arrow from C6 to C3P chop
+</span></span><span class="line"><span class="ln">23</span><span class="cl">
+</span></span><span class="line"><span class="ln">24</span><span class="cl">box height C3.y-C2.y \
+</span></span><span class="line"><span class="ln">25</span><span class="cl">    width (C5P.e.x-C0.w.x)+linewid \
+</span></span><span class="line"><span class="ln">26</span><span class="cl">    with .w at 0.5*linewid west of C0.w \
+</span></span><span class="line"><span class="ln">27</span><span class="cl">    behind C0 \
+</span></span><span class="line"><span class="ln">28</span><span class="cl">    fill 0xc6e2ff thin color gray
+</span></span><span class="line"><span class="ln">29</span><span class="cl">box same width previous.e.x - C2.w.x \
+</span></span><span class="line"><span class="ln">30</span><span class="cl">    with .se at previous.ne \
+</span></span><span class="line"><span class="ln">31</span><span class="cl">    fill 0x9accfc
+</span></span><span class="line"><span class="ln">32</span><span class="cl">&#34;trunk&#34; below at 2nd last box.s
+</span></span><span class="line"><span class="ln">33</span><span class="cl">&#34;feature branch&#34; above at last box.n
+</span></span><span class="line"><span class="ln">34</span><span class="cl">
+</span></span><span class="line"><span class="ln">35</span><span class="cl">circle &#34;C0&#34; at 3.7cm south of C0
+</span></span><span class="line"><span class="ln">36</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">37</span><span class="cl">circle &#34;C1&#34;
+</span></span><span class="line"><span class="ln">38</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">39</span><span class="cl">circle &#34;C2&#34;
+</span></span><span class="line"><span class="ln">40</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">41</span><span class="cl">circle &#34;C4&#34;
+</span></span><span class="line"><span class="ln">42</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">43</span><span class="cl">circle &#34;C6&#34;
+</span></span><span class="line"><span class="ln">44</span><span class="cl">circle &#34;C3&#34; at dist(C2,C4) heading 30 from C2
+</span></span><span class="line"><span class="ln">45</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">46</span><span class="cl">circle &#34;C5&#34;
+</span></span><span class="line"><span class="ln">47</span><span class="cl">arrow
+</span></span><span class="line"><span class="ln">48</span><span class="cl">circle &#34;C7&#34;
+</span></span><span class="line"><span class="ln">49</span><span class="cl">arrow from C2 to C3 chop
+</span></span><span class="line"><span class="ln">50</span><span class="cl">arrow from C6 to C7 chop
+</span></span><span class="line"><span class="ln">51</span><span class="cl">
+</span></span><span class="line"><span class="ln">52</span><span class="cl">box height C3.y-C2.y \
+</span></span><span class="line"><span class="ln">53</span><span class="cl">    width (C7.e.x-C0.w.x)+1.5*C1.radius \
+</span></span><span class="line"><span class="ln">54</span><span class="cl">    with .w at 0.5*linewid west of C0.w \
+</span></span><span class="line"><span class="ln">55</span><span class="cl">    behind C0 \
+</span></span><span class="line"><span class="ln">56</span><span class="cl">    fill 0xc6e2ff thin color gray
+</span></span><span class="line"><span class="ln">57</span><span class="cl">box same width previous.e.x - C2.w.x \
+</span></span><span class="line"><span class="ln">58</span><span class="cl">    with .se at previous.ne \
+</span></span><span class="line"><span class="ln">59</span><span class="cl">    fill 0x9accfc
+</span></span><span class="line"><span class="ln">60</span><span class="cl">&#34;trunk&#34; below at 2nd last box.s
+</span></span><span class="line"><span class="ln">61</span><span class="cl">&#34;feature branch&#34; above at last box.n
+</span></span><span class="line"><span class="ln">62</span><span class="cl">```</span></span></code></pre></div>
+</details>
+
+
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-pikchr" id="h-rh-cb-kroki-22" src="/hugo-bearberry/images/kroki/md5-elFIBQg8zBTsieq14SjcjA==.svg">
+</div><h3 id="erd">Erd</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=erd}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">[Person]
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">*name
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">height
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">weight
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">+birth_location_id
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">[Location]
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">*id
+</span></span><span class="line"><span class="ln">10</span><span class="cl">city
+</span></span><span class="line"><span class="ln">11</span><span class="cl">state
+</span></span><span class="line"><span class="ln">12</span><span class="cl">country
+</span></span><span class="line"><span class="ln">13</span><span class="cl">
+</span></span><span class="line"><span class="ln">14</span><span class="cl">Person *--1 Location
+</span></span><span class="line"><span class="ln">15</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-erd" id="h-rh-cb-kroki-24" src="/hugo-bearberry/images/kroki/md5-GI8vlUGkpgQrHOxHOwUcKg==.svg">
+</div><h3 id="vega">Vega</h3>
+<details>
+    <summary style="color: var(--flexoki-light-blue)">Code</summary>
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=vega flexoki=paper}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">{
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  &#34;$schema&#34;: &#34;https://vega.github.io/schema/vega/v5.json&#34;,
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  &#34;width&#34;: 800,
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  &#34;height&#34;: 400,
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  &#34;padding&#34;: 0,
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  &#34;data&#34;: [
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">10</span><span class="cl">      &#34;name&#34;: &#34;table&#34;,
+</span></span><span class="line"><span class="ln">11</span><span class="cl">      &#34;values&#34;: [
+</span></span><span class="line"><span class="ln">12</span><span class="cl">        &#34;Declarative visualization grammars can accelerate development, facilitate retargeting across platforms, and allow language-level optimizations. However, existing declarative visualization languages are primarily concerned with visual encoding, and rely on imperative event handlers for interactive behaviors. In response, we introduce a model of declarative interaction design for data visualizations. Adopting methods from reactive programming, we model low-level events as composable data streams from which we form higher-level semantic signals. Signals feed predicates and scale inversions, which allow us to generalize interactive selections at the level of item geometry (pixels) into interactive queries over the data domain. Production rules then use these queries to manipulate the visualization’s appearance. To facilitate reuse and sharing, these constructs can be encapsulated as named interactors: standalone, purely declarative specifications of interaction techniques. We assess our model’s feasibility and expressivity by instantiating it with extensions to the Vega visualization grammar. Through a diverse range of examples, we demonstrate coverage over an established taxonomy of visualization interaction techniques.&#34;,
+</span></span><span class="line"><span class="ln">13</span><span class="cl">        &#34;We present Reactive Vega, a system architecture that provides the first robust and comprehensive treatment of declarative visual and interaction design for data visualization. Starting from a single declarative specification, Reactive Vega constructs a dataflow graph in which input data, scene graph elements, and interaction events are all treated as first-class streaming data sources. To support expressive interactive visualizations that may involve time-varying scalar, relational, or hierarchical data, Reactive Vega’s dataflow graph can dynamically re-write itself at runtime by extending or pruning branches in a data-driven fashion. We discuss both compile- and run-time optimizations applied within Reactive Vega, and share the results of benchmark studies that indicate superior interactive performance to both D3 and the original, non-reactive Vega system.&#34;,
+</span></span><span class="line"><span class="ln">14</span><span class="cl">        &#34;We present Vega-Lite, a high-level grammar that enables rapid specification of interactive data visualizations. Vega-Lite combines a traditional grammar of graphics, providing visual encoding rules and a composition algebra for layered and multi-view displays, with a novel grammar of interaction. Users specify interactive semantics by composing selections. In Vega-Lite, a selection is an abstraction that defines input event processing, points of interest, and a predicate function for inclusion testing. Selections parameterize visual encodings by serving as input data, defining scale extents, or by driving conditional logic. The Vega-Lite compiler automatically synthesizes requisite data flow and event handling logic, which users can override for further customization. In contrast to existing reactive specifications, Vega-Lite selections decompose an interaction design into concise, enumerable semantic units. We evaluate Vega-Lite through a range of examples, demonstrating succinct specification of both customized interaction methods and common techniques such as panning, zooming, and linked selection.&#34;
+</span></span><span class="line"><span class="ln">15</span><span class="cl">      ],
+</span></span><span class="line"><span class="ln">16</span><span class="cl">      &#34;transform&#34;: [
+</span></span><span class="line"><span class="ln">17</span><span class="cl">        {
+</span></span><span class="line"><span class="ln">18</span><span class="cl">          &#34;type&#34;: &#34;countpattern&#34;,
+</span></span><span class="line"><span class="ln">19</span><span class="cl">          &#34;field&#34;: &#34;data&#34;,
+</span></span><span class="line"><span class="ln">20</span><span class="cl">          &#34;case&#34;: &#34;upper&#34;,
+</span></span><span class="line"><span class="ln">21</span><span class="cl">          &#34;pattern&#34;: &#34;[\\w&#39;]{3,}&#34;,
+</span></span><span class="line"><span class="ln">22</span><span class="cl">          &#34;stopwords&#34;: &#34;(i|me|my|myself|we|us|our|ours|ourselves|you|your|yours|yourself|yourselves|he|him|his|himself|she|her|hers|herself|it|its|itself|they|them|their|theirs|themselves|what|which|who|whom|whose|this|that|these|those|am|is|are|was|were|be|been|being|have|has|had|having|do|does|did|doing|will|would|should|can|could|ought|i&#39;m|you&#39;re|he&#39;s|she&#39;s|it&#39;s|we&#39;re|they&#39;re|i&#39;ve|you&#39;ve|we&#39;ve|they&#39;ve|i&#39;d|you&#39;d|he&#39;d|she&#39;d|we&#39;d|they&#39;d|i&#39;ll|you&#39;ll|he&#39;ll|she&#39;ll|we&#39;ll|they&#39;ll|isn&#39;t|aren&#39;t|wasn&#39;t|weren&#39;t|hasn&#39;t|haven&#39;t|hadn&#39;t|doesn&#39;t|don&#39;t|didn&#39;t|won&#39;t|wouldn&#39;t|shan&#39;t|shouldn&#39;t|can&#39;t|cannot|couldn&#39;t|mustn&#39;t|let&#39;s|that&#39;s|who&#39;s|what&#39;s|here&#39;s|there&#39;s|when&#39;s|where&#39;s|why&#39;s|how&#39;s|a|an|the|and|but|if|or|because|as|until|while|of|at|by|for|with|about|against|between|into|through|during|before|after|above|below|to|from|up|upon|down|in|out|on|off|over|under|again|further|then|once|here|there|when|where|why|how|all|any|both|each|few|more|most|other|some|such|no|nor|not|only|own|same|so|than|too|very|say|says|said|shall)&#34;
+</span></span><span class="line"><span class="ln">23</span><span class="cl">        },
+</span></span><span class="line"><span class="ln">24</span><span class="cl">        {
+</span></span><span class="line"><span class="ln">25</span><span class="cl">          &#34;type&#34;: &#34;formula&#34;, &#34;as&#34;: &#34;angle&#34;,
+</span></span><span class="line"><span class="ln">26</span><span class="cl">          &#34;expr&#34;: &#34;[-45, 0, 45][~~(random() * 3)]&#34;
+</span></span><span class="line"><span class="ln">27</span><span class="cl">        },
+</span></span><span class="line"><span class="ln">28</span><span class="cl">        {
+</span></span><span class="line"><span class="ln">29</span><span class="cl">          &#34;type&#34;: &#34;formula&#34;, &#34;as&#34;: &#34;weight&#34;,
+</span></span><span class="line"><span class="ln">30</span><span class="cl">          &#34;expr&#34;: &#34;if(datum.text==&#39;VEGA&#39;, 600, 300)&#34;
+</span></span><span class="line"><span class="ln">31</span><span class="cl">        }
+</span></span><span class="line"><span class="ln">32</span><span class="cl">      ]
+</span></span><span class="line"><span class="ln">33</span><span class="cl">    }
+</span></span><span class="line"><span class="ln">34</span><span class="cl">  ],
+</span></span><span class="line"><span class="ln">35</span><span class="cl">
+</span></span><span class="line"><span class="ln">36</span><span class="cl">  &#34;scales&#34;: [
+</span></span><span class="line"><span class="ln">37</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">38</span><span class="cl">      &#34;name&#34;: &#34;color&#34;,
+</span></span><span class="line"><span class="ln">39</span><span class="cl">      &#34;type&#34;: &#34;ordinal&#34;,
+</span></span><span class="line"><span class="ln">40</span><span class="cl">      &#34;domain&#34;: {&#34;data&#34;: &#34;table&#34;, &#34;field&#34;: &#34;text&#34;},
+</span></span><span class="line"><span class="ln">41</span><span class="cl">      &#34;range&#34;: [&#34;#d5a928&#34;, &#34;#652c90&#34;, &#34;#939597&#34;]
+</span></span><span class="line"><span class="ln">42</span><span class="cl">    }
+</span></span><span class="line"><span class="ln">43</span><span class="cl">  ],
+</span></span><span class="line"><span class="ln">44</span><span class="cl">
+</span></span><span class="line"><span class="ln">45</span><span class="cl">  &#34;marks&#34;: [
+</span></span><span class="line"><span class="ln">46</span><span class="cl">    {
+</span></span><span class="line"><span class="ln">47</span><span class="cl">      &#34;type&#34;: &#34;text&#34;,
+</span></span><span class="line"><span class="ln">48</span><span class="cl">      &#34;from&#34;: {&#34;data&#34;: &#34;table&#34;},
+</span></span><span class="line"><span class="ln">49</span><span class="cl">      &#34;encode&#34;: {
+</span></span><span class="line"><span class="ln">50</span><span class="cl">        &#34;enter&#34;: {
+</span></span><span class="line"><span class="ln">51</span><span class="cl">          &#34;text&#34;: {&#34;field&#34;: &#34;text&#34;},
+</span></span><span class="line"><span class="ln">52</span><span class="cl">          &#34;align&#34;: {&#34;value&#34;: &#34;center&#34;},
+</span></span><span class="line"><span class="ln">53</span><span class="cl">          &#34;baseline&#34;: {&#34;value&#34;: &#34;alphabetic&#34;},
+</span></span><span class="line"><span class="ln">54</span><span class="cl">          &#34;fill&#34;: {&#34;scale&#34;: &#34;color&#34;, &#34;field&#34;: &#34;text&#34;}
+</span></span><span class="line"><span class="ln">55</span><span class="cl">        },
+</span></span><span class="line"><span class="ln">56</span><span class="cl">        &#34;update&#34;: {
+</span></span><span class="line"><span class="ln">57</span><span class="cl">          &#34;fillOpacity&#34;: {&#34;value&#34;: 1}
+</span></span><span class="line"><span class="ln">58</span><span class="cl">        },
+</span></span><span class="line"><span class="ln">59</span><span class="cl">        &#34;hover&#34;: {
+</span></span><span class="line"><span class="ln">60</span><span class="cl">          &#34;fillOpacity&#34;: {&#34;value&#34;: 0.5}
+</span></span><span class="line"><span class="ln">61</span><span class="cl">        }
+</span></span><span class="line"><span class="ln">62</span><span class="cl">      },
+</span></span><span class="line"><span class="ln">63</span><span class="cl">      &#34;transform&#34;: [
+</span></span><span class="line"><span class="ln">64</span><span class="cl">        {
+</span></span><span class="line"><span class="ln">65</span><span class="cl">          &#34;type&#34;: &#34;wordcloud&#34;,
+</span></span><span class="line"><span class="ln">66</span><span class="cl">          &#34;size&#34;: [800, 400],
+</span></span><span class="line"><span class="ln">67</span><span class="cl">          &#34;text&#34;: {&#34;field&#34;: &#34;text&#34;},
+</span></span><span class="line"><span class="ln">68</span><span class="cl">          &#34;rotate&#34;: {&#34;field&#34;: &#34;datum.angle&#34;},
+</span></span><span class="line"><span class="ln">69</span><span class="cl">          &#34;font&#34;: &#34;Helvetica Neue, Arial&#34;,
+</span></span><span class="line"><span class="ln">70</span><span class="cl">          &#34;fontSize&#34;: {&#34;field&#34;: &#34;datum.count&#34;},
+</span></span><span class="line"><span class="ln">71</span><span class="cl">          &#34;fontWeight&#34;: {&#34;field&#34;: &#34;datum.weight&#34;},
+</span></span><span class="line"><span class="ln">72</span><span class="cl">          &#34;fontSizeRange&#34;: [12, 56],
+</span></span><span class="line"><span class="ln">73</span><span class="cl">          &#34;padding&#34;: 2
+</span></span><span class="line"><span class="ln">74</span><span class="cl">        }
+</span></span><span class="line"><span class="ln">75</span><span class="cl">      ]
+</span></span><span class="line"><span class="ln">76</span><span class="cl">    }
+</span></span><span class="line"><span class="ln">77</span><span class="cl">  ]
+</span></span><span class="line"><span class="ln">78</span><span class="cl">}
+</span></span><span class="line"><span class="ln">79</span><span class="cl">```</span></span></code></pre></div>
+</details>
+
+
+<div class="kroki-img" style="background-color: var(--flexoki-paper)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-On5jC5FpCelDdUz9/5nXCg==.svg">
+</div><h3 id="vega-lite">Vega-Lite</h3>
+<details>
+    <summary style="color: var(--flexoki-light-blue)">Code</summary>
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">  1</span><span class="cl">```kroki {type=vegalite}
+</span></span><span class="line"><span class="ln">  2</span><span class="cl">{
+</span></span><span class="line"><span class="ln">  3</span><span class="cl">  &#34;$schema&#34;: &#34;https://vega.github.io/schema/vega-lite/v4.json&#34;,
+</span></span><span class="line"><span class="ln">  4</span><span class="cl">  &#34;description&#34;: &#34;A diverging stacked bar chart for sentiments towards a set of eight questions, displayed as percentages with neutral responses straddling the 0% mark&#34;,
+</span></span><span class="line"><span class="ln">  5</span><span class="cl">  &#34;data&#34;: {
+</span></span><span class="line"><span class="ln">  6</span><span class="cl">    &#34;values&#34;: [
+</span></span><span class="line"><span class="ln">  7</span><span class="cl">      {&#34;question&#34;: &#34;Question 1&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 24, &#34;percentage&#34;: 0.7},
+</span></span><span class="line"><span class="ln">  8</span><span class="cl">      {&#34;question&#34;: &#34;Question 1&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 294, &#34;percentage&#34;: 9.1},
+</span></span><span class="line"><span class="ln">  9</span><span class="cl">      {&#34;question&#34;: &#34;Question 1&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 594, &#34;percentage&#34;: 18.5},
+</span></span><span class="line"><span class="ln"> 10</span><span class="cl">      {&#34;question&#34;: &#34;Question 1&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 1927, &#34;percentage&#34;: 59.9},
+</span></span><span class="line"><span class="ln"> 11</span><span class="cl">      {&#34;question&#34;: &#34;Question 1&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 376, &#34;percentage&#34;: 11.7},
+</span></span><span class="line"><span class="ln"> 12</span><span class="cl">      {&#34;question&#34;: &#34;Question 2&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 18.2},
+</span></span><span class="line"><span class="ln"> 13</span><span class="cl">      {&#34;question&#34;: &#34;Question 2&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 18.2},
+</span></span><span class="line"><span class="ln"> 14</span><span class="cl">      {&#34;question&#34;: &#34;Question 2&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 15</span><span class="cl">      {&#34;question&#34;: &#34;Question 2&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 7, &#34;percentage&#34;: 63.6},
+</span></span><span class="line"><span class="ln"> 16</span><span class="cl">      {&#34;question&#34;: &#34;Question 2&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 11, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 17</span><span class="cl">      {&#34;question&#34;: &#34;Question 3&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 20},
+</span></span><span class="line"><span class="ln"> 18</span><span class="cl">      {&#34;question&#34;: &#34;Question 3&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 19</span><span class="cl">      {&#34;question&#34;: &#34;Question 3&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 20},
+</span></span><span class="line"><span class="ln"> 20</span><span class="cl">      {&#34;question&#34;: &#34;Question 3&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 4, &#34;percentage&#34;: 40},
+</span></span><span class="line"><span class="ln"> 21</span><span class="cl">      {&#34;question&#34;: &#34;Question 3&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 20},
+</span></span><span class="line"><span class="ln"> 22</span><span class="cl">      {&#34;question&#34;: &#34;Question 4&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 23</span><span class="cl">      {&#34;question&#34;: &#34;Question 4&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 12.5},
+</span></span><span class="line"><span class="ln"> 24</span><span class="cl">      {&#34;question&#34;: &#34;Question 4&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 1, &#34;percentage&#34;: 6.3},
+</span></span><span class="line"><span class="ln"> 25</span><span class="cl">      {&#34;question&#34;: &#34;Question 4&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 7, &#34;percentage&#34;: 43.8},
+</span></span><span class="line"><span class="ln"> 26</span><span class="cl">      {&#34;question&#34;: &#34;Question 4&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 6, &#34;percentage&#34;: 37.5},
+</span></span><span class="line"><span class="ln"> 27</span><span class="cl">      {&#34;question&#34;: &#34;Question 5&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 28</span><span class="cl">      {&#34;question&#34;: &#34;Question 5&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 1, &#34;percentage&#34;: 4.2},
+</span></span><span class="line"><span class="ln"> 29</span><span class="cl">      {&#34;question&#34;: &#34;Question 5&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 3, &#34;percentage&#34;: 12.5},
+</span></span><span class="line"><span class="ln"> 30</span><span class="cl">      {&#34;question&#34;: &#34;Question 5&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 16, &#34;percentage&#34;: 66.7},
+</span></span><span class="line"><span class="ln"> 31</span><span class="cl">      {&#34;question&#34;: &#34;Question 5&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 4, &#34;percentage&#34;: 16.7},
+</span></span><span class="line"><span class="ln"> 32</span><span class="cl">      {&#34;question&#34;: &#34;Question 6&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 1, &#34;percentage&#34;: 6.3},
+</span></span><span class="line"><span class="ln"> 33</span><span class="cl">      {&#34;question&#34;: &#34;Question 6&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 1, &#34;percentage&#34;: 6.3},
+</span></span><span class="line"><span class="ln"> 34</span><span class="cl">      {&#34;question&#34;: &#34;Question 6&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 12.5},
+</span></span><span class="line"><span class="ln"> 35</span><span class="cl">      {&#34;question&#34;: &#34;Question 6&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 9, &#34;percentage&#34;: 56.3},
+</span></span><span class="line"><span class="ln"> 36</span><span class="cl">      {&#34;question&#34;: &#34;Question 6&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 3, &#34;percentage&#34;: 18.8},
+</span></span><span class="line"><span class="ln"> 37</span><span class="cl">      {&#34;question&#34;: &#34;Question 7&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 38</span><span class="cl">      {&#34;question&#34;: &#34;Question 7&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 39</span><span class="cl">      {&#34;question&#34;: &#34;Question 7&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 1, &#34;percentage&#34;: 20},
+</span></span><span class="line"><span class="ln"> 40</span><span class="cl">      {&#34;question&#34;: &#34;Question 7&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 4, &#34;percentage&#34;: 80},
+</span></span><span class="line"><span class="ln"> 41</span><span class="cl">      {&#34;question&#34;: &#34;Question 7&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 42</span><span class="cl">      {&#34;question&#34;: &#34;Question 8&#34;, &#34;type&#34;: &#34;Strongly disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 43</span><span class="cl">      {&#34;question&#34;: &#34;Question 8&#34;, &#34;type&#34;: &#34;Disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 44</span><span class="cl">      {&#34;question&#34;: &#34;Question 8&#34;, &#34;type&#34;: &#34;Neither agree nor disagree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 45</span><span class="cl">      {&#34;question&#34;: &#34;Question 8&#34;, &#34;type&#34;: &#34;Agree&#34;, &#34;value&#34;: 0, &#34;percentage&#34;: 0},
+</span></span><span class="line"><span class="ln"> 46</span><span class="cl">      {&#34;question&#34;: &#34;Question 8&#34;, &#34;type&#34;: &#34;Strongly agree&#34;, &#34;value&#34;: 2, &#34;percentage&#34;: 100}
+</span></span><span class="line"><span class="ln"> 47</span><span class="cl">    ]
+</span></span><span class="line"><span class="ln"> 48</span><span class="cl">  },
+</span></span><span class="line"><span class="ln"> 49</span><span class="cl">  &#34;transform&#34;: [
+</span></span><span class="line"><span class="ln"> 50</span><span class="cl">    {
+</span></span><span class="line"><span class="ln"> 51</span><span class="cl">      &#34;calculate&#34;: &#34;if(datum.type === &#39;Strongly disagree&#39;,-2,0) + if(datum.type===&#39;Disagree&#39;,-1,0) + if(datum.type ==&#39;Neither agree nor disagree&#39;,0,0) + if(datum.type ===&#39;Agree&#39;,1,0) + if(datum.type ===&#39;Strongly agree&#39;,2,0)&#34;,
+</span></span><span class="line"><span class="ln"> 52</span><span class="cl">      &#34;as&#34;: &#34;q_order&#34;
+</span></span><span class="line"><span class="ln"> 53</span><span class="cl">    },
+</span></span><span class="line"><span class="ln"> 54</span><span class="cl">    {
+</span></span><span class="line"><span class="ln"> 55</span><span class="cl">      &#34;calculate&#34;: &#34;if(datum.type === &#39;Disagree&#39; || datum.type === &#39;Strongly disagree&#39;, datum.percentage,0) + if(datum.type === &#39;Neither agree nor disagree&#39;, datum.percentage / 2,0)&#34;,
+</span></span><span class="line"><span class="ln"> 56</span><span class="cl">      &#34;as&#34;: &#34;signed_percentage&#34;
+</span></span><span class="line"><span class="ln"> 57</span><span class="cl">    },
+</span></span><span class="line"><span class="ln"> 58</span><span class="cl">    {&#34;stack&#34;: &#34;percentage&#34;, &#34;as&#34;: [&#34;v1&#34;, &#34;v2&#34;], &#34;groupby&#34;: [&#34;question&#34;]},
+</span></span><span class="line"><span class="ln"> 59</span><span class="cl">    {
+</span></span><span class="line"><span class="ln"> 60</span><span class="cl">      &#34;joinaggregate&#34;: [
+</span></span><span class="line"><span class="ln"> 61</span><span class="cl">        {
+</span></span><span class="line"><span class="ln"> 62</span><span class="cl">          &#34;field&#34;: &#34;signed_percentage&#34;,
+</span></span><span class="line"><span class="ln"> 63</span><span class="cl">          &#34;op&#34;: &#34;sum&#34;,
+</span></span><span class="line"><span class="ln"> 64</span><span class="cl">          &#34;as&#34;: &#34;offset&#34;
+</span></span><span class="line"><span class="ln"> 65</span><span class="cl">        }
+</span></span><span class="line"><span class="ln"> 66</span><span class="cl">      ],
+</span></span><span class="line"><span class="ln"> 67</span><span class="cl">      &#34;groupby&#34;: [&#34;question&#34;]
+</span></span><span class="line"><span class="ln"> 68</span><span class="cl">    },
+</span></span><span class="line"><span class="ln"> 69</span><span class="cl">    {&#34;calculate&#34;: &#34;datum.v1 - datum.offset&#34;, &#34;as&#34;: &#34;nx&#34;},
+</span></span><span class="line"><span class="ln"> 70</span><span class="cl">    {&#34;calculate&#34;: &#34;datum.v2 - datum.offset&#34;, &#34;as&#34;: &#34;nx2&#34;}
+</span></span><span class="line"><span class="ln"> 71</span><span class="cl">  ],
+</span></span><span class="line"><span class="ln"> 72</span><span class="cl">  &#34;mark&#34;: &#34;bar&#34;,
+</span></span><span class="line"><span class="ln"> 73</span><span class="cl">  &#34;encoding&#34;: {
+</span></span><span class="line"><span class="ln"> 74</span><span class="cl">    &#34;x&#34;: {
+</span></span><span class="line"><span class="ln"> 75</span><span class="cl">      &#34;field&#34;: &#34;nx&#34;,
+</span></span><span class="line"><span class="ln"> 76</span><span class="cl">      &#34;type&#34;: &#34;quantitative&#34;,
+</span></span><span class="line"><span class="ln"> 77</span><span class="cl">      &#34;axis&#34;: {
+</span></span><span class="line"><span class="ln"> 78</span><span class="cl">        &#34;title&#34;: &#34;Percentage&#34;
+</span></span><span class="line"><span class="ln"> 79</span><span class="cl">      }
+</span></span><span class="line"><span class="ln"> 80</span><span class="cl">    },
+</span></span><span class="line"><span class="ln"> 81</span><span class="cl">    &#34;x2&#34;: {&#34;field&#34;: &#34;nx2&#34;},
+</span></span><span class="line"><span class="ln"> 82</span><span class="cl">    &#34;y&#34;: {
+</span></span><span class="line"><span class="ln"> 83</span><span class="cl">      &#34;field&#34;: &#34;question&#34;,
+</span></span><span class="line"><span class="ln"> 84</span><span class="cl">      &#34;type&#34;: &#34;nominal&#34;,
+</span></span><span class="line"><span class="ln"> 85</span><span class="cl">      &#34;axis&#34;: {
+</span></span><span class="line"><span class="ln"> 86</span><span class="cl">        &#34;title&#34;: &#34;Question&#34;,
+</span></span><span class="line"><span class="ln"> 87</span><span class="cl">        &#34;offset&#34;: 5,
+</span></span><span class="line"><span class="ln"> 88</span><span class="cl">        &#34;ticks&#34;: false,
+</span></span><span class="line"><span class="ln"> 89</span><span class="cl">        &#34;minExtent&#34;: 60,
+</span></span><span class="line"><span class="ln"> 90</span><span class="cl">        &#34;domain&#34;: false
+</span></span><span class="line"><span class="ln"> 91</span><span class="cl">      }
+</span></span><span class="line"><span class="ln"> 92</span><span class="cl">    },
+</span></span><span class="line"><span class="ln"> 93</span><span class="cl">    &#34;color&#34;: {
+</span></span><span class="line"><span class="ln"> 94</span><span class="cl">      &#34;field&#34;: &#34;type&#34;,
+</span></span><span class="line"><span class="ln"> 95</span><span class="cl">      &#34;type&#34;: &#34;nominal&#34;,
+</span></span><span class="line"><span class="ln"> 96</span><span class="cl">      &#34;legend&#34;: {
+</span></span><span class="line"><span class="ln"> 97</span><span class="cl">        &#34;title&#34;: &#34;Response&#34;
+</span></span><span class="line"><span class="ln"> 98</span><span class="cl">      },
+</span></span><span class="line"><span class="ln"> 99</span><span class="cl">      &#34;scale&#34;: {
+</span></span><span class="line"><span class="ln">100</span><span class="cl">        &#34;domain&#34;: [&#34;Strongly disagree&#34;, &#34;Disagree&#34;, &#34;Neither agree nor disagree&#34;, &#34;Agree&#34;, &#34;Strongly agree&#34;],
+</span></span><span class="line"><span class="ln">101</span><span class="cl">        &#34;range&#34;: [&#34;#c30d24&#34;, &#34;#f3a583&#34;, &#34;#cccccc&#34;, &#34;#94c6da&#34;, &#34;#1770ab&#34;],
+</span></span><span class="line"><span class="ln">102</span><span class="cl">        &#34;type&#34;: &#34;ordinal&#34;
+</span></span><span class="line"><span class="ln">103</span><span class="cl">      }
+</span></span><span class="line"><span class="ln">104</span><span class="cl">    }
+</span></span><span class="line"><span class="ln">105</span><span class="cl">  }
+</span></span><span class="line"><span class="ln">106</span><span class="cl">}
+</span></span><span class="line"><span class="ln">107</span><span class="cl">```</span></span></code></pre></div>
+</details>
+
+
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vegalite" id="h-rh-cb-kroki-26" src="/hugo-bearberry/images/kroki/md5-OasvGN3bSjQQE+apq4s0kQ==.svg">
+</div><h3 id="ditaa">Ditaa</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=ditaa}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">                          +-------------+
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">                          |             |
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">                          | Exponential |
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">                          |             |
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">                          +-------------+
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">                                 |
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">                          lambda |
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">                                 v
+</span></span><span class="line"><span class="ln">10</span><span class="cl">+-------------+           +-------------+           +-------------+
+</span></span><span class="line"><span class="ln">11</span><span class="cl">|             |   tau     |             |   lambda  |             |
+</span></span><span class="line"><span class="ln">12</span><span class="cl">|  Lognormal  |----------&gt;|    Gamma    |&lt;----------| Poisson     |
+</span></span><span class="line"><span class="ln">13</span><span class="cl">|             |           |             |---+       |             |
+</span></span><span class="line"><span class="ln">14</span><span class="cl">+-------------+           +-------------+   |       +-------------+
+</span></span><span class="line"><span class="ln">15</span><span class="cl">      |                         ^ ^         | beta
+</span></span><span class="line"><span class="ln">16</span><span class="cl">      |                   tau   | |         |
+</span></span><span class="line"><span class="ln">17</span><span class="cl">      | tau                     | +---------+
+</span></span><span class="line"><span class="ln">18</span><span class="cl">      |                   +-------------+
+</span></span><span class="line"><span class="ln">19</span><span class="cl">      +------------------&gt;|             |
+</span></span><span class="line"><span class="ln">20</span><span class="cl">                          |     Normal  |
+</span></span><span class="line"><span class="ln">21</span><span class="cl">                          |             |----+
+</span></span><span class="line"><span class="ln">22</span><span class="cl">                          +-------------+    |
+</span></span><span class="line"><span class="ln">23</span><span class="cl">                                     ^       | mu
+</span></span><span class="line"><span class="ln">24</span><span class="cl">                                     |       |
+</span></span><span class="line"><span class="ln">25</span><span class="cl">                                     +-------+
+</span></span><span class="line"><span class="ln">26</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-ditaa" id="h-rh-cb-kroki-28" src="/hugo-bearberry/images/kroki/md5-iDom6/ZwIJSt6rlvQXdvNA==.svg">
+</div><h3 id="dbml">DBML</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=dbml}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">Table users {
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  id integer
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  username varchar
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  role varchar
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  created_at timestamp
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">}
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">Table posts {
+</span></span><span class="line"><span class="ln">10</span><span class="cl">  id integer [primary key]
+</span></span><span class="line"><span class="ln">11</span><span class="cl">  title varchar
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  body text [note: &#39;Content of the post&#39;]
+</span></span><span class="line"><span class="ln">13</span><span class="cl">  user_id integer
+</span></span><span class="line"><span class="ln">14</span><span class="cl">  status post_status
+</span></span><span class="line"><span class="ln">15</span><span class="cl">  created_at timestamp
+</span></span><span class="line"><span class="ln">16</span><span class="cl">}
+</span></span><span class="line"><span class="ln">17</span><span class="cl">
+</span></span><span class="line"><span class="ln">18</span><span class="cl">Enum post_status {
+</span></span><span class="line"><span class="ln">19</span><span class="cl">  draft
+</span></span><span class="line"><span class="ln">20</span><span class="cl">  published
+</span></span><span class="line"><span class="ln">21</span><span class="cl">  private [note: &#39;visible via URL only&#39;]
+</span></span><span class="line"><span class="ln">22</span><span class="cl">}
+</span></span><span class="line"><span class="ln">23</span><span class="cl">
+</span></span><span class="line"><span class="ln">24</span><span class="cl">Ref: posts.user_id &gt; users.id // many-to-one
+</span></span><span class="line"><span class="ln">25</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-dbml" id="h-rh-cb-kroki-30" src="/hugo-bearberry/images/kroki/md5-tvhGJpkIayCFUONw4xlxcA==.svg">
+</div><h3 id="tikz">TikZ</h3>
+<details>
+    <summary style="color: var(--flexoki-light-blue)">Code</summary>
+    
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=tikz flexoki=paper}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">\documentclass{article}
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">\usepackage{tikz}
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">\usepackage{tikz-3dplot}
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">\usetikzlibrary{math}
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">\usepackage[active,tightpage]{preview}
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">\PreviewEnvironment{tikzpicture}
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">\setlength\PreviewBorder{0.125pt}
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">%
+</span></span><span class="line"><span class="ln">10</span><span class="cl">% File name: directional-angles.tex
+</span></span><span class="line"><span class="ln">11</span><span class="cl">% Description:
+</span></span><span class="line"><span class="ln">12</span><span class="cl">% The directional angles of a vector are geometrically represented.
+</span></span><span class="line"><span class="ln">13</span><span class="cl">%
+</span></span><span class="line"><span class="ln">14</span><span class="cl">% Date of creation: July, 25th, 2021.
+</span></span><span class="line"><span class="ln">15</span><span class="cl">% Date of last modification: October, 9th, 2022.
+</span></span><span class="line"><span class="ln">16</span><span class="cl">% Author: Efra�n Soto Apolinar.
+</span></span><span class="line"><span class="ln">17</span><span class="cl">% https://www.aprendematematicas.org.mx/author/efrain-soto-apolinar/instructing-courses/
+</span></span><span class="line"><span class="ln">18</span><span class="cl">% Source: page 11 of the
+</span></span><span class="line"><span class="ln">19</span><span class="cl">% Glosario Ilustrado de Matematicas Escolares.
+</span></span><span class="line"><span class="ln">20</span><span class="cl">% https://tinyurl.com/5udm2ufy
+</span></span><span class="line"><span class="ln">21</span><span class="cl">%
+</span></span><span class="line"><span class="ln">22</span><span class="cl">% Terms of use:
+</span></span><span class="line"><span class="ln">23</span><span class="cl">% According to TikZ.net
+</span></span><span class="line"><span class="ln">24</span><span class="cl">% https://creativecommons.org/licenses/by-nc-sa/4.0/
+</span></span><span class="line"><span class="ln">25</span><span class="cl">% Your commitment to the terms of use is greatly appreciated.
+</span></span><span class="line"><span class="ln">26</span><span class="cl">%
+</span></span><span class="line"><span class="ln">27</span><span class="cl">\begin{document}
+</span></span><span class="line"><span class="ln">28</span><span class="cl">  \tdplotsetmaincoords{80}{120}
+</span></span><span class="line"><span class="ln">29</span><span class="cl">  %
+</span></span><span class="line"><span class="ln">30</span><span class="cl">  \begin{tikzpicture}[tdplot_main_coords,scale=0.75]
+</span></span><span class="line"><span class="ln">31</span><span class="cl">    % Indicate the components of the vector in rectangular coordinates
+</span></span><span class="line"><span class="ln">32</span><span class="cl">    \pgfmathsetmacro{\ux}{4}
+</span></span><span class="line"><span class="ln">33</span><span class="cl">    \pgfmathsetmacro{\uy}{4}
+</span></span><span class="line"><span class="ln">34</span><span class="cl">    \pgfmathsetmacro{\uz}{3}
+</span></span><span class="line"><span class="ln">35</span><span class="cl">    % Length of each axis
+</span></span><span class="line"><span class="ln">36</span><span class="cl">    \pgfmathsetmacro{\ejex}{\ux+0.5}
+</span></span><span class="line"><span class="ln">37</span><span class="cl">    \pgfmathsetmacro{\ejey}{\uy+0.5}
+</span></span><span class="line"><span class="ln">38</span><span class="cl">    \pgfmathsetmacro{\ejez}{\uz+0.5}
+</span></span><span class="line"><span class="ln">39</span><span class="cl">    \pgfmathsetmacro{\umag}{sqrt(\ux*\ux+\uy*\uy+\uz*\uz)} % Magnitude of vector $\vec{u}$
+</span></span><span class="line"><span class="ln">40</span><span class="cl">    % Compute the angle $\theta$
+</span></span><span class="line"><span class="ln">41</span><span class="cl">    \pgfmathsetmacro{\angthetax}{pi*atan(\uy/\ux)/180}
+</span></span><span class="line"><span class="ln">42</span><span class="cl">    \pgfmathsetmacro{\angthetay}{pi*atan(\ux/\uz)/180}
+</span></span><span class="line"><span class="ln">43</span><span class="cl">    \pgfmathsetmacro{\angthetaz}{pi*atan(\uz/\uy)/180}
+</span></span><span class="line"><span class="ln">44</span><span class="cl">    % Compute the angle $\phi$
+</span></span><span class="line"><span class="ln">45</span><span class="cl">    \pgfmathsetmacro{\angphix}{pi*acos(\ux/\umag)/180}
+</span></span><span class="line"><span class="ln">46</span><span class="cl">    \pgfmathsetmacro{\angphiy}{pi*acos(\uy/\umag)/180}
+</span></span><span class="line"><span class="ln">47</span><span class="cl">    \pgfmathsetmacro{\angphiz}{pi*acos(\uz/\umag)/180}
+</span></span><span class="line"><span class="ln">48</span><span class="cl">    % Compute rho sin(phi) to simplify computations
+</span></span><span class="line"><span class="ln">49</span><span class="cl">    \pgfmathsetmacro{\costz}{cos(\angthetax r)}
+</span></span><span class="line"><span class="ln">50</span><span class="cl">    \pgfmathsetmacro{\sintz}{sin(\angthetax r)}
+</span></span><span class="line"><span class="ln">51</span><span class="cl">    \pgfmathsetmacro{\costy}{cos(\angthetay r)}
+</span></span><span class="line"><span class="ln">52</span><span class="cl">    \pgfmathsetmacro{\sinty}{sin(\angthetay r)}
+</span></span><span class="line"><span class="ln">53</span><span class="cl">    \pgfmathsetmacro{\costx}{cos(\angthetaz r)}
+</span></span><span class="line"><span class="ln">54</span><span class="cl">    \pgfmathsetmacro{\sintx}{sin(\angthetaz r)}
+</span></span><span class="line"><span class="ln">55</span><span class="cl">    % Coordinate axis
+</span></span><span class="line"><span class="ln">56</span><span class="cl">    \draw[thick,-&gt;] (0,0,0) -- (\ejex,0,0) node[below left] {$x$};
+</span></span><span class="line"><span class="ln">57</span><span class="cl">    \draw[thick,-&gt;] (0,0,0) -- (0,\ejey,0) node[right] {$y$};
+</span></span><span class="line"><span class="ln">58</span><span class="cl">    \draw[thick,-&gt;] (0,0,0) -- (0,0,\ejez) node[above] {$z$};
+</span></span><span class="line"><span class="ln">59</span><span class="cl">    % Projections of the components in the axis
+</span></span><span class="line"><span class="ln">60</span><span class="cl">    \draw[gray,very thin,opacity=0.5] (0,0,0) -- (\ux,0,0) -- (\ux,\uy,0) -- (0,\uy,0) -- (0,0,0);	% face on the plane z = 0
+</span></span><span class="line"><span class="ln">61</span><span class="cl">    \draw[gray,very thin,opacity=0.5] (0,0,\uz) -- (\ux,0,\uz) -- (\ux,\uy,\uz) -- (0,\uy,\uz) -- (0,0,\uz);	% face on the plane z = \uz
+</span></span><span class="line"><span class="ln">62</span><span class="cl">    \draw[gray,very thin,opacity=0.5] (0,0,0) -- (0,0,\uz) -- (\ux,0,\uz) -- (\ux,0,0) -- (0,0,0);	% face on the plane y = 0
+</span></span><span class="line"><span class="ln">63</span><span class="cl">    \draw[gray,very thin,opacity=0.5] (0,\uy,0) -- (0,\uy,\uz) -- (\ux,\uy,\uz) -- (\ux,\uy,0) -- (0,\uy,0);	% face on the plane y = \uy
+</span></span><span class="line"><span class="ln">64</span><span class="cl">    \draw[gray,very thin,opacity=0.5] (0,0,0) -- (0,\uy,0) -- (0,\uy,\uz) -- (0,0,\uz) -- (0,0,0); % face on the plane x = 0
+</span></span><span class="line"><span class="ln">65</span><span class="cl">    \draw[gray,very thin,opacity=0.5] (\ux,0,0) -- (\ux,\uy,0) -- (\ux,\uy,\uz) -- (\ux,0,\uz) -- (\ux,0,0); % face on the plane x = \ux
+</span></span><span class="line"><span class="ln">66</span><span class="cl">    % Arc indicating the angle $\alpha$
+</span></span><span class="line"><span class="ln">67</span><span class="cl">    % (angle formed by the vector $\vec{v}$ and the $x$ axis)
+</span></span><span class="line"><span class="ln">68</span><span class="cl">    \draw[red,thick] plot[domain=0:\angphix,smooth,variable=\t] ({cos(\t r)},{sin(\t r)*\costx},{sin(\t r)*\sintx});
+</span></span><span class="line"><span class="ln">69</span><span class="cl">    % Arc indicating the angle $\beta$
+</span></span><span class="line"><span class="ln">70</span><span class="cl">    % (angle formed by the vector $\vec{v}$ and the $y$ axis)
+</span></span><span class="line"><span class="ln">71</span><span class="cl">    \draw[red,thick] plot[domain=0:\angphiy,smooth,variable=\t] ({sin(\t r)*\sinty},{cos(\t r)},{sin(\t r)*\costy});
+</span></span><span class="line"><span class="ln">72</span><span class="cl">    % Arc indicating the angle $\gamma$
+</span></span><span class="line"><span class="ln">73</span><span class="cl">    % (angle formed by the vector $\vec{v}$ and the $z$ axis)
+</span></span><span class="line"><span class="ln">74</span><span class="cl">    \draw[red,thick] plot[domain=0:\angphiz,smooth,variable=\t] ({sin(\t r)*\costz},{sin(\t r)*\sintz},{cos(\t r)});
+</span></span><span class="line"><span class="ln">75</span><span class="cl">    % Vector $\vec{u}$
+</span></span><span class="line"><span class="ln">76</span><span class="cl">    \draw[blue,thick,-&gt;] (0,0,0) -- (\ux,\uy,\uz) node [below right] {$\vec{u}$};
+</span></span><span class="line"><span class="ln">77</span><span class="cl">    % Nodes indicating the direction angles
+</span></span><span class="line"><span class="ln">78</span><span class="cl">    \pgfmathsetmacro{\xa}{1.85*cos(0.5*\angphix r)}
+</span></span><span class="line"><span class="ln">79</span><span class="cl">    \pgfmathsetmacro{\ya}{1.85*sin(0.5*\angphix r)*\costx}
+</span></span><span class="line"><span class="ln">80</span><span class="cl">    \pgfmathsetmacro{\za}{1.85*sin(0.5*\angphiz r)*\sintx}
+</span></span><span class="line"><span class="ln">81</span><span class="cl">    \node[red] at (\xa,\ya,\za) {\footnotesize$\alpha$};
+</span></span><span class="line"><span class="ln">82</span><span class="cl">    %
+</span></span><span class="line"><span class="ln">83</span><span class="cl">    \pgfmathsetmacro{\xb}{1.5*sin(0.5*\angphiy r)*\sinty}
+</span></span><span class="line"><span class="ln">84</span><span class="cl">    \pgfmathsetmacro{\yb}{1.5*cos(0.5*\angphiy r)}
+</span></span><span class="line"><span class="ln">85</span><span class="cl">    \pgfmathsetmacro{\zb}{1.5*sin(0.5*\angphiy r)*\costy}
+</span></span><span class="line"><span class="ln">86</span><span class="cl">    \node[red] at (\xb,\yb,\zb) {\footnotesize$\beta$};
+</span></span><span class="line"><span class="ln">87</span><span class="cl">    %
+</span></span><span class="line"><span class="ln">88</span><span class="cl">    \pgfmathsetmacro{\xc}{1.5*sin(0.5*\angphiz r)*\costz}
+</span></span><span class="line"><span class="ln">89</span><span class="cl">    \pgfmathsetmacro{\yc}{1.5*sin(0.5*\angphiz r)*\sintz}
+</span></span><span class="line"><span class="ln">90</span><span class="cl">    \pgfmathsetmacro{\zc}{1.5*cos(0.5*\angphiz r)}
+</span></span><span class="line"><span class="ln">91</span><span class="cl">    \node[red] at (\xc,\yc,\zc) {\footnotesize$\gamma$};
+</span></span><span class="line"><span class="ln">92</span><span class="cl">    %
+</span></span><span class="line"><span class="ln">93</span><span class="cl">  \end{tikzpicture}
+</span></span><span class="line"><span class="ln">94</span><span class="cl">  %
+</span></span><span class="line"><span class="ln">95</span><span class="cl">\end{document}
+</span></span><span class="line"><span class="ln">96</span><span class="cl">```</span></span></code></pre></div>
+</details>
+
+
+<div class="kroki-img" style="background-color: var(--flexoki-paper)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-31" src="/hugo-bearberry/images/kroki/md5-yszS6mr0sDDl+Qcg8FFrqQ==.svg">
+</div><h3 id="wavedrom">WaveDrom</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">```kroki {type=wavedrom}
+</span></span><span class="line"><span class="ln">2</span><span class="cl">{ signal: [
+</span></span><span class="line"><span class="ln">3</span><span class="cl">  { name: &#34;clk&#34;,         wave: &#34;p.....|...&#34; },
+</span></span><span class="line"><span class="ln">4</span><span class="cl">  { name: &#34;Data&#34;,        wave: &#34;x.345x|=.x&#34;, data: [&#34;head&#34;, &#34;body&#34;, &#34;tail&#34;, &#34;data&#34;] },
+</span></span><span class="line"><span class="ln">5</span><span class="cl">  { name: &#34;Request&#34;,     wave: &#34;0.1..0|1.0&#34; },
+</span></span><span class="line"><span class="ln">6</span><span class="cl">  {},
+</span></span><span class="line"><span class="ln">7</span><span class="cl">  { name: &#34;Acknowledge&#34;, wave: &#34;1.....|01.&#34; }
+</span></span><span class="line"><span class="ln">8</span><span class="cl">]}
+</span></span><span class="line"><span class="ln">9</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-wavedrom" id="h-rh-cb-kroki-33" src="/hugo-bearberry/images/kroki/md5-Tno2lJbS15XjfdZpmVQGkA==.svg">
+</div><h3 id="wireviz">WireViz</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=wireviz}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">connectors:
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  X1:
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">    type: D-Sub
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">    subtype: female
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    pinlabels: [DCD, RX, TX, DTR, GND, DSR, RTS, CTS, RI]
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">  X2:
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    type: Molex KK 254
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    subtype: female
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    pinlabels: [GND, RX, TX]
+</span></span><span class="line"><span class="ln">11</span><span class="cl">
+</span></span><span class="line"><span class="ln">12</span><span class="cl">cables:
+</span></span><span class="line"><span class="ln">13</span><span class="cl">  W1:
+</span></span><span class="line"><span class="ln">14</span><span class="cl">    gauge: 0.25 mm2
+</span></span><span class="line"><span class="ln">15</span><span class="cl">    length: 0.2
+</span></span><span class="line"><span class="ln">16</span><span class="cl">    color_code: DIN
+</span></span><span class="line"><span class="ln">17</span><span class="cl">    wirecount: 3
+</span></span><span class="line"><span class="ln">18</span><span class="cl">    shield: true
+</span></span><span class="line"><span class="ln">19</span><span class="cl">
+</span></span><span class="line"><span class="ln">20</span><span class="cl">connections:
+</span></span><span class="line"><span class="ln">21</span><span class="cl">  -
+</span></span><span class="line"><span class="ln">22</span><span class="cl">    - X1: [5,2,3]
+</span></span><span class="line"><span class="ln">23</span><span class="cl">    - W1: [1,2,3]
+</span></span><span class="line"><span class="ln">24</span><span class="cl">    - X2: [1,3,2]
+</span></span><span class="line"><span class="ln">25</span><span class="cl">  -
+</span></span><span class="line"><span class="ln">26</span><span class="cl">    - X1: 5
+</span></span><span class="line"><span class="ln">27</span><span class="cl">    - W1: s
+</span></span><span class="line"><span class="ln">28</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-wireviz" id="h-rh-cb-kroki-35" src="/hugo-bearberry/images/kroki/md5-VQZWJwCLLm44Z45qRda77A==.svg">
+</div><h3 id="more-examples">More Examples</h3>
+<p>Go to the <a href="https://kroki.io/examples.html">Kroki examples</a> page.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://www.veriphor.com/articles/diagrams/">https://www.veriphor.com/articles/diagrams/</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

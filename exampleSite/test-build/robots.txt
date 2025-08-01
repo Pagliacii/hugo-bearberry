@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pagliacii.github.io/hugo-bearberry/sitemap.xml

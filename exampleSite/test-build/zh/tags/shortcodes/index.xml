@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Shortcodes on 熊莓</title>
+    <link>https://pagliacii.github.io/hugo-bearberry/zh/tags/shortcodes/</link>
+    <description>Recent content in Shortcodes on 熊莓</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>me@example.com (Jason Huang)</managingEditor>
+    <webMaster>me@example.com (Jason Huang)</webMaster>
+    <copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright>
+    <lastBuildDate>Sun, 29 Oct 2023 17:09:08 +0800</lastBuildDate>
+    <atom:link href="https://pagliacii.github.io/hugo-bearberry/zh/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>更多短代码</title>
+      <link>https://pagliacii.github.io/hugo-bearberry/zh/blog/more-shortcodes/</link>
+      <pubDate>Sun, 29 Oct 2023 17:09:08 +0800</pubDate><author>me@example.com (Jason Huang)</author>
+      <guid>https://pagliacii.github.io/hugo-bearberry/zh/blog/more-shortcodes/</guid>
+      <description>&lt;p&gt;这是一个展示更多自定义短代码的页面。&lt;/p&gt;&#xA;&lt;h2 id=&#34;警告框&#34;&gt;警告框&lt;/h2&gt;&#xA;&lt;h3 id=&#34;注意警告&#34;&gt;注意警告&lt;/h3&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;{{&amp;lt; note &amp;gt;}}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;突出显示用户应该注意的信息，即使在快速浏览时也应该注意。&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;{{&amp;lt; /note &amp;gt;}}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;alert alert-note&#34;&gt;&#xD;&#xA;  &lt;p class=&#34;alert-title&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;alert-icon alert-note-icon&#34;&gt;&#xD;&#xA;      &lt;svg class=&#34;octicon&#34; viewBox=&#34;0 0 16 16&#34; version=&#34;1.1&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34;&gt;&#xD;&#xA;        &lt;path d=&#34;M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z&#34;&gt;&lt;/path&gt;&#xD;&#xA;      &lt;/svg&gt;&#xD;&#xA;      Note&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;  &lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>这是一个展示更多自定义短代码的页面。</p>
+<h2 id="警告框">警告框</h2>
+<h3 id="注意警告">注意警告</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; note &gt;}}
+</span></span><span class="line"><span class="ln">2</span><span class="cl">突出显示用户应该注意的信息，即使在快速浏览时也应该注意。
+</span></span><span class="line"><span class="ln">3</span><span class="cl">{{&lt; /note &gt;}}</span></span></code></pre></div><div class="alert alert-note">
+  <p class="alert-title">
+    <span class="alert-icon alert-note-icon">
+      <svg class="octicon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
+      </svg>
+      Note
+    </span>
+  </p>
+  <p class="alert-text">突出显示用户应该注意的信息，即使在快速浏览时也应该注意。</p>
+</div>
+
+<h3 id="提示警告">提示警告</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; tip &gt;}}
+</span></span><span class="line"><span class="ln">2</span><span class="cl">帮助用户更成功的可选信息。
+</span></span><span class="line"><span class="ln">3</span><span class="cl">{{&lt; /tip &gt;}}</span></span></code></pre></div><div class="alert alert-tip">
+  <p class="alert-title">
+    <span class="alert-icon alert-tip-icon">
+      <svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path>
+      </svg>
+      Tip
+    </span>
+   </p>
+   <p class="alert-text">帮助用户更成功的可选信息。</p>
+</div>
+
+<h3 id="重要警告">重要警告</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; important &gt;}}
+</span></span><span class="line"><span class="ln">2</span><span class="cl">用户成功必需的关键信息。
+</span></span><span class="line"><span class="ln">3</span><span class="cl">{{&lt; /important &gt;}}</span></span></code></pre></div><div class="alert alert-important">
+  <p class="alert-title">
+    <span class="alert-icon alert-important-icon">
+      <svg class="octicon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
+      </svg>
+      Important
+    </span>
+  </p>
+  <p class="alert-text">用户成功必需的关键信息。</p>
+</div>
+
+<h3 id="警告">警告</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; warning &gt;}}
+</span></span><span class="line"><span class="ln">2</span><span class="cl">由于潜在风险而需要用户立即关注的关键内容。
+</span></span><span class="line"><span class="ln">3</span><span class="cl">{{&lt; /warning &gt;}}</span></span></code></pre></div><div class="alert alert-warning">
+  <p class="alert-title">
+    <span class="alert-icon alert-warning-icon">
+      <svg class="octicon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
+      </svg>
+      Warning
+    </span>
+   </p>
+   <p class="alert-text">由于潜在风险而需要用户立即关注的关键内容。</p>
+</div>
+
+<h3 id="谨慎警告">谨慎警告</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; caution &gt;}}
+</span></span><span class="line"><span class="ln">2</span><span class="cl">某个行为的负面潜在后果。
+</span></span><span class="line"><span class="ln">3</span><span class="cl">{{&lt; /caution &gt;}}</span></span></code></pre></div><div class="alert alert-caution">
+  <p class="alert-title">
+    <span class="alert-icon alert-caution-icon">
+      <svg class="octicon octicon-stop mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
+      </svg>
+      Caution
+    </span>
+   </p>
+   <p class="alert-text">某个行为的负面潜在后果。</p>
+</div>
+
+<h2 id="详情展开">详情展开</h2>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; details &#34;更多详情&#34; &gt;}}
+</span></span><span class="line"><span class="ln">2</span><span class="cl">&gt; The past is never dead. It&#39;s not even past.
+</span></span><span class="line"><span class="ln">3</span><span class="cl">&gt;
+</span></span><span class="line"><span class="ln">4</span><span class="cl">&gt; -- William Faulkner, Requiem for a Nun
+</span></span><span class="line"><span class="ln">5</span><span class="cl">{{&lt; /details &gt;}}</span></span></code></pre></div><details>
+    <summary style="color: var(--flexoki-light-blue)">更多详情</summary>
+    <blockquote>
+<p>The past is never dead. It&rsquo;s not even past.</p>
+<p>&ndash; William Faulkner, Requiem for a Nun</p></blockquote>
+
+</details>
+
+<h2 id="引用">引用</h2>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; quote title=&#34;Requiem for a Nun&#34; author=&#34;William Faulkner&#34; ref=&#34;https://www.goodreads.com/work/quotes/2041161&#34; &gt;}}
+</span></span><span class="line"><span class="ln">2</span><span class="cl">The past is never dead. It&#39;s not even past.
+</span></span><span class="line"><span class="ln">3</span><span class="cl">{{&lt; /quote &gt;}}</span></span></code></pre></div>
+<blockquote class="quote">
+  <p class="quote-text">&ldquo;The past is never dead. It's not even past.&rdquo;</p>
+  <div class="quote-info">
+    <span>&mdash;</span>
+    <span class="quote-author">William Faulkner, </span>
+    <span class="quote-title"><a href="https://www.goodreads.com/work/quotes/2041161">Requiem for a Nun</a></span>
+  </div>
+</blockquote>
+
+<h2 id="heading">@</h2>
+<p>你可以使用这个短代码来创建到 GitHub 用户或 Twitter 用户的链接。例如，
+
+<a href="https://github.com/gohugoio">@Hugo</a> 和 
+
+<a href="https://twitter.com/gohugoio">@GoHugo.io</a>。</p>
+<p>代码如下：</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; at name=Hugo type=github id=gohugoio &gt;}}
+</span></span><span class="line"><span class="ln">2</span><span class="cl">{{&lt; at name=&#34;GoHugo.io&#34; type=twitter id=gohugoio &gt;}}</span></span></code></pre></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>丰富内容</title>
+      <link>https://pagliacii.github.io/hugo-bearberry/zh/blog/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author>
+      <guid>https://pagliacii.github.io/hugo-bearberry/zh/blog/rich-content/</guid>
+      <description>&lt;p&gt;Hugo 内置了多个&lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;内置短代码&lt;/a&gt;来支持丰富内容，以及&lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;隐私配置&lt;/a&gt;和一套简单短代码，可启用各种社交媒体嵌入的静态和无 JS 版本。&lt;/p&gt;&#xA;&lt;h2&gt;&lt;/h2&gt;</description>
+      <content:encoded><![CDATA[<p>Hugo 内置了多个<a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">内置短代码</a>来支持丰富内容，以及<a href="https://gohugo.io/about/hugo-and-gdpr/">隐私配置</a>和一套简单短代码，可启用各种社交媒体嵌入的静态和无 JS 版本。</p>
+<h2></h2>
+<h2 id="youtube-隐私增强短代码">YouTube 隐私增强短代码</h2>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZJthWmvUzzc?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<br>
+<hr>
+<h2 id="twitter-简单短代码">Twitter 简单短代码</h2>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”<br>— Jan Tschichold <a href="https://t.co/gcv7SrhvJb">pic.twitter.com/gcv7SrhvJb</a></p>&mdash; Design Reviewed | Graphic Design History (@DesignReviewed) <a href="https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw">January 17, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<br>
+<hr>
+<h2 id="vimeo-简单短代码">Vimeo 简单短代码</h2>
+<style>
+.__h_video {
+   position: relative;
+   padding-bottom: 56.23%;
+   height: 0;
+   overflow: hidden;
+   width: 100%;
+   background: #000;
+}
+.__h_video img {
+   width: 100%;
+   height: auto;
+   color: #000;
+}
+.__h_video .play {
+   height: 72px;
+   width: 72px;
+   left: 50%;
+   top: 50%;
+   margin-left: -36px;
+   margin-top: -36px;
+   position: absolute;
+   cursor: pointer;
+}
+</style><div class="s_video_simple __h_video">
+          <a href="https://vimeo.com/48912912" rel="noopener" target="_blank">
+            <img src="https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us" srcset="https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us 1x, https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us 2x" alt="Sing Jan Swing - Kinetic Type">
+            <div class="play">
+              <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61"><circle cx="30.5" cy="30.5" r="30.5" opacity=".8" fill="#000"></circle><path d="M25.3 19.2c-2.1-1.2-3.8-.2-3.8 2.2v18.1c0 2.4 1.7 3.4 3.8 2.2l16.6-9.1c2.1-1.2 2.1-3.2 0-4.4l-16.6-9z" fill="#fff"></path></svg>
+            </div>
+          </a>
+        </div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

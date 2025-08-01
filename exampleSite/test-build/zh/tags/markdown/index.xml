@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Markdown on 熊莓</title>
+    <link>https://pagliacii.github.io/hugo-bearberry/zh/tags/markdown/</link>
+    <description>Recent content in Markdown on 熊莓</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>me@example.com (Jason Huang)</managingEditor>
+    <webMaster>me@example.com (Jason Huang)</webMaster>
+    <copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright>
+    <lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pagliacii.github.io/hugo-bearberry/zh/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kroki 图表</title>
+      <link>https://pagliacii.github.io/hugo-bearberry/zh/blog/kroki-diagrams/</link>
+      <pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author>
+      <guid>https://pagliacii.github.io/hugo-bearberry/zh/blog/kroki-diagrams/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;使用代码块在你的 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 站点中嵌入图表的 SVG 图像，使用免费的 &lt;a href=&#34;https://kroki.io/&#34;&gt;Kroki&lt;/a&gt; 服务。与需要客户端渲染的 JavaScript 解决方案不同，这种方法在页面中嵌入 SVG 图像。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;感谢 &lt;a href=&#34;https://github.com/jmooring&#34;&gt;@jmooring&lt;/a&gt; 和 &lt;a href=&#34;https://kroki.io/&#34;&gt;Kroki&lt;/a&gt;。&lt;/p&gt;&#xA;&lt;h2 id=&#34;性能&#34;&gt;性能&lt;/h2&gt;&#xA;&lt;p&gt;根据 &lt;a href=&#34;https://github.com/jmooring&#34;&gt;@jmooring&lt;/a&gt; 的&lt;a href=&#34;https://www.veriphor.com/articles/diagrams/#performance&#34;&gt;博客&lt;/a&gt;，你可以编辑你的&lt;a href=&#34;https://gohugo.io/getting-started/configuration/#configure-file-caches&#34;&gt;站点配置&lt;/a&gt;来存储 &lt;code&gt;getresource&lt;/code&gt; 缓存以优化性能。&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;caches&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;caches&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;getresource&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;dir&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;:resourceDir/_gen&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;maxAge&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;-1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;不要忘记将 &lt;code&gt;resources&lt;/code&gt; 目录检入源代码控制。&lt;/p&gt;&#xA;&lt;h2 id=&#34;图表类型&#34;&gt;图表类型&lt;/h2&gt;&#xA;&lt;p&gt;以下图表类型可用：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;blockdiag&lt;/code&gt; - &lt;a href=&#34;https://github.com/blockdiag/blockdiag&#34;&gt;BlockDiag&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;bpmn&lt;/code&gt; - &lt;a href=&#34;https://github.com/bpmn-io/bpmn-js&#34;&gt;BPMN&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;bytefield&lt;/code&gt; - &lt;a href=&#34;https://github.com/Deep-Symmetry/bytefield-svg/&#34;&gt;Bytefield&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;seqdiag&lt;/code&gt; - &lt;a href=&#34;https://github.com/blockdiag/seqdiag&#34;&gt;SeqDiag&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;actdiag&lt;/code&gt; - &lt;a href=&#34;https://github.com/blockdiag/actdiag&#34;&gt;ActDiag&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;nwdiag&lt;/code&gt; - &lt;a href=&#34;https://github.com/blockdiag/nwdiag&#34;&gt;NwDiag&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;packetdiag&lt;/code&gt; - &lt;a href=&#34;https://github.com/blockdiag/nwdiag&#34;&gt;PacketDiag&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;rackdiag&lt;/code&gt; - &lt;a href=&#34;https://github.com/blockdiag/nwdiag&#34;&gt;RackDiag&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;c4plantuml&lt;/code&gt; - &lt;a href=&#34;https://github.com/RicardoNiepel/C4-PlantUML&#34;&gt;C4 with PlantUML&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;d2&lt;/code&gt; - &lt;a href=&#34;https://github.com/terrastruct/d2&#34;&gt;D2&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;dbml&lt;/code&gt; - &lt;a href=&#34;https://github.com/softwaretechnik-berlin/dbml-renderer&#34;&gt;DBML&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;ditaa&lt;/code&gt; - &lt;a href=&#34;https://ditaa.sourceforge.net/&#34;&gt;Ditaa&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;erd&lt;/code&gt; - &lt;a href=&#34;https://github.com/BurntSushi/erd&#34;&gt;Erd&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;excalidraw&lt;/code&gt; - &lt;a href=&#34;https://github.com/excalidraw/excalidraw&#34;&gt;Excalidraw&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;graphviz&lt;/code&gt; - &lt;a href=&#34;https://www.graphviz.org/&#34;&gt;GraphViz&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;mermaid&lt;/code&gt; - &lt;a href=&#34;https://github.com/knsv/mermaid&#34;&gt;Mermaid&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;nomnoml&lt;/code&gt; - &lt;a href=&#34;https://github.com/skanaar/nomnoml&#34;&gt;Nomnoml&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;pikchr&lt;/code&gt; - &lt;a href=&#34;https://github.com/drhsqlite/pikchr&#34;&gt;Pikchr&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;plantuml&lt;/code&gt; - &lt;a href=&#34;https://github.com/plantuml/plantuml&#34;&gt;PlantUML&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;structurizr&lt;/code&gt; - &lt;a href=&#34;https://github.com/structurizr/dsl&#34;&gt;Structurizr&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;svgbob&lt;/code&gt; - &lt;a href=&#34;https://github.com/ivanceras/svgbob&#34;&gt;Svgbob&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;symbolator&lt;/code&gt; - &lt;a href=&#34;https://github.com/kevinpt/symbolator&#34;&gt;Symbolator&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;tikz&lt;/code&gt; - &lt;a href=&#34;https://github.com/pgf-tikz/pgf&#34;&gt;TikZ&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;umlet&lt;/code&gt; - &lt;a href=&#34;https://github.com/umlet/umlet&#34;&gt;UMlet&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;vega&lt;/code&gt; - &lt;a href=&#34;https://github.com/vega/vega&#34;&gt;Vega&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;vegalite&lt;/code&gt; - &lt;a href=&#34;https://github.com/vega/vega-lite&#34;&gt;Vega-Lite&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;wavedrom&lt;/code&gt; - &lt;a href=&#34;https://github.com/wavedrom/wavedrom&#34;&gt;WaveDrom&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;wireviz&lt;/code&gt; - &lt;a href=&#34;https://github.com/formatc1702/WireViz&#34;&gt;WireViz&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;示例&#34;&gt;示例&lt;/h2&gt;&#xA;&lt;h3 id=&#34;d2&#34;&gt;D2&lt;/h3&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;```kroki {type=d2}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;# Actors&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;hans: Hans Niemann&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;defendants: {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  mc: Magnus Carlsen&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  playmagnus: Play Magnus Group&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  chesscom: Chess.com&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  naka: Hikaru Nakamura&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  mc -&amp;gt; playmagnus: Owns majority&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  playmagnus &amp;lt;-&amp;gt; chesscom: Merger talks&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  chesscom -&amp;gt; naka: Sponsoring&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;# Accusations&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;hans -&amp;gt; defendants: &amp;#39;sueing for $100M&amp;#39;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;# Offense&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;defendants.naka -&amp;gt; hans: Accused of cheating on his stream&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;defendants.mc -&amp;gt; hans: Lost then withdrew with accusations&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;defendants.chesscom -&amp;gt; hans: 72 page report of cheating&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;```&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xD;&#xA;&lt;div class=&#34;kroki-img&#34; style=&#34;background-color: var(--flexoki-100)&#34;&gt;&#xD;&#xA;&lt;img alt=&#34;diagram&#34; class=&#34;diagram diagram-kroki diagram-kroki-d2&#34; id=&#34;h-rh-cb-kroki-2&#34; src=&#34;https://pagliacii.github.io/hugo-bearberry/images/kroki/md5-Qn+pg0wTLP9csGo6grANSQ==.svg&#34;&gt;&#xD;&#xA;&lt;/div&gt;&lt;h3 id=&#34;mermaid&#34;&gt;Mermaid&lt;/h3&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;```kroki {type=mermaid flexoki=paper}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;sequenceDiagram&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  participant Alice&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  participant Bob&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  Alice-&amp;gt;John: Hello John, how are you?&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  loop Healthcheck&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    John-&amp;gt;John: Fight against hypochondria...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  end&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  Note right of John: Rational thoughts prevail...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  John--&amp;gt;Alice: Great!&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  John-&amp;gt;Bob: How about you?&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  Bob--&amp;gt;John: Jolly good!&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;```&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xD;&#xA;&lt;div class=&#34;kroki-img&#34; style=&#34;background-color: var(--flexoki-paper)&#34;&gt;&#xD;&#xA;&lt;img alt=&#34;diagram&#34; class=&#34;diagram diagram-kroki diagram-kroki-mermaid&#34; id=&#34;h-rh-cb-kroki-4&#34; src=&#34;https://pagliacii.github.io/hugo-bearberry/images/kroki/md5-4hvUQrv6bby9YZX4/peJRw==.svg&#34;&gt;&#xD;&#xA;&lt;/div&gt;&lt;h3 id=&#34;更多示例&#34;&gt;更多示例&lt;/h3&gt;&#xA;&lt;p&gt;前往 &lt;a href=&#34;https://kroki.io/examples.html&#34;&gt;Kroki 示例&lt;/a&gt;页面查看更多内容。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>使用代码块在你的 <a href="https://gohugo.io/">Hugo</a> 站点中嵌入图表的 SVG 图像，使用免费的 <a href="https://kroki.io/">Kroki</a> 服务。与需要客户端渲染的 JavaScript 解决方案不同，这种方法在页面中嵌入 SVG 图像。<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p></blockquote>
+<p>感谢 <a href="https://github.com/jmooring">@jmooring</a> 和 <a href="https://kroki.io/">Kroki</a>。</p>
+<h2 id="性能">性能</h2>
+<p>根据 <a href="https://github.com/jmooring">@jmooring</a> 的<a href="https://www.veriphor.com/articles/diagrams/#performance">博客</a>，你可以编辑你的<a href="https://gohugo.io/getting-started/configuration/#configure-file-caches">站点配置</a>来存储 <code>getresource</code> 缓存以优化性能。</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="ln">1</span><span class="cl"><span class="p">[</span><span class="nx">caches</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">getresource</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">    <span class="nx">dir</span> <span class="p">=</span> <span class="s2">&#34;:resourceDir/_gen&#34;</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span></span></span></code></pre></div><p>不要忘记将 <code>resources</code> 目录检入源代码控制。</p>
+<h2 id="图表类型">图表类型</h2>
+<p>以下图表类型可用：</p>
+<ul>
+<li><code>blockdiag</code> - <a href="https://github.com/blockdiag/blockdiag">BlockDiag</a></li>
+<li><code>bpmn</code> - <a href="https://github.com/bpmn-io/bpmn-js">BPMN</a></li>
+<li><code>bytefield</code> - <a href="https://github.com/Deep-Symmetry/bytefield-svg/">Bytefield</a></li>
+<li><code>seqdiag</code> - <a href="https://github.com/blockdiag/seqdiag">SeqDiag</a></li>
+<li><code>actdiag</code> - <a href="https://github.com/blockdiag/actdiag">ActDiag</a></li>
+<li><code>nwdiag</code> - <a href="https://github.com/blockdiag/nwdiag">NwDiag</a></li>
+<li><code>packetdiag</code> - <a href="https://github.com/blockdiag/nwdiag">PacketDiag</a></li>
+<li><code>rackdiag</code> - <a href="https://github.com/blockdiag/nwdiag">RackDiag</a></li>
+<li><code>c4plantuml</code> - <a href="https://github.com/RicardoNiepel/C4-PlantUML">C4 with PlantUML</a></li>
+<li><code>d2</code> - <a href="https://github.com/terrastruct/d2">D2</a></li>
+<li><code>dbml</code> - <a href="https://github.com/softwaretechnik-berlin/dbml-renderer">DBML</a></li>
+<li><code>ditaa</code> - <a href="https://ditaa.sourceforge.net/">Ditaa</a></li>
+<li><code>erd</code> - <a href="https://github.com/BurntSushi/erd">Erd</a></li>
+<li><code>excalidraw</code> - <a href="https://github.com/excalidraw/excalidraw">Excalidraw</a></li>
+<li><code>graphviz</code> - <a href="https://www.graphviz.org/">GraphViz</a></li>
+<li><code>mermaid</code> - <a href="https://github.com/knsv/mermaid">Mermaid</a></li>
+<li><code>nomnoml</code> - <a href="https://github.com/skanaar/nomnoml">Nomnoml</a></li>
+<li><code>pikchr</code> - <a href="https://github.com/drhsqlite/pikchr">Pikchr</a></li>
+<li><code>plantuml</code> - <a href="https://github.com/plantuml/plantuml">PlantUML</a></li>
+<li><code>structurizr</code> - <a href="https://github.com/structurizr/dsl">Structurizr</a></li>
+<li><code>svgbob</code> - <a href="https://github.com/ivanceras/svgbob">Svgbob</a></li>
+<li><code>symbolator</code> - <a href="https://github.com/kevinpt/symbolator">Symbolator</a></li>
+<li><code>tikz</code> - <a href="https://github.com/pgf-tikz/pgf">TikZ</a></li>
+<li><code>umlet</code> - <a href="https://github.com/umlet/umlet">UMlet</a></li>
+<li><code>vega</code> - <a href="https://github.com/vega/vega">Vega</a></li>
+<li><code>vegalite</code> - <a href="https://github.com/vega/vega-lite">Vega-Lite</a></li>
+<li><code>wavedrom</code> - <a href="https://github.com/wavedrom/wavedrom">WaveDrom</a></li>
+<li><code>wireviz</code> - <a href="https://github.com/formatc1702/WireViz">WireViz</a></li>
+</ul>
+<h2 id="示例">示例</h2>
+<h3 id="d2">D2</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=d2}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"># Actors
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">hans: Hans Niemann
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">defendants: {
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  mc: Magnus Carlsen
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">  playmagnus: Play Magnus Group
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  chesscom: Chess.com
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  naka: Hikaru Nakamura
+</span></span><span class="line"><span class="ln">10</span><span class="cl">
+</span></span><span class="line"><span class="ln">11</span><span class="cl">  mc -&gt; playmagnus: Owns majority
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  playmagnus &lt;-&gt; chesscom: Merger talks
+</span></span><span class="line"><span class="ln">13</span><span class="cl">  chesscom -&gt; naka: Sponsoring
+</span></span><span class="line"><span class="ln">14</span><span class="cl">}
+</span></span><span class="line"><span class="ln">15</span><span class="cl">
+</span></span><span class="line"><span class="ln">16</span><span class="cl"># Accusations
+</span></span><span class="line"><span class="ln">17</span><span class="cl">hans -&gt; defendants: &#39;sueing for $100M&#39;
+</span></span><span class="line"><span class="ln">18</span><span class="cl">
+</span></span><span class="line"><span class="ln">19</span><span class="cl"># Offense
+</span></span><span class="line"><span class="ln">20</span><span class="cl">defendants.naka -&gt; hans: Accused of cheating on his stream
+</span></span><span class="line"><span class="ln">21</span><span class="cl">defendants.mc -&gt; hans: Lost then withdrew with accusations
+</span></span><span class="line"><span class="ln">22</span><span class="cl">defendants.chesscom -&gt; hans: 72 page report of cheating
+</span></span><span class="line"><span class="ln">23</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-100)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-d2" id="h-rh-cb-kroki-2" src="/hugo-bearberry/images/kroki/md5-Qn+pg0wTLP9csGo6grANSQ==.svg">
+</div><h3 id="mermaid">Mermaid</h3>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln"> 1</span><span class="cl">```kroki {type=mermaid flexoki=paper}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">sequenceDiagram
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  participant Alice
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  participant Bob
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  Alice-&gt;John: Hello John, how are you?
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  loop Healthcheck
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    John-&gt;John: Fight against hypochondria...
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  end
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  Note right of John: Rational thoughts prevail...
+</span></span><span class="line"><span class="ln">10</span><span class="cl">  John--&gt;Alice: Great!
+</span></span><span class="line"><span class="ln">11</span><span class="cl">  John-&gt;Bob: How about you?
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  Bob--&gt;John: Jolly good!
+</span></span><span class="line"><span class="ln">13</span><span class="cl">```</span></span></code></pre></div>
+<div class="kroki-img" style="background-color: var(--flexoki-paper)">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-mermaid" id="h-rh-cb-kroki-4" src="/hugo-bearberry/images/kroki/md5-4hvUQrv6bby9YZX4/peJRw==.svg">
+</div><h3 id="更多示例">更多示例</h3>
+<p>前往 <a href="https://kroki.io/examples.html">Kroki 示例</a>页面查看更多内容。</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://www.veriphor.com/articles/diagrams/">https://www.veriphor.com/articles/diagrams/</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>编程语言</title>
+      <link>https://pagliacii.github.io/hugo-bearberry/zh/blog/programming-languages/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author>
+      <guid>https://pagliacii.github.io/hugo-bearberry/zh/blog/programming-languages/</guid>
+      <description>&lt;h2 id=&#34;python&#34;&gt;Python&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;hello_world&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello, world!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;c&#34;&gt;C&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hello, world!&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;c-1&#34;&gt;C++&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Hello, world!&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;endl&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;go&#34;&gt;Go&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hello, world!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;javascript&#34;&gt;JavaScript&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello, world!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;rust&#34;&gt;Rust&lt;/h2&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-rust&#34; data-lang=&#34;rust&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fn&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;fm&#34;&gt;println!&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hello, world!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <content:encoded><![CDATA[<h2 id="python">Python</h2>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello, world!&#34;</span><span class="p">)</span></span></span></code></pre></div><h2 id="c">C</h2>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="ln">1</span><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Hello, world!</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="p">}</span></span></span></code></pre></div><h2 id="c-1">C++</h2>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="ln">1</span><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Hello, world!&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="p">}</span></span></span></code></pre></div><h2 id="go">Go</h2>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">package</span> <span class="nx">main</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello, world!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="p">}</span></span></span></code></pre></div><h2 id="javascript">JavaScript</h2>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="ln">1</span><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Hello, world!&#34;</span><span class="p">);</span></span></span></code></pre></div><h2 id="rust">Rust</h2>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Hello, world!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>图表</title>
+      <link>https://pagliacii.github.io/hugo-bearberry/zh/blog/diagrams/</link>
+      <pubDate>Sat, 21 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author>
+      <guid>https://pagliacii.github.io/hugo-bearberry/zh/blog/diagrams/</guid>
+      <description>&lt;p&gt;这篇文章是图表的演示，使用了 &lt;a href=&#34;https://mermaid.js.org&#34;&gt;mermaid&lt;/a&gt; 和 &lt;a href=&#34;https://github.com/bep/goat&#34;&gt;goat&lt;/a&gt; 工具。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>这篇文章是图表的演示，使用了 <a href="https://mermaid.js.org">mermaid</a> 和 <a href="https://github.com/bep/goat">goat</a> 工具。</p>
+<h2 id="mermaid">Mermaid</h2>
+<h3 id="时序图示例">时序图示例</h3>
+
+
+
+
+
+<pre tabindex="0"><code>```mermaid
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail!
+    John--&gt;&gt;Alice: Great!
+    John-&gt;&gt;Bob: How about you?
+    Bob--&gt;&gt;John: Jolly good!
+```</code></pre><pre class="mermaid">sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+</pre>
+
+<h3 id="类图示例">类图示例</h3>
+
+
+
+
+
+<pre tabindex="0"><code>```mermaid
+---
+title: Animal example
+---
+classDiagram
+    note &#34;From Duck till Zebra&#34;
+    Animal &lt;|-- Duck
+    note for Duck &#34;can fly\ncan swim\ncan dive\ncan help in debugging&#34;
+    Animal &lt;|-- Fish
+    Animal &lt;|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+        +String beakColor
+        +swim()
+        +quack()
+    }
+    class Fish{
+        -int sizeInFeet
+        -canEat()
+    }
+    class Zebra{
+        +bool is_wild
+        +run()
+    }
+```</code></pre><pre class="mermaid">---
+title: Animal example
+---
+classDiagram
+    note "From Duck till Zebra"
+    Animal <|-- Duck
+    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
+    Animal <|-- Fish
+    Animal <|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+        +String beakColor
+        +swim()
+        +quack()
+    }
+    class Fish{
+        -int sizeInFeet
+        -canEat()
+    }
+    class Zebra{
+        +bool is_wild
+        +run()
+    }
+</pre>
+
+<h3 id="带指定主题的甘特图">带指定主题的甘特图</h3>
+
+
+
+
+
+<pre tabindex="0"><code>```mermaid
+%%{init: { &#34;theme&#34;: &#34;forest&#34; } }%%
+gantt
+      accTitle: My Gantt Chart Accessibility Title
+      accDescr: My Gantt Chart Accessibility Description
+
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+    section Section
+    A task           :a1, 2014-01-01, 30d
+    Another task     :after a1  , 20d
+    section Another
+    Task in sec      :2014-01-12  , 12d
+    another task      : 24d
+```</code></pre><pre class="mermaid">%%{init: { "theme": "forest" } }%%
+gantt
+      accTitle: My Gantt Chart Accessibility Title
+      accDescr: My Gantt Chart Accessibility Description
+
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+    section Section
+    A task           :a1, 2014-01-01, 30d
+    Another task     :after a1  , 20d
+    section Another
+    Task in sec      :2014-01-12  , 12d
+    another task      : 24d
+</pre>
+
+<h2 id="goat">GoAT</h2>
+<p>点击<a href="https://github.com/bep/goat/tree/master/examples">这里</a>查看更多示例。</p>
+<h3 id="树形结构">树形结构</h3>
+
+
+
+
+
+<pre tabindex="0"><code>```goat
+      .               .                .               .--- 1          .-- 1     / 1
+     / \              |                |           .---+            .-+         +
+    /   \         .---+---.         .--+--.        |   &#39;--- 2      |   &#39;-- 2   / \ 2
+   +     +        |       |        |       |    ---+            ---+          +
+  / \   / \     .-+-.   .-+-.     .+.     .+.      |   .--- 3      |   .-- 3   \ / 3
+ /   \ /   \    |   |   |   |    |   |   |   |     &#39;---+            &#39;-+         +
+ 1   2 3   4    1   2   3   4    1   2   3   4         &#39;--- 4          &#39;-- 4     \ 4
+
+```</code></pre>
+
+
+<div class="goat svg-container ">
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      font-family="Menlo,Lucida Console,monospace"
+      
+        viewBox="0 0 680 121"
+      >
+      <g transform='translate(8,16)'>
+<path d='M 440,0 L 464,0' fill='none' stroke='currentColor'></path>
+<path d='M 576,0 L 584,0' fill='none' stroke='currentColor'></path>
+<path d='M 408,16 L 440,16' fill='none' stroke='currentColor'></path>
+<path d='M 552,16 L 560,16' fill='none' stroke='currentColor'></path>
+<path d='M 144,32 L 176,32' fill='none' stroke='currentColor'></path>
+<path d='M 176,32 L 208,32' fill='none' stroke='currentColor'></path>
+<path d='M 296,32 L 312,32' fill='none' stroke='currentColor'></path>
+<path d='M 312,32 L 328,32' fill='none' stroke='currentColor'></path>
+<path d='M 440,32 L 464,32' fill='none' stroke='currentColor'></path>
+<path d='M 576,32 L 584,32' fill='none' stroke='currentColor'></path>
+<path d='M 384,48 L 408,48' fill='none' stroke='currentColor'></path>
+<path d='M 512,48 L 536,48' fill='none' stroke='currentColor'></path>
+<path d='M 128,64 L 144,64' fill='none' stroke='currentColor'></path>
+<path d='M 144,64 L 160,64' fill='none' stroke='currentColor'></path>
+<path d='M 192,64 L 208,64' fill='none' stroke='currentColor'></path>
+<path d='M 208,64 L 224,64' fill='none' stroke='currentColor'></path>
+<path d='M 440,64 L 464,64' fill='none' stroke='currentColor'></path>
+<path d='M 576,64 L 584,64' fill='none' stroke='currentColor'></path>
+<path d='M 408,80 L 440,80' fill='none' stroke='currentColor'></path>
+<path d='M 552,80 L 560,80' fill='none' stroke='currentColor'></path>
+<path d='M 440,96 L 464,96' fill='none' stroke='currentColor'></path>
+<path d='M 576,96 L 584,96' fill='none' stroke='currentColor'></path>
+<path d='M 128,64 L 128,80' fill='none' stroke='currentColor'></path>
+<path d='M 144,32 L 144,64' fill='none' stroke='currentColor'></path>
+<path d='M 160,64 L 160,80' fill='none' stroke='currentColor'></path>
+<path d='M 176,0 L 176,32' fill='none' stroke='currentColor'></path>
+<path d='M 192,64 L 192,80' fill='none' stroke='currentColor'></path>
+<path d='M 208,32 L 208,64' fill='none' stroke='currentColor'></path>
+<path d='M 224,64 L 224,80' fill='none' stroke='currentColor'></path>
+<path d='M 280,48 L 280,64' fill='none' stroke='currentColor'></path>
+<path d='M 312,0 L 312,32' fill='none' stroke='currentColor'></path>
+<path d='M 344,48 L 344,64' fill='none' stroke='currentColor'></path>
+<path d='M 408,16 L 408,48' fill='none' stroke='currentColor'></path>
+<path d='M 408,48 L 408,80' fill='none' stroke='currentColor'></path>
+<path d='M 440,0 L 440,16' fill='none' stroke='currentColor'></path>
+<path d='M 440,16 L 440,32' fill='none' stroke='currentColor'></path>
+<path d='M 440,64 L 440,80' fill='none' stroke='currentColor'></path>
+<path d='M 440,80 L 440,96' fill='none' stroke='currentColor'></path>
+<path d='M 536,32 L 536,48' fill='none' stroke='currentColor'></path>
+<path d='M 536,48 L 536,64' fill='none' stroke='currentColor'></path>
+<path d='M 8,80 L 24,48' fill='none' stroke='currentColor'></path>
+<path d='M 24,48 L 48,0' fill='none' stroke='currentColor'></path>
+<path d='M 56,80 L 72,48' fill='none' stroke='currentColor'></path>
+<path d='M 624,48 L 640,16' fill='none' stroke='currentColor'></path>
+<path d='M 640,16 L 648,0' fill='none' stroke='currentColor'></path>
+<path d='M 640,80 L 648,64' fill='none' stroke='currentColor'></path>
+<path d='M 24,48 L 40,80' fill='none' stroke='currentColor'></path>
+<path d='M 48,0 L 72,48' fill='none' stroke='currentColor'></path>
+<path d='M 72,48 L 88,80' fill='none' stroke='currentColor'></path>
+<path d='M 624,48 L 640,80' fill='none' stroke='currentColor'></path>
+<path d='M 640,80 L 648,96' fill='none' stroke='currentColor'></path>
+<path d='M 640,16 L 648,32' fill='none' stroke='currentColor'></path>
+<path d='M 576,0 A 16,16 0 0,0 560,16' fill='none' stroke='currentColor'></path>
+<path d='M 552,16 A 16,16 0 0,0 536,32' fill='none' stroke='currentColor'></path>
+<path d='M 296,32 A 16,16 0 0,0 280,48' fill='none' stroke='currentColor'></path>
+<path d='M 328,32 A 16,16 0 0,1 344,48' fill='none' stroke='currentColor'></path>
+<path d='M 560,16 A 16,16 0 0,0 576,32' fill='none' stroke='currentColor'></path>
+<path d='M 280,64 A 16,16 0 0,0 264,80' fill='none' stroke='currentColor'></path>
+<path d='M 280,64 A 16,16 0 0,1 296,80' fill='none' stroke='currentColor'></path>
+<path d='M 344,64 A 16,16 0 0,0 328,80' fill='none' stroke='currentColor'></path>
+<path d='M 344,64 A 16,16 0 0,1 360,80' fill='none' stroke='currentColor'></path>
+<path d='M 576,64 A 16,16 0 0,0 560,80' fill='none' stroke='currentColor'></path>
+<path d='M 536,64 A 16,16 0 0,0 552,80' fill='none' stroke='currentColor'></path>
+<path d='M 560,80 A 16,16 0 0,0 576,96' fill='none' stroke='currentColor'></path>
+<text text-anchor='middle' x='8' y='100' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='40' y='100' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='56' y='100' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='88' y='100' fill='currentColor' style='font-size:1em'>4</text>
+<text text-anchor='middle' x='128' y='100' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='160' y='100' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='192' y='100' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='224' y='100' fill='currentColor' style='font-size:1em'>4</text>
+<text text-anchor='middle' x='264' y='100' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='296' y='100' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='328' y='100' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='360' y='100' fill='currentColor' style='font-size:1em'>4</text>
+<text text-anchor='middle' x='480' y='4' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='480' y='36' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='480' y='68' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='480' y='100' fill='currentColor' style='font-size:1em'>4</text>
+<text text-anchor='middle' x='600' y='4' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='600' y='36' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='600' y='68' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='600' y='100' fill='currentColor' style='font-size:1em'>4</text>
+<text text-anchor='middle' x='664' y='4' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='664' y='36' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='664' y='68' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='664' y='100' fill='currentColor' style='font-size:1em'>4</text>
+</g>
+
+    </svg>
+  
+</div>
+<h3 id="点阵网格">点阵网格</h3>
+
+
+
+
+
+<pre tabindex="0"><code>```goat
+  o o o o o  * * * * *  * * o o *    o o o      * * *      o o o     · * · · ·     · · ·
+  o o o o o  * * * * *  o o o o *   o o o o    * * * *    * o * *    · * * · ·    · · · ·
+  o o o o o  * * * * *  o * o o o  o o o o o  * * * * *  o o o o o   · o · · o   · · * * ·
+  o o o o o  * * * * *  o * o o o   o o o o    * * * *    o * o o    · · · · o    · · * ·
+  o o o o o  * * * * *  * * * * o    o o o      * * *      o * o     · · · · ·     · · *
+```</code></pre>
+
+
+<div class="goat svg-container ">
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      font-family="Menlo,Lucida Console,monospace"
+      
+        viewBox="0 0 728 89"
+      >
+      <g transform='translate(8,16)'>
+<circle cx='16' cy='0' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='16' cy='16' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='16' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='16' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='16' cy='64' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='32' cy='0' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='32' cy='16' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='32' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='32' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='32' cy='64' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='48' cy='0' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='48' cy='16' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='48' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='48' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='48' cy='64' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='64' cy='0' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='64' cy='16' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='64' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='64' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='64' cy='64' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='80' cy='0' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='80' cy='16' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='80' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='80' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='80' cy='64' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='104' cy='0' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='104' cy='16' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='104' cy='32' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='104' cy='48' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='104' cy='64' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='120' cy='0' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='120' cy='16' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='120' cy='32' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='120' cy='48' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='120' cy='64' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='136' cy='0' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='136' cy='16' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='136' cy='32' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='136' cy='48' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='136' cy='64' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='152' cy='0' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='152' cy='16' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='152' cy='32' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='152' cy='48' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='152' cy='64' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='168' cy='0' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='168' cy='16' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='168' cy='32' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='168' cy='48' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='168' cy='64' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='192' cy='0' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='192' cy='16' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='192' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='192' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='192' cy='64' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='208' cy='0' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='208' cy='16' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='208' cy='32' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='208' cy='48' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='208' cy='64' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='224' cy='0' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='224' cy='16' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='224' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='224' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='224' cy='64' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='240' cy='0' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='240' cy='16' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='240' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='240' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='240' cy='64' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='256' cy='0' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='256' cy='16' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='256' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='256' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='256' cy='64' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='280' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='288' cy='16' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='288' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='296' cy='0' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='296' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='296' cy='64' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='304' cy='16' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='304' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='312' cy='0' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='312' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='312' cy='64' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='320' cy='16' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='320' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='328' cy='0' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='328' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='328' cy='64' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='336' cy='16' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='336' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='344' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='368' cy='32' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='376' cy='16' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='376' cy='48' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='384' cy='0' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='384' cy='32' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='384' cy='64' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='392' cy='16' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='392' cy='48' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='400' cy='0' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='400' cy='32' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='400' cy='64' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='408' cy='16' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='408' cy='48' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='416' cy='0' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='416' cy='32' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='416' cy='64' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='424' cy='16' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='424' cy='48' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='432' cy='32' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='456' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='464' cy='16' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='464' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='472' cy='0' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='472' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='472' cy='64' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='480' cy='16' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='480' cy='48' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='488' cy='0' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='488' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='488' cy='64' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='496' cy='16' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='496' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='504' cy='0' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='504' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='504' cy='64' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='512' cy='16' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='512' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='520' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='568' cy='0' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='568' cy='16' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='568' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='584' cy='16' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='616' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='616' cy='48' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='680' cy='32' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='688' cy='48' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='696' cy='32' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='696' cy='64' r='6' stroke='currentColor' fill='currentColor'></circle>
+<text text-anchor='middle' x='552' y='4' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='552' y='20' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='552' y='36' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='552' y='52' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='552' y='68' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='568' y='52' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='568' y='68' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='584' y='4' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='584' y='36' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='584' y='52' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='584' y='68' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='600' y='4' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='600' y='20' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='600' y='36' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='600' y='52' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='600' y='68' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='616' y='4' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='616' y='20' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='616' y='68' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='648' y='36' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='656' y='20' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='656' y='52' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='664' y='4' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='664' y='36' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='664' y='68' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='672' y='20' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='672' y='52' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='680' y='4' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='680' y='68' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='688' y='20' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='696' y='4' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='704' y='20' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='704' y='52' fill='currentColor' style='font-size:1em'>·</text>
+<text text-anchor='middle' x='712' y='36' fill='currentColor' style='font-size:1em'>·</text>
+</g>
+
+    </svg>
+  
+</div>
+<h3 id="大型节点">大型节点</h3>
+
+
+
+
+
+<pre tabindex="0"><code>```goat
+   .---.       .-.        .-.       .-.                                       .-.
+   | A +-----&gt;| 1 +&lt;----&gt;| 2 |&lt;----+ 4 +------------------.                  | 8 |
+   &#39;---&#39;       &#39;-&#39;        &#39;+&#39;       &#39;-&#39;                    |                  &#39;-&#39;
+                           |         ^                     |                   ^
+                           v         |                     v                   |
+                          .-.      .-+-.        .-.      .-+-.      .-.       .+.       .---.
+                         | 3 +----&gt;| B |&lt;-----&gt;| 5 +----&gt;| C +----&gt;| 6 +----&gt;| 7 |&lt;----&gt;| D |
+                          &#39;-&#39;      &#39;---&#39;        &#39;-&#39;      &#39;---&#39;      &#39;-&#39;       &#39;-&#39;       &#39;---&#39;
+```</code></pre>
+
+
+<div class="goat svg-container ">
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      font-family="Menlo,Lucida Console,monospace"
+      
+        viewBox="0 0 752 137"
+      >
+      <g transform='translate(8,16)'>
+<path d='M 24,0 L 56,0' fill='none' stroke='currentColor'></path>
+<path d='M 56,16 L 104,16' fill='none' stroke='currentColor'></path>
+<path d='M 152,16 L 192,16' fill='none' stroke='currentColor'></path>
+<path d='M 240,16 L 280,16' fill='none' stroke='currentColor'></path>
+<path d='M 312,16 L 456,16' fill='none' stroke='currentColor'></path>
+<path d='M 24,32 L 56,32' fill='none' stroke='currentColor'></path>
+<path d='M 280,80 L 296,80' fill='none' stroke='currentColor'></path>
+<path d='M 296,80 L 312,80' fill='none' stroke='currentColor'></path>
+<path d='M 456,80 L 472,80' fill='none' stroke='currentColor'></path>
+<path d='M 472,80 L 488,80' fill='none' stroke='currentColor'></path>
+<path d='M 704,80 L 736,80' fill='none' stroke='currentColor'></path>
+<path d='M 232,96 L 272,96' fill='none' stroke='currentColor'></path>
+<path d='M 320,96 L 368,96' fill='none' stroke='currentColor'></path>
+<path d='M 408,96 L 448,96' fill='none' stroke='currentColor'></path>
+<path d='M 488,96 L 528,96' fill='none' stroke='currentColor'></path>
+<path d='M 568,96 L 608,96' fill='none' stroke='currentColor'></path>
+<path d='M 656,96 L 696,96' fill='none' stroke='currentColor'></path>
+<path d='M 280,112 L 312,112' fill='none' stroke='currentColor'></path>
+<path d='M 456,112 L 488,112' fill='none' stroke='currentColor'></path>
+<path d='M 704,112 L 736,112' fill='none' stroke='currentColor'></path>
+<path d='M 24,0 L 24,32' fill='none' stroke='currentColor'></path>
+<path d='M 56,0 L 56,16' fill='none' stroke='currentColor'></path>
+<path d='M 56,16 L 56,32' fill='none' stroke='currentColor'></path>
+<path d='M 216,32 L 216,64' fill='none' stroke='currentColor'></path>
+<path d='M 280,80 L 280,112' fill='none' stroke='currentColor'></path>
+<path d='M 296,48 L 296,80' fill='none' stroke='currentColor'></path>
+<path d='M 312,80 L 312,112' fill='none' stroke='currentColor'></path>
+<path d='M 456,80 L 456,112' fill='none' stroke='currentColor'></path>
+<path d='M 472,32 L 472,64' fill='none' stroke='currentColor'></path>
+<path d='M 472,64 L 472,80' fill='none' stroke='currentColor'></path>
+<path d='M 488,80 L 488,96' fill='none' stroke='currentColor'></path>
+<path d='M 488,96 L 488,112' fill='none' stroke='currentColor'></path>
+<path d='M 632,48 L 632,80' fill='none' stroke='currentColor'></path>
+<path d='M 704,80 L 704,112' fill='none' stroke='currentColor'></path>
+<path d='M 736,80 L 736,112' fill='none' stroke='currentColor'></path>
+<polygon points='112.000000,16.000000 100.000000,10.400000 100.000000,21.600000' fill='currentColor' transform='rotate(0.000000, 104.000000, 16.000000)'></polygon>
+<polygon points='160.000000,16.000000 148.000000,10.400000 148.000000,21.600000' fill='currentColor' transform='rotate(180.000000, 152.000000, 16.000000)'></polygon>
+<polygon points='200.000000,16.000000 188.000000,10.400000 188.000000,21.600000' fill='currentColor' transform='rotate(0.000000, 192.000000, 16.000000)'></polygon>
+<path d='M 216,64 L 216,72' fill='none' stroke='currentColor'></path>
+<polygon points='232.000000,64.000000 220.000000,58.400002 220.000000,69.599998' fill='currentColor' transform='rotate(90.000000, 216.000000, 64.000000)'></polygon>
+<polygon points='248.000000,16.000000 236.000000,10.400000 236.000000,21.600000' fill='currentColor' transform='rotate(180.000000, 240.000000, 16.000000)'></polygon>
+<polygon points='280.000000,96.000000 268.000000,90.400002 268.000000,101.599998' fill='currentColor' transform='rotate(0.000000, 272.000000, 96.000000)'></polygon>
+<path d='M 296,40 L 296,48' fill='none' stroke='currentColor'></path>
+<polygon points='312.000000,48.000000 300.000000,42.400002 300.000000,53.599998' fill='currentColor' transform='rotate(270.000000, 296.000000, 48.000000)'></polygon>
+<polygon points='328.000000,96.000000 316.000000,90.400002 316.000000,101.599998' fill='currentColor' transform='rotate(180.000000, 320.000000, 96.000000)'></polygon>
+<polygon points='376.000000,96.000000 364.000000,90.400002 364.000000,101.599998' fill='currentColor' transform='rotate(0.000000, 368.000000, 96.000000)'></polygon>
+<polygon points='456.000000,96.000000 444.000000,90.400002 444.000000,101.599998' fill='currentColor' transform='rotate(0.000000, 448.000000, 96.000000)'></polygon>
+<path d='M 472,64 L 472,72' fill='none' stroke='currentColor'></path>
+<polygon points='488.000000,64.000000 476.000000,58.400002 476.000000,69.599998' fill='currentColor' transform='rotate(90.000000, 472.000000, 64.000000)'></polygon>
+<polygon points='536.000000,96.000000 524.000000,90.400002 524.000000,101.599998' fill='currentColor' transform='rotate(0.000000, 528.000000, 96.000000)'></polygon>
+<polygon points='616.000000,96.000000 604.000000,90.400002 604.000000,101.599998' fill='currentColor' transform='rotate(0.000000, 608.000000, 96.000000)'></polygon>
+<path d='M 632,40 L 632,48' fill='none' stroke='currentColor'></path>
+<polygon points='648.000000,48.000000 636.000000,42.400002 636.000000,53.599998' fill='currentColor' transform='rotate(270.000000, 632.000000, 48.000000)'></polygon>
+<polygon points='664.000000,96.000000 652.000000,90.400002 652.000000,101.599998' fill='currentColor' transform='rotate(180.000000, 656.000000, 96.000000)'></polygon>
+<polygon points='704.000000,96.000000 692.000000,90.400002 692.000000,101.599998' fill='currentColor' transform='rotate(0.000000, 696.000000, 96.000000)'></polygon>
+<path d='M 128,0 A 16,16 0 0,0 112,16' fill='none' stroke='currentColor'></path>
+<path d='M 128,0 A 16,16 0 0,1 144,16' fill='none' stroke='currentColor'></path>
+<path d='M 216,0 A 16,16 0 0,0 200,16' fill='none' stroke='currentColor'></path>
+<path d='M 216,0 A 16,16 0 0,1 232,16' fill='none' stroke='currentColor'></path>
+<path d='M 296,0 A 16,16 0 0,0 280,16' fill='none' stroke='currentColor'></path>
+<path d='M 296,0 A 16,16 0 0,1 312,16' fill='none' stroke='currentColor'></path>
+<path d='M 632,0 A 16,16 0 0,0 616,16' fill='none' stroke='currentColor'></path>
+<path d='M 632,0 A 16,16 0 0,1 648,16' fill='none' stroke='currentColor'></path>
+<path d='M 456,16 A 16,16 0 0,1 472,32' fill='none' stroke='currentColor'></path>
+<path d='M 112,16 A 16,16 0 0,0 128,32' fill='none' stroke='currentColor'></path>
+<path d='M 144,16 A 16,16 0 0,1 128,32' fill='none' stroke='currentColor'></path>
+<path d='M 200,16 A 16,16 0 0,0 216,32' fill='none' stroke='currentColor'></path>
+<path d='M 232,16 A 16,16 0 0,1 216,32' fill='none' stroke='currentColor'></path>
+<path d='M 280,16 A 16,16 0 0,0 296,32' fill='none' stroke='currentColor'></path>
+<path d='M 312,16 A 16,16 0 0,1 296,32' fill='none' stroke='currentColor'></path>
+<path d='M 616,16 A 16,16 0 0,0 632,32' fill='none' stroke='currentColor'></path>
+<path d='M 648,16 A 16,16 0 0,1 632,32' fill='none' stroke='currentColor'></path>
+<path d='M 216,80 A 16,16 0 0,0 200,96' fill='none' stroke='currentColor'></path>
+<path d='M 216,80 A 16,16 0 0,1 232,96' fill='none' stroke='currentColor'></path>
+<path d='M 392,80 A 16,16 0 0,0 376,96' fill='none' stroke='currentColor'></path>
+<path d='M 392,80 A 16,16 0 0,1 408,96' fill='none' stroke='currentColor'></path>
+<path d='M 552,80 A 16,16 0 0,0 536,96' fill='none' stroke='currentColor'></path>
+<path d='M 552,80 A 16,16 0 0,1 568,96' fill='none' stroke='currentColor'></path>
+<path d='M 632,80 A 16,16 0 0,0 616,96' fill='none' stroke='currentColor'></path>
+<path d='M 632,80 A 16,16 0 0,1 648,96' fill='none' stroke='currentColor'></path>
+<path d='M 200,96 A 16,16 0 0,0 216,112' fill='none' stroke='currentColor'></path>
+<path d='M 232,96 A 16,16 0 0,1 216,112' fill='none' stroke='currentColor'></path>
+<path d='M 376,96 A 16,16 0 0,0 392,112' fill='none' stroke='currentColor'></path>
+<path d='M 408,96 A 16,16 0 0,1 392,112' fill='none' stroke='currentColor'></path>
+<path d='M 536,96 A 16,16 0 0,0 552,112' fill='none' stroke='currentColor'></path>
+<path d='M 568,96 A 16,16 0 0,1 552,112' fill='none' stroke='currentColor'></path>
+<path d='M 616,96 A 16,16 0 0,0 632,112' fill='none' stroke='currentColor'></path>
+<path d='M 648,96 A 16,16 0 0,1 632,112' fill='none' stroke='currentColor'></path>
+<text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='128' y='20' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='216' y='20' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='216' y='100' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='296' y='20' fill='currentColor' style='font-size:1em'>4</text>
+<text text-anchor='middle' x='296' y='100' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='392' y='100' fill='currentColor' style='font-size:1em'>5</text>
+<text text-anchor='middle' x='472' y='100' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='552' y='100' fill='currentColor' style='font-size:1em'>6</text>
+<text text-anchor='middle' x='632' y='20' fill='currentColor' style='font-size:1em'>8</text>
+<text text-anchor='middle' x='632' y='100' fill='currentColor' style='font-size:1em'>7</text>
+<text text-anchor='middle' x='720' y='100' fill='currentColor' style='font-size:1em'>D</text>
+</g>
+
+    </svg>
+  
+</div>
+<h3 id="电路图">电路图</h3>
+
+
+
+
+
+<pre tabindex="0"><code>```goat
+                     ____                      *
+                    |    |_____.---.           |
+                    o     _____|    )----------)-------.
+                   / \   |     &#39;---&#39;           |     __|__
+                  /___\  |                     |     \   /
+                    |    &#39;-------------.       |      \ /
+  A ----------------&#39;                  |       |       o
+       .-------------------.     o-----)-------&#39;       |
+       |                   |___.---.   |               |___.---.
+  B ---*---.__.---.         ___|    )--*--.__..---.     ____)   )----- Y
+            __|    o----*--&#39;   &#39;---&#39;    ______))   )---&#39;   &#39;---&#39;
+  C -------&#39;  &#39;---&#39;     |              |     &#39;&#39;---&#39;
+                        |              o
+                        |             / \
+                        |            /___\
+                        |              |
+                        &#39;--------------&#39;
+```</code></pre>
+
+
+<div class="goat svg-container ">
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      font-family="Menlo,Lucida Console,monospace"
+      
+        viewBox="0 0 584 281"
+      >
+      <g transform='translate(8,16)'>
+<path d='M 248,16 L 272,16' fill='none' stroke='currentColor'></path>
+<path d='M 288,32 L 376,32' fill='none' stroke='currentColor'></path>
+<path d='M 376,32 L 440,32' fill='none' stroke='currentColor'></path>
+<path d='M 248,48 L 272,48' fill='none' stroke='currentColor'></path>
+<path d='M 200,80 L 312,80' fill='none' stroke='currentColor'></path>
+<path d='M 32,96 L 160,96' fill='none' stroke='currentColor'></path>
+<path d='M 56,112 L 216,112' fill='none' stroke='currentColor'></path>
+<path d='M 264,112 L 312,112' fill='none' stroke='currentColor'></path>
+<path d='M 312,112 L 376,112' fill='none' stroke='currentColor'></path>
+<path d='M 248,128 L 272,128' fill='none' stroke='currentColor'></path>
+<path d='M 480,128 L 496,128' fill='none' stroke='currentColor'></path>
+<path d='M 32,144 L 56,144' fill='none' stroke='currentColor'></path>
+<path d='M 56,144 L 88,144' fill='none' stroke='currentColor'></path>
+<path d='M 112,144 L 136,144' fill='none' stroke='currentColor'></path>
+<path d='M 288,144 L 312,144' fill='none' stroke='currentColor'></path>
+<path d='M 312,144 L 336,144' fill='none' stroke='currentColor'></path>
+<path d='M 368,144 L 392,144' fill='none' stroke='currentColor'></path>
+<path d='M 512,144 L 552,144' fill='none' stroke='currentColor'></path>
+<path d='M 152,160 L 192,160' fill='none' stroke='currentColor'></path>
+<path d='M 192,160 L 216,160' fill='none' stroke='currentColor'></path>
+<path d='M 248,160 L 272,160' fill='none' stroke='currentColor'></path>
+<path d='M 408,160 L 440,160' fill='none' stroke='currentColor'></path>
+<path d='M 480,160 L 496,160' fill='none' stroke='currentColor'></path>
+<path d='M 32,176 L 88,176' fill='none' stroke='currentColor'></path>
+<path d='M 112,176 L 136,176' fill='none' stroke='currentColor'></path>
+<path d='M 376,176 L 392,176' fill='none' stroke='currentColor'></path>
+<path d='M 192,256 L 312,256' fill='none' stroke='currentColor'></path>
+<path d='M 160,8 L 200,8' fill='none' stroke='currentColor'></path>
+<path d='M 200,24 L 248,24' fill='none' stroke='currentColor'></path>
+<path d='M 200,40 L 248,40' fill='none' stroke='currentColor'></path>
+<path d='M 420,56 L 440,56' fill='none' stroke='currentColor'></path>
+<path d='M 440,56 L 460,56' fill='none' stroke='currentColor'></path>
+<path d='M 140,72 L 180,72' fill='none' stroke='currentColor'></path>
+<path d='M 216,136 L 248,136' fill='none' stroke='currentColor'></path>
+<path d='M 440,136 L 464,136' fill='none' stroke='currentColor'></path>
+<path d='M 88,152 L 112,152' fill='none' stroke='currentColor'></path>
+<path d='M 216,152 L 248,152' fill='none' stroke='currentColor'></path>
+<path d='M 336,152 L 352,152' fill='none' stroke='currentColor'></path>
+<path d='M 440,152 L 472,152' fill='none' stroke='currentColor'></path>
+<path d='M 88,168 L 112,168' fill='none' stroke='currentColor'></path>
+<path d='M 312,168 L 368,168' fill='none' stroke='currentColor'></path>
+<path d='M 292,232 L 332,232' fill='none' stroke='currentColor'></path>
+<path d='M 56,112 L 56,144' fill='none' stroke='currentColor'></path>
+<path d='M 112,144 L 112,176' fill='none' stroke='currentColor'></path>
+<path d='M 160,16 L 160,32' fill='none' stroke='currentColor'></path>
+<path d='M 160,80 L 160,96' fill='none' stroke='currentColor'></path>
+<path d='M 192,160 L 192,256' fill='none' stroke='currentColor'></path>
+<path d='M 200,8 L 200,24' fill='none' stroke='currentColor'></path>
+<path d='M 200,48 L 200,80' fill='none' stroke='currentColor'></path>
+<path d='M 216,112 L 216,128' fill='none' stroke='currentColor'></path>
+<path d='M 248,16 L 248,48' fill='none' stroke='currentColor'></path>
+<path d='M 248,128 L 248,160' fill='none' stroke='currentColor'></path>
+<path d='M 312,80 L 312,96' fill='none' stroke='currentColor'></path>
+<path d='M 312,128 L 312,144' fill='none' stroke='currentColor'></path>
+<path d='M 312,176 L 312,192' fill='none' stroke='currentColor'></path>
+<path d='M 312,240 L 312,256' fill='none' stroke='currentColor'></path>
+<path d='M 376,0 L 376,16' fill='none' stroke='currentColor'></path>
+<path d='M 376,48 L 376,112' fill='none' stroke='currentColor'></path>
+<path d='M 440,32 L 440,48' fill='none' stroke='currentColor'></path>
+<path d='M 440,96 L 440,128' fill='none' stroke='currentColor'></path>
+<path d='M 140,72 L 160,32' fill='none' stroke='currentColor'></path>
+<path d='M 292,232 L 312,192' fill='none' stroke='currentColor'></path>
+<path d='M 440,96 L 460,56' fill='none' stroke='currentColor'></path>
+<path d='M 160,32 L 180,72' fill='none' stroke='currentColor'></path>
+<path d='M 312,192 L 332,232' fill='none' stroke='currentColor'></path>
+<path d='M 420,56 L 440,96' fill='none' stroke='currentColor'></path>
+<path d='M 88,144 L 88,152' fill='none' stroke='currentColor'></path>
+<path d='M 88,168 L 88,176' fill='none' stroke='currentColor'></path>
+<path d='M 112,144 L 112,152' fill='none' stroke='currentColor'></path>
+<path d='M 112,152 L 112,160' fill='none' stroke='currentColor'></path>
+<path d='M 112,168 L 112,176' fill='none' stroke='currentColor'></path>
+<path d='M 160,8 L 160,16' fill='none' stroke='currentColor'></path>
+<path d='M 160,72 L 160,80' fill='none' stroke='currentColor'></path>
+<path d='M 200,8 L 200,16' fill='none' stroke='currentColor'></path>
+<path d='M 200,40 L 200,48' fill='none' stroke='currentColor'></path>
+<path d='M 216,128 L 216,136' fill='none' stroke='currentColor'></path>
+<path d='M 216,152 L 216,160' fill='none' stroke='currentColor'></path>
+<path d='M 248,16 L 248,24' fill='none' stroke='currentColor'></path>
+<path d='M 248,24 L 248,32' fill='none' stroke='currentColor'></path>
+<path d='M 248,40 L 248,48' fill='none' stroke='currentColor'></path>
+<path d='M 248,128 L 248,136' fill='none' stroke='currentColor'></path>
+<path d='M 248,136 L 248,144' fill='none' stroke='currentColor'></path>
+<path d='M 248,152 L 248,160' fill='none' stroke='currentColor'></path>
+<path d='M 312,168 L 312,176' fill='none' stroke='currentColor'></path>
+<path d='M 312,232 L 312,240' fill='none' stroke='currentColor'></path>
+<path d='M 336,144 L 336,152' fill='none' stroke='currentColor'></path>
+<path d='M 440,48 L 440,56' fill='none' stroke='currentColor'></path>
+<path d='M 440,128 L 440,136' fill='none' stroke='currentColor'></path>
+<path d='M 440,152 L 440,160' fill='none' stroke='currentColor'></path>
+<path d='M 272,16 A 16,16 0 0,1 288,32' fill='none' stroke='currentColor'></path>
+<path d='M 288,32 A 16,16 0 0,1 272,48' fill='none' stroke='currentColor'></path>
+<path d='M 272,128 A 16,16 0 0,1 288,144' fill='none' stroke='currentColor'></path>
+<path d='M 464,128 A 16,16 0 0,1 480,144' fill='none' stroke='currentColor'></path>
+<path d='M 496,128 A 16,16 0 0,1 512,144' fill='none' stroke='currentColor'></path>
+<path d='M 136,144 A 16,16 0 0,1 152,160' fill='none' stroke='currentColor'></path>
+<path d='M 352,144 A 16,16 0 0,1 368,160' fill='none' stroke='currentColor'></path>
+<path d='M 392,144 A 16,16 0 0,1 408,160' fill='none' stroke='currentColor'></path>
+<path d='M 288,144 A 16,16 0 0,1 272,160' fill='none' stroke='currentColor'></path>
+<path d='M 480,144 A 16,16 0 0,1 464,160' fill='none' stroke='currentColor'></path>
+<path d='M 512,144 A 16,16 0 0,1 496,160' fill='none' stroke='currentColor'></path>
+<path d='M 152,160 A 16,16 0 0,1 136,176' fill='none' stroke='currentColor'></path>
+<path d='M 368,160 A 16,16 0 0,1 352,176' fill='none' stroke='currentColor'></path>
+<path d='M 376,160 A 16,16 0 0,1 360,176' fill='none' stroke='currentColor'></path>
+<path d='M 408,160 A 16,16 0 0,1 392,176' fill='none' stroke='currentColor'></path>
+<circle cx='56' cy='144' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='152' cy='160' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='160' cy='32' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='192' cy='160' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='264' cy='112' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='312' cy='144' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='312' cy='192' r='6' stroke='currentColor' fill='#fff'></circle>
+<circle cx='376' cy='0' r='6' stroke='currentColor' fill='currentColor'></circle>
+<circle cx='440' cy='96' r='6' stroke='currentColor' fill='#fff'></circle>
+<path d='M 376,16 L 376,24' fill='none' stroke='currentColor'></path>
+<path d='M 376,40 L 376,48' fill='none' stroke='currentColor'></path>
+<path d='M 376,24 A 9,9 0 0,1 376,40' fill='none' stroke='currentColor'></path>
+<path d='M 312,96 L 312,104' fill='none' stroke='currentColor'></path>
+<path d='M 312,120 L 312,128' fill='none' stroke='currentColor'></path>
+<path d='M 312,104 A 9,9 0 0,1 312,120' fill='none' stroke='currentColor'></path>
+<text text-anchor='middle' x='16' y='100' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='16' y='148' fill='currentColor' style='font-size:1em'>B</text>
+<text text-anchor='middle' x='16' y='180' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='568' y='148' fill='currentColor' style='font-size:1em'>Y</text>
+</g>
+
+    </svg>
+  
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Markdown 语法指南</title>
+      <link>https://pagliacii.github.io/hugo-bearberry/zh/blog/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author>
+      <guid>https://pagliacii.github.io/hugo-bearberry/zh/blog/markdown-syntax/</guid>
+      <description>&lt;p&gt;这篇文章提供了可以在 Hugo 内容文件中使用的基本 Markdown 语法示例，同时展示了 Hugo 主题中基本 HTML 元素的 CSS 装饰效果。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>这篇文章提供了可以在 Hugo 内容文件中使用的基本 Markdown 语法示例，同时展示了 Hugo 主题中基本 HTML 元素的 CSS 装饰效果。</p>
+<h2 id="标题">标题</h2>
+<p>以下 HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> 元素代表六个级别的分节标题。<code>&lt;h1&gt;</code> 是最高分节级别，而 <code>&lt;h6&gt;</code> 是最低级别。</p>
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+<h2 id="段落">段落</h2>
+<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>
+<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>
+<h2 id="引用块">引用块</h2>
+<p>引用块元素表示从另一个来源引用的内容，可选地带有引用，引用必须在 <code>footer</code> 或 <code>cite</code> 元素内，并且可选地带有内联更改，如注释和缩写。</p>
+<h4 id="无归属的引用块">无归属的引用块</h4>
+<blockquote>
+<p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+<strong>注意</strong>：你可以在引用块内使用 <em>Markdown 语法</em>。</p></blockquote>
+<h4 id="带归属的引用块">带归属的引用块</h4>
+<blockquote>
+<p>Don&rsquo;t communicate by sharing memory, share memory by communicating.<br>
+— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p></blockquote>
+<h2 id="表格">表格</h2>
+<p>表格不是核心 Markdown 规范的一部分，但 Hugo 开箱即用地支持它们。</p>
+<table>
+  <thead>
+      <tr>
+          <th>姓名</th>
+          <th>年龄</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Bob</td>
+          <td>27</td>
+      </tr>
+      <tr>
+          <td>Alice</td>
+          <td>23</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="表格内的内联-markdown">表格内的内联 Markdown</h4>
+<table>
+  <thead>
+      <tr>
+          <th>斜体</th>
+          <th>粗体</th>
+          <th>代码</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><em>斜体</em></td>
+          <td><strong>粗体</strong></td>
+          <td><code>代码</code></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="代码块">代码块</h2>
+<h4 id="使用反引号的代码块">使用反引号的代码块</h4>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></div><h4 id="用四个空格缩进的代码块">用四个空格缩进的代码块</h4>
+<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Test&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id="使用-hugo-内部高亮短代码的代码块">使用 Hugo 内部高亮短代码的代码块</h4>
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></div>
+<h4 id="带高亮行的代码块">带高亮行的代码块</h4>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line hl"><span class="ln"> 4</span><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line hl"><span class="ln"> 5</span><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line hl"><span class="ln"> 8</span><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></div><h2 id="列表类型">列表类型</h2>
+<h4 id="有序列表">有序列表</h4>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ol>
+<h4 id="无序列表">无序列表</h4>
+<ul>
+<li>列表项</li>
+<li>另一项</li>
+<li>还有一项</li>
+</ul>
+<h4 id="嵌套列表">嵌套列表</h4>
+<ul>
+<li>水果
+<ul>
+<li>苹果</li>
+<li>橙子</li>
+<li>香蕉</li>
+</ul>
+</li>
+<li>乳制品
+<ul>
+<li>牛奶</li>
+<li>奶酪</li>
+</ul>
+</li>
+</ul>
+<h2 id="其他元素--abbr-sub-sup-kbd-mark">其他元素 — abbr, sub, sup, kbd, mark</h2>
+<p><abbr title="Graphics Interchange Format">GIF</abbr> 是一种位图图像格式。</p>
+<p>H<sub>2</sub>O</p>
+<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
+<p>按 <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> 结束会话。</p>
+<p>大多数<mark>蝾螈</mark>都是夜行动物，以昆虫、蠕虫和其他小动物为食。</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>上面的引用摘录自 Rob Pike 在 2015年11月18日 Gopherfest 期间的<a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">演讲</a>。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>占位文本</title>
+      <link>https://pagliacii.github.io/hugo-bearberry/zh/blog/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author>
+      <guid>https://pagliacii.github.io/hugo-bearberry/zh/blog/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Lorem est tota propiore conpellat pectoribus de pectora summo.</p>
+<p>Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.</p>
+<ol>
+<li>Exierant elisi ambit vivere dedere</li>
+<li>Duce pollice</li>
+<li>Eris modo</li>
+<li>Spargitque ferrea quos palude</li>
+</ol>
+<p>Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.</p>
+<ol>
+<li>Comas hunc haec pietate fetum procerum dixit</li>
+<li>Post torum vates letum Tiresia</li>
+<li>Flumen querellas</li>
+<li>Arcanaque montibus omnes</li>
+<li>Quidem et</li>
+</ol>
+<h1 id="vagus-elidunt">Vagus elidunt</h1>
+<p><svg class="canon" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 496 373" height="373" width="496"><g fill="none"><path stroke="#000" stroke-width=".75" d="M.599 372.348L495.263 1.206M.312.633l494.95 370.853M.312 372.633L247.643.92M248.502.92l246.76 370.566M330.828 123.869V1.134M330.396 1.134L165.104 124.515"></path><path stroke="#ED1C24" stroke-width=".75" d="M275.73 41.616h166.224v249.05H275.73zM54.478 41.616h166.225v249.052H54.478z"></path><path stroke="#000" stroke-width=".75" d="M.479.375h495v372h-495zM247.979.875v372"></path><ellipse cx="498.729" cy="177.625" rx=".75" ry="1.25"></ellipse><ellipse cx="247.229" cy="377.375" rx=".75" ry="1.25"></ellipse></g></svg></p>
+<p><a href="https://en.wikipedia.org/wiki/Canons_of_page_construction#Van_de_Graaf_canon">Van de Graaf Canon 页面构造法则</a></p>
+<h2 id="mane-refeci-capiebant-unda-mulcebat">Mane refeci capiebant unda mulcebat</h2>
+<p>Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. <strong>Faces illo pepulere</strong> tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.</p>
+<p>Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.</p>
+<p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel <strong>mitis temploque</strong> vocatus, inque alis, <em>oculos nomen</em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides <strong>parte</strong>.</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

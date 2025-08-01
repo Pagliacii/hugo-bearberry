@@ -2,3 +2,5 @@
 .DS_Store
 todo.md
 _gen/
+resources/
+exampleSite/public/
