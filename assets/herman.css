@@ -200,3 +200,16 @@ figcaption > p {
   text-align: center;
   font-style: italic;
 }
+
+/* Add margin between code blocks and diagrams */
+pre + pre.mermaid,
+pre + div.goat,
+pre + div.kroki-img {
+  margin-top: var(--spacing);
+}
+
+pre.mermaid + pre,
+div.goat + pre,
+div.kroki-img + pre {
+  margin-top: var(--spacing);
+}

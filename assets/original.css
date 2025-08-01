@@ -666,3 +666,16 @@ abbr[title] {
   text-decoration: underline dotted;
   text-decoration-color: var(--flexoki-light-cyan);
 }
+
+/* Add margin between code blocks and diagrams */
+pre + pre.mermaid,
+pre + div.goat,
+pre + div.kroki-img {
+  margin-top: 1rem;
+}
+
+pre.mermaid + pre,
+div.goat + pre,
+div.kroki-img + pre {
+  margin-top: 1rem;
+}
