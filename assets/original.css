@@ -70,7 +70,7 @@ body {
     font-size: 0.65rem !important;
     color: var(--flexoki-300) !important;
   }
-  
+
   p.byline {
     font-size: 0.65rem !important;
     color: var(--flexoki-300) !important;
@@ -80,15 +80,15 @@ body {
     font-size: 1.3rem;
     margin: 0.5rem 0;
   }
-  
+
   content h1 {
     font-size: 1.1rem;
   }
-  
+
   content h2 {
     font-size: 1rem;
   }
-  
+
   content h3 {
     font-size: 0.9rem;
   }
@@ -258,7 +258,7 @@ pre code {
   overflow-y: auto;
   max-height: 36rem;
   color: var(--flexoki-800);
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 blockquote {
@@ -354,20 +354,20 @@ ul.blog-posts li {
     justify-content: space-between;
     align-items: baseline;
   }
-  
+
   .blog-post-title {
     margin-bottom: 0;
     flex: 1;
   }
-  
+
   .blog-post-meta {
     margin-left: 20px;
   }
-  
+
   .blog-post-tags {
     display: none;
   }
-  
+
   ul.blog-posts li {
     margin-bottom: 8px;
     padding: 4px 0;
