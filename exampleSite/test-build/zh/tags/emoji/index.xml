@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Emoji on 熊莓</title>
+    <link>https://pagliacii.github.io/hugo-bearberry/zh/tags/emoji/</link>
+    <description>Recent content in Emoji on 熊莓</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>me@example.com (Jason Huang)</managingEditor>
+    <webMaster>me@example.com (Jason Huang)</webMaster>
+    <copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright>
+    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pagliacii.github.io/hugo-bearberry/zh/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emoji 支持</title>
+      <link>https://pagliacii.github.io/hugo-bearberry/zh/blog/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author>
+      <guid>https://pagliacii.github.io/hugo-bearberry/zh/blog/emoji-support/</guid>
+      <description>&lt;p&gt;在 Hugo 项目中可以通过多种方式启用 Emoji。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>在 Hugo 项目中可以通过多种方式启用 Emoji。</p>
+<p><a href="https://gohugo.io/functions/emojify/"><code>emojify</code></a> 函数可以直接在模板或<a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">内联短代码</a>中调用。</p>
+<p>要全局启用 emoji，请在站点的<a href="https://gohugo.io/getting-started/configuration/">配置</a>中将 <code>enableEmoji</code> 设置为 <code>true</code>，然后你就可以直接在内容文件中输入 emoji 简码；例如：</p>
+<p><span class="nowrap"><span class="emojify">🙈</span> <code>:see_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙉</span> <code>:hear_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙊</span> <code>:speak_no_evil:</code></span></p>
+<br>
+<p><a href="http://www.emoji-cheat-sheet.com/">Emoji 速查表</a>是 emoji 简码的有用参考。</p>
+<hr>
+<p><strong>注意：</strong> 上述步骤启用了 Hugo 中的 Unicode 标准 emoji 字符和序列，但这些字形的渲染取决于浏览器和平台。要为 emoji 设置样式，你可以使用第三方 emoji 字体或字体堆栈；例如：</p>
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln">1</span><span class="cl">.emoji {
+</span></span><span class="line"><span class="ln">2</span><span class="cl">  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
+</span></span><span class="line"><span class="ln">3</span><span class="cl">}</span></span></code></pre></div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

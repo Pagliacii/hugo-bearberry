@@ -77,6 +77,12 @@ pageDateFormat = "2006-01-02 15:04:05"
 # have the theme simply not show any link
 hideUntranslated = false
 
+# (EXPERIMENTAL) This theme has two options for its CSS styles: "original" and
+# "herman". The former is what you see on Bear Cub's demo (an optimized
+# version of Hugo Bear Blog), while the latter has a more modern look based on
+# Herman Martinus's version of the Blogster Minimal theme for Astro.
+themeStyle = "original"
+
 # (EXPERIMENTAL) This theme is capable of dynamically generating social cards
 # for posts that don't have `images` defined in their front matter; By setting
 # `generateSocialCard` to false, you can prevent this behavior. For more
@@ -101,7 +107,8 @@ twitter = "example"           # Twitter handle (without '@')
 facebook_admin = "0000000000" # Facebook Page Admin ID
 
 # Author metadata. This is mostly used for the RSS feed of your site, but the
-# email is also added to the footer of each post
+# email is also added to the footer of each post. You can hide the "reply to"
+# link by using a `hideReply` param in front matter.
 [params.author]
 name = "Jason Huang"     # Your name as shown in the RSS feed metadata
 email = "me@example.com" # Added to the footer so readers can reply to posts

@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add exampleSite/content/blog/kroki-diagrams.md)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: enable mermaid rendering in kroki diagrams article\n\n- Remove caution warning about kroki.io bug\n- Add working mermaid sequence diagram example\n- Enable mermaid diagram rendering for better documentation\n\n🤖 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git add exampleSite/content/_index.md exampleSite/content.zh/_index.md)",
+      "Bash(git commit -m \"$(cat <<''EOF''\ncontent: enhance homepage with detailed feature descriptions\n\n- Add comprehensive feature list with detailed descriptions\n- Improve grammar and writing quality\n- Add professional descriptions for comments, diagrams, SEO, etc.\n- Update both English and Chinese versions\n- Use proper shortcode format for author attribution\n\n🤖 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git add exampleSite/config.toml i18n/zh.toml)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nchore: update copyright year and fix Chinese email translation\n\n- Update copyright year from 2024 to 2025 in site config\n- Fix Chinese translation: change ''电邮'' to ''邮件'' for better localization\n- Ensure consistency in terminology across Chinese interface\n\n🤖 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git add exampleSite/content.zh/blog/)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: add complete Chinese translations for all blog articles\n\n- Translate 10 blog articles from English to Chinese\n- Maintain technical accuracy and natural Chinese expressions\n- Keep tags in English as requested for consistency\n- Cover programming languages, diagrams, markdown syntax, math typesetting, \n  rich content, shortcodes, emoji support, and placeholder content\n- Ensure proper Chinese typography and formatting\n\n🤖 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git add layouts/_default/list.html)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: redesign blog list page layout with improved UX\n\n- Restructure layout: title on top line, date and tags on second line\n- Position tags on far right for better visual balance\n- Add responsive design: mobile shows single line (title + date), no tags\n- Remove border separators for cleaner appearance\n- Optimize spacing for better content density\n- Support up to 3 tags per post to prevent clutter\n- Maintain existing tag styling and functionality\n\nDesktop layout: Title above, date on left + tags on right below\nMobile layout: Title left, date right, same line, no tags\n\n🤖 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git add assets/js/toc.js assets/toc.css CLAUDE.md)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: improve table of contents with better mobile support\n\n- Add mobile-specific TOC styling with expanded view\n- Improve TOC readability on mobile devices with smaller fonts\n- Fix mobile responsive breakpoint from 720px to 721px for consistency\n- Add JavaScript to auto-expand TOC on mobile devices\n- Add CLAUDE.md project documentation for AI assistant guidance\n\n🤖 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(hugo server:*)",
+      "WebFetch(domain:www.anthropic.com)",
+      "Bash(hugo:*)",
+      "Bash(find:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:gohugo.io)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(git fetch:*)"
+    ],
+    "deny": []
+  }
+}

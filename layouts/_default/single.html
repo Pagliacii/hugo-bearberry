@@ -19,7 +19,6 @@
   <span>mins</span>
 </p>
 {{ end }}
-
 {{ if .Params.toc }}
 <article class="article">
   <aside class="sidebar">
@@ -41,24 +40,7 @@
 </article>
 {{ end }}
 
-{{ with .Site.Params.giscus }}
-<script src="https://giscus.app/client.js"
-        data-repo="{{ .repoName }}"
-        data-repo-id="{{ .repoID }}"
-        data-category="{{ .category }}"
-        data-category-id="{{ .categoryID }}"
-        data-mapping='{{ .mapping | default "pathname" }}'
-        data-strict="0"
-        data-reactions-enabled="{{ if .reactionsEnabled }}1{{ else }}0{{ end }}"
-        data-emit-metadata="{{ if .emitMetadata }}0{{ else }}1{{ end }}"
-        data-input-position='{{ .inputPosition | default "top" }}'
-        data-theme='{{ .theme | default "preferred_color_scheme" }}'
-        data-lang='{{ .lang | default "en" }}'
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
-{{ end }}
+{{ if not .Params.hideReply }}
 {{ with .Site.Params.author.email }}
   <p>
     <a href='mailto:{{ . }}?subject={{ i18n "email-subject" }}"{{ default $.Site.Title $.Page.Title }}"'>
@@ -88,6 +70,26 @@
   mermaid.initialize({
     startOnLoad: true,
   });
+</script>
+{{ end }}
+{{ end }}
+
+{{ with .Site.Params.giscus }}
+<script src="https://giscus.app/client.js"
+        data-repo="{{ .repoName }}"
+        data-repo-id="{{ .repoID }}"
+        data-category="{{ .category }}"
+        data-category-id="{{ .categoryID }}"
+        data-mapping='{{ .mapping | default "pathname" }}'
+        data-strict="0"
+        data-reactions-enabled="{{ if .reactionsEnabled }}1{{ else }}0{{ end }}"
+        data-emit-metadata="{{ if .emitMetadata }}0{{ else }}1{{ end }}"
+        data-input-position='{{ .inputPosition | default "top" }}'
+        data-theme='{{ .theme | default "preferred_color_scheme" }}'
+        data-lang='{{ .lang | default "en" }}'
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
 </script>
 {{ end }}
 {{ end }}

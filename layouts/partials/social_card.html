@@ -13,11 +13,14 @@
 
 {{ $titleOptions := dict
     "color" "#f8f8f2"
-    "size" 130
-    "linespacing" 20
     "x" 0
     "y" 0
 }}
+{{ if gt (len .Title) 45 }}
+  {{ $titleOptions = merge $titleOptions (dict "size" 95 "linespacing" 16) }}
+{{ else }}
+  {{ $titleOptions = merge $titleOptions (dict "size" 130 "linespacing" 20) }}
+{{ end }}
 {{ if $font }}{{ $titleOptions = merge $titleOptions (dict "font" $font) }}{{ end }}
 {{ $fg = $fg.Filter (images.Text .Title $titleOptions) }}
 
@@ -73,16 +76,10 @@
 {{ end }}{{ end }}
 {{- end }}
 
-{{- /* Deprecate site.Social.facebook_admin in favor of site.Params.social.facebook_admin */}}
 {{- $facebookAdmin := "" }}
 {{- with site.Params.social }}
   {{- if reflect.IsMap . }}
     {{- $facebookAdmin = .facebook_admin }}
-  {{- end }}
-{{- else }}
-  {{- with site.Social.facebook_admin }}
-    {{- $facebookAdmin = . }}
-    {{- warnf "The social key in site configuration is deprecated. Use params.social.facebook_admin instead." }}
   {{- end }}
 {{- end }}
 
@@ -96,16 +93,10 @@
 <meta name="twitter:title" content="{{ .Title }}"/>
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
 
-{{- /* Deprecate site.Social.twitter in favor of site.Params.social.twitter */}}
 {{- $twitterSite := "" }}
 {{- with site.Params.social }}
   {{- if reflect.IsMap . }}
     {{- $twitterSite = .twitter }}
-  {{- end }}
-{{- else }}
-  {{- with site.Social.twitter }}
-    {{- $twitterSite = . }}
-    {{- warnf "The social key in site configuration is deprecated. Use params.social.twitter instead." }}
   {{- end }}
 {{- end }}
 
