@@ -62,6 +62,29 @@ YOU MUST: Follow the existing code patterns and conventions found in the theme f
 
 IMPORTANT: Never modify files in `exampleSite/public/` - these are generated files.
 
+### Upstream Syncing
+This repository is a fork of `clente/hugo-bearcub`. To sync with upstream changes:
+
+1. **Fetch upstream changes**: `git fetch upstream`
+2. **Switch to main branch**: `git checkout main`
+3. **Merge upstream changes**: `git merge upstream/main`
+4. **Resolve conflicts** (if any):
+   - Review conflicted files carefully
+   - Preserve local customizations while integrating upstream improvements
+   - Pay special attention to theme files that may have been locally modified
+5. **Test changes thoroughly**:
+   - Run development server: `hugo server --source ./exampleSite --themesDir ../.. --disableFastRender`
+   - Test all theme features (math rendering, diagrams, comments, multilingual)
+   - Verify responsive design and both light/dark themes
+6. **Commit merge** (if not auto-committed): `git commit -m "Merge upstream changes from hugo-bearcub"`
+7. **Push changes**: `git push origin main`
+
+**Important Notes:**
+- Always test the exampleSite after merging upstream changes
+- Review changes carefully as upstream modifications may affect local customizations
+- Consider creating a backup branch before major upstream merges
+- The upstream remote should point to: `git@github.com:clente/hugo-bearcub.git`
+
 ## Project-Specific Information
 
 ### Key Files and Directories
