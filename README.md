@@ -2,171 +2,366 @@
 
 [![github pages](https://github.com/Pagliacii/hugo-bearberry/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/Pagliacii/hugo-bearberry/actions/workflows/gh-pages.yml)
 [![MIT license](https://img.shields.io/github/license/Pagliacii/hugo-bearberry)](https://github.com/Pagliacii/hugo-bearberry/blob/main/LICENSE)
+[![Hugo](https://img.shields.io/badge/Hugo-%5E0.90-ff4088?style=flat&logo=hugo)](https://gohugo.io/)
+[![Demo](https://img.shields.io/badge/Live-Demo-blue)](https://pagliacii.github.io/hugo-bearberry)
 
 ## Overview
 
-🐻 🍓 A lightweight [Hugo](https://gohugo.io/) theme based on [Hugo Bear
-Cub](https://github.com/clente/hugo-bearcub).
+🐻 🍓 Bear Berry is a modern, feature-rich Hugo theme that's a significant enhancement of [Hugo Bear Cub](https://github.com/clente/hugo-bearcub). While maintaining the lightweight and minimal design philosophy, Bear Berry adds powerful features including multilingual support, dynamic social cards, advanced diagram rendering, and comprehensive SEO optimization.
 
-If you want to know more features about **Bear Cub**, click [this](https://github.com/clente/hugo-bearcub).
+Perfect for technical blogs, documentation sites, and personal websites that need both elegance and functionality.
+
+**[🚀 Live Demo](https://pagliacii.github.io/hugo-bearberry)**
 
 ## Installation
 
-Follow Hugo's [quick start](https://gohugo.io/getting-started/quick-start/) to
-create an empty website and then clone **Bear Berry** into the themes directory as
-a [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules):
+### Quick Start
 
-```sh
+Follow Hugo's [quick start](https://gohugo.io/getting-started/quick-start/) to create an empty website, then install Bear Berry:
+
+```bash
+# Create new site
+hugo new site my-blog
+cd my-blog
+
+# Install Bear Berry as submodule
+git init
 git submodule add https://github.com/Pagliacii/hugo-bearberry themes/hugo-bearberry
+
+# Configure theme
+echo 'theme = "hugo-bearberry"' >> hugo.toml
 ```
 
-To finish off, append a line to the site configuration file:
+### GitHub Pages Deployment
 
-```sh
-echo 'theme = "hugo-bearberry"' >> config.toml
+Bear Berry works great with GitHub Pages! Use the [Hugo GitHub Action](https://github.com/peaceiris/actions-hugo):
+
+1. **Create `.github/workflows/gh-pages.yml`**:
+```yaml
+name: Deploy Hugo site to Pages
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - run: hugo --minify
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
 ```
 
-## Features
+2. **Enable GitHub Pages** in repository settings
 
-- Show the update date, words and reading time in the post page.
-- Heading prefix with "#".
-- Enable [katex](https://katex.org/) to render math expressions by including `math = true` in a post's [front matter](https://gohugo.io/content-management/front-matter/).
-  - You can choose the [mathjax](https://www.mathjax.org/) as the renderer by including `mathjax = true`.
-- Use [giscus](https://giscus.app/) as the comment system.
-- Use [mermaid.js](https://mermaid.js.org/) to draw diagrams.
-- Add copy button and language name for code blocks.
-- Add the [back-to-top](https://github.com/vfeskov/vanilla-back-to-top) button at right-bottom corner.
-- Use [tocbot](https://github.com/tscanlin/tocbot) to show the table of contents.
-- Use the free [Kroki](https://kroki.io/) for more diagrams.
-- Add more [shortcodes](layouts/shortcodes) to make the writing more easily.
+### Development Setup
+
+For theme development or testing:
+
+```bash
+# Clone with submodules
+git clone --recursive https://github.com/Pagliacii/hugo-bearberry
+cd hugo-bearberry
+
+# Start development server using exampleSite
+hugo server --source ./exampleSite --themesDir ../.. --disableFastRender
+
+# Build example site
+hugo --source ./exampleSite --themesDir ../.. --cleanDestinationDir
+```
+
+## ✨ Features
+
+### Content & Writing
+- **Reading experience**: Shows update date, word count, and reading time on post pages
+- **Table of contents**: Smart TOC with mobile-responsive design using tocbot
+- **Copy functionality**: One-click copying for code blocks and markdown content
+- **Back-to-top**: Smooth scrolling navigation button
+- **Heading anchors**: Automatic heading links with "#" prefix
+
+### Multilingual Support
+- **4 languages**: English, Chinese (Simplified), German, Korean
+- **Content mirroring**: Automatic content organization across languages
+- **Language switcher**: Seamless navigation between translations
+- **SEO-friendly**: Proper hreflang tags for international SEO
+
+### Technical Features
+- **Math rendering**: Choose between KaTeX and MathJax per post
+- **Diagram support**: 
+  - Mermaid.js for flowcharts, sequence diagrams, class diagrams
+  - Kroki integration for 20+ diagram types (PlantUML, D2, C4, etc.)
+- **Syntax highlighting**: Dracula-based theme with line numbers
+- **Social cards**: Dynamic generation for posts without custom images
+- **SEO optimization**: Structured data, meta tags, Open Graph, Twitter Cards
+
+### Interactive Elements
+- **Giscus comments**: GitHub-powered commenting system
+- **Custom shortcodes**: 11 enhanced shortcodes for better content presentation
+- **Responsive design**: Mobile-first approach with touch-friendly interactions
+- **Theme styles**: Two built-in themes - "original" (Bear Cub style) and "herman" (modern)
+
+### Performance & SEO
+- **Fast loading**: Optimized assets and caching strategies
+- **Social media**: Automatic Open Graph and Twitter Card generation
+- **Search engines**: Robots.txt, sitemap.xml, structured data
+- **PWA ready**: Web app manifest and service worker support
 
 ## Configuration
 
-**Bear Berry** can be customized with a `hugo.toml` file. Check out the
-[configuration](https://github.com/Pagliacii/hugo-bearberry/blob/main/exampleSite/config.toml)
-of the [demo](https://pagliacii.github.io/hugo-bearberry/) for more information.
+### Basic Setup
+
+Create a `hugo.toml` file in your site root:
 
 ```toml
-# Basic config
-baseURL = "https://example.com"
+baseURL = "https://yourdomain.com"
 theme = "hugo-bearberry"
-copyright = "Jason Huang © 2023"
+copyright = "Your Name © 2025"
 defaultContentLanguage = "en"
 
-# Generate a nice robots.txt for SEO
+# Essential features
 enableRobotsTXT = true
+enableGitInfo = true
 
-# Setup syntax highlighting without inline styles. For more information about
-# why you'd want to avoid inline styles, see
-# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src#unsafe_inline_styles
+# Syntax highlighting
 [markup]
   [markup.highlight]
     lineNos = true
     lineNumbersInTable = false
-    # This allows Bear Berry to use a variation of Dracula that is more accessible
-    # to people with poor eyesight. For more information about color contrast
-    # and accessibility, see https://web.dev/color-and-contrast-accessibility/
     noClasses = false
   [markup.goldmark]
     [markup.goldmark.renderer]
-      # Enable this to allow the raw html in markdown file
       unsafe = true
 
-# Multilingual mode config. More for information about how to setup translation,
-# see https://gohugo.io/content-management/multilingual/
+# Multilingual support
 [languages]
   [languages.en]
-    title = "Bear Berry"
-    languageName = "en-US 🇺🇸"
+    title = "My Blog"
+    languageName = "English 🇺🇸"
     LanguageCode = "en-US"
     contentDir = "content"
-    [languages.en.params]
-      madeWith = "Made with [Bear Berry](https://github.com/Pagliacii/hugo-bearberry)"
   [languages.zh]
-    title = "熊莓"
-    languageName = "zh-CN 🇨🇳"
+    title = "我的博客"
+    languageName = "中文 🇨🇳"
     LanguageCode = "zh-CN"
     contentDir = "content.zh"
-    [languages.zh.params]
-      madeWith = "由 [Bear Berry](https://github.com/Pagliacii/hugo-bearberry) 驱动"
 
 [params]
-  # The description of your website
-  description = "Bear Berry Demo"
-
-  # The path to your favicon
-  favicon = "images/favicon.ico"
-  favicon16 = "images/favicon-16x16.png"
-  favicon32 = "images/favicon-32x32.png"
-  apple_touch_icon = "images/apple-touch-icon.png"
-  manifest = "images/site.webmanifest"
-  safari_pinned_tab = "images/safari-pinned-tab.svg"
-  msapplication_tilecolor = "#da532c"
-  msapplication_config = "images/browserconfig.xml"
-  theme_color = "#fff"
-
-  # These images will show up when services want to generate a preview of a link
-  # to your site. Ignored if `generateSocialCard = true`. For more information
-  # about previews, see https://gohugo.io/templates/internal#twitter-cards and
-  # https://gohugo.io/templates/internal#open-graph
-  images = ["images/share.webp"]
-
-  # This title is used as the site_name on the Hugo's internal opengraph
-  # structured data template
-  title = "Bear Berry"
-
-  # Dates are displayed following the format below. For more information about
-  # formatting, see https://gohugo.io/functions/format/
+  description = "A modern Hugo blog with Bear Berry theme"
+  
+  # Theme customization
+  themeStyle = "original"  # or "herman"
+  generateSocialCard = true
+  
+  # Dates
   listDateFormat = "2006-01-02"
   pageDateFormat = "2006-01-02 15:04:05"
-
-  # If your blog is multilingual but you haven't translated a page, this theme
-  # will create a disabled link. By setting `hideUntranslated` to true, you can
-  # have the theme simply not show any link
-  hideUntranslated = false
-
-  # (EXPERIMENTAL) This theme is capable of dynamically generating social cards
-  # for posts that don't have `images` defined in their front matter; By setting
-  # `generateSocialCard` to false, you can prevent this behavior. For more
-  # information see layouts/partials/seo_tags.html
-  generateSocialCard = true
-
-  # Social media. Delete any item you aren't using to make sure it won't show up
-  # in your website's metadata.
-  [params.social]
-    twitter = "example" # Twitter handle (without '@')
-    facebook_admin = "0000000000" # Facebook Page Admin ID
-
-  # Author metadata. This is mostly used for the RSS feed of your site, but the
-  # email is also added to the footer of each post
-  [params.author]
-    name = "Jason Huang" # Your name as shown in the RSS feed metadata
-    email = "me@example.com" # Added to the footer so readers can reply to posts
-
-  # For information about giscus, see https://giscus.app/
+  
+  # Favicons and social
+  favicon = "images/favicon.ico"
+  images = ["images/share.webp"]
+  
+  # Comments
   [params.giscus]
-    repoName = "<your-repo-name>"
-    repoID = "<your-repo-id>"
-    category = "<your-discussion-category"
-    categoryID = "<your-category-id>"
-    # mapping = "pathname"
-    # reactionsEnabled = false
-    # emitMetadata = false
-    # inputPosition = "top"
-    # lang = "en"
-    # theme = "preferred_color_scheme"
+    repoName = "your-username/your-repo"
+    repoID = "your-repo-id"
+    category = "Comments"
+    categoryID = "your-category-id"
+    mapping = "og:title"
+    reactionsEnabled = true
+    theme = "preferred_color_scheme"
 
-# Use Hugo cache to optimize performance in a CI/CD environment. For more information see links below:
-# https://gohugo.io/getting-started/configuration/#configure-file-caches
-# https://www.veriphor.com/articles/diagrams/#performance
+# Performance optimization
 [caches]
   [caches.getresource]
     dir = ":resourceDir/_gen"
     maxAge = -1
 ```
 
-## Contributing
+### Advanced Configuration
 
-If you come across any problems while using **Bear Berry**, you can file an
-[issue](https://github.com/Pagliacii/hugo-bearberry/issues) or create a [pull
-request](https://github.com/Pagliacii/hugo-bearberry/pulls).
+#### Math Rendering
+Enable per-post math rendering in your content's front matter:
+
+```yaml
+---
+title: "Mathematical Post"
+math: true      # For KaTeX
+# or
+mathjax: true   # For MathJax
+---
+```
+
+#### Diagrams
+Use Mermaid or Kroki diagrams directly in your content:
+
+````markdown
+```mermaid
+graph TD
+    A[Start] --> B[Process]
+    B --> C[End]
+```
+
+```kroki-plantuml
+@startuml
+Alice -> Bob: Hello
+Bob -> Alice: Hi there!
+@enduml
+```
+````
+
+#### Social Cards
+Bear Berry automatically generates social cards for posts. Customize or disable:
+
+```toml
+[params]
+  generateSocialCard = true  # Set to false to disable auto-generation
+```
+
+#### Theme Styles
+Switch between two built-in themes:
+
+```toml
+[params]
+  themeStyle = "original"  # Classic Bear Cub style
+  # or
+  themeStyle = "herman"    # Modern Herman style
+```
+
+## Development & Contributing
+
+### Development Commands
+
+```bash
+# Start development server
+hugo server --source ./exampleSite --themesDir ../.. --disableFastRender
+
+# Build with draft content
+hugo server --source ./exampleSite --themesDir ../.. -D --disableFastRender
+
+# Clean build
+hugo --source ./exampleSite --themesDir ../.. --cleanDestinationDir
+
+# Multilingual build
+hugo --source ./exampleSite --themesDir ../.. --buildDrafts=false
+```
+
+### Upstream Syncing
+
+This repository is a fork of [hugo-bearcub](https://github.com/clente/hugo-bearcub). To sync with upstream:
+
+```bash
+# Add upstream remote
+git remote add upstream https://github.com/clente/hugo-bearcub.git
+
+# Fetch upstream changes
+git fetch upstream
+
+# Switch to main branch and merge
+git checkout main
+git merge upstream/main
+
+# Test changes
+hugo server --source ./exampleSite --themesDir ../.. --disableFastRender
+```
+
+### Contributing Guidelines
+
+1. **Fork and branch**: Create feature branches for new functionality
+2. **Test thoroughly**: Use the exampleSite for testing all changes
+3. **Follow conventions**: Maintain existing code style and patterns
+4. **Multilingual**: Update all language files when adding features
+5. **Documentation**: Update README.md for new features
+
+### Testing Checklist
+
+Before submitting changes:
+- [ ] Development server starts without errors
+- [ ] All example content renders correctly
+- [ ] Multilingual features work (EN/ZH)
+- [ ] Responsive design tested on mobile
+- [ ] Both theme styles work (original/herman)
+- [ ] Math rendering works
+- [ ] Diagrams display correctly
+- [ ] Comments system loads
+- [ ] Social cards generate
+- [ ] SEO tags are present
+
+## Usage Examples
+
+### Creating Content
+
+```bash
+# New post in English
+hugo new content/blog/my-post/index.md
+
+# New post in Chinese
+hugo new content.zh/blog/my-post/index.md
+```
+
+### Front Matter Examples
+
+```yaml
+---
+title: "Advanced Hugo Features"
+date: 2024-01-15T10:00:00Z
+draft: false
+tags: ["hugo", "web-development", "static-site"]
+categories: ["Tutorial"]
+math: true
+images: ["images/cover.jpg"]
+description: "Learn advanced features of Hugo static site generator"
+---
+```
+
+### Shortcodes
+
+Bear Berry includes 11 custom shortcodes:
+
+```markdown
+{{< highlight go >}}
+func main() {
+    fmt.Println("Hello, World!")
+}
+{{< /highlight >}}
+
+{{< note >}}
+This is an important note.
+{{< /note >}}
+
+{{< caution >}}
+Be careful with this configuration.
+{{< /caution >}}
+
+{{< details "Click to expand" >}}
+Hidden content here.
+{{< /details >}}
+```
+
+## Support
+
+- **Issues**: [GitHub Issues](https://github.com/Pagliacii/hugo-bearberry/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Pagliacii/hugo-bearberry/discussions)
+- **Examples**: Check the [exampleSite](exampleSite/) for implementation examples
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- **Hugo Bear Cub** by [Caio Lenth](https://github.com/clente/hugo-bearcub) - the foundation theme
+- **Herman theme** by [Herman Martinus](https://herman.bearblog.dev/) - modern styling inspiration
+- **Dracula theme** - syntax highlighting colors
+- **Giscus** - GitHub-powered comments
+- **Kroki** - diagram rendering service
+
