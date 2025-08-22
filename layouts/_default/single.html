@@ -31,21 +31,28 @@
   <content class="content">
     {{ .Content }}
   </content>
+  {{ if .GetTerms "tags" }}
   <p>
     {{ range (.GetTerms "tags") }}
       <a class="blog-tags" href="{{ .Permalink }}">#{{ .LinkTitle }}</a>&nbsp;&nbsp;
     {{ end }}
   </p>
+  {{ end }}
 {{ if .Params.toc }}
 </article>
 {{ end }}
 
 {{ if not .Params.hideReply }}
 {{ with .Site.Params.author.email }}
-  <p>
-    <a href='mailto:{{ . }}?subject={{ i18n "email-subject" }}"{{ default $.Site.Title $.Page.Title }}"'>
-      {{ i18n "email-reply" }} ↪
-    </a>
+  <p style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.5rem;">
+    <a href='mailto:{{ . }}?subject={{ i18n "email-subject" }}"{{ default $.Site.Title $.Page.Title }}"'>reply via e-mail</a>
+    {{ if eq $.Type "blog" }}
+    <span class="copy-markdown-links">
+      <a href="javascript:void(0)" onclick="copyMarkdown()">copy as</a> / 
+      <a href="javascript:void(0)" onclick="viewMarkdown()" rel="noopener noreferrer">view</a>
+      markdown
+    </span>
+    {{ end }}
   </p>
 {{ end }}
 
@@ -63,6 +70,14 @@
 {{ if (findRE "<pre" .Content 1) }}
   {{ $js := resources.Get "/js/copy-code-button.js" | minify }}
   <script src="{{ $js.RelPermalink }}"></script>
+{{ end }}
+
+{{ if eq .Type "blog" }}
+  {{ $copyJs := resources.Get "/js/copy-markdown.js" | minify }}
+  <script src="{{ $copyJs.RelPermalink }}"></script>
+  
+  {{ $copyCss := resources.Get "/css/copy-markdown.css" | minify }}
+  <link rel="stylesheet" href="{{ $copyCss.RelPermalink }}">
 {{ end }}
 {{ if .Page.Store.Get "hasMermaid" }}
 <script type="module">

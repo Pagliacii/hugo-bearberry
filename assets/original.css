@@ -258,7 +258,6 @@ pre code {
   overflow-y: auto;
   max-height: 36rem;
   color: var(--flexoki-800);
-  white-space: nowrap;
 }
 
 blockquote {

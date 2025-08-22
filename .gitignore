@@ -4,3 +4,5 @@ todo.md
 _gen/
 resources/
 exampleSite/public/
+.claude/
+.playwright-mcp/

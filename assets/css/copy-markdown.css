@@ -1,0 +1,14 @@
+.copy-markdown-links {
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+}
+
+@media (max-width: 768px) {
+    .copy-markdown-links {
+        font-size: 0.8rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+    
+}

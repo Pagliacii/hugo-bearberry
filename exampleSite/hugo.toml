@@ -118,3 +118,18 @@ email = "me@example.com" # Added to the footer so readers can reply to posts
 [caches.getresource]
 dir = ":resourceDir"
 maxAge = -1
+
+# Enable raw markdown serving for copy as markdown feature
+[mediaTypes]
+[mediaTypes."text/markdown"]
+suffixes = ["md"]
+
+[outputFormats]
+[outputFormats.Markdown]
+mediaType = "text/markdown"
+baseName = "index"
+isPlainText = true
+notAlternative = true
+
+[outputs]
+page = ["HTML", "Markdown"]
