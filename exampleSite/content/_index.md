@@ -18,8 +18,7 @@ Keep it simple and fast, but with enhanced functionality for modern websites.
 - **User Experience**: Smooth back-to-top button via [vanilla-back-to-top](https://github.com/vfeskov/vanilla-back-to-top) for better scrolling experience
 - **Advanced Diagrams**: Complete integration with [Kroki](https://kroki.io/) supporting 20+ diagram types including PlantUML, D2, GraphViz, and more
 - **Rich Content**: Extended shortcode collection for enhanced content creation and formatting
-- **SEO Optimized**: Built-in SEO optimizations and social card generation
-- **Multilingual Support**: Full internationalization support for global audiences
-- **Performance**: Optimized for speed with efficient caching and minimal resource usage
+- **Markdown Export**: Copy/view raw markdown functionality for content sharing
+- **TOC Improvements**: Enhanced table of contents with mobile-responsive design
 
 Made with 💟 by {{< at name="Jason Huang" type=github id=Pagliacii >}}.
