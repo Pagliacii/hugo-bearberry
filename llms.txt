@@ -1,0 +1,81 @@
+# Bear Berry
+
+Bear Berry Demo
+
+## Content
+- **[中文测试文章：如何使用Hugo创建静态网站](https://pagliacii.github.io/hugo-bearberry/blog/chinese-test/index.md)**
+  - Published: 2024-07-21
+  - Tags: `中文` `测试` `hugo` 
+  - Description: 这是一个测试中文内容在社交媒体分享卡片中显示效果的文章
+
+- **[Math Typesetting via Mathjax](https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting-mathjax/index.md)**
+  - Published: 2024-01-14
+  - Description: Using Mathjax to render mathematical notations
+
+- **[More Shortcodes](https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/index.md)**
+  - Published: 2023-10-29
+  - Tags: `shortcodes` `hugo` 
+  - Description: More custom shortcodes.
+
+- **[Kroki diagrams](https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/index.md)**
+  - Published: 2023-10-28
+  - Tags: `markdown` `code` `diagram` `mermaid` `kroki` `plantuml` `d2` `c4` 
+  - Description: Use a fenced code block to embed an SVG image of a diagram in your Hugo site using the free Kroki service.
+
+- **[Programming Languages](https://pagliacii.github.io/hugo-bearberry/blog/programming-languages/index.md)**
+  - Published: 2023-10-22
+  - Tags: `markdown` `code` 
+  - Description: Use fenced code blocks for some programming languages.
+
+- **[Diagrams](https://pagliacii.github.io/hugo-bearberry/blog/diagrams/index.md)**
+  - Published: 2023-10-21
+  - Tags: `markdown` `code` `diagram` `mermaid` `GoAT` 
+  - Description: Use fenced code blocks and markdown render hooks to display diagrams.
+
+- **[Markdown Syntax Guide](https://pagliacii.github.io/hugo-bearberry/blog/markdown-syntax/index.md)**
+  - Published: 2019-03-11
+  - Tags: `markdown` `css` `html` 
+  - Description: Sample article showcasing basic Markdown syntax and formatting for HTML elements.
+
+- **[Rich Content](https://pagliacii.github.io/hugo-bearberry/blog/rich-content/index.md)**
+  - Published: 2019-03-10
+  - Tags: `shortcodes` `privacy` 
+  - Description: A brief description of Hugo Shortcodes
+
+- **[Placeholder Text](https://pagliacii.github.io/hugo-bearberry/blog/placeholder-text/index.md)**
+  - Published: 2019-03-09
+  - Tags: `markdown` `text` 
+  - Description: Lorem Ipsum Dolor Si Amet
+
+- **[Math Typesetting](https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting/index.md)**
+  - Published: 2019-03-08
+  - Description: A brief guide to setup KaTeX
+
+- **[Emoji Support](https://pagliacii.github.io/hugo-bearberry/blog/emoji-support/index.md)**
+  - Published: 2019-03-05
+  - Tags: `emoji` 
+  - Description: Guide to emoji usage in Hugo
+
+
+## Site Information
+
+- **Language**: en-US 🇺🇸
+- **Base URL**: https://pagliacii.github.io/hugo-bearberry/
+- **Last Updated**: 2025-08-23
+
+## Available Languages
+- en-US 🇺🇸 (en-US)
+
+- zh-CN 🇨🇳 (zh-CN)
+
+
+## Technical Features
+
+This site uses:
+- Hugo Static Site Generator
+- Bear Berry theme
+- Math rendering support (KaTeX/MathJax)
+- Diagram support (Mermaid, Kroki)
+- Multilingual content support
+- RSS feeds
+- Syntax highlighting

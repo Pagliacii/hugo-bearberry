@@ -1,0 +1,76 @@
+# 熊莓
+
+Bear Berry Demo
+
+## Content
+- **[通过 Mathjax 进行数学排版](https://pagliacii.github.io/hugo-bearberry/zh/blog/math-typesetting-mathjax/index.md)**
+  - Published: 2024-01-14
+  - Description: 使用 Mathjax 渲染数学符号
+
+- **[更多短代码](https://pagliacii.github.io/hugo-bearberry/zh/blog/more-shortcodes/index.md)**
+  - Published: 2023-10-29
+  - Tags: `shortcodes` `hugo` 
+  - Description: 更多自定义短代码。
+
+- **[Kroki 图表](https://pagliacii.github.io/hugo-bearberry/zh/blog/kroki-diagrams/index.md)**
+  - Published: 2023-10-28
+  - Tags: `markdown` `code` `diagram` `mermaid` `kroki` `plantuml` `d2` `c4` 
+  - Description: 使用免费的 Kroki 服务在 Hugo 站点中嵌入图表的 SVG 图像。
+
+- **[编程语言](https://pagliacii.github.io/hugo-bearberry/zh/blog/programming-languages/index.md)**
+  - Published: 2023-10-22
+  - Tags: `markdown` `code` 
+  - Description: 使用代码块展示各种编程语言示例。
+
+- **[图表](https://pagliacii.github.io/hugo-bearberry/zh/blog/diagrams/index.md)**
+  - Published: 2023-10-21
+  - Tags: `markdown` `code` `diagram` `mermaid` `GoAT` 
+  - Description: 使用代码围栏和 markdown 渲染钩子显示图表。
+
+- **[Markdown 语法指南](https://pagliacii.github.io/hugo-bearberry/zh/blog/markdown-syntax/index.md)**
+  - Published: 2019-03-11
+  - Tags: `markdown` `css` `html` 
+  - Description: 展示基本 Markdown 语法和 HTML 元素格式的示例文章。
+
+- **[丰富内容](https://pagliacii.github.io/hugo-bearberry/zh/blog/rich-content/index.md)**
+  - Published: 2019-03-10
+  - Tags: `shortcodes` `privacy` 
+  - Description: Hugo 短代码的简要说明
+
+- **[占位文本](https://pagliacii.github.io/hugo-bearberry/zh/blog/placeholder-text/index.md)**
+  - Published: 2019-03-09
+  - Tags: `markdown` `text` 
+  - Description: Lorem Ipsum Dolor Si Amet
+
+- **[数学排版](https://pagliacii.github.io/hugo-bearberry/zh/blog/math-typesetting/index.md)**
+  - Published: 2019-03-08
+  - Description: KaTeX 设置简要指南
+
+- **[Emoji 支持](https://pagliacii.github.io/hugo-bearberry/zh/blog/emoji-support/index.md)**
+  - Published: 2019-03-05
+  - Tags: `emoji` 
+  - Description: Hugo 中 emoji 使用指南
+
+
+## Site Information
+
+- **Language**: zh-CN 🇨🇳
+- **Base URL**: https://pagliacii.github.io/hugo-bearberry/
+- **Last Updated**: 2025-08-23
+
+## Available Languages
+- en-US 🇺🇸 (en-US)
+
+- zh-CN 🇨🇳 (zh-CN)
+
+
+## Technical Features
+
+This site uses:
+- Hugo Static Site Generator
+- Bear Berry theme
+- Math rendering support (KaTeX/MathJax)
+- Diagram support (Mermaid, Kroki)
+- Multilingual content support
+- RSS feeds
+- Syntax highlighting
