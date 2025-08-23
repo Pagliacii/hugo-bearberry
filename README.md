@@ -116,6 +116,11 @@ hugo --source ./exampleSite --themesDir ../.. --cleanDestinationDir
 - **Search engines**: Robots.txt, sitemap.xml, structured data
 - **PWA ready**: Web app manifest and service worker support
 
+### AI & LLM Integration
+- **llms.txt**: Automatic generation of structured content file for AI model consumption at `/llms.txt`
+- **AI Navigation**: Complete site overview with titles, publish dates, tags, and content URLs
+- **No Setup Required**: Enabled by default with smart link generation to markdown sources
+
 ## Configuration
 
 ### Basic Setup
@@ -185,6 +190,15 @@ enableGitInfo = true
   [caches.getresource]
     dir = ":resourceDir/_gen"
     maxAge = -1
+
+# llms.txt configuration for AI model navigation
+[outputFormats.TXT]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "TXT"]
 ```
 
 ### Advanced Configuration
