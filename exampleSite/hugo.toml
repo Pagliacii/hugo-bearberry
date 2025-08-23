@@ -131,5 +131,11 @@ baseName = "index"
 isPlainText = true
 notAlternative = true
 
+[outputFormats.TXT]
+mediaType = "text/plain"
+baseName = "llms"
+isPlainText = true
+
 [outputs]
 page = ["HTML", "Markdown"]
+home = ["HTML", "RSS", "JSON", "TXT"]

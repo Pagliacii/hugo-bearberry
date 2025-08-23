@@ -1,0 +1,47 @@
+# {{ .Site.Title }}
+
+{{ .Site.Params.description }}
+
+## Content
+
+{{- range where .Site.RegularPages "Type" "blog" }}
+- **[{{ .Title }}]({{ .Permalink }}index.md)**
+  - Published: {{ .Date.Format "2006-01-02" }}
+  {{- if .Params.tags }}
+  - Tags: {{ range .Params.tags }}`{{ . }}` {{ end }}
+  {{- end }}
+  {{- if .Params.description }}
+  - Description: {{ .Params.description }}
+  {{- end }}
+{{ end }}
+
+{{- range where .Site.RegularPages "Type" "!=" "blog" }}
+- **[{{ .Title }}]({{ .Permalink }}index.md)**
+  - Published: {{ .Date.Format "2006-01-02" }}
+  {{- if .Params.description }}
+  - Description: {{ .Params.description }}
+  {{- end }}
+{{ end }}
+
+## Site Information
+
+- **Language**: {{ .Site.Language.LanguageName }}
+- **Base URL**: {{ .Site.BaseURL }}
+- **Last Updated**: {{ now.Format "2006-01-02" }}
+
+## Available Languages
+
+{{- range .Site.Languages }}
+- {{ .LanguageName }} ({{ .LanguageCode }})
+{{ end }}
+
+## Technical Features
+
+This site uses:
+- Hugo Static Site Generator
+- Bear Berry theme
+- Math rendering support (KaTeX/MathJax)
+- Diagram support (Mermaid, Kroki)
+- Multilingual content support
+- RSS feeds
+- Syntax highlighting
