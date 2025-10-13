@@ -160,15 +160,30 @@ content h6 {
 a {
   color: var(--flexoki-light-cyan);
   text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size .3s;
+  position: relative;
 }
 
 a:hover, a:focus {
-  background-size: 100% 2px;
+  color: var(--flexoki-dark-cyan);
+}
+
+/* VitePress-style underline transform for all links except title */
+a:not(.title)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--flexoki-light-cyan);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform .25s ease-out;
+}
+
+a:not(.title):hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .title {
