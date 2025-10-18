@@ -44,6 +44,7 @@ body {
   overflow-wrap: break-word;
   line-height: 1.5;
   color: var(--flexoki-black);
+  text-autospace: normal;
 }
 
 @media (max-width: 720px) {
