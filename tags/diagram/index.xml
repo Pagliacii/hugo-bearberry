@@ -1,20 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Diagram on Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/tags/diagram/</link><description>Recent content in Diagram on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/tags/diagram/index.xml" rel="self" type="application/rss+xml"/><item><title>Kroki diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</link><pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</guid><description>&lt;blockquote>
-&lt;p>Use a fenced code block to embed an SVG image of a diagram in your &lt;a href="https://gohugo.io/">Hugo&lt;/a> site using the free &lt;a href="https://kroki.io/">Kroki&lt;/a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>&lt;/blockquote>
-&lt;p>Thanks for &lt;a href="https://github.com/jmooring">@jmooring&lt;/a> and &lt;a href="https://kroki.io/">Kroki&lt;/a>.&lt;/p>
-&lt;h2 id="performance">Performance&lt;/h2>
-&lt;p>According to &lt;a href="https://github.com/jmooring">@jmooring&lt;/a>&amp;rsquo;s &lt;a href="https://www.veriphor.com/articles/diagrams/#performance">blog&lt;/a>, you could edit your &lt;a href="https://gohugo.io/getting-started/configuration/#configure-file-caches">site configuration&lt;/a> to store &lt;code>getresource&lt;/code> cache to optimize performance.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Diagram on Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/tags/diagram/</link><description>Recent content in Diagram on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/tags/diagram/index.xml" rel="self" type="application/rss+xml"/><item><title>Kroki diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</link><pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;Use a fenced code block to embed an SVG image of a diagram in your &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt; site using the free &lt;a href="https://kroki.io/"&gt;Kroki&lt;/a&gt; service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Thanks for &lt;a href="https://github.com/jmooring"&gt;@jmooring&lt;/a&gt; and &lt;a href="https://kroki.io/"&gt;Kroki&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="performance"&gt;Performance&lt;/h2&gt;
+&lt;p&gt;According to &lt;a href="https://github.com/jmooring"&gt;@jmooring&lt;/a&gt;&amp;rsquo;s &lt;a href="https://www.veriphor.com/articles/diagrams/#performance"&gt;blog&lt;/a&gt;, you could edit your &lt;a href="https://gohugo.io/getting-started/configuration/#configure-file-caches"&gt;site configuration&lt;/a&gt; to store &lt;code&gt;getresource&lt;/code&gt; cache to optimize performance.&lt;/p&gt;
 
 
 
 
 
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="nx">caches&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nx">caches&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getresource&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl"> &lt;span class="nx">dir&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;:resourceDir/_gen&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> &lt;span class="nx">maxAge&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">-1&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And don&amp;rsquo;t forget to check the &lt;code>resources&lt;/code> directory into source control.&lt;/p>
-&lt;h2 id="diagram-types">Diagram types&lt;/h2>
-&lt;p>The following diagram types are available:&lt;/p></description><content:encoded><![CDATA[<blockquote>
-<p>Use a fenced code block to embed an SVG image of a diagram in your <a href="https://gohugo.io/">Hugo</a> site using the free <a href="https://kroki.io/">Kroki</a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p></blockquote>
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-toml" data-lang="toml"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;caches&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;2&lt;/span&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;caches&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getresource&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;3&lt;/span&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;dir&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;:resourceDir/_gen&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;4&lt;/span&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;maxAge&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;-1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And don&amp;rsquo;t forget to check the &lt;code&gt;resources&lt;/code&gt; directory into source control.&lt;/p&gt;
+&lt;h2 id="diagram-types"&gt;Diagram types&lt;/h2&gt;
+&lt;p&gt;The following diagram types are available:&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
+<p>Use a fenced code block to embed an SVG image of a diagram in your <a href="https://gohugo.io/">Hugo</a> site using the free <a href="https://kroki.io/">Kroki</a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+</blockquote>
 <p>Thanks for <a href="https://github.com/jmooring">@jmooring</a> and <a href="https://kroki.io/">Kroki</a>.</p>
 <h2 id="performance">Performance</h2>
 <p>According to <a href="https://github.com/jmooring">@jmooring</a>&rsquo;s <a href="https://www.veriphor.com/articles/diagrams/#performance">blog</a>, you could edit your <a href="https://gohugo.io/getting-started/configuration/#configure-file-caches">site configuration</a> to store <code>getresource</code> cache to optimize performance.</p>
@@ -1378,7 +1380,7 @@
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-iUbwPzF1kFupGP1KBnW2TA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-0E+cD7GSlCRs0eMbAI47kQ==.svg">
 </div><h3 id="vega-lite">Vega-Lite</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1674,7 +1676,7 @@
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-31" src="/hugo-bearberry/images/kroki/md5-3M8a+vtdlcEiwRHUMAb6rQ==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-31" src="/hugo-bearberry/images/kroki/md5-Cz/tLl6qRNzJSL3vlWGWZg==.svg">
 </div><h3 id="wavedrom">WaveDrom</h3>
 
 
@@ -1738,7 +1740,7 @@
 </li>
 </ol>
 </div>
-]]></content:encoded></item><item><title>Diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</link><pubDate>Sat, 21 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</guid><description>&lt;p>This article is a demo of diagrams, using the &lt;a href="https://mermaid.js.org">mermaid&lt;/a> and &lt;a href="https://github.com/bep/goat">goat&lt;/a> tools.&lt;/p></description><content:encoded><![CDATA[<p>This article is a demo of diagrams, using the <a href="https://mermaid.js.org">mermaid</a> and <a href="https://github.com/bep/goat">goat</a> tools.</p>
+]]></content:encoded></item><item><title>Diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</link><pubDate>Sat, 21 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</guid><description>&lt;p&gt;This article is a demo of diagrams, using the &lt;a href="https://mermaid.js.org"&gt;mermaid&lt;/a&gt; and &lt;a href="https://github.com/bep/goat"&gt;goat&lt;/a&gt; tools.&lt;/p&gt;</description><content:encoded><![CDATA[<p>This article is a demo of diagrams, using the <a href="https://mermaid.js.org">mermaid</a> and <a href="https://github.com/bep/goat">goat</a> tools.</p>
 <h2 id="mermaid">Mermaid</h2>
 <h3 id="sequence-diagram-example">Sequence Diagram Example</h3>
 

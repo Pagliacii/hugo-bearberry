@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Blog on Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/blog/</link><description>Recent content in Blog on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><atom:link href="https://pagliacii.github.io/hugo-bearberry/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>中文测试文章：如何使用Hugo创建静态网站</title><link>https://pagliacii.github.io/hugo-bearberry/blog/chinese-test/</link><pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/chinese-test/</guid><description>&lt;h1 id="中文标题测试">中文标题测试&lt;/h1>
-&lt;p>这是一个测试中文内容在社交媒体分享卡片中显示效果的文章。我们将验证中文文字是否能够正确显示，而不是显示为空白方块。&lt;/p></description><content:encoded><![CDATA[<h1 id="中文标题测试">中文标题测试</h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Blog on Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/blog/</link><description>Recent content in Blog on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><atom:link href="https://pagliacii.github.io/hugo-bearberry/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>中文测试文章：如何使用Hugo创建静态网站</title><link>https://pagliacii.github.io/hugo-bearberry/blog/chinese-test/</link><pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/chinese-test/</guid><description>&lt;h1 id="中文标题测试"&gt;中文标题测试&lt;/h1&gt;
+&lt;p&gt;这是一个测试中文内容在社交媒体分享卡片中显示效果的文章。我们将验证中文文字是否能够正确显示，而不是显示为空白方块。&lt;/p&gt;</description><content:encoded><![CDATA[<h1 id="中文标题测试">中文标题测试</h1>
 <p>这是一个测试中文内容在社交媒体分享卡片中显示效果的文章。我们将验证中文文字是否能够正确显示，而不是显示为空白方块。</p>
 <h2 id="主要内容">主要内容</h2>
 <p>中文内容应该能够正常显示在社交媒体上，包括微信、微博等平台。</p>
@@ -11,7 +11,7 @@
 <li>字体渲染效果</li>
 </ol>
 <h2 id="结论">结论</h2>
-<p>如果中文能够正常显示，那么这个功能就测试成功了。</p>]]></content:encoded></item><item><title>Math Typesetting via Mathjax</title><link>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting-mathjax/</link><pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting-mathjax/</guid><description>&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p></description><content:encoded><![CDATA[<p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
+<p>如果中文能够正常显示，那么这个功能就测试成功了。</p>]]></content:encoded></item><item><title>Math Typesetting via Mathjax</title><link>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting-mathjax/</link><pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting-mathjax/</guid><description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description><content:encoded><![CDATA[<p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
 <h2 id="configuration">Configuration</h2>
 <p>You can enable Mathjax by using the <code>mathjax</code> option in your site&rsquo;s configuration file or in the front matter:</p>
 
@@ -22,25 +22,25 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="ln">1</span><span class="cl"><span class="nx">math</span> <span class="p">=</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nx">mathjax</span> <span class="p">=</span> <span class="kc">true</span></span></span></code></pre></div><h2 id="example">Example</h2>
 <p>When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><title>More Shortcodes</title><link>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</link><pubDate>Sun, 29 Oct 2023 17:09:08 +0800</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</guid><description>&lt;p>This is a page with more custom shortcodes.&lt;/p>
-&lt;h2 id="alerts">Alerts&lt;/h2>
-&lt;h3 id="note-alert">Note alert&lt;/h3>
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><title>More Shortcodes</title><link>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</link><pubDate>Sun, 29 Oct 2023 17:09:08 +0800</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</guid><description>&lt;p&gt;This is a page with more custom shortcodes.&lt;/p&gt;
+&lt;h2 id="alerts"&gt;Alerts&lt;/h2&gt;
+&lt;h3 id="note-alert"&gt;Note alert&lt;/h3&gt;
 
 
 
 
 
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">{{&amp;lt; note &amp;gt;}}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">Highlights information that users should take into account, even when skimming.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">{{&amp;lt; /note &amp;gt;}}&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="alert alert-note">
- &lt;p class="alert-title">
- &lt;span class="alert-icon alert-note-icon">
- &lt;svg class="octicon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
- &lt;path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z">&lt;/path>
- &lt;/svg>
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;{{&amp;lt; note &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;2&lt;/span&gt;&lt;span class="cl"&gt;Highlights information that users should take into account, even when skimming.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;3&lt;/span&gt;&lt;span class="cl"&gt;{{&amp;lt; /note &amp;gt;}}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="alert alert-note"&gt;
+ &lt;p class="alert-title"&gt;
+ &lt;span class="alert-icon alert-note-icon"&gt;
+ &lt;svg class="octicon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;
+ &lt;path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"&gt;&lt;/path&gt;
+ &lt;/svg&gt;
  Note
- &lt;/span>
- &lt;/p></description><content:encoded><![CDATA[<p>This is a page with more custom shortcodes.</p>
+ &lt;/span&gt;
+ &lt;/p&gt;</description><content:encoded><![CDATA[<p>This is a page with more custom shortcodes.</p>
 <h2 id="alerts">Alerts</h2>
 <h3 id="note-alert">Note alert</h3>
 
@@ -156,7 +156,8 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
     <summary style="color: var(--flexoki-light-blue)">More details</summary>
     <blockquote>
 <p>The past is never dead. It&rsquo;s not even past.</p>
-<p>&ndash; William Faulkner, Requiem for a Nun</p></blockquote>
+<p>&ndash; William Faulkner, Requiem for a Nun</p>
+</blockquote>
 
 </details>
 
@@ -191,23 +192,25 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; at name=Hugo type=github id=gohugoio &gt;}}
-</span></span><span class="line"><span class="ln">2</span><span class="cl">{{&lt; at name=&#34;GoHugo.io&#34; type=twitter id=gohugoio &gt;}}</span></span></code></pre></div>]]></content:encoded></item><item><title>Kroki diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</link><pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</guid><description>&lt;blockquote>
-&lt;p>Use a fenced code block to embed an SVG image of a diagram in your &lt;a href="https://gohugo.io/">Hugo&lt;/a> site using the free &lt;a href="https://kroki.io/">Kroki&lt;/a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>&lt;/blockquote>
-&lt;p>Thanks for &lt;a href="https://github.com/jmooring">@jmooring&lt;/a> and &lt;a href="https://kroki.io/">Kroki&lt;/a>.&lt;/p>
-&lt;h2 id="performance">Performance&lt;/h2>
-&lt;p>According to &lt;a href="https://github.com/jmooring">@jmooring&lt;/a>&amp;rsquo;s &lt;a href="https://www.veriphor.com/articles/diagrams/#performance">blog&lt;/a>, you could edit your &lt;a href="https://gohugo.io/getting-started/configuration/#configure-file-caches">site configuration&lt;/a> to store &lt;code>getresource&lt;/code> cache to optimize performance.&lt;/p>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">{{&lt; at name=&#34;GoHugo.io&#34; type=twitter id=gohugoio &gt;}}</span></span></code></pre></div>]]></content:encoded></item><item><title>Kroki diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</link><pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/kroki-diagrams/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;Use a fenced code block to embed an SVG image of a diagram in your &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt; site using the free &lt;a href="https://kroki.io/"&gt;Kroki&lt;/a&gt; service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Thanks for &lt;a href="https://github.com/jmooring"&gt;@jmooring&lt;/a&gt; and &lt;a href="https://kroki.io/"&gt;Kroki&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="performance"&gt;Performance&lt;/h2&gt;
+&lt;p&gt;According to &lt;a href="https://github.com/jmooring"&gt;@jmooring&lt;/a&gt;&amp;rsquo;s &lt;a href="https://www.veriphor.com/articles/diagrams/#performance"&gt;blog&lt;/a&gt;, you could edit your &lt;a href="https://gohugo.io/getting-started/configuration/#configure-file-caches"&gt;site configuration&lt;/a&gt; to store &lt;code&gt;getresource&lt;/code&gt; cache to optimize performance.&lt;/p&gt;
 
 
 
 
 
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="nx">caches&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nx">caches&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getresource&lt;/span>&lt;span class="p">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl"> &lt;span class="nx">dir&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;:resourceDir/_gen&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> &lt;span class="nx">maxAge&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">-1&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And don&amp;rsquo;t forget to check the &lt;code>resources&lt;/code> directory into source control.&lt;/p>
-&lt;h2 id="diagram-types">Diagram types&lt;/h2>
-&lt;p>The following diagram types are available:&lt;/p></description><content:encoded><![CDATA[<blockquote>
-<p>Use a fenced code block to embed an SVG image of a diagram in your <a href="https://gohugo.io/">Hugo</a> site using the free <a href="https://kroki.io/">Kroki</a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p></blockquote>
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-toml" data-lang="toml"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;caches&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;2&lt;/span&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;caches&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getresource&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;3&lt;/span&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;dir&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;:resourceDir/_gen&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;4&lt;/span&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;maxAge&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;-1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And don&amp;rsquo;t forget to check the &lt;code&gt;resources&lt;/code&gt; directory into source control.&lt;/p&gt;
+&lt;h2 id="diagram-types"&gt;Diagram types&lt;/h2&gt;
+&lt;p&gt;The following diagram types are available:&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
+<p>Use a fenced code block to embed an SVG image of a diagram in your <a href="https://gohugo.io/">Hugo</a> site using the free <a href="https://kroki.io/">Kroki</a> service. Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+</blockquote>
 <p>Thanks for <a href="https://github.com/jmooring">@jmooring</a> and <a href="https://kroki.io/">Kroki</a>.</p>
 <h2 id="performance">Performance</h2>
 <p>According to <a href="https://github.com/jmooring">@jmooring</a>&rsquo;s <a href="https://www.veriphor.com/articles/diagrams/#performance">blog</a>, you could edit your <a href="https://gohugo.io/getting-started/configuration/#configure-file-caches">site configuration</a> to store <code>getresource</code> cache to optimize performance.</p>
@@ -1571,7 +1574,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-iUbwPzF1kFupGP1KBnW2TA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-0E+cD7GSlCRs0eMbAI47kQ==.svg">
 </div><h3 id="vega-lite">Vega-Lite</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1867,7 +1870,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-31" src="/hugo-bearberry/images/kroki/md5-3M8a+vtdlcEiwRHUMAb6rQ==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-31" src="/hugo-bearberry/images/kroki/md5-Cz/tLl6qRNzJSL3vlWGWZg==.svg">
 </div><h3 id="wavedrom">WaveDrom</h3>
 
 
@@ -1931,62 +1934,62 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 </li>
 </ol>
 </div>
-]]></content:encoded></item><item><title>Programming Languages</title><link>https://pagliacii.github.io/hugo-bearberry/blog/programming-languages/</link><pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/programming-languages/</guid><description>&lt;h2 id="python">Python&lt;/h2>
+]]></content:encoded></item><item><title>Programming Languages</title><link>https://pagliacii.github.io/hugo-bearberry/blog/programming-languages/</link><pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/programming-languages/</guid><description>&lt;h2 id="python"&gt;Python&lt;/h2&gt;
 
 
 
 
 
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">hello_world&lt;/span>&lt;span class="p">():&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Hello, world!&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="c">C&lt;/h2>
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello_world&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;2&lt;/span&gt;&lt;span class="cl"&gt; &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Hello, world!&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="c"&gt;C&lt;/h2&gt;
 
 
 
 
 
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-c" data-lang="c">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="cp">#include&lt;/span> &lt;span class="cpf">&amp;lt;stdio.h&amp;gt;&lt;/span>&lt;span class="cp">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">&lt;span class="cp">&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> &lt;span class="nf">printf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello, world!&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s">&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="c-1">C++&lt;/h2>
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-c" data-lang="c"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;2&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;3&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;4&lt;/span&gt;&lt;span class="cl"&gt; &lt;span class="nf"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;Hello, world!&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;5&lt;/span&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;6&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="c-1"&gt;C++&lt;/h2&gt;
 
 
 
 
 
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="cp">#include&lt;/span> &lt;span class="cpf">&amp;lt;iostream&amp;gt;&lt;/span>&lt;span class="cp">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">&lt;span class="cp">&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl"> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">cout&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="s">&amp;#34;Hello, world!&amp;#34;&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">endl&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="go">Go&lt;/h2>
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-cpp" data-lang="cpp"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;2&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;3&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;4&lt;/span&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="s"&gt;&amp;#34;Hello, world!&amp;#34;&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;5&lt;/span&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;6&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="go"&gt;Go&lt;/h2&gt;
 
 
 
 
 
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="s">&amp;#34;fmt&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">4&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">5&lt;/span>&lt;span class="cl">&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">6&lt;/span>&lt;span class="cl"> &lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello, world!&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">7&lt;/span>&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="javascript">JavaScript&lt;/h2>
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;package&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;2&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;3&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;4&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;5&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;6&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;Hello, world!&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;7&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="javascript"&gt;JavaScript&lt;/h2&gt;
 
 
 
 
 
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Hello, world!&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="rust">Rust&lt;/h2>
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Hello, world!&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="rust"&gt;Rust&lt;/h2&gt;
 
 
 
 
 
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-rust" data-lang="rust">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">&lt;span class="k">fn&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="fm">println!&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello, world!&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description><content:encoded><![CDATA[<h2 id="python">Python</h2>
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-rust" data-lang="rust"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;fn&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;2&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="fm"&gt;println!&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;Hello, world!&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;3&lt;/span&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><content:encoded><![CDATA[<h2 id="python">Python</h2>
 
 
 
@@ -2021,13 +2024,13 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">package</span> <span class="nx">main</span>
-</span></span><span class="line"><span class="ln">2</span><span class="cl">
-</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
-</span></span><span class="line"><span class="ln">4</span><span class="cl">
-</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello, world!&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="p">}</span></span></span></code></pre></div><h2 id="javascript">JavaScript</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nx">main</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="s">&#34;fmt&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="w"></span><span class="kd">func</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello, world!&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div><h2 id="javascript">JavaScript</h2>
 
 
 
@@ -2041,7 +2044,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Hello, world!&#34;</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>]]></content:encoded></item><item><title>Diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</link><pubDate>Sat, 21 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</guid><description>&lt;p>This article is a demo of diagrams, using the &lt;a href="https://mermaid.js.org">mermaid&lt;/a> and &lt;a href="https://github.com/bep/goat">goat&lt;/a> tools.&lt;/p></description><content:encoded><![CDATA[<p>This article is a demo of diagrams, using the <a href="https://mermaid.js.org">mermaid</a> and <a href="https://github.com/bep/goat">goat</a> tools.</p>
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>]]></content:encoded></item><item><title>Diagrams</title><link>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</link><pubDate>Sat, 21 Oct 2023 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/diagrams/</guid><description>&lt;p&gt;This article is a demo of diagrams, using the &lt;a href="https://mermaid.js.org"&gt;mermaid&lt;/a&gt; and &lt;a href="https://github.com/bep/goat"&gt;goat&lt;/a&gt; tools.&lt;/p&gt;</description><content:encoded><![CDATA[<p>This article is a demo of diagrams, using the <a href="https://mermaid.js.org">mermaid</a> and <a href="https://github.com/bep/goat">goat</a> tools.</p>
 <h2 id="mermaid">Mermaid</h2>
 <h3 id="sequence-diagram-example">Sequence Diagram Example</h3>
 
@@ -2792,7 +2795,7 @@ gantt
 
     </svg>
   
-</div>]]></content:encoded></item><item><title>Markdown Syntax Guide</title><link>https://pagliacii.github.io/hugo-bearberry/blog/markdown-syntax/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/markdown-syntax/</guid><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p></description><content:encoded><![CDATA[<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
+</div>]]></content:encoded></item><item><title>Markdown Syntax Guide</title><link>https://pagliacii.github.io/hugo-bearberry/blog/markdown-syntax/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/markdown-syntax/</guid><description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description><content:encoded><![CDATA[<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
 <h2 id="headings">Headings</h2>
 <p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
 <h1 id="h1">H1</h1>
@@ -2809,11 +2812,13 @@ gantt
 <h4 id="blockquote-without-attribution">Blockquote without attribution</h4>
 <blockquote>
 <p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p></blockquote>
+<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p>
+</blockquote>
 <h4 id="blockquote-with-attribution">Blockquote with attribution</h4>
 <blockquote>
 <p>Don&rsquo;t communicate by sharing memory, share memory by communicating.<br>
-— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p></blockquote>
+— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p>
+</blockquote>
 <h2 id="tables">Tables</h2>
 <p>Tables aren&rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.</p>
 <table>
@@ -2951,8 +2956,8 @@ gantt
 <p>The above quote is excerpted from Rob Pike&rsquo;s <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk</a> during Gopherfest, November 18, 2015.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</div>]]></content:encoded></item><item><title>Rich Content</title><link>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</guid><description>&lt;p>Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes&lt;/a> for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config&lt;/a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p>
-&lt;h2>&lt;/h2></description><content:encoded><![CDATA[<p>Hugo ships with several <a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes</a> for rich content, along with a <a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config</a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</p>
+</div>]]></content:encoded></item><item><title>Rich Content</title><link>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</guid><description>&lt;p&gt;Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes"&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/"&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
+&lt;h2&gt;&lt;/h2&gt;</description><content:encoded><![CDATA[<p>Hugo ships with several <a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes</a> for rich content, along with a <a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config</a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</p>
 <h2></h2>
 <h2 id="youtube-privacy-enhanced-shortcode">YouTube Privacy Enhanced Shortcode</h2>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -3000,7 +3005,7 @@ gantt
               <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61"><circle cx="30.5" cy="30.5" r="30.5" opacity=".8" fill="#000"></circle><path d="M25.3 19.2c-2.1-1.2-3.8-.2-3.8 2.2v18.1c0 2.4 1.7 3.4 3.8 2.2l16.6-9.1c2.1-1.2 2.1-3.2 0-4.4l-16.6-9z" fill="#fff"></path></svg>
             </div>
           </a>
-        </div>]]></content:encoded></item><item><title>Placeholder Text</title><link>https://pagliacii.github.io/hugo-bearberry/blog/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/placeholder-text/</guid><description>&lt;p>Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p></description><content:encoded><![CDATA[<p>Lorem est tota propiore conpellat pectoribus de pectora summo.</p>
+        </div>]]></content:encoded></item><item><title>Placeholder Text</title><link>https://pagliacii.github.io/hugo-bearberry/blog/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/placeholder-text/</guid><description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description><content:encoded><![CDATA[<p>Lorem est tota propiore conpellat pectoribus de pectora summo.</p>
 <p>Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.</p>
 <ol>
 <li>Exierant elisi ambit vivere dedere</li>
@@ -3022,7 +3027,7 @@ gantt
 <h2 id="mane-refeci-capiebant-unda-mulcebat">Mane refeci capiebant unda mulcebat</h2>
 <p>Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. <strong>Faces illo pepulere</strong> tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.</p>
 <p>Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.</p>
-<p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel <strong>mitis temploque</strong> vocatus, inque alis, <em>oculos nomen</em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides <strong>parte</strong>.</p>]]></content:encoded></item><item><title>Math Typesetting</title><link>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting/</link><pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting/</guid><description>&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p></description><content:encoded><![CDATA[<p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
+<p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel <strong>mitis temploque</strong> vocatus, inque alis, <em>oculos nomen</em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides <strong>parte</strong>.</p>]]></content:encoded></item><item><title>Math Typesetting</title><link>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting/</link><pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/math-typesetting/</guid><description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description><content:encoded><![CDATA[<p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
 <p>In this example we will be using <a href="https://katex.org/">KaTeX</a></p>
 <ul>
 <li>Create a partial under <code>/layouts/partials/math.html</code></li>
@@ -3047,7 +3052,7 @@ gantt
 <p>Block math:
 $$
 \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$</p>]]></content:encoded></item><item><title>Emoji Support</title><link>https://pagliacii.github.io/hugo-bearberry/blog/emoji-support/</link><pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/emoji-support/</guid><description>&lt;p>Emoji can be enabled in a Hugo project in a number of ways.&lt;/p></description><content:encoded><![CDATA[<p>Emoji can be enabled in a Hugo project in a number of ways.</p>
+$$</p>]]></content:encoded></item><item><title>Emoji Support</title><link>https://pagliacii.github.io/hugo-bearberry/blog/emoji-support/</link><pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/emoji-support/</guid><description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description><content:encoded><![CDATA[<p>Emoji can be enabled in a Hugo project in a number of ways.</p>
 <p>The <a href="https://gohugo.io/functions/emojify/"><code>emojify</code></a> function can be called directly in templates or <a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes</a>.</p>
 <p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site&rsquo;s <a href="https://gohugo.io/getting-started/configuration/">configuration</a> and then you can type emoji shorthand codes directly in content files; e.g.</p>
 <p><span class="nowrap"><span class="emojify">🙈</span> <code>:see_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙉</span> <code>:hear_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙊</span> <code>:speak_no_evil:</code></span></p>

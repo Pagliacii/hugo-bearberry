@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Shortcodes on 熊莓</title><link>https://pagliacii.github.io/hugo-bearberry/zh/tags/shortcodes/</link><description>Recent content in Shortcodes on 熊莓</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><lastBuildDate>Sun, 29 Oct 2023 17:09:08 +0800</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/zh/tags/shortcodes/index.xml" rel="self" type="application/rss+xml"/><item><title>更多短代码</title><link>https://pagliacii.github.io/hugo-bearberry/zh/blog/more-shortcodes/</link><pubDate>Sun, 29 Oct 2023 17:09:08 +0800</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/zh/blog/more-shortcodes/</guid><description>&lt;p>这是一个展示更多自定义短代码的页面。&lt;/p>
-&lt;h2 id="警告框">警告框&lt;/h2>
-&lt;h3 id="注意警告">注意警告&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Shortcodes on 熊莓</title><link>https://pagliacii.github.io/hugo-bearberry/zh/tags/shortcodes/</link><description>Recent content in Shortcodes on 熊莓</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><lastBuildDate>Sun, 29 Oct 2023 17:09:08 +0800</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/zh/tags/shortcodes/index.xml" rel="self" type="application/rss+xml"/><item><title>更多短代码</title><link>https://pagliacii.github.io/hugo-bearberry/zh/blog/more-shortcodes/</link><pubDate>Sun, 29 Oct 2023 17:09:08 +0800</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/zh/blog/more-shortcodes/</guid><description>&lt;p&gt;这是一个展示更多自定义短代码的页面。&lt;/p&gt;
+&lt;h2 id="警告框"&gt;警告框&lt;/h2&gt;
+&lt;h3 id="注意警告"&gt;注意警告&lt;/h3&gt;
 
 
 
 
 
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">{{&amp;lt; note &amp;gt;}}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">突出显示用户应该注意的信息，即使在快速浏览时也应该注意。
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">{{&amp;lt; /note &amp;gt;}}&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="alert alert-note">
- &lt;p class="alert-title">
- &lt;span class="alert-icon alert-note-icon">
- &lt;svg class="octicon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
- &lt;path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z">&lt;/path>
- &lt;/svg>
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;{{&amp;lt; note &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;2&lt;/span&gt;&lt;span class="cl"&gt;突出显示用户应该注意的信息，即使在快速浏览时也应该注意。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;3&lt;/span&gt;&lt;span class="cl"&gt;{{&amp;lt; /note &amp;gt;}}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="alert alert-note"&gt;
+ &lt;p class="alert-title"&gt;
+ &lt;span class="alert-icon alert-note-icon"&gt;
+ &lt;svg class="octicon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;
+ &lt;path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"&gt;&lt;/path&gt;
+ &lt;/svg&gt;
  Note
- &lt;/span>
- &lt;/p></description><content:encoded><![CDATA[<p>这是一个展示更多自定义短代码的页面。</p>
+ &lt;/span&gt;
+ &lt;/p&gt;</description><content:encoded><![CDATA[<p>这是一个展示更多自定义短代码的页面。</p>
 <h2 id="警告框">警告框</h2>
 <h3 id="注意警告">注意警告</h3>
 
@@ -132,7 +132,8 @@
     <summary style="color: var(--flexoki-light-blue)">更多详情</summary>
     <blockquote>
 <p>The past is never dead. It&rsquo;s not even past.</p>
-<p>&ndash; William Faulkner, Requiem for a Nun</p></blockquote>
+<p>&ndash; William Faulkner, Requiem for a Nun</p>
+</blockquote>
 
 </details>
 
@@ -167,8 +168,8 @@
 
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; at name=Hugo type=github id=gohugoio &gt;}}
-</span></span><span class="line"><span class="ln">2</span><span class="cl">{{&lt; at name=&#34;GoHugo.io&#34; type=twitter id=gohugoio &gt;}}</span></span></code></pre></div>]]></content:encoded></item><item><title>丰富内容</title><link>https://pagliacii.github.io/hugo-bearberry/zh/blog/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/zh/blog/rich-content/</guid><description>&lt;p>Hugo 内置了多个&lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">内置短代码&lt;/a>来支持丰富内容，以及&lt;a href="https://gohugo.io/about/hugo-and-gdpr/">隐私配置&lt;/a>和一套简单短代码，可启用各种社交媒体嵌入的静态和无 JS 版本。&lt;/p>
-&lt;h2>&lt;/h2></description><content:encoded><![CDATA[<p>Hugo 内置了多个<a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">内置短代码</a>来支持丰富内容，以及<a href="https://gohugo.io/about/hugo-and-gdpr/">隐私配置</a>和一套简单短代码，可启用各种社交媒体嵌入的静态和无 JS 版本。</p>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">{{&lt; at name=&#34;GoHugo.io&#34; type=twitter id=gohugoio &gt;}}</span></span></code></pre></div>]]></content:encoded></item><item><title>丰富内容</title><link>https://pagliacii.github.io/hugo-bearberry/zh/blog/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/zh/blog/rich-content/</guid><description>&lt;p&gt;Hugo 内置了多个&lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes"&gt;内置短代码&lt;/a&gt;来支持丰富内容，以及&lt;a href="https://gohugo.io/about/hugo-and-gdpr/"&gt;隐私配置&lt;/a&gt;和一套简单短代码，可启用各种社交媒体嵌入的静态和无 JS 版本。&lt;/p&gt;
+&lt;h2&gt;&lt;/h2&gt;</description><content:encoded><![CDATA[<p>Hugo 内置了多个<a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">内置短代码</a>来支持丰富内容，以及<a href="https://gohugo.io/about/hugo-and-gdpr/">隐私配置</a>和一套简单短代码，可启用各种社交媒体嵌入的静态和无 JS 版本。</p>
 <h2></h2>
 <h2 id="youtube-隐私增强短代码">YouTube 隐私增强短代码</h2>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">

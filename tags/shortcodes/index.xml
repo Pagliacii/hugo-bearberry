@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Shortcodes on Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/tags/shortcodes/</link><description>Recent content in Shortcodes on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><lastBuildDate>Sun, 29 Oct 2023 17:09:08 +0800</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/tags/shortcodes/index.xml" rel="self" type="application/rss+xml"/><item><title>More Shortcodes</title><link>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</link><pubDate>Sun, 29 Oct 2023 17:09:08 +0800</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</guid><description>&lt;p>This is a page with more custom shortcodes.&lt;/p>
-&lt;h2 id="alerts">Alerts&lt;/h2>
-&lt;h3 id="note-alert">Note alert&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Shortcodes on Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/tags/shortcodes/</link><description>Recent content in Shortcodes on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><lastBuildDate>Sun, 29 Oct 2023 17:09:08 +0800</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/tags/shortcodes/index.xml" rel="self" type="application/rss+xml"/><item><title>More Shortcodes</title><link>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</link><pubDate>Sun, 29 Oct 2023 17:09:08 +0800</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/more-shortcodes/</guid><description>&lt;p&gt;This is a page with more custom shortcodes.&lt;/p&gt;
+&lt;h2 id="alerts"&gt;Alerts&lt;/h2&gt;
+&lt;h3 id="note-alert"&gt;Note alert&lt;/h3&gt;
 
 
 
 
 
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="ln">1&lt;/span>&lt;span class="cl">{{&amp;lt; note &amp;gt;}}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">2&lt;/span>&lt;span class="cl">Highlights information that users should take into account, even when skimming.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">3&lt;/span>&lt;span class="cl">{{&amp;lt; /note &amp;gt;}}&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="alert alert-note">
- &lt;p class="alert-title">
- &lt;span class="alert-icon alert-note-icon">
- &lt;svg class="octicon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
- &lt;path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z">&lt;/path>
- &lt;/svg>
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;1&lt;/span&gt;&lt;span class="cl"&gt;{{&amp;lt; note &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;2&lt;/span&gt;&lt;span class="cl"&gt;Highlights information that users should take into account, even when skimming.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="ln"&gt;3&lt;/span&gt;&lt;span class="cl"&gt;{{&amp;lt; /note &amp;gt;}}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="alert alert-note"&gt;
+ &lt;p class="alert-title"&gt;
+ &lt;span class="alert-icon alert-note-icon"&gt;
+ &lt;svg class="octicon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;
+ &lt;path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"&gt;&lt;/path&gt;
+ &lt;/svg&gt;
  Note
- &lt;/span>
- &lt;/p></description><content:encoded><![CDATA[<p>This is a page with more custom shortcodes.</p>
+ &lt;/span&gt;
+ &lt;/p&gt;</description><content:encoded><![CDATA[<p>This is a page with more custom shortcodes.</p>
 <h2 id="alerts">Alerts</h2>
 <h3 id="note-alert">Note alert</h3>
 
@@ -132,7 +132,8 @@
     <summary style="color: var(--flexoki-light-blue)">More details</summary>
     <blockquote>
 <p>The past is never dead. It&rsquo;s not even past.</p>
-<p>&ndash; William Faulkner, Requiem for a Nun</p></blockquote>
+<p>&ndash; William Faulkner, Requiem for a Nun</p>
+</blockquote>
 
 </details>
 
@@ -167,8 +168,8 @@
 
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">{{&lt; at name=Hugo type=github id=gohugoio &gt;}}
-</span></span><span class="line"><span class="ln">2</span><span class="cl">{{&lt; at name=&#34;GoHugo.io&#34; type=twitter id=gohugoio &gt;}}</span></span></code></pre></div>]]></content:encoded></item><item><title>Rich Content</title><link>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</guid><description>&lt;p>Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes&lt;/a> for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config&lt;/a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p>
-&lt;h2>&lt;/h2></description><content:encoded><![CDATA[<p>Hugo ships with several <a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes</a> for rich content, along with a <a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config</a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</p>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">{{&lt; at name=&#34;GoHugo.io&#34; type=twitter id=gohugoio &gt;}}</span></span></code></pre></div>]]></content:encoded></item><item><title>Rich Content</title><link>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/rich-content/</guid><description>&lt;p&gt;Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes"&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/"&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
+&lt;h2&gt;&lt;/h2&gt;</description><content:encoded><![CDATA[<p>Hugo ships with several <a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes</a> for rich content, along with a <a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config</a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</p>
 <h2></h2>
 <h2 id="youtube-privacy-enhanced-shortcode">YouTube Privacy Enhanced Shortcode</h2>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">

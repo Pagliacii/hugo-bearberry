@@ -56,7 +56,7 @@ Bear Berry Demo
 
 - **Language**: zh-CN 🇨🇳
 - **Base URL**: https://pagliacii.github.io/hugo-bearberry/
-- **Last Updated**: 2025-08-23
+- **Last Updated**: 2025-10-18
 
 ## Available Languages
 - en-US 🇺🇸 (en-US)

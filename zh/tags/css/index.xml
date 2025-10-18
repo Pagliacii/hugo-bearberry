@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Css on 熊莓</title><link>https://pagliacii.github.io/hugo-bearberry/zh/tags/css/</link><description>Recent content in Css on 熊莓</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/zh/tags/css/index.xml" rel="self" type="application/rss+xml"/><item><title>Markdown 语法指南</title><link>https://pagliacii.github.io/hugo-bearberry/zh/blog/markdown-syntax/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/zh/blog/markdown-syntax/</guid><description>&lt;p>这篇文章提供了可以在 Hugo 内容文件中使用的基本 Markdown 语法示例，同时展示了 Hugo 主题中基本 HTML 元素的 CSS 装饰效果。&lt;/p></description><content:encoded><![CDATA[<p>这篇文章提供了可以在 Hugo 内容文件中使用的基本 Markdown 语法示例，同时展示了 Hugo 主题中基本 HTML 元素的 CSS 装饰效果。</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Css on 熊莓</title><link>https://pagliacii.github.io/hugo-bearberry/zh/tags/css/</link><description>Recent content in Css on 熊莓</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://pagliacii.github.io/hugo-bearberry/zh/tags/css/index.xml" rel="self" type="application/rss+xml"/><item><title>Markdown 语法指南</title><link>https://pagliacii.github.io/hugo-bearberry/zh/blog/markdown-syntax/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/zh/blog/markdown-syntax/</guid><description>&lt;p&gt;这篇文章提供了可以在 Hugo 内容文件中使用的基本 Markdown 语法示例，同时展示了 Hugo 主题中基本 HTML 元素的 CSS 装饰效果。&lt;/p&gt;</description><content:encoded><![CDATA[<p>这篇文章提供了可以在 Hugo 内容文件中使用的基本 Markdown 语法示例，同时展示了 Hugo 主题中基本 HTML 元素的 CSS 装饰效果。</p>
 <h2 id="标题">标题</h2>
 <p>以下 HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> 元素代表六个级别的分节标题。<code>&lt;h1&gt;</code> 是最高分节级别，而 <code>&lt;h6&gt;</code> 是最低级别。</p>
 <h1 id="h1">H1</h1>
@@ -15,11 +15,13 @@
 <h4 id="无归属的引用块">无归属的引用块</h4>
 <blockquote>
 <p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-<strong>注意</strong>：你可以在引用块内使用 <em>Markdown 语法</em>。</p></blockquote>
+<strong>注意</strong>：你可以在引用块内使用 <em>Markdown 语法</em>。</p>
+</blockquote>
 <h4 id="带归属的引用块">带归属的引用块</h4>
 <blockquote>
 <p>Don&rsquo;t communicate by sharing memory, share memory by communicating.<br>
-— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p></blockquote>
+— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p>
+</blockquote>
 <h2 id="表格">表格</h2>
 <p>表格不是核心 Markdown 规范的一部分，但 Hugo 开箱即用地支持它们。</p>
 <table>
