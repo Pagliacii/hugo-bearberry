@@ -1,0 +1,101 @@
+/* Code Block Styles */
+
+code {
+  font-family: var(--font-mono);
+  background-color: var(--flexoki-50);
+  color: var(--flexoki-black);
+  padding: 0.1em 0.2em;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-weight: bolder;
+  font-stretch: expanded;
+  font-size: 90%;
+}
+
+pre code {
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 0 0 .6rem .6rem;
+  white-space: pre;
+  font-size: 14px;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 36rem;
+  color: var(--flexoki-800);
+}
+
+blockquote code {
+  background-color: transparent;
+}
+
+/* Code block copy button */
+.copy-code-button {
+  color: var(--flexoki-light-cyan);
+  background-color: var(--flexoki-200);
+  border-color: var(--flexoki-light-cyan);
+  border: 2px solid;
+  border-radius: 4px;
+
+  /* right-align */
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+
+  margin-bottom: -2px;
+  padding: 3px 8px;
+  font-size: 0.8em;
+}
+
+.copy-code-button:hover {
+  cursor: pointer;
+  background-color: var(--flexoki-light-cyan);
+  color: var(--flexoki-100);
+  border-color: var(--flexoki-light-cyan);
+}
+
+.copy-code-button:focus {
+  /* Avoid an ugly focus outline on click in Chrome,
+     but darken the button for accessibility.
+     See https://stackoverflow.com/a/25298082/1481479 */
+  background-color: var(--flexoki-dark-blue);
+  outline: 0;
+}
+
+.copy-code-button:active {
+  background-color: var(--flexoki-dark-blue);
+}
+
+.highlight pre {
+  /* Avoid pushing up the copy buttons. */
+  margin: 0;
+}
+
+pre {
+  margin: 0;
+}
+
+.code-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--flexoki-200);
+  padding: 0.5rem 0.75rem;
+}
+
+.lang {
+  text-transform: uppercase;
+  margin-right: 0.5em;
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+/* Mobile code styling */
+@media (max-width: 720px) {
+  pre code {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

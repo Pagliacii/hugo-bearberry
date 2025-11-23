@@ -11,11 +11,19 @@
   {{- partial "seo_tags.html" . -}}
   <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  {{ $style := print (default "original" .Site.Params.themeStyle) ".css" | resources.Get | minify }}
+  {{ $css := slice
+    (resources.Get "css/themes/_flexoki-variables.css")
+    (resources.Get "css/themes/original.css")
+    (resources.Get "css/syntax/syntax.css")
+    (resources.Get "css/components/toc.css")
+    (resources.Get "css/components/copy-markdown.css")
+    (resources.Get "css/components/_code-blocks.css")
+  }}
+  {{ $style := $css | resources.Concat "css/bundled.css" | minify }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 
   {{ if (.Page.Store.Get "hasCodeBlock") }}
-    {{ $syntax := resources.Get "syntax.css" | minify }}
+    {{ $syntax := resources.Get "css/syntax/syntax.css" | minify }}
     <link href="{{ $syntax.RelPermalink }}" rel="stylesheet">
   {{ end }}
 
@@ -30,7 +38,7 @@
 
   {{ if .Params.toc }}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.21.2/tocbot.css">
-    {{ $toc := resources.Get "toc.css" | minify }}
+    {{ $toc := resources.Get "css/components/toc.css" | minify }}
     <link href="{{ $toc.RelPermalink }}" rel="stylesheet">
   {{ end }}
 
@@ -53,7 +61,7 @@
 
   {{ if .Params.toc }}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.21.2/tocbot.min.js"></script>
-    {{ $toc := resources.Get "js/toc.js" | minify }}
+    {{ $toc := resources.Get "js/components/toc.js" | minify }}
     <script src="{{ $toc.RelPermalink }}"></script>
   {{ end }}
 

@@ -1,0 +1,36 @@
+/* Flexoki Color Palette Variables */
+:root {
+  --flexoki-black:         #100F0F;
+  --flexoki-950:           #1C1B1A;
+  --flexoki-900:           #282726;
+  --flexoki-850:           #343331;
+  --flexoki-800:           #403E3C;
+  --flexoki-700:           #575653;
+  --flexoki-600:           #6F6E69;
+  --flexoki-500:           #878580;
+  --flexoki-300:           #B7B5AC;
+  --flexoki-200:           #CECDC3;
+  --flexoki-150:           #DAD8CE;
+  --flexoki-100:           #E6E4D9;
+  --flexoki-50:            #F2F0E5;
+  --flexoki-paper:         #FFFCF0;
+  --flexoki-dark-red:      #AF3029;
+  --flexoki-dark-orange:   #BC5215;
+  --flexoki-dark-yellow:   #AD8301;
+  --flexoki-dark-green:    #66800B;
+  --flexoki-dark-cyan:     #24837B;
+  --flexoki-dark-blue:     #205EA6;
+  --flexoki-dark-purple:   #5E409D;
+  --flexoki-dark-magenta:  #A02F6F;
+  --flexoki-light-red:     #D14D41;
+  --flexoki-light-orange:  #DA702C;
+  --flexoki-light-yellow:  #D0A215;
+  --flexoki-light-green:   #879A39;
+  --flexoki-light-cyan:    #3AA99F;
+  --flexoki-light-blue:    #4385BE;
+  --flexoki-light-purple:  #8B7EC8;
+  --flexoki-light-magenta: #CE5D97;
+
+  /* Font Variables */
+  --font-mono: ui-monospace, "Iosevka Term SS14", "JetBrainsMono Nerd Font", "Hack NF", SFMono-Regular, "Cascadia Code", "IBM Plex Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+}

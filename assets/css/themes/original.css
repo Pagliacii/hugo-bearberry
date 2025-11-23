@@ -1,37 +1,5 @@
-:root {
-  --flexoki-black:         #100F0F;
-  --flexoki-950:           #1C1B1A;
-  --flexoki-900:           #282726;
-  --flexoki-850:           #343331;
-  --flexoki-800:           #403E3C;
-  --flexoki-700:           #575653;
-  --flexoki-600:           #6F6E69;
-  --flexoki-500:           #878580;
-  --flexoki-300:           #B7B5AC;
-  --flexoki-200:           #CECDC3;
-  --flexoki-150:           #DAD8CE;
-  --flexoki-100:           #E6E4D9;
-  --flexoki-50:            #F2F0E5;
-  --flexoki-paper:         #FFFCF0;
-  --flexoki-dark-red:      #AF3029;
-  --flexoki-dark-orange:   #BC5215;
-  --flexoki-dark-yellow:   #AD8301;
-  --flexoki-dark-green:    #66800B;
-  --flexoki-dark-cyan:     #24837B;
-  --flexoki-dark-blue:     #205EA6;
-  --flexoki-dark-purple:   #5E409D;
-  --flexoki-dark-magenta:  #A02F6F;
-  --flexoki-light-red:     #D14D41;
-  --flexoki-light-orange:  #DA702C;
-  --flexoki-light-yellow:  #D0A215;
-  --flexoki-light-green:   #879A39;
-  --flexoki-light-cyan:    #3AA99F;
-  --flexoki-light-blue:    #4385BE;
-  --flexoki-light-purple:  #8B7EC8;
-  --flexoki-light-magenta: #CE5D97;
-
-  --font-mono: ui-monospace, "Iosevka Term SS14", "JetBrainsMono Nerd Font", "Hack NF", SFMono-Regular, "Cascadia Code", "IBM Plex Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
-}
+/* Import color variables */
+@import url('_flexoki-variables.css');
 
 body {
   font-family: Verdana, sans-serif;
@@ -62,11 +30,7 @@ body {
     height: auto;
   }
 
-  pre code {
-    font-size: 12px;
-    padding: 8px;
-  }
-
+  
   .byline {
     font-size: 0.65rem !important;
     color: var(--flexoki-300) !important;
@@ -249,32 +213,6 @@ img {
   height: auto;
 }
 
-code {
-  font-family: var(--font-mono);
-  background-color: var(--flexoki-50);
-  color: var(--flexoki-black);
-  padding: 0.1em 0.2em;
-  border-radius: 4px;
-  white-space: nowrap;
-  font-weight: bolder;
-  font-stretch: expanded;
-  font-size: 90%;
-}
-
-pre code {
-  display: block;
-  padding-top: 4px;
-  padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
-  border-radius: 0 0 .6rem .6rem;
-  white-space: pre;
-  font-size: 14px;
-  overflow-x: auto;
-  overflow-y: auto;
-  max-height: 36rem;
-  color: var(--flexoki-800);
-}
 
 blockquote {
   border-left: 6px solid var(--flexoki-light-blue);
@@ -289,9 +227,6 @@ blockquote {
   border-radius: 0.25rem;
 }
 
-blockquote code {
-  background-color: transparent;
-}
 
 footer {
   padding: 25px;
@@ -436,66 +371,6 @@ figcaption > p {
   color: #ccc;
 }
 
-/* Code block copy button */
-.copy-code-button {
-  color: var(--flexoki-light-cyan);
-  background-color: var(--flexoki-200);
-  border-color: var(--flexoki-light-cyan);
-  border: 2px solid;
-  border-radius: 4px;
-
-  /* right-align */
-  display: block;
-  margin-left: auto;
-  margin-right: 0;
-
-  margin-bottom: -2px;
-  padding: 3px 8px;
-  font-size: 0.8em;
-}
-
-.copy-code-button:hover {
-  cursor: pointer;
-  background-color: var(--flexoki-light-cyan);
-  color: var(--flexoki-100);
-  border-color: var(--flexoki-light-cyan);
-}
-
-.copy-code-button:focus {
-  /* Avoid an ugly focus outline on click in Chrome,
-     but darken the button for accessibility.
-     See https://stackoverflow.com/a/25298082/1481479 */
-  background-color: var(--flexoki-dark-blue);
-  outline: 0;
-}
-
-.copy-code-button:active {
-  background-color: var(--flexoki-dark-blue);
-}
-
-.highlight pre {
-  /* Avoid pushing up the copy buttons. */
-  margin: 0;
-}
-
-pre {
-  margin: 0;
-}
-
-.code-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--flexoki-200);
-  padding: 0.5rem 0.75rem;
-}
-
-.lang {
-  text-transform: uppercase;
-  margin-right: 0.5em;
-  font-size: 0.6em;
-  font-weight: bold;
-}
 
 /* For kroki diagrams */
 img.diagram {

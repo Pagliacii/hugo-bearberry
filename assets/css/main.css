@@ -1,0 +1,18 @@
+/* Main CSS Entry Point for Hugo Bearberry Theme */
+
+/* Import theme variables */
+@import './themes/_flexoki-variables.css';
+
+/* Import theme styles */
+@import './themes/original.css';
+
+/* Import syntax highlighting */
+@import './syntax/syntax.css';
+
+/* Import component styles */
+@import './components/toc.css';
+@import './components/copy-markdown.css';
+@import './components/_code-blocks.css';
+
+/* Import additional syntax theme if needed */
+/* @import './syntax/dracula.css'; */

@@ -74,6 +74,11 @@
   background-color: var(--flexoki-light-cyan);
 }
 
+/* Fix spacing for all tocbot indicator bars */
+.toc .toc-link::before {
+  left: -8px !important;
+}
+
 .toc .toc-list {
   color: var(--flexoki-light-cyan);
 }

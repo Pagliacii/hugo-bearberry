@@ -68,15 +68,15 @@
   showWhenScrollTopIs: 512, // px
 })</script>
 {{ if (findRE "<pre" .Content 1) }}
-  {{ $js := resources.Get "/js/copy-code-button.js" | minify }}
+  {{ $js := resources.Get "js/components/copy-code-button.js" | minify }}
   <script src="{{ $js.RelPermalink }}"></script>
 {{ end }}
 
 {{ if eq .Type "blog" }}
-  {{ $copyJs := resources.Get "/js/copy-markdown.js" | minify }}
+  {{ $copyJs := resources.Get "js/components/copy-markdown.js" | minify }}
   <script src="{{ $copyJs.RelPermalink }}"></script>
-  
-  {{ $copyCss := resources.Get "/css/copy-markdown.css" | minify }}
+
+  {{ $copyCss := resources.Get "css/components/copy-markdown.css" | minify }}
   <link rel="stylesheet" href="{{ $copyCss.RelPermalink }}">
 {{ end }}
 {{ if .Page.Store.Get "hasMermaid" }}
