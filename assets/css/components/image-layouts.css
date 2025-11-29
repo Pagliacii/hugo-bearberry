@@ -189,6 +189,8 @@
   flex: 1;
   min-width: 250px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Ensure images have consistent height and fit container */
