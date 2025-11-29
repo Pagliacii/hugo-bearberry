@@ -197,11 +197,11 @@
 .image-pair img {
   width: 100%;
   height: auto;
+  min-height: 100%; /* Ensure image fills container height */
   flex: 1;
   object-fit: cover; /* Maintain aspect ratio while filling container */
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
-  min-height: 0; /* Allow image to shrink if needed */
 }
 
 /* Grid layout */
