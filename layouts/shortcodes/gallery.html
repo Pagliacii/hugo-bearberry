@@ -1,0 +1,32 @@
+{{/* Gallery shortcode for Hugo Bearberry */}}
+{{/* Usage: {{< gallery layout="main-sidebar|pair|grid|masonry" gap="1rem" cols="3" >}} */}}
+
+{{ $layout := .Get "layout" | default "grid" }}
+{{ $gap := .Get "gap" | default "1rem" }}
+{{ $cols := .Get "cols" | default "3" }}
+{{ $gridMinWidth := .Get "grid-min-width" | default "250px" }}
+
+{{/* Set container class based on layout */}}
+{{ $containerClass := "image-flex" }}
+{{ $style := printf "--image-gap: %s;" $gap }}
+
+{{ if eq $layout "main-sidebar" }}
+  {{ $containerClass = "image-main-sidebar" }}
+{{ else if eq $layout "pair" }}
+  {{ $containerClass = "image-pair" }}
+{{ else if eq $layout "grid" }}
+  {{ $containerClass = printf "image-grid image-flex--%s" $cols }}
+  {{ $style = printf "--image-gap: %s; --grid-columns: repeat(auto-fit, minmax(%s, 1fr));" $gap $gridMinWidth }}
+{{ else if eq $layout "masonry" }}
+  {{ $containerClass = "image-flex image-flex--masonry" }}
+  {{ $style = printf "--image-gap: %s; --grid-columns: %s;" $gap $cols }}
+{{ end }}
+
+{{/* Wrap content and apply modal functionality */}}
+{{ $inner := .Inner }}
+{{/* Convert markdown images to HTML figures with modal functionality */}}
+{{ $wrappedContent := replaceRE `!\[([^\]]*)\]\(([^)]+)\)` "<figure><img src=\"$2\" alt=\"$1\" onclick=\"openImageModal(this)\" loading=\"lazy\"></figure>" $inner }}
+
+<div class="image-container {{ $containerClass }}" style="{{ $style | safeCSS }}">
+  {{ $wrappedContent | safeHTML }}
+</div>

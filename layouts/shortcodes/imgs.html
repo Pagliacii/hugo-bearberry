@@ -1,0 +1,41 @@
+{{ $layout := .Get "layout" | default "auto" }}
+{{ $gap := .Get "gap" | default "1rem" }}
+
+{{/* Count images to determine best layout */}}
+{{ $content := .Inner }}
+{{ $imgTags := findRE `<img[^>]+>` $content }}
+{{ $imageCount := len $imgTags }}
+
+{{/* Auto-layout detection */}}
+{{ $containerClass := "image-flex" }}
+{{ $style := printf "--image-gap: %s;" $gap }}
+
+{{ if eq $layout "single" }}
+  {{ $containerClass = "image-flex" }}
+{{ else if eq $layout "pair" }}
+  {{ $containerClass = "image-pair" }}
+{{ else if eq $layout "grid" }}
+  {{ $containerClass = "image-grid" }}
+  {{ $style = printf "--grid-columns: 3; --grid-min-width: 200px; --image-gap: %s;" $gap }}
+{{ else if eq $layout "auto" }}
+  {{ if eq $imageCount 1 }}
+    {{ $containerClass = "image-flex" }}
+  {{ else if eq $imageCount 2 }}
+    {{ $containerClass = "image-pair" }}
+  {{ else if ge $imageCount 3 }}
+    {{ $containerClass = "image-grid" }}
+    {{ $style = printf "--grid-columns: 3; --grid-min-width: 200px; --image-gap: %s;" $gap }}
+  {{ end }}
+{{ end }}
+
+{{/* Add custom class if provided */}}
+{{ if .Get "class" }}
+  {{ $containerClass = printf "%s %s" $containerClass (.Get "class") }}
+{{ end }}
+
+{{/* Add figure wrapper and modal functionality */}}
+{{ $wrappedContent := replaceRE `<img([^>]+)>` "<figure><img$1 onclick=\"openImageModal(this)\" loading=\"lazy\"></figure>" $content }}
+
+<div class="image-container {{ $containerClass }}{{ if .Get "class" }} {{ .Get "class" }}{{ end }}" style="{{ $style | safeCSS }}">
+  {{ $wrappedContent | safeHTML }}
+</div>
