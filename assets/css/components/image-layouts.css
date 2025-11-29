@@ -197,7 +197,7 @@
 .image-pair img {
   width: 100%;
   height: auto;
-  min-height: 100%; /* Ensure image fills container height */
+  min-height: 0; /* Allow image to shrink if needed */
   flex: 1;
   object-fit: cover; /* Maintain aspect ratio while filling container */
   border-radius: var(--border-radius);
