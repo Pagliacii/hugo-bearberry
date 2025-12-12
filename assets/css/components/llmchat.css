@@ -1,0 +1,472 @@
+/* LLM Chat Component Styles for Hugo Bearberry Theme */
+
+/* Main chat container */
+.chat-container {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;  /* Reduced from 1.5rem for tighter spacing */
+}
+
+/* Individual message wrapper */
+.chat-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;  /* Reduced from 1.25rem for tighter spacing */
+  width: 100%;
+}
+
+/* User messages - right aligned, content-based width */
+.chat-message--user {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+/* Assistant messages - left aligned */
+.chat-message--assistant {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* Avatar container */
+.chat-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 0;
+  position: relative;
+  z-index: 2;
+  margin-top: 0.25rem;
+}
+
+/* Avatar background colors */
+.chat-message--user .chat-avatar {
+  background-color: var(--flexoki-300, #d1d5db); /* Fallback gray */
+  color: var(--flexoki-900, #111827); /* Fallback dark */
+}
+
+.chat-message--assistant .chat-avatar {
+  background-color: var(--flexoki-200, #e5e7eb); /* Fallback light gray */
+  color: var(--flexoki-700, #374151); /* Fallback medium gray */
+}
+
+/* Chat icon styling */
+.chat-icon {
+  width: 24px;
+  height: 24px;
+  color: currentColor;
+}
+
+/* Chat bubble container - base styling for both user and assistant */
+.chat-bubble {
+  position: relative;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1.125rem;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Assistant bubble styling - improved readability */
+.chat-message--assistant .chat-bubble {
+  background-color: var(--flexoki-50, #fafafa); /* Fallback very light gray */
+  color: var(--flexoki-700, #374151); /* Fallback medium gray */
+  border: 1px solid var(--flexoki-300, #d1d5db); /* Fallback light gray */
+  margin-left: 0.5rem;
+  width: 100%;
+}
+
+/* User bubble styling - right-aligned */
+.chat-message--user .chat-bubble {
+  background-color: var(--flexoki-300, #d1d5db); /* Fallback light gray */
+  color: var(--flexoki-900, #111827); /* Fallback dark gray */
+  border: 1px solid var(--flexoki-400, #9ca3af); /* Fallback medium gray */
+  margin-left: 56px; /* Account for avatar + gap */
+  margin-right: 0;
+  align-self: flex-end; /* Align bubble to the right */
+  max-width: 75%; /* More reliable than calc(100% - 56px) for Playwright */
+}
+
+/* User bubble tail - removed */
+
+/* Assistant bubble tail - removed */
+
+/* Chat content styling - improved readability */
+.chat-content {
+  word-wrap: break-word;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.chat-content p {
+  margin: 0 0 1rem 0;
+  line-height: 1.8;
+}
+
+.chat-content p:last-child {
+  margin-bottom: 0;
+}
+
+.chat-content ul,
+.chat-content ol {
+  margin: 0.75rem 0;
+  padding-left: 1.75rem;
+}
+
+.chat-content ul li,
+.chat-content ol li {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.chat-content ul li::marker {
+  color: var(--flexoki-600);
+}
+
+.chat-content ol li::marker {
+  color: var(--flexoki-600);
+  font-weight: 500;
+}
+
+.chat-content pre {
+  margin: 0.75rem 0;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  background-color: var(--flexoki-50);
+  border: 1px solid var(--flexoki-200);
+  overflow-x: auto;
+  font-size: 0.875rem;
+}
+
+.chat-content pre:first-child {
+  margin-top: 0;
+}
+
+.chat-content pre:last-child {
+  margin-bottom: 0;
+}
+
+.chat-content code {
+  background-color: var(--flexoki-50, #fafafa); /* Fallback very light gray */
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+  color: var(--flexoki-700, #374151); /* Fallback medium gray */
+  border: 1px solid var(--flexoki-200, #e5e7eb); /* Fallback light gray */
+}
+
+.chat-content pre code {
+  background: none;
+  padding: 0;
+  border: none;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Message content wrapper - contains thinking and bubble */
+.chat-message-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1 1 auto; /* Explicit flex values for better Playwright compatibility */
+  max-width: 85%;
+  min-width: 0; /* Prevent flexbox overflow issues */
+}
+
+/* Thinking section - perfectly aligned with answer bubble */
+.chat-thinking {
+  font-size: 0.875rem;
+  width: 100%;
+  margin: 0.5rem 0 0 0.5rem;
+  box-sizing: border-box;
+}
+
+.chat-thinking__details {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  overflow: hidden;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+/* Ensure details are collapsed by default */
+.chat-thinking__details:not([open]) .chat-thinking__content {
+  display: none;
+}
+
+/* Foldable bubble design */
+.chat-bubble--foldable {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.chat-bubble--foldable:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Collapsed state - truncate content */
+.chat-bubble--foldable:not(.expanded) .chat-content.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* Fallback for browsers without line-clamp support */
+  max-height: 4.5em; /* 3 lines * 1.5em line-height */
+  line-height: 1.5em;
+}
+
+/* Expanded state - show full content */
+.chat-bubble--foldable.expanded .chat-content.collapsed {
+  display: block;
+}
+
+/* Corner indicator */
+.chat-bubble__indicator {
+  position: absolute;
+  bottom: 0.625rem;
+  right: 0.625rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.chat-bubble--foldable:hover .chat-bubble__indicator,
+.chat-bubble--foldable.expanded .chat-bubble__indicator {
+  opacity: 0.6;
+}
+
+.chat-bubble__indicator .dots {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--flexoki-600) !important;
+  letter-spacing: 1px;
+  font-family: monospace;
+  display: inline-block;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: rotate(45deg); /* Default expandable state (↘) */
+}
+
+
+/* Focus state for accessibility */
+.chat-bubble--foldable:focus {
+  outline: 2px solid var(--flexoki-400);
+  outline-offset: 2px;
+}
+
+/* Chat bubble indicator styling - consistent with blog theme */
+.chat-bubble__indicator .dots {
+  color: var(--flexoki-300, #878580);
+}
+
+/* Duplicate removed - styles moved above */
+
+.chat-thinking__details:hover {
+  /* No background change - only summary should change on hover */
+}
+
+
+.chat-thinking__summary::before {
+  content: '🔍';
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  margin-right: 0.5rem;
+}
+
+.chat-thinking[open] > .chat-thinking__summary::before {
+  content: '💭';
+  transform: rotate(180deg);
+}
+
+.chat-thinking__content {
+  padding: 0 1.125rem 0.875rem 1.125rem;
+  border-top: 2px dashed var(--flexoki-400, #9ca3af); /* Fallback medium gray */
+  background-color: var(--flexoki-paper, #ffffff); /* Fallback white */
+  font-style: italic;
+  color: var(--flexoki-600, #4b5563); /* Fallback gray */
+  font-size: 0.85rem;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chat-thinking__content p,
+.chat-thinking__content ul,
+.chat-thinking__content ol {
+  margin-bottom: 0.75rem;
+}
+
+.chat-thinking__content p:last-child,
+.chat-thinking__content ul:last-child,
+.chat-thinking__content ol:last-child {
+  margin-bottom: 0;
+}
+
+.chat-thinking__content pre {
+  background-color: var(--flexoki-100);
+  border: 1px solid var(--flexoki-300);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+}
+
+.chat-thinking__content code {
+  background-color: var(--flexoki-100);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.125rem;
+  font-size: 0.8rem;
+}
+
+.chat-thinking__content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .chat-container {
+    gap: 0.5rem;  /* Reduced from 1.25rem for tighter spacing on mobile */
+    margin: 1.5rem 0;
+  }
+
+  .chat-avatar {
+    width: 32px;
+    height: 32px;
+  }
+
+  .chat-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .chat-bubble {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    max-width: calc(100% - 52px);
+  }
+
+  .chat-thinking__summary {
+    padding: 0.425rem 0.625rem;
+    font-size: 0.85rem;
+  }
+
+  .chat-thinking__content {
+    padding: 0.625rem;
+  }
+}
+
+/* Smooth transitions */
+.chat-bubble,
+.chat-avatar {
+  transition: transform 0.2s ease;
+}
+
+.chat-message:hover .chat-bubble {
+  transform: translateY(-1px);
+}
+
+/* Follow blog theme color scheme instead of browser preference */
+.chat-message--assistant .chat-bubble {
+  background-color: var(--flexoki-50, #F2F0E5); /* Much lighter background for better readability */
+  border-color: var(--flexoki-300, #B7B5AC); /* Lighter border to match */
+  color: var(--flexoki-700, #575653); /* Dark text for contrast against light background */
+}
+
+.chat-message--assistant .chat-avatar {
+  background-color: var(--flexoki-200, #CECDC3); /* Light avatar background */
+  color: var(--flexoki-700, #575653); /* Dark icon color */
+}
+
+.chat-thinking {
+  background-color: transparent;
+  border: none;
+}
+
+.chat-thinking__summary {
+  background-color: var(--flexoki-100, #E6E4D9);
+  color: var(--flexoki-600, #6F6E69);
+  font-size: 0.8rem;
+  padding: 0.5rem 0.75rem;
+  font-style: italic;
+  opacity: 0.8;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--flexoki-300, #B7B5AC);
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: left;
+  transition: all 0.2s ease;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* When thinking section is expanded, remove bottom rounded corners from summary */
+.chat-thinking__details[open] .chat-thinking__summary {
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: var(--flexoki-150, #DAD8CE);  /* Slightly darker when expanded */
+  opacity: 1;
+}
+
+.chat-thinking__summary:hover {
+  background-color: var(--flexoki-150, #DAD8CE);
+  opacity: 1;
+}
+
+.chat-thinking__content {
+  background-color: var(--flexoki-100, #E6E4D9);
+  border: 1px solid var(--flexoki-300, #B7B5AC);
+  border-top: none;
+  border-radius: 0 0 0.5rem 0.5rem;
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  font-style: italic;
+  color: var(--flexoki-600, #6F6E69);
+  font-size: 0.8rem;
+  box-sizing: border-box;
+}
+
+/* When thinking section is expanded, ensure no gap between summary and content */
+.chat-thinking__details[open] .chat-thinking__content {
+  margin: -1px 0 0 0;
+  box-sizing: border-box;
+}
+
+/* Print styles */
+@media print {
+  .chat-container {
+    break-inside: avoid;
+  }
+
+  .chat-thinking {
+    display: none;
+  }
+}

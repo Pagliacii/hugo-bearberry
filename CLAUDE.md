@@ -2,6 +2,30 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Agent rules
+
+### Code Quality & Analysis
+
+- @import ./rules/check.mdc - Comprehensive code quality checks across different languages.
+- @import ./rules/clean.mdc - Fix all formatting and linting issues.
+- @import ./rules/code-analysis.mdc - Advanced multi-faceted code analysis options.
+
+### Problem Solving & Implementation
+
+- @import ./rules/implement-task.mdc - Methodical task implementation approach.
+- @import ./rules/five.mdc - Five Whys root cause analysis technique.
+
+### Documentation & Visualization
+
+- @import ./rules/create-docs.mdc - Comprehensive documentation generation.
+- @import ./rules/mermaid.mdc - Mermaid diagram generation for various visualizations.
+
+### Project Setup & Meta
+
+- @import ./rules/context-prime.mdc - Load project context comprehensively.
+- @import ./rules/create-command.mds - Guide for creating new custom commands.
+- @import ./rules/continuous-improvement.mdc - Systematic approach for improving AI assistant rules.
+
 ## Commands
 
 ### Development Commands

@@ -18,6 +18,7 @@
     (resources.Get "css/components/toc.css")
     (resources.Get "css/components/copy-markdown.css")
     (resources.Get "css/components/_code-blocks.css")
+    (resources.Get "css/components/llmchat.css")
   }}
   {{ $style := $css | resources.Concat "css/bundled.css" | minify }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet">
@@ -64,6 +65,10 @@
     {{ $toc := resources.Get "js/components/toc.js" | minify }}
     <script src="{{ $toc.RelPermalink }}"></script>
   {{ end }}
+
+  {{/* LLM Chat Component JavaScript - loaded for consistent behavior across contexts */}}
+  {{ $llmchat := resources.Get "js/components/llmchat.js" | minify }}
+  <script src="{{ $llmchat.RelPermalink }}"></script>
 
   <!-- A partial to be overwritten by the user.
   Simply place a custom_body.html into

@@ -1,0 +1,40 @@
+{{/* LLM Icon Partial */}}
+{{/* Usage: {{ partial "llm-icon.html" (dict "icon" "claude") }} */}}
+{{/* Supports: predefined names (claude, openai, gemini, ollama, deepseek, kimi) or direct image URLs */}}
+
+{{ $icon := .icon | default "ollama" }}
+
+{{/* Check if icon is a URL (starts with http:// or https://) */}}
+{{ if or (hasPrefix $icon "http://") (hasPrefix $icon "https://") }}
+  <img class="chat-icon" src="{{ $icon }}" width="24" height="24" alt="AI Assistant" style="border-radius: 50%; object-fit: cover;" />
+
+{{/* Ollama - Default icon */}}
+{{ else if eq $icon "ollama" }}
+  <img class="chat-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/ollama.png" width="24" height="24" alt="Ollama" style="border-radius: 50%; object-fit: cover;" />
+
+{{/* Claude - Official icon from LobeHub */}}
+{{ else if eq $icon "claude" }}
+  <img class="chat-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/claude.png" width="24" height="24" alt="Claude" style="border-radius: 50%; object-fit: cover;" />
+
+{{/* OpenAI/GPT - Official icon */}}
+{{ else if eq $icon "openai" }}
+  <img class="chat-icon" src="https://custom.typingmind.com/assets/models/openai.svg" width="24" height="24" alt="OpenAI" style="border-radius: 50%; object-fit: cover;" />
+
+{{/* Google Gemini - Official icon */}}
+{{ else if eq $icon "gemini" }}
+  <img class="chat-icon" src="https://custom.typingmind.com/assets/models/gemini.png" width="24" height="24" alt="Gemini" style="border-radius: 50%; object-fit: cover;" />
+
+{{/* DeepSeek - Official icon */}}
+{{ else if eq $icon "deepseek" }}
+  <img class="chat-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/deepseek-color.png" width="24" height="24" alt="DeepSeek" style="border-radius: 50%; object-fit: cover;" />
+
+{{/* Kimi (Moonshot AI) - Official icon */}}
+{{ else if eq $icon "kimi" }}
+  <img class="chat-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/kimi-color.png" width="24" height="24" alt="Kimi" style="border-radius: 50%; object-fit: cover;" />
+
+{{/* Fallback AI icon */}}
+{{ else }}
+<svg class="chat-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+  <path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6l-2-2-2 2H5c-1.1 0-2 .9-2 2v5c0 1.1.9 2 2 2h5l2 2 2-2h5c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2zm-9 11c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" fill="currentColor"/>
+</svg>
+{{ end }}
