@@ -3,6 +3,10 @@
 Bear Berry Demo
 
 ## Content
+- **[图片布局可视化演示](https://pagliacii.github.io/hugo-bearberry/zh/blog/image-layouts-visual/index.md)**
+  - Published: 2025-11-24
+  - Tags: `演示` `图片` `可视化` 
+
 - **[通过 Mathjax 进行数学排版](https://pagliacii.github.io/hugo-bearberry/zh/blog/math-typesetting-mathjax/index.md)**
   - Published: 2024-01-14
   - Description: 使用 Mathjax 渲染数学符号
@@ -56,7 +60,7 @@ Bear Berry Demo
 
 - **Language**: zh-CN 🇨🇳
 - **Base URL**: https://pagliacii.github.io/hugo-bearberry/
-- **Last Updated**: 2025-11-23
+- **Last Updated**: 2025-12-12
 
 ## Available Languages
 - en-US 🇺🇸 (en-US)

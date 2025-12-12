@@ -1,4 +1,759 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/</link><description>Recent content on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><atom:link href="https://pagliacii.github.io/hugo-bearberry/index.xml" rel="self" type="application/rss+xml"/><item><title>中文测试文章：如何使用Hugo创建静态网站</title><link>https://pagliacii.github.io/hugo-bearberry/blog/chinese-test/</link><pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/chinese-test/</guid><description>&lt;h1 id="中文标题测试"&gt;中文标题测试&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Bear Berry</title><link>https://pagliacii.github.io/hugo-bearberry/</link><description>Recent content on Bear Berry</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><managingEditor>me@example.com (Jason Huang)</managingEditor><webMaster>me@example.com (Jason Huang)</webMaster><copyright>[Jason Huang](https://github.com/Pagliacii) © 2025</copyright><atom:link href="https://pagliacii.github.io/hugo-bearberry/index.xml" rel="self" type="application/rss+xml"/><item><title>LLM Chat Shortcode Demo</title><link>https://pagliacii.github.io/hugo-bearberry/blog/llm-chat-demo/</link><pubDate>Thu, 09 Jan 2025 10:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/llm-chat-demo/</guid><description>&lt;h1 id="llm-chat-shortcode-demonstration"&gt;LLM Chat Shortcode Demonstration&lt;/h1&gt;
+&lt;p&gt;This post demonstrates the new LLM chat shortcode functionality in Hugo Bearberry theme.&lt;/p&gt;
+&lt;h2 id="simple-qa-format"&gt;Simple Q&amp;amp;A Format&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s a simple question-answer pair with the default LLM icon:&lt;/p&gt;
+
+
+
+
+&lt;div class="chat-container"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ &lt;div class="chat-message chat-message--user"&gt;
+ &lt;div class="chat-avatar"&gt;
+ &lt;svg class="chat-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"&gt;
+ &lt;path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/&gt;
+ &lt;/svg&gt;
+ &lt;/div&gt;
+ &lt;div class="chat-bubble"&gt;
+ &lt;div class="chat-content"&gt;What is Hugo?&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ 
+
+ 
+ 
+ 
+ &lt;div class="chat-message chat-message--assistant"&gt;
+ &lt;div class="chat-avatar"&gt;
+ 
+
+
+
+
+
+
+
+ &lt;img class="chat-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/ollama.png" width="24" height="24" alt="Ollama" style="border-radius: 50%; object-fit: cover;" /&gt;
+
+
+
+ &lt;/div&gt;
+
+ &lt;div class="chat-message-content"&gt;
+ 
+ 
+
+ 
+ 
+ &lt;div class="chat-bubble"&gt;
+ &lt;div class="chat-content"&gt;Hugo is a fast and modern static site generator written in Go. It&amp;rsquo;s designed for speed, ease of use, and building websites quickly.&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+ &lt;/div&gt;
+ 
+ 
+&lt;/div&gt;
+&lt;h2 id="custom-llm-icons"&gt;Custom LLM Icons&lt;/h2&gt;
+&lt;p&gt;You can specify different LLM provider icons:&lt;/p&gt;</description><content:encoded><![CDATA[<h1 id="llm-chat-shortcode-demonstration">LLM Chat Shortcode Demonstration</h1>
+<p>This post demonstrates the new LLM chat shortcode functionality in Hugo Bearberry theme.</p>
+<h2 id="simple-qa-format">Simple Q&amp;A Format</h2>
+<p>Here&rsquo;s a simple question-answer pair with the default LLM icon:</p>
+
+
+
+
+<div class="chat-container">
+  
+  
+    
+    
+    
+    
+    
+
+    
+    
+    <div class="chat-message chat-message--user">
+      <div class="chat-avatar">
+        <svg class="chat-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="chat-bubble">
+        <div class="chat-content">What is Hugo?</div>
+      </div>
+    </div>
+    
+
+    
+    
+    
+    <div class="chat-message chat-message--assistant">
+      <div class="chat-avatar">
+        
+
+
+
+
+
+
+
+  <img class="chat-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/ollama.png" width="24" height="24" alt="Ollama" style="border-radius: 50%; object-fit: cover;" />
+
+
+
+      </div>
+
+      <div class="chat-message-content">
+        
+        
+
+        
+        
+        <div class="chat-bubble">
+          <div class="chat-content">Hugo is a fast and modern static site generator written in Go. It&rsquo;s designed for speed, ease of use, and building websites quickly.</div>
+        </div>
+        
+      </div>
+    </div>
+    
+  
+</div>
+<h2 id="custom-llm-icons">Custom LLM Icons</h2>
+<p>You can specify different LLM provider icons:</p>
+<h3 id="openai">OpenAI</h3>
+
+
+
+
+<div class="chat-container">
+  
+  
+    
+    
+    
+    
+    
+
+    
+    
+    <div class="chat-message chat-message--user">
+      <div class="chat-avatar">
+        <svg class="chat-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="chat-bubble">
+        <div class="chat-content">What&rsquo;s the difference between GPT-3 and GPT-4?</div>
+      </div>
+    </div>
+    
+
+    
+    
+    
+    <div class="chat-message chat-message--assistant">
+      <div class="chat-avatar">
+        
+
+
+
+
+
+
+
+  <img class="chat-icon" src="https://custom.typingmind.com/assets/models/openai.svg" width="24" height="24" alt="OpenAI" style="border-radius: 50%; object-fit: cover;" />
+
+
+
+      </div>
+
+      <div class="chat-message-content">
+        
+        
+
+        
+        
+        <div class="chat-bubble">
+          <div class="chat-content">GPT-4 is more advanced than GPT-3, offering better reasoning capabilities, more nuanced understanding, and improved performance across a wide range of tasks.</div>
+        </div>
+        
+      </div>
+    </div>
+    
+  
+</div>
+<h3 id="google-gemini">Google Gemini</h3>
+
+
+
+
+<div class="chat-container">
+  
+  
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="chat-message chat-message--user">
+  <div class="chat-avatar">
+    
+      <svg class="chat-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/>
+      </svg>
+    
+  </div>
+
+  <div class="chat-message-content">
+    
+    
+
+    
+    
+    <div class="chat-bubble">
+      <div class="chat-content">How do I optimize my Hugo site for performance?</div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="chat-message chat-message--assistant">
+  <div class="chat-avatar">
+    
+      
+
+
+
+
+
+
+
+  <img class="chat-icon" src="https://custom.typingmind.com/assets/models/gemini.png" width="24" height="24" alt="Gemini" style="border-radius: 50%; object-fit: cover;" />
+
+
+
+    
+  </div>
+
+  <div class="chat-message-content">
+    
+    
+
+    
+    
+    <div class="chat-bubble">
+      <div class="chat-content"><p>To optimize your Hugo site:</p>
+<ol>
+<li>Use minification</li>
+<li>Optimize images with proper sizing and format</li>
+<li>Enable caching with proper headers</li>
+<li>Use a CDN for static assets</li>
+<li>Keep your dependencies minimal</li>
+</ol></div>
+    </div>
+    
+  </div>
+</div>
+
+  
+</div>
+<h3 id="deepseek">DeepSeek</h3>
+
+
+
+
+<div class="chat-container">
+  
+  
+    
+    
+    
+    
+    
+
+    
+    
+    <div class="chat-message chat-message--user">
+      <div class="chat-avatar">
+        <svg class="chat-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="chat-bubble">
+        <div class="chat-content">What makes DeepSeek models unique?</div>
+      </div>
+    </div>
+    
+
+    
+    
+    
+    <div class="chat-message chat-message--assistant">
+      <div class="chat-avatar">
+        
+
+
+
+
+
+
+
+  <img class="chat-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/deepseek-color.png" width="24" height="24" alt="DeepSeek" style="border-radius: 50%; object-fit: cover;" />
+
+
+
+      </div>
+
+      <div class="chat-message-content">
+        
+        
+
+        
+        
+        <div class="chat-bubble">
+          <div class="chat-content">DeepSeek models are known for their strong reasoning capabilities and cost-effectiveness. They&rsquo;re designed to compete with larger models while maintaining efficient resource usage.</div>
+        </div>
+        
+      </div>
+    </div>
+    
+  
+</div>
+<h3 id="kimi-moonshot-ai">Kimi (Moonshot AI)</h3>
+
+
+
+
+<div class="chat-container">
+  
+  
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="chat-message chat-message--user">
+  <div class="chat-avatar">
+    
+      <svg class="chat-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/>
+      </svg>
+    
+  </div>
+
+  <div class="chat-message-content">
+    
+    
+
+    
+    
+    <div class="chat-bubble">
+      <div class="chat-content">What is Kimi AI good at?</div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="chat-message chat-message--assistant">
+  <div class="chat-avatar">
+    
+      
+
+
+
+
+
+
+
+  <img class="chat-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/kimi-color.png" width="24" height="24" alt="Kimi" style="border-radius: 50%; object-fit: cover;" />
+
+
+
+    
+  </div>
+
+  <div class="chat-message-content">
+    
+    
+
+    
+    
+    <div class="chat-bubble">
+      <div class="chat-content"><p>Kimi AI excels at:</p>
+<ul>
+<li>Long-context understanding (up to 200K tokens)</li>
+<li>Chinese language processing</li>
+<li>Document analysis and summarization</li>
+<li>Code generation and explanation</li>
+</ul></div>
+    </div>
+    
+  </div>
+</div>
+
+  
+</div>
+<h2 id="multiple-exchanges">Multiple Exchanges</h2>
+<p>For conversations with multiple messages, use the nested format:</p>
+
+
+
+
+<div class="chat-container">
+  
+  
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="chat-message chat-message--user">
+  <div class="chat-avatar">
+    
+      <svg class="chat-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/>
+      </svg>
+    
+  </div>
+
+  <div class="chat-message-content">
+    
+    
+
+    
+    
+    <div class="chat-bubble">
+      <div class="chat-content">How can I add custom shortcodes to my Hugo theme?</div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="chat-message chat-message--assistant">
+  <div class="chat-avatar">
+    
+      
+
+
+
+
+
+
+
+  <img class="chat-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/claude.png" width="24" height="24" alt="Claude" style="border-radius: 50%; object-fit: cover;" />
+
+
+
+    
+  </div>
+
+  <div class="chat-message-content">
+    
+    
+    <div class="chat-thinking">
+      <details class="chat-thinking__details">
+        <summary class="chat-thinking__summary">Thinking...</summary>
+        <div class="chat-thinking__content">The user wants to add custom shortcodes. I should explain the basic process.</div>
+      </details>
+    </div>
+    
+
+    
+    
+    <div class="chat-bubble">
+      <div class="chat-content"><p>You can add custom shortcodes by creating HTML template files in the <code>layouts/shortcodes/</code> directory. Each shortcode is a separate HTML file that Hugo will render when called from your content.</p>
+<p>For example, create <code>layouts/shortcodes/button.html</code> with your HTML template code.</p>
+</div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="chat-message chat-message--user">
+  <div class="chat-avatar">
+    
+      <svg class="chat-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/>
+      </svg>
+    
+  </div>
+
+  <div class="chat-message-content">
+    
+    
+
+    
+    
+    <div class="chat-bubble">
+      <div class="chat-content">What about styling?</div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="chat-message chat-message--assistant">
+  <div class="chat-avatar">
+    
+      
+
+
+
+
+
+
+
+  <img class="chat-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/claude.png" width="24" height="24" alt="Claude" style="border-radius: 50%; object-fit: cover;" />
+
+
+
+    
+  </div>
+
+  <div class="chat-message-content">
+    
+    
+
+    
+    
+    <div class="chat-bubble">
+      <div class="chat-content"><p>Add CSS in your stylesheet to style the shortcode output. You can use Flexoki color variables to match the theme.</p>
+<p>Here are the key steps:</p>
+<ul>
+<li>Create your CSS file in the assets directory</li>
+<li>Import it in the main CSS bundle</li>
+<li>Use Flexoki color variables for consistency</li>
+<li>Test with different screen sizes</li>
+</ul>
+</div>
+    </div>
+    
+  </div>
+</div>
+
+  
+</div>
+<h2 id="foldable-thinking-sections">Foldable Thinking Sections</h2>
+<p>Notice how the assistant messages above include thinking sections that can be expanded to see the reasoning process. This is useful for educational content or showing AI workflow.</p>
+<h2 id="folding-long-answers">Folding Long Answers</h2>
+<p>Both thinking sections and long answers can be folded to keep the page clean. Click to expand:</p>
+
+
+
+
+<div class="chat-container">
+  
+  
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="chat-message chat-message--user">
+  <div class="chat-avatar">
+    
+      <svg class="chat-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/>
+      </svg>
+    
+  </div>
+
+  <div class="chat-message-content">
+    
+    
+
+    
+    
+    <div class="chat-bubble">
+      <div class="chat-content">Explain how Hugo&rsquo;s static site generation works in detail</div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="chat-message chat-message--assistant">
+  <div class="chat-avatar">
+    
+      
+
+
+
+
+
+
+
+  <img class="chat-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/claude.png" width="24" height="24" alt="Claude" style="border-radius: 50%; object-fit: cover;" />
+
+
+
+    
+  </div>
+
+  <div class="chat-message-content">
+    
+    
+    <div class="chat-thinking">
+      <details class="chat-thinking__details">
+        <summary class="chat-thinking__summary">Thinking...</summary>
+        <div class="chat-thinking__content">The user wants a detailed explanation of Hugo&rsquo;s static site generation process. I should cover the core architecture, build process, templating system, and key features that make Hugo fast and efficient. This is a complex topic that requires understanding of Go-based static site generators, content management, and web performance optimization principles.</div>
+      </details>
+    </div>
+    
+
+    
+    
+    <div class="chat-bubble chat-bubble--foldable">
+      <div class="chat-content collapsed"><p>Hugo&rsquo;s static site generation is a sophisticated process that transforms raw content into optimized HTML websites. Here&rsquo;s how it works:</p>
+<p><strong>Core Architecture</strong>
+Hugo is written in Go and compiled into a single executable. When you run <code>hugo</code>, it loads your configuration files, parses content directories, and builds a complete website in memory before writing static files.</p>
+<p><strong>Content Processing Pipeline</strong></p>
+<ol>
+<li><strong>Content Discovery</strong>: Hugo scans your <code>content/</code> directory for markdown files and other content types</li>
+<li><strong>Front Matter Parsing</strong>: It extracts YAML, TOML, or JSON metadata from file headers</li>
+<li><strong>Content Classification</strong>: Files are organized by content type, section, and taxonomy</li>
+<li><strong>Markdown Processing</strong>: Content is converted to HTML using Goldmark, Blackfriday, or other configured renderers</li>
+</ol>
+<p><strong>Template Engine</strong>
+Hugo uses a powerful templating system that supports:</p>
+<ul>
+<li>Go templates for logic and data manipulation</li>
+<li>Partial templates for reusable components</li>
+<li>Base templates for consistent layouts</li>
+<li>Shortcodes for dynamic content injection</li>
+<li>Custom functions and data transformations</li>
+</ul>
+<p><strong>Asset Pipeline</strong></p>
+<ul>
+<li>CSS/JS processing with PostCSS, Sass, and bundlers</li>
+<li>Image resizing, optimization, and format conversion</li>
+<li>Resource fingerprinting for cache busting</li>
+<li>Minification and compression for production</li>
+</ul>
+<p><strong>Performance Optimizations</strong></p>
+<ul>
+<li>Parallel processing of multiple content files</li>
+<li>In-memory caching of templates and assets</li>
+<li>Differential rebuilds during development</li>
+<li>Lazy loading of heavy content</li>
+</ul>
+<p>The result is a set of static HTML, CSS, and JavaScript files ready for deployment on any web server.</p>
+</div>
+      <div class="chat-bubble__indicator">
+        <span class="dots">>>></span>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+  
+</div>
+<h2 id="foldable-answer-usage">Foldable Answer Usage</h2>
+<p>You can make long answers foldable by adding <code>foldable=&quot;true&quot;</code> parameter:</p>
+
+
+
+
+
+<pre tabindex="0"><code class="language-hugo" data-lang="hugo">{{&lt; llmchat user=&#34;Complex question?&#34; response=&#34;Long answer...&#34; foldable=&#34;true&#34; &gt;}}
+
+{{&lt; llmchat-message role=&#34;assistant&#34; foldable=&#34;true&#34; &gt;}}
+Very long content...
+{{&lt; /llmchat-message &gt;}}</code></pre><p>This creates a &ldquo;View Answer&hellip;&rdquo; button that expands to show the full response.</p>
+<h2 id="supported-llm-icons">Supported LLM Icons</h2>
+<p>The shortcode currently supports these LLM icons:</p>
+<ul>
+<li><code>ollama</code> - Ollama icon (default)</li>
+<li><code>claude</code> - Claude/Anthropic icon</li>
+<li><code>openai</code> - OpenAI/GPT icon</li>
+<li><code>gemini</code> - Google Gemini icon</li>
+<li><code>deepseek</code> - DeepSeek icon</li>
+<li><code>kimi</code> - Kimi (Moonshot AI) icon</li>
+</ul>
+<p>You can also use custom image URLs or add new icons by modifying the <code>layouts/partials/llm-icon.html</code> partial file.</p>
+]]></content:encoded></item><item><title>中文测试文章：如何使用Hugo创建静态网站</title><link>https://pagliacii.github.io/hugo-bearberry/blog/chinese-test/</link><pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/chinese-test/</guid><description>&lt;h1 id="中文标题测试"&gt;中文标题测试&lt;/h1&gt;
 &lt;p&gt;这是一个测试中文内容在社交媒体分享卡片中显示效果的文章。我们将验证中文文字是否能够正确显示，而不是显示为空白方块。&lt;/p&gt;</description><content:encoded><![CDATA[<h1 id="中文标题测试">中文标题测试</h1>
 <p>这是一个测试中文内容在社交媒体分享卡片中显示效果的文章。我们将验证中文文字是否能够正确显示，而不是显示为空白方块。</p>
 <h2 id="主要内容">主要内容</h2>
@@ -1574,7 +2329,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-Gm6nG6ohQ5emJR3hZ9VedA==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-zVtq7fYjriqa2hRFUmZ1pg==.svg">
 </div><h3 id="vega-lite">Vega-Lite</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -1870,7 +2625,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-31" src="/hugo-bearberry/images/kroki/md5-l4K3T4L1suwPclMjI6YKaQ==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-31" src="/hugo-bearberry/images/kroki/md5-2vzUlVgYg/vwOV3pEyV07g==.svg">
 </div><h3 id="wavedrom">WaveDrom</h3>
 
 
@@ -2973,39 +3728,7 @@ gantt
 
 <br>
 <hr>
-<h2 id="vimeo-simple-shortcode">Vimeo Simple Shortcode</h2>
-<style>
-.__h_video {
-   position: relative;
-   padding-bottom: 56.23%;
-   height: 0;
-   overflow: hidden;
-   width: 100%;
-   background: #000;
-}
-.__h_video img {
-   width: 100%;
-   height: auto;
-   color: #000;
-}
-.__h_video .play {
-   height: 72px;
-   width: 72px;
-   left: 50%;
-   top: 50%;
-   margin-left: -36px;
-   margin-top: -36px;
-   position: absolute;
-   cursor: pointer;
-}
-</style><div class="s_video_simple __h_video">
-          <a href="https://vimeo.com/48912912" rel="noopener" target="_blank">
-            <img src="https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us" srcset="https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us 1x, https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640?region=us 2x" alt="Sing Jan Swing - Kinetic Type">
-            <div class="play">
-              <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61"><circle cx="30.5" cy="30.5" r="30.5" opacity=".8" fill="#000"></circle><path d="M25.3 19.2c-2.1-1.2-3.8-.2-3.8 2.2v18.1c0 2.4 1.7 3.4 3.8 2.2l16.6-9.1c2.1-1.2 2.1-3.2 0-4.4l-16.6-9z" fill="#fff"></path></svg>
-            </div>
-          </a>
-        </div>]]></content:encoded></item><item><title>Placeholder Text</title><link>https://pagliacii.github.io/hugo-bearberry/blog/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/placeholder-text/</guid><description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description><content:encoded><![CDATA[<p>Lorem est tota propiore conpellat pectoribus de pectora summo.</p>
+<h2 id="vimeo-simple-shortcode">Vimeo Simple Shortcode</h2>]]></content:encoded></item><item><title>Placeholder Text</title><link>https://pagliacii.github.io/hugo-bearberry/blog/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (Jason Huang)</author><guid>https://pagliacii.github.io/hugo-bearberry/blog/placeholder-text/</guid><description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description><content:encoded><![CDATA[<p>Lorem est tota propiore conpellat pectoribus de pectora summo.</p>
 <p>Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.</p>
 <ol>
 <li>Exierant elisi ambit vivere dedere</li>

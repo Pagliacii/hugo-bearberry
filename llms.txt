@@ -3,6 +3,10 @@
 Bear Berry Demo
 
 ## Content
+- **[LLM Chat Shortcode Demo](https://pagliacii.github.io/hugo-bearberry/blog/llm-chat-demo/index.md)**
+  - Published: 2025-01-09
+  - Tags: `shortcode` `demo` `llm` 
+
 - **[中文测试文章：如何使用Hugo创建静态网站](https://pagliacii.github.io/hugo-bearberry/blog/chinese-test/index.md)**
   - Published: 2024-07-21
   - Tags: `中文` `测试` `hugo` 
@@ -61,7 +65,7 @@ Bear Berry Demo
 
 - **Language**: en-US 🇺🇸
 - **Base URL**: https://pagliacii.github.io/hugo-bearberry/
-- **Last Updated**: 2025-11-23
+- **Last Updated**: 2025-12-12
 
 ## Available Languages
 - en-US 🇺🇸 (en-US)
