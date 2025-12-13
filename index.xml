@@ -440,7 +440,7 @@
 
 
 
-  <img class="chat-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/kimi-color.png" width="24" height="24" alt="Kimi" style="border-radius: 50%; object-fit: cover;" />
+  <img class="chat-icon kimi-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/kimi-color.png" width="24" height="24" alt="Kimi" style="object-fit: cover;" />
 
 
 
@@ -2602,7 +2602,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-VxG6Ari0exGcpCTXqahekQ==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-vega" id="h-rh-cb-kroki-25" src="/hugo-bearberry/images/kroki/md5-C1dcvxxjQ9mONmXo2pGFdA==.svg">
 </div><h3 id="vega-lite">Vega-Lite</h3>
 <details>
     <summary style="color: var(--flexoki-light-blue)">Code</summary>
@@ -2898,7 +2898,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>]]></content:encoded></item><item><
 
 
 <div class="kroki-img" style="background-color: var(--flexoki-paper)">
-<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-31" src="/hugo-bearberry/images/kroki/md5-FnaRz1kiZnpKP/vdZeYsKQ==.svg">
+<img alt="diagram" class="diagram diagram-kroki diagram-kroki-tikz" id="h-rh-cb-kroki-31" src="/hugo-bearberry/images/kroki/md5-yho7shjsQKXtpdEK3ySqfw==.svg">
 </div><h3 id="wavedrom">WaveDrom</h3>
 
 

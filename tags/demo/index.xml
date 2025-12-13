@@ -440,7 +440,7 @@
 
 
 
-  <img class="chat-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/kimi-color.png" width="24" height="24" alt="Kimi" style="border-radius: 50%; object-fit: cover;" />
+  <img class="chat-icon kimi-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/kimi-color.png" width="24" height="24" alt="Kimi" style="object-fit: cover;" />
 
 
 
