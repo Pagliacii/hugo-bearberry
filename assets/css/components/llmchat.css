@@ -237,19 +237,14 @@
   display: block;
 }
 
-/* Corner indicator */
+/* Corner indicator - always visible for foldable bubbles */
 .chat-bubble__indicator {
   position: absolute;
   bottom: 0.625rem;
   right: 0.625rem;
-  opacity: 0;
+  opacity: 0.6;
   transition: all 0.3s ease;
   pointer-events: none;
-}
-
-.chat-bubble--foldable:hover .chat-bubble__indicator,
-.chat-bubble--foldable.expanded .chat-bubble__indicator {
-  opacity: 0.6;
 }
 
 .chat-bubble__indicator .dots {
