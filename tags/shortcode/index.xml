@@ -212,6 +212,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 <div class="chat-message chat-message--user">
   <div class="chat-avatar">
     
@@ -233,6 +242,15 @@
     
   </div>
 </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -363,6 +381,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 <div class="chat-message chat-message--user">
   <div class="chat-avatar">
     
@@ -384,6 +411,15 @@
     
   </div>
 </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -452,6 +488,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 <div class="chat-message chat-message--user">
   <div class="chat-avatar">
     
@@ -473,6 +518,15 @@
     
   </div>
 </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -505,8 +559,16 @@
     
     <div class="chat-thinking">
       <details class="chat-thinking__details">
-        <summary class="chat-thinking__summary">Thinking...</summary>
-        <div class="chat-thinking__content">The user wants to add custom shortcodes. I should explain the basic process.</div>
+        <summary class="chat-thinking__summary">
+          
+            Thinking...
+          
+        </summary>
+        <div class="chat-thinking__content">
+          
+            The user wants to add custom shortcodes. I should explain the basic process.
+          
+        </div>
       </details>
     </div>
     
@@ -521,6 +583,15 @@
     
   </div>
 </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -551,6 +622,15 @@
     
   </div>
 </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -623,6 +703,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 <div class="chat-message chat-message--user">
   <div class="chat-avatar">
     
@@ -644,6 +733,15 @@
     
   </div>
 </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -676,8 +774,16 @@
     
     <div class="chat-thinking">
       <details class="chat-thinking__details">
-        <summary class="chat-thinking__summary">Thinking...</summary>
-        <div class="chat-thinking__content">The user wants a detailed explanation of Hugo&rsquo;s static site generation process. I should cover the core architecture, build process, templating system, and key features that make Hugo fast and efficient. This is a complex topic that requires understanding of Go-based static site generators, content management, and web performance optimization principles.</div>
+        <summary class="chat-thinking__summary">
+          
+            Thinking...
+          
+        </summary>
+        <div class="chat-thinking__content">
+          
+            The user wants a detailed explanation of Hugo&rsquo;s static site generation process. I should cover the core architecture, build process, templating system, and key features that make Hugo fast and efficient. This is a complex topic that requires understanding of Go-based static site generators, content management, and web performance optimization principles.
+          
+        </div>
       </details>
     </div>
     
@@ -742,7 +848,174 @@ Hugo uses a powerful templating system that supports:</p>
 {{&lt; llmchat-message role=&#34;assistant&#34; foldable=&#34;true&#34; &gt;}}
 Very long content...
 {{&lt; /llmchat-message &gt;}}</code></pre><p>This creates a &ldquo;View Answer&hellip;&rdquo; button that expands to show the full response.</p>
-<h2 id="supported-llm-icons">Supported LLM Icons</h2>
+<h2 id="custom-thinking-labels">Custom Thinking Labels</h2>
+<p>You can customize the thinking section label using the <code>thinking-label</code> parameter. This is useful for showing elapsed time:</p>
+
+
+
+
+
+<pre tabindex="0"><code class="language-hugo" data-lang="hugo">{{&lt; llmchat-message role=&#34;assistant&#34; llm-icon=&#34;claude&#34; thinking-label=&#34;Thought 8 seconds...&#34; &gt;}}
+  {{&lt; llmchat-thought &gt;}}
+  The user is asking about thinking labels. I should explain the new syntax and show an example with elapsed time.
+
+  - New `thinking-label` parameter for custom text
+  - Shows elapsed time like &#34;Thought 3.2s&#34;
+  - Backward compatible (defaults to &#34;Thinking...&#34;)
+  {{&lt; /llmchat-thought &gt;}}
+  You can now customize the thinking section label! Use the `thinking-label` parameter to show elapsed time or custom text. For example: &#34;Thought 3.2s&#34; or &#34;Processing...&#34;
+{{&lt; /llmchat-message &gt;}}</code></pre><p>Which renders as:</p>
+
+
+
+
+<div class="chat-container">
+  
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="chat-message chat-message--user">
+  <div class="chat-avatar">
+    
+      <svg class="chat-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/>
+      </svg>
+    
+  </div>
+
+  <div class="chat-message-content">
+    
+    
+
+    
+    
+    <div class="chat-bubble">
+      <div class="chat-content">Can we customize the thinking label?</div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+<div class="chat-message chat-message--assistant">
+  <div class="chat-avatar">
+    
+      
+
+
+
+
+
+
+
+  <img class="chat-icon" src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/claude.png" width="24" height="24" alt="Claude" style="border-radius: 50%; object-fit: cover;" />
+
+
+
+    
+  </div>
+
+  <div class="chat-message-content">
+    
+    
+    <div class="chat-thinking">
+      <details class="chat-thinking__details">
+        <summary class="chat-thinking__summary">
+          
+            Thought 8 seconds...
+          
+        </summary>
+        <div class="chat-thinking__content">
+          
+            <p>The user is asking about thinking labels. I should explain the new syntax and show an example with elapsed time.</p>
+<ul>
+<li>New <code>thinking-label</code> parameter for custom text</li>
+<li>Shows elapsed time like &ldquo;Thought 3.2s&rdquo;</li>
+<li>Backward compatible (defaults to &ldquo;Thinking&hellip;&rdquo;)</li>
+</ul>
+          
+        </div>
+      </details>
+    </div>
+    
+
+    
+    
+    <div class="chat-bubble">
+      <div class="chat-content">You can now customize the thinking section label! Use the <code>thinking-label</code> parameter to show elapsed time or custom text. For example: &ldquo;Thought 3.2s&rdquo; or &ldquo;Processing&hellip;&rdquo;</div>
+    </div>
+    
+  </div>
+</div>
+
+  
+</div>
+<h2 id="nested-thought-content">Nested Thought Content</h2>
+<p>The new <code>llmchat-thought</code> shortcode allows you to write multi-line thought content with full markdown support:</p>
+
+
+
+
+
+<pre tabindex="0"><code class="language-hugo" data-lang="hugo">{{&lt; llmchat-message role=&#34;assistant&#34; thinking-label=&#34;Thought 12 seconds...&#34; &gt;}}
+  {{&lt; llmchat-thought &gt;}}
+  **Analysis:**
+  - User wants to understand the implementation
+  - Should provide code examples
+  - Need to show markdown formatting capabilities
+
+  **Plan:**
+  1. Explain the shortcode syntax
+  2. Show markdown rendering in thoughts
+  3. Provide a concrete example
+  {{&lt; /llmchat-thought &gt;}}
+  The `llmchat-thought` shortcode supports:
+
+  - **Bold** and *italic* text
+  - Lists (ordered and unordered)
+  - [Links](https://example.com)
+  - `inline code`
+  - Code blocks
+{{&lt; /llmchat-message &gt;}}</code></pre><h2 id="supported-llm-icons">Supported LLM Icons</h2>
 <p>The shortcode currently supports these LLM icons:</p>
 <ul>
 <li><code>ollama</code> - Ollama icon (default)</li>

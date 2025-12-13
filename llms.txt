@@ -65,7 +65,7 @@ Bear Berry Demo
 
 - **Language**: en-US 🇺🇸
 - **Base URL**: https://pagliacii.github.io/hugo-bearberry/
-- **Last Updated**: 2025-12-12
+- **Last Updated**: 2025-12-13
 
 ## Available Languages
 - en-US 🇺🇸 (en-US)
