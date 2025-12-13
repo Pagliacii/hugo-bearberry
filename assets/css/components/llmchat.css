@@ -62,6 +62,13 @@
   color: currentColor;
 }
 
+/* Kimi icon - no border-radius */
+.chat-icon.kimi-icon {
+  border-radius: 0;
+  width: 20px;
+  height: 20px;
+}
+
 /* Chat bubble container - base styling for both user and assistant */
 .chat-bubble {
   position: relative;
@@ -357,6 +364,11 @@
   .chat-icon {
     width: 20px;
     height: 20px;
+  }
+
+  .chat-icon.kimi-icon {
+    width: 16px;
+    height: 16px;
   }
 
   .chat-bubble {
