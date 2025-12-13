@@ -1,0 +1,5 @@
+{{/* llmchat-thought shortcode - wraps thought content inside llmchat-message */}}
+{{/* Stores content in scratchpad for parent to retrieve */}}
+
+{{/* Store thought content in page scratchpad */}}
+{{ .Page.Scratch.Set "llmchat_thought" (.Inner | .Page.RenderString) }}

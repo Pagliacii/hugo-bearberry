@@ -144,6 +144,68 @@ Very long content...
 
 This creates a "View Answer..." button that expands to show the full response.
 
+## Custom Thinking Labels
+
+You can customize the thinking section label using the `thinking-label` parameter. This is useful for showing elapsed time:
+
+```hugo
+{{</* llmchat-message role="assistant" llm-icon="claude" thinking-label="Thought 8 seconds..." */>}}
+  {{</* llmchat-thought */>}}
+  The user is asking about thinking labels. I should explain the new syntax and show an example with elapsed time.
+
+  - New `thinking-label` parameter for custom text
+  - Shows elapsed time like "Thought 3.2s"
+  - Backward compatible (defaults to "Thinking...")
+  {{</* /llmchat-thought */>}}
+  You can now customize the thinking section label! Use the `thinking-label` parameter to show elapsed time or custom text. For example: "Thought 3.2s" or "Processing..."
+{{</* /llmchat-message */>}}
+```
+
+Which renders as:
+
+{{< llmchat >}}
+{{< llmchat-message role="user" >}}
+Can we customize the thinking label?
+{{< /llmchat-message >}}
+{{< llmchat-message role="assistant" llm-icon="claude" thinking-label="Thought 8 seconds..." >}}
+  {{< llmchat-thought >}}
+The user is asking about thinking labels. I should explain the new syntax and show an example with elapsed time.
+
+- New `thinking-label` parameter for custom text
+- Shows elapsed time like "Thought 3.2s"
+- Backward compatible (defaults to "Thinking...")
+  {{< /llmchat-thought >}}
+You can now customize the thinking section label! Use the `thinking-label` parameter to show elapsed time or custom text. For example: "Thought 3.2s" or "Processing..."
+{{< /llmchat-message >}}
+{{< /llmchat >}}
+
+## Nested Thought Content
+
+The new `llmchat-thought` shortcode allows you to write multi-line thought content with full markdown support:
+
+```hugo
+{{</* llmchat-message role="assistant" thinking-label="Thought 12 seconds..." */>}}
+  {{</* llmchat-thought */>}}
+  **Analysis:**
+  - User wants to understand the implementation
+  - Should provide code examples
+  - Need to show markdown formatting capabilities
+
+  **Plan:**
+  1. Explain the shortcode syntax
+  2. Show markdown rendering in thoughts
+  3. Provide a concrete example
+  {{</* /llmchat-thought */>}}
+  The `llmchat-thought` shortcode supports:
+
+  - **Bold** and *italic* text
+  - Lists (ordered and unordered)
+  - [Links](https://example.com)
+  - `inline code`
+  - Code blocks
+{{</* /llmchat-message */>}}
+```
+
 ## Supported LLM Icons
 
 The shortcode currently supports these LLM icons:

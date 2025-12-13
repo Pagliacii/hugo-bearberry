@@ -1,11 +1,28 @@
 {{/* Individual chat message shortcode */}}
-{{/* Usage: {{< llmchat-message role="user|assistant" llm-icon="claude" thinking="..." foldable="true" >}}content{{< /llmchat-message >}} */}}
+{{/* New Usage: {{< llmchat-message role="user|assistant" llm-icon="claude" thinking-label="Thought 3.2s" foldable="true" >}}
+     {{< llmchat-thought >}}thought content{{< /llmchat-thought >}}
+     answer content
+     {{< /llmchat-message >}} */}}
 
 {{ $role := .Get "role" | default "user" }}
 {{ $thinking := .Get "thinking" }}
+{{ $thinkingLabel := .Get "thinking-label" }}
 {{ $llmIcon := .Get "llm-icon" | default "default" }}
 {{ $foldable := .Get "foldable" | default false }}
-{{ $content := .Inner }}
+{{ $innerContent := .Inner }}
+
+{{/* Check for thought content from llmchat-thought shortcode or thinking parameter */}}
+{{ $thoughtContent := "" }}
+{{ $hasNestedThought := false }}
+{{ $messageContent := $innerContent }}
+
+{{/* Try to get thought from scratchpad (set by llmchat-thought) */}}
+{{ if .Page.Scratch.Get "llmchat_thought" }}
+  {{ $thoughtContent = (.Page.Scratch.Get "llmchat_thought") }}
+  {{ $hasNestedThought = true }}
+  {{/* Clear the scratchpad for next message */}}
+  {{ .Page.Scratch.Delete "llmchat_thought" }}
+{{ end }}
 
 <div class="chat-message chat-message--{{ $role }}">
   <div class="chat-avatar">
@@ -19,12 +36,25 @@
   </div>
 
   <div class="chat-message-content">
-    {{/* Thinking section if provided - before the answer bubble */}}
-    {{ if and $thinking (eq $role "assistant") }}
+    {{/* Thinking section - backward compatibility with $thinking parameter or new nested approach
+     Note: only one of $thinking (old param) or $hasNestedThought can be true per message */}}
+    {{ if and (or $thinking $hasNestedThought) (eq $role "assistant") }}
     <div class="chat-thinking">
       <details class="chat-thinking__details">
-        <summary class="chat-thinking__summary">Thinking...</summary>
-        <div class="chat-thinking__content">{{ $thinking | .Page.RenderString }}</div>
+        <summary class="chat-thinking__summary">
+          {{ if $thinking }}
+            Thinking...
+          {{ else }}
+            {{ $thinkingLabel | default "Thinking..." }}
+          {{ end }}
+        </summary>
+        <div class="chat-thinking__content">
+          {{ if $thinking }}
+            {{ $thinking | .Page.RenderString }}
+          {{ else }}
+            {{ $thoughtContent }}
+          {{ end }}
+        </div>
       </details>
     </div>
     {{ end }}
@@ -32,14 +62,14 @@
     {{/* Foldable answer bubble if requested (only for assistant messages) */}}
     {{ if and $foldable (eq $role "assistant") }}
     <div class="chat-bubble chat-bubble--foldable">
-      <div class="chat-content collapsed">{{ $content | .Page.RenderString }}</div>
+      <div class="chat-content collapsed">{{ $messageContent | .Page.RenderString }}</div>
       <div class="chat-bubble__indicator">
         <span class="dots">>>></span>
       </div>
     </div>
     {{ else }}
     <div class="chat-bubble">
-      <div class="chat-content">{{ $content | .Page.RenderString }}</div>
+      <div class="chat-content">{{ $messageContent | .Page.RenderString }}</div>
     </div>
     {{ end }}
   </div>
